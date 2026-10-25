@@ -105,6 +105,29 @@ if (!frames.length) {
   process.exit(0);
 }
 
+// 0) GIF sin transparencia (arte oscuro sobre fondo claro): se quita el fondo para que el logo
+//    se vea sobre el vidrio del header. alpha = 1 - luminosidad/luminosidad_del_fondo, color negro.
+{
+  const W0 = frames[0].w;
+  const fullyOpaque = frames.every((f) => {
+    for (let i = 3; i < f.data.length; i += 4) if (f.data[i] < 250) return false;
+    return true;
+  });
+  const bgL =
+    frames[0].data[0] * 0.299 + frames[0].data[1] * 0.587 + frames[0].data[2] * 0.114 || 0;
+  if (fullyOpaque && bgL > 200 && W0 > 0) {
+    for (const f of frames) {
+      for (let i = 0; i < f.data.length; i += 4) {
+        const l = f.data[i] * 0.299 + f.data[i + 1] * 0.587 + f.data[i + 2] * 0.114;
+        const a = Math.max(0, Math.min(1, 1 - l / bgL));
+        f.data[i] = f.data[i + 1] = f.data[i + 2] = 0;
+        f.data[i + 3] = a < 0.03 ? 0 : Math.round(a * 255);
+      }
+    }
+    console.log('[logo] Fondo claro opaco detectado: se convirtió en transparente.');
+  }
+}
+
 // 1) Recuadro mínimo de píxeles no transparentes, unión de TODOS los fotogramas.
 const W = frames[0].w;
 const H = frames[0].h;

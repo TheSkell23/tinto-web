@@ -208,6 +208,7 @@ export function HeaderLogo({ compact, sheet }: { compact: boolean; sheet: LogoSh
         width: SLOT_W,
         aspectRatio: String(ratio),
         overflow: 'hidden',
+        marginBlock: Math.min(0, -(SLOT_W / ratio - 28) / 2),
       }}
     >
       <Image

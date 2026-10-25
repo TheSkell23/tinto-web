@@ -39,4 +39,4 @@ El GIF solo se usa en el header: se convierte en una hoja de sprites que se repr
 2. Ejecuta `npm run logo` (también corre solo en `predev` y `prebuild`).
 3. Se generan `public/anim/logo-sheet.webp` y `.json`. Reinicia/reconstruye.
 
-**Estado actual: no hay GIF**, así que el header muestra el logo estático `tinto-logo.png`.
+**Estado actual:** usa `tinto_logo.gif` (copiado del Escritorio a `assets/logo-anim.gif`). Es un GIF con fondo claro opaco: el script lo vuelve transparente automáticamente.
