@@ -81,7 +81,7 @@ button {
   background: #fff;
   color: var(--color-ink);
   overflow: hidden;
-  padding: calc(150px + 5cqw) 6cqw 0;
+  padding: calc(108px + 3cqw) 6cqw 0;
 }
 .cq {
   container-type: inline-size;
