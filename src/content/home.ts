@@ -13,8 +13,8 @@ export const homeHero = {
     steps: ['Atraída', 'Precalificada', 'Organizada'],
   },
   trust: {
-    label: 'Confían en nosotros equipos de todo el país',
-    logos: ['Estudio Norte', 'Casa Lumen', 'Taller 9', 'Oficina Sur', 'Cobre&Co'],
+    label: 'Agencias que ya venden confían en Tinto',
+    logos: ['Agencia Norte', 'Seguros Lumen', 'Corredora Andina', 'Red Sur', 'Cobre Corredores'],
   },
 };
 
@@ -25,7 +25,7 @@ export const homeSteps = {
 };
 
 export const homeBanner = {
-  alt: 'Un escritorio en medio de colinas verdes',
+  alt: 'Colinas verdes',
   ghost: 'Tu agenda',
   title: 'Todo lo que te imaginas',
   accent: 'está aquí.',
