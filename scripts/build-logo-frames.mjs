@@ -15,7 +15,9 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const gifPath = path.resolve(root, process.env.LOGO_GIF || 'assets/logo-anim.gif');
 const outDir = path.resolve(root, process.env.LOGO_OUT_DIR || 'public/anim');
-const MAX_FRAMES = 96;
+const MAX_FRAMES = 150;
+// Duración objetivo de la animación (ms). Los retardos irregulares del GIF se normalizan a pasos iguales.
+const TARGET_MS = Number(process.env.LOGO_DURATION) || 2400;
 const MIN_DELAY = 20;
 const COLS = 10;
 const SLOT_W = 96;
@@ -164,12 +166,8 @@ if (frames.length > MAX_FRAMES) {
   );
   picked = [...new Set(picked)];
 }
-const delays = picked.map((idx, n) => {
-  const end = n + 1 < picked.length ? picked[n + 1] : frames.length;
-  let sum = 0;
-  for (let j = idx; j < end; j++) sum += frames[j].delay;
-  return Math.max(MIN_DELAY, sum);
-});
+const stepMs = Math.max(MIN_DELAY, TARGET_MS / picked.length);
+const delays = picked.map(() => stepMs);
 
 // 3) Tamaño de cada fotograma: 4× el slot, sin escalar hacia arriba y con hoja ≤ 4096px.
 let fw = Math.min(TARGET_W, cw);
