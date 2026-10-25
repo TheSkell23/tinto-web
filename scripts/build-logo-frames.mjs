@@ -195,6 +195,16 @@ for (let n = 0; n < picked.length; n++) {
     .toBuffer();
   tiles.push(png);
 }
+// centro vertical (0..1) del dibujo en el primer fotograma: el header lo usa para centrarlo ópticamente
+let ry0 = fh,
+  ry1 = -1;
+for (let y = 0; y < fh; y++)
+  for (let x = 0; x < fw; x++)
+    if (tiles[0][(y * fw + x) * 4 + 3] > 40) {
+      if (y < ry0) ry0 = y;
+      if (y > ry1) ry1 = y;
+    }
+const restCy = ry1 >= 0 ? (ry0 + ry1 + 1) / 2 / fh : 0.5;
 const firstVisible = opaque(tiles[0]) >= 0.6 * opaque(tiles[tiles.length - 1]);
 
 const composites = await Promise.all(
@@ -231,6 +241,7 @@ fs.writeFileSync(
     delays,
     duration,
     firstFrameVisible: firstVisible,
+    restCy,
   }),
 );
 console.log(

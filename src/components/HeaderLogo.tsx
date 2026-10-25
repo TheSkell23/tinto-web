@@ -12,6 +12,8 @@ export type LogoSheet = {
   delays: number[];
   duration: number;
   firstFrameVisible: boolean;
+  /** centro vertical (0..1) del dibujo en el primer fotograma */
+  restCy?: number;
 };
 
 const SHEET_URL = '/anim/logo-sheet.webp';
@@ -212,6 +214,7 @@ export function HeaderLogo({ compact, sheet }: { compact: boolean; sheet: LogoSh
       href="/"
       aria-label="tinto — inicio"
       style={{
+        transform: `translateY(${((0.5 - (sheet?.restCy ?? 0.5)) * 100).toFixed(2)}%)`,
         position: 'relative',
         display: 'block',
         flex: 'none',
