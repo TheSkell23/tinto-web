@@ -54,6 +54,13 @@ h4 {
   font-family: var(--font-sans);
   letter-spacing: -0.03em;
 }
+/* igual que el diseño original: h2/h3/h4 siempre en 800 */
+h2,
+h3,
+h4 {
+  font-weight: 800 !important;
+  letter-spacing: -0.03em !important;
+}
 a {
   color: inherit;
   text-decoration: none;
