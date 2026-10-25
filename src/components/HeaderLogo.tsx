@@ -72,24 +72,34 @@ export function HeaderLogo({ compact, sheet }: { compact: boolean; sheet: LogoSh
     let last = 0;
     let dead = false;
 
+    // Dibuja el fotograma actual y mezcla el siguiente según el tiempo: de ~20 fps del GIF a 60 fps fluidos.
     const draw = (force = false) => {
-      const f = Math.min(frameAt(starts, Math.min(t, duration)), sheet.frames - 1);
-      if (f === shown && !force) return;
+      const tt = Math.min(Math.max(t, 0), duration);
+      const f = Math.min(frameAt(starts, tt), sheet.frames - 1);
+      const changed = f !== shown;
       shown = f;
       canvas.dataset.frame = String(f);
       if (!ready || !img) return;
+      if (!changed && !force && dir === 0) return;
+      const frac = f + 1 < sheet.frames ? (tt - starts[f]) / sheet.delays[f] : 0;
+      const put = (i: number, alpha: number) => {
+        ctx.globalAlpha = alpha;
+        ctx.drawImage(
+          img!,
+          (i % sheet.cols) * sheet.frameW,
+          Math.floor(i / sheet.cols) * sheet.frameH,
+          sheet.frameW,
+          sheet.frameH,
+          0,
+          0,
+          canvas.width,
+          canvas.height,
+        );
+      };
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.drawImage(
-        img,
-        (f % sheet.cols) * sheet.frameW,
-        Math.floor(f / sheet.cols) * sheet.frameH,
-        sheet.frameW,
-        sheet.frameH,
-        0,
-        0,
-        canvas.width,
-        canvas.height,
-      );
+      put(f, 1);
+      if (frac > 0.02 && dir !== 0) put(f + 1, Math.min(1, frac));
+      ctx.globalAlpha = 1;
     };
 
     const tick = (now: number) => {
@@ -163,8 +173,8 @@ export function HeaderLogo({ compact, sheet }: { compact: boolean; sheet: LogoSh
       if (ric) ric(load);
       else setTimeout(load, 200);
     };
-    if (document.readyState === 'complete') idle();
-    else window.addEventListener('load', idle, { once: true });
+    load();
+    void idle;
 
     canvas.dataset.dir = '0';
     canvas.dataset.frame = String(compactRef.current && reduce ? sheet.frames - 1 : 0);
