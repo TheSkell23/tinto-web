@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useCallback, useEffect, useRef, useState, type MouseEvent } from 'react';
-import { headerBar, navGroups, type NavLink } from '@/content/site';
+import { navGroups, type NavLink } from '@/content/site';
 import { goHref, scrollToSection } from '@/lib/scroll';
 import { HeaderLogo, type LogoSheet } from './HeaderLogo';
 import { Icon } from './Icons';
@@ -78,7 +78,7 @@ export function Header({ logoSheet }: { logoSheet: LogoSheet | null }) {
     [pathname],
   );
 
-  const showNav = !compact;
+  const showNav = true; // el header solo se encoge; el contenido no cambia
 
   return (
     <>
@@ -198,43 +198,6 @@ export function Header({ logoSheet }: { logoSheet: LogoSheet | null }) {
               );
             })}
           </nav>
-
-          {/* Barra compacta: Módulo / Equipo / Canal / Plan */}
-          <div
-            className="hdr-sw"
-            inert={showNav}
-            style={{
-              gridArea: '1/1',
-              width: '100%',
-              minWidth: 0,
-              overflow: 'hidden',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-around',
-              gap: 16,
-              opacity: showNav ? 0 : 1,
-              transform: showNav ? 'translateY(8px)' : 'translateY(0)',
-              pointerEvents: showNav ? 'none' : 'auto',
-            }}
-          >
-            {headerBar.map((f, i) => (
-              <div key={f.title} style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
-                {i > 0 && (
-                  <div style={{ width: 1, height: 34, background: 'rgba(42,29,18,.15)' }} />
-                )}
-                <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                  <Icon name={f.icon} size={20} stroke={1.8} />
-                  <div style={{ lineHeight: 1.25, whiteSpace: 'nowrap' }}>
-                    <div style={{ fontSize: 14, fontWeight: 600 }}>{f.title}</div>
-                    <div style={{ fontSize: 12, color: '#7a6a58' }}>{f.sub}</div>
-                  </div>
-                  {f.chevron && (
-                    <Icon name="chevron" size={11} stroke={2.4} style={{ marginLeft: 6 }} />
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
 
         <div style={{ flex: 'none', display: 'flex', alignItems: 'center', gap: 8 }}>
@@ -255,26 +218,6 @@ export function Header({ logoSheet }: { logoSheet: LogoSheet | null }) {
                 whiteSpace: 'nowrap',
                 opacity: showNav ? 1 : 0,
                 pointerEvents: showNav ? 'auto' : 'none',
-              }}
-            >
-              ¿Agendamos un tinto?
-            </Link>
-            <Link
-              href="/agendar"
-              inert={showNav}
-              className="hdr-sw hdr-cta-dark"
-              style={{
-                gridArea: '1/1',
-                background: 'linear-gradient(180deg,#4d3828,#2a1d12)',
-                color: '#fff',
-                padding: '13px 26px',
-                borderRadius: 999,
-                fontSize: 14,
-                fontWeight: 600,
-                whiteSpace: 'nowrap',
-                opacity: showNav ? 0 : 1,
-                pointerEvents: showNav ? 'none' : 'auto',
-                boxShadow: 'inset 0 1px 0 rgba(255,255,255,.28),0 8px 18px rgba(42,29,18,.28)',
               }}
             >
               ¿Agendamos un tinto?
