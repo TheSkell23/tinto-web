@@ -109,38 +109,53 @@ export function Header({ logoSheet }: { logoSheet: LogoSheet | null }) {
                   onMouseEnter={() => setOpen(i)}
                   onMouseLeave={() => setOpen(-1)}
                 >
-                  <button
-                    type="button"
+                  <div
                     className="hdr-link"
-                    aria-expanded={isOpen}
-                    aria-haspopup="true"
-                    aria-controls={`hdr-panel-${i}`}
-                    onClick={() => setOpen(isOpen ? -1 : i)}
                     style={{
                       display: 'flex',
                       alignItems: 'center',
-                      gap: 6,
-                      padding: '8px 10px',
                       borderRadius: 999,
-                      border: 0,
-                      cursor: 'pointer',
                       fontSize: 14,
                       fontWeight: 500,
                       background: isOpen ? 'rgba(255,255,255,.55)' : 'transparent',
                       transition: 'background .25s ease',
                     }}
                   >
-                    {g.label}
-                    <Icon
-                      name="chevron"
-                      size={11}
-                      stroke={2.4}
+                    <Link
+                      href={g.page}
+                      onClick={(e) => onNavigate(e, { page: g.page, find: '' })}
+                      style={{ padding: '8px 2px 8px 10px', borderRadius: '999px 0 0 999px' }}
+                    >
+                      {g.label}
+                    </Link>
+                    <button
+                      type="button"
+                      aria-label={'Abrir opciones de ' + g.label}
+                      aria-expanded={isOpen}
+                      aria-haspopup="true"
+                      aria-controls={'hdr-panel-' + i}
+                      onClick={() => setOpen(isOpen ? -1 : i)}
                       style={{
-                        transition: 'transform .3s ease',
-                        transform: `rotate(${isOpen ? 180 : 0}deg)`,
+                        display: 'grid',
+                        placeItems: 'center',
+                        padding: '8px 10px 8px 6px',
+                        border: 0,
+                        background: 'none',
+                        cursor: 'pointer',
+                        borderRadius: '0 999px 999px 0',
                       }}
-                    />
-                  </button>
+                    >
+                      <Icon
+                        name="chevron"
+                        size={11}
+                        stroke={2.4}
+                        style={{
+                          transition: 'transform .3s ease',
+                          transform: 'rotate(' + (isOpen ? 180 : 0) + 'deg)',
+                        }}
+                      />
+                    </button>
+                  </div>
                   <div
                     id={`hdr-panel-${i}`}
                     style={{
