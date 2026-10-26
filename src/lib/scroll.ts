@@ -31,7 +31,11 @@ export function scrollToSection(find: string, smooth: boolean): boolean {
   }
   const h = findHeading(find);
   if (!h) return false;
-  const top = h.getBoundingClientRect().top - pendingShift(h) + window.scrollY - GO_OFFSET;
+  const header = document.querySelector('header');
+  const offset = window.matchMedia('(max-width: 899px)').matches && header
+    ? Math.ceil(header.getBoundingClientRect().bottom) + 16
+    : GO_OFFSET;
+  const top = h.getBoundingClientRect().top - pendingShift(h) + window.scrollY - offset;
   window.scrollTo({ top: Math.max(0, top), behavior });
   return true;
 }

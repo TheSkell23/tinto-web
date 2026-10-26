@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useMemo, useState, useSyncExternalStore, type CSSProperties, type ReactNode } from 'react';
 import { bookingChannels, bookingWants, months, timeSlots, weekdays } from '@/content/agendar';
 import { bookingSchema, formatDay } from '@/lib/schemas';
-import { u } from '@/lib/u';
+import { textSize, fieldSize, u } from '@/lib/u';
 
 const SEL = 'rgba(255,255,255,.95)';
 const OFF = 'rgba(255,255,255,.55)';
@@ -20,13 +20,13 @@ const stepNum: CSSProperties = {
   color: '#fff',
   display: 'grid',
   placeItems: 'center',
-  fontSize: u(1.2),
+  fontSize: textSize(1.2),
   fontWeight: 800,
   boxShadow: 'inset 0 1px 0 rgba(255,255,255,.6),0 6px 14px rgba(255,120,60,.3)',
 };
 const stepTitle: CSSProperties = {
   margin: 0,
-  fontSize: u(1.7),
+  fontSize: textSize(1.7),
   fontWeight: 800,
   letterSpacing: '-.02em',
 };
@@ -39,14 +39,14 @@ const inputSt: CSSProperties = {
   border: '1px solid rgba(138,90,31,.22)',
   background: 'rgba(255,255,255,.9)',
   font: 'inherit',
-  fontSize: u(1.1),
+  fontSize: fieldSize(1.1),
   color: '#2a1d12',
   outline: 'none',
 };
 const fieldLabel: CSSProperties = {
   display: 'flex',
   flexDirection: 'column',
-  fontSize: u(1),
+  fontSize: textSize(1),
   fontWeight: 700,
   color: '#7a6a58',
 };
@@ -56,16 +56,16 @@ const sumRow: CSSProperties = {
   gap: u(1),
   padding: u(0.9, 0),
   borderTop: '1px solid rgba(42,29,18,.08)',
-  fontSize: u(1.1),
+  fontSize: textSize(1.1),
 };
 
 function Step({ n, title, children }: { n: number; title: string; children: ReactNode }) {
   return (
     <section
       aria-labelledby={`booking-step-${n}`}
-      className="cream"
+      className="cream booking-step"
       style={{
-        padding: u(2.4),
+        padding: `var(--mobile-form-padding, ${u(2.4)})`,
         gap: u(1.4),
         background: 'linear-gradient(160deg,rgba(255,253,249,.92),rgba(255,246,235,.7))',
       }}
@@ -183,7 +183,7 @@ export function BookingFlow() {
             color: '#fff',
             display: 'grid',
             placeItems: 'center',
-            fontSize: u(2.6),
+            fontSize: textSize(2.6),
             boxShadow: 'inset 0 1px 0 rgba(255,255,255,.6),0 10px 24px rgba(255,120,60,.35)',
           }}
           aria-hidden="true"
@@ -193,7 +193,7 @@ export function BookingFlow() {
         <h2
           style={{
             margin: 0,
-            fontSize: u(3),
+            fontSize: textSize(3),
             lineHeight: 1.08,
             fontWeight: 800,
             letterSpacing: '-.035em',
@@ -204,7 +204,7 @@ export function BookingFlow() {
         <p
           style={{
             margin: 0,
-            fontSize: u(1.2),
+            fontSize: textSize(1.2),
             lineHeight: 1.55,
             color: '#7a6a58',
             maxWidth: u(38),
@@ -224,7 +224,7 @@ export function BookingFlow() {
           <Link
             href="/"
             className="btn btn-primary"
-            style={{ padding: u(1.2, 2.4), fontSize: u(1.2) }}
+            style={{ padding: u(1.2, 2.4), fontSize: textSize(1.2) }}
           >
             Volver al inicio
           </Link>
@@ -235,7 +235,7 @@ export function BookingFlow() {
               background: 'none',
               border: 0,
               cursor: 'pointer',
-              fontSize: u(1.2),
+              fontSize: textSize(1.2),
               padding: u(1.2, 1.6),
             }}
             onClick={() => {
@@ -293,10 +293,10 @@ export function BookingFlow() {
                 <span className="tag" style={{ alignSelf: 'flex-start' }}>
                   {c.meta}
                 </span>
-                <span style={{ fontSize: u(1.35), fontWeight: 800, letterSpacing: '-.02em' }}>
+                <span style={{ fontSize: textSize(1.35), fontWeight: 800, letterSpacing: '-.02em' }}>
                   {c.name}
                 </span>
-                <span style={{ fontSize: u(1), lineHeight: 1.45, color: '#7a6a58' }}>{c.desc}</span>
+                <span style={{ fontSize: textSize(1), lineHeight: 1.45, color: '#7a6a58' }}>{c.desc}</span>
               </button>
             ))}
           </div>
@@ -334,7 +334,7 @@ export function BookingFlow() {
               >
                 <span
                   style={{
-                    fontSize: u(0.85),
+                    fontSize: textSize(0.85),
                     fontWeight: 700,
                     letterSpacing: '.08em',
                     textTransform: 'uppercase',
@@ -343,8 +343,8 @@ export function BookingFlow() {
                 >
                   {d ? weekdays[d.getDay()] : '···'}
                 </span>
-                <span style={{ fontSize: u(1.7), fontWeight: 800 }}>{d ? d.getDate() : '–'}</span>
-                <span style={{ fontSize: u(0.85), color: '#7a6a58' }}>
+                <span style={{ fontSize: textSize(1.7), fontWeight: 800 }}>{d ? d.getDate() : '–'}</span>
+                <span style={{ fontSize: textSize(0.85), color: '#7a6a58' }}>
                   {d ? months[d.getMonth()] : ''}
                 </span>
               </button>
@@ -376,7 +376,7 @@ export function BookingFlow() {
                     border: `2px solid ${on ? '#ff8a3d' : BD_OFF}`,
                     background: on ? 'var(--grad-primary)' : OFF,
                     color: on ? '#fff' : off ? 'rgba(122,106,88,.5)' : '#2a1d12',
-                    fontSize: u(1.1),
+                    fontSize: textSize(1.1),
                     fontWeight: 700,
                     textDecoration: off ? 'line-through' : 'none',
                   }}
@@ -397,6 +397,8 @@ export function BookingFlow() {
                 type="text"
                 name="name"
                 autoComplete="name"
+              inputMode="text"
+              enterKeyHint="next"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Tu nombre completo"
@@ -408,6 +410,8 @@ export function BookingFlow() {
               <input
                 className="field"
                 type="email"
+              inputMode="email"
+              enterKeyHint="next"
                 name="email"
                 autoComplete="email"
                 value={mail}
@@ -421,6 +425,8 @@ export function BookingFlow() {
               <input
                 className="field"
                 type="tel"
+              inputMode="tel"
+              enterKeyHint="next"
                 name="phone"
                 autoComplete="tel"
                 value={phone}
@@ -447,7 +453,7 @@ export function BookingFlow() {
                         borderRadius: 99,
                         border: `2px solid ${on ? '#ff8a3d' : BD_OFF}`,
                         background: on ? SEL : OFF,
-                        fontSize: u(1),
+                        fontSize: textSize(1),
                         fontWeight: 700,
                         color: '#2a1d12',
                       }}
@@ -491,7 +497,7 @@ export function BookingFlow() {
       >
         <div
           style={{
-            fontSize: u(0.9),
+            fontSize: textSize(0.9),
             fontWeight: 700,
             letterSpacing: '.14em',
             textTransform: 'uppercase',
@@ -500,7 +506,7 @@ export function BookingFlow() {
         >
           Tu cita
         </div>
-        <div style={{ fontSize: u(1.8), fontWeight: 800, letterSpacing: '-.02em' }}>
+        <div style={{ fontSize: textSize(1.8), fontWeight: 800, letterSpacing: '-.02em' }}>
           {channel.name}
         </div>
         <div style={{ display: 'flex', flexDirection: 'column' }}>
@@ -531,7 +537,7 @@ export function BookingFlow() {
           className="btn btn-primary"
           disabled={!ok || sending}
           onClick={submit}
-          style={{ padding: u(1.2, 2.4), fontSize: u(1.2), width: '100%' }}
+          style={{ padding: u(1.2, 2.4), fontSize: textSize(1.2), width: '100%' }}
         >
           {sending ? 'Confirmando…' : 'Confirmar cita'}
         </button>
@@ -539,7 +545,7 @@ export function BookingFlow() {
           <div
             role="alert"
             style={{
-              fontSize: u(0.95),
+              fontSize: textSize(0.95),
               color: '#a2442f',
               background: '#fbe3dc',
               padding: u(0.8, 1.2),
@@ -550,7 +556,7 @@ export function BookingFlow() {
             {error}
           </div>
         )}
-        <div style={{ fontSize: u(0.95), lineHeight: 1.5, color: '#7a6a58', textAlign: 'center' }}>
+        <div style={{ fontSize: textSize(0.95), lineHeight: 1.5, color: '#7a6a58', textAlign: 'center' }}>
           {ok
             ? 'Sin costo y sin compromiso de compra.'
             : 'Completa horario, nombre y correo para confirmar.'}

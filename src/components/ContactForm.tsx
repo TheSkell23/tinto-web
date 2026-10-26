@@ -3,12 +3,12 @@
 import { useState, type CSSProperties, type FormEvent } from 'react';
 import { wants } from '@/content/contacto';
 import { contactSchema } from '@/lib/schemas';
-import { u } from '@/lib/u';
+import { textSize, fieldSize, u } from '@/lib/u';
 
 const input: CSSProperties = {
   font: 'inherit',
   fontWeight: 500,
-  fontSize: u(1.05),
+  fontSize: fieldSize(1.05),
   padding: u(1.05, 1.4),
   borderRadius: u(1.2),
   border: '1px solid rgba(240,222,200,1)',
@@ -23,7 +23,7 @@ const label: CSSProperties = {
   display: 'flex',
   flexDirection: 'column',
   gap: u(0.6),
-  fontSize: u(0.95),
+  fontSize: textSize(0.95),
   fontWeight: 600,
   color: '#2a1d12',
 };
@@ -73,8 +73,8 @@ export function ContactForm() {
   return (
     <div
       id="form"
-      className="cream soft"
-      style={{ borderRadius: u(2.6), padding: u(2.6), gap: u(1.3) }}
+      className="cream soft contact-form"
+      style={{ borderRadius: u(2.6), padding: `var(--mobile-form-padding, ${u(2.6)})`, gap: u(1.3) }}
     >
       <div
         style={{
@@ -84,10 +84,10 @@ export function ContactForm() {
           gap: u(1),
         }}
       >
-        <h2 style={{ margin: 0, fontSize: u(1.7), fontWeight: 800, letterSpacing: '-.02em' }}>
+        <h2 style={{ margin: 0, fontSize: textSize(1.7), fontWeight: 800, letterSpacing: '-.02em' }}>
           Escríbenos
         </h2>
-        <span className="tag" style={{ fontSize: u(0.8) }}>
+        <span className="tag" style={{ fontSize: textSize(0.8) }}>
           Respuesta en 24 h
         </span>
       </div>
@@ -113,15 +113,15 @@ export function ContactForm() {
               color: '#fff',
               display: 'grid',
               placeItems: 'center',
-              fontSize: u(2),
+              fontSize: textSize(2),
             }}
           >
             ✓
           </span>
-          <div style={{ fontSize: u(1.7), fontWeight: 800, letterSpacing: '-.02em' }}>
+          <div style={{ fontSize: textSize(1.7), fontWeight: 800, letterSpacing: '-.02em' }}>
             ¡Gracias! Recibimos tu mensaje.
           </div>
-          <div style={{ fontSize: u(1.1), lineHeight: 1.5, color: '#7a6a58' }}>
+          <div style={{ fontSize: textSize(1.1), lineHeight: 1.5, color: '#7a6a58' }}>
             Un asesor te responde en menos de 24 horas.
           </div>
         </div>
@@ -138,6 +138,8 @@ export function ContactForm() {
               name="name"
               type="text"
               autoComplete="name"
+              inputMode="text"
+              enterKeyHint="next"
               placeholder="Tu nombre completo"
               style={input}
             />
@@ -148,6 +150,8 @@ export function ContactForm() {
               className="field"
               name="email"
               type="email"
+              inputMode="email"
+              enterKeyHint="next"
               autoComplete="email"
               placeholder="tu@correo.com"
               style={input}
@@ -159,6 +163,8 @@ export function ContactForm() {
               className="field"
               name="phone"
               type="tel"
+              inputMode="tel"
+              enterKeyHint="next"
               autoComplete="tel"
               placeholder="+57 300 000 0000"
               style={input}
@@ -169,7 +175,7 @@ export function ContactForm() {
             aria-label="¿Qué buscas?"
             style={{ display: 'flex', flexDirection: 'column', gap: u(0.6) }}
           >
-            <div style={{ fontSize: u(0.95), fontWeight: 600 }}>¿Qué buscas?</div>
+            <div style={{ fontSize: textSize(0.95), fontWeight: 600 }}>¿Qué buscas?</div>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: u(0.6) }}>
               {wants.map((w) => {
                 const on = sel.includes(w);
@@ -183,7 +189,7 @@ export function ContactForm() {
                       cursor: 'pointer',
                       padding: u(0.55, 1.2),
                       borderRadius: 99,
-                      fontSize: u(0.9),
+                      fontSize: textSize(0.9),
                       fontWeight: 600,
                       ...(on
                         ? {
@@ -213,6 +219,7 @@ export function ContactForm() {
               className="field"
               name="message"
               rows={4}
+              enterKeyHint="enter"
               placeholder="Cuéntanos cómo es tu día de trabajo…"
               style={{ ...input, resize: 'vertical', minHeight: u(8) }}
             />
@@ -231,7 +238,7 @@ export function ContactForm() {
             <div
               role="alert"
               style={{
-                fontSize: u(1),
+                fontSize: textSize(1),
                 color: '#a2442f',
                 background: '#fbe3dc',
                 padding: u(0.8, 1.2),
@@ -251,12 +258,12 @@ export function ContactForm() {
               background: 'var(--grad-primary)',
               color: '#fff',
               padding: u(1, 2.4),
-              fontSize: u(1.1),
+              fontSize: textSize(1.1),
               fontWeight: 700,
             }}
           >
             {status === 'sending' ? 'Enviando…' : 'Enviar mensaje'}{' '}
-            <span style={{ fontSize: u(1.3) }} aria-hidden="true">
+            <span style={{ fontSize: textSize(1.3) }} aria-hidden="true">
               →
             </span>
           </button>

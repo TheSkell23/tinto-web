@@ -95,10 +95,10 @@ export function MobileMenu({
         aria-label="Menú"
         style={{
           position: 'absolute',
-          top: 70,
-          left: 12,
-          right: 12,
-          maxHeight: 'calc(100dvh - 84px)',
+          top: 'var(--mobile-menu-top, 70px)',
+          left: 'var(--mobile-menu-side, 12px)',
+          right: 'var(--mobile-menu-side, 12px)',
+          maxHeight: 'var(--mobile-menu-height, calc(100dvh - 84px))',
           overflowY: 'auto',
           padding: 10,
           borderRadius: 26,
@@ -117,7 +117,7 @@ export function MobileMenu({
             <div
               style={{
                 padding: '6px 14px',
-                fontSize: 11,
+                fontSize: 'max(var(--mobile-label-min, 0px), 11px)',
                 fontWeight: 700,
                 letterSpacing: '.12em',
                 textTransform: 'uppercase',

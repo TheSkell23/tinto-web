@@ -10,7 +10,7 @@ import {
 } from 'react';
 import { chatWelcome, ideaQuestions, quickQuestions } from '@/content/dudas';
 import { FALLBACK_ERROR, answer } from '@/lib/ai';
-import { u } from '@/lib/u';
+import { textSize, fieldSize, u } from '@/lib/u';
 
 type Msg = { from: 'bot' | 'me'; text: string };
 
@@ -76,11 +76,12 @@ export function DudasChat({ children }: { children: ReactNode }) {
     >
       <div className="cream chat" style={{ padding: 0, gap: 0, overflow: 'hidden', height: u(44) }}>
         <div
+          className="chat-heading"
           style={{
             display: 'flex',
             alignItems: 'center',
             gap: u(1),
-            padding: u(1.4, 2),
+            padding: `var(--mobile-chat-padding, ${u(1.4,2)})`,
             borderBottom: '1px solid rgba(42,29,18,.08)',
           }}
         >
@@ -89,20 +90,20 @@ export function DudasChat({ children }: { children: ReactNode }) {
               ...dot,
               width: u(2.8),
               height: u(2.8),
-              fontSize: u(1.2),
+              fontSize: textSize(1.2),
               boxShadow: '0 4px 10px rgba(255,120,60,.3)',
             }}
           >
             t
           </span>
           <div style={{ lineHeight: 1.25 }}>
-            <div style={{ fontSize: u(1.25), fontWeight: 800 }}>Asistente de Tinto</div>
+            <div style={{ fontSize: textSize(1.25), fontWeight: 800 }}>Asistente de Tinto</div>
             <div
               style={{
                 display: 'flex',
                 alignItems: 'center',
                 gap: u(0.5),
-                fontSize: u(0.9),
+                fontSize: textSize(0.9),
                 color: '#7a6a58',
               }}
             >
@@ -117,7 +118,7 @@ export function DudasChat({ children }: { children: ReactNode }) {
               En línea · responde al instante
             </div>
           </div>
-          <span className="tag" style={{ marginLeft: 'auto', fontSize: u(0.8) }}>
+          <span className="tag" style={{ marginLeft: 'auto', fontSize: textSize(0.8) }}>
             Vista previa
           </span>
         </div>
@@ -125,6 +126,7 @@ export function DudasChat({ children }: { children: ReactNode }) {
         <div
           ref={scroller}
           id="chat-scroll"
+          tabIndex={0}
           role="log"
           aria-live="polite"
           aria-label="Conversación con el asistente"
@@ -132,7 +134,7 @@ export function DudasChat({ children }: { children: ReactNode }) {
             flex: 1,
             minHeight: 0,
             overflowY: 'auto',
-            padding: u(2),
+            padding: `var(--mobile-chat-padding, ${u(2)})`,
             display: 'flex',
             flexDirection: 'column',
             gap: u(1.2),
@@ -155,19 +157,19 @@ export function DudasChat({ children }: { children: ReactNode }) {
                 {!me && (
                   <span
                     aria-hidden="true"
-                    style={{ ...dot, width: u(2.4), height: u(2.4), fontSize: u(1) }}
+                    style={{ ...dot, width: u(2.4), height: u(2.4), fontSize: textSize(1) }}
                   >
                     t
                   </span>
                 )}
                 <div
                   style={{
-                    maxWidth: '70%',
+                    maxWidth: 'var(--mobile-message-width, 70%)',
                     padding: u(1.1, 1.5),
                     borderRadius: me ? u(1.6, 1.6, 0.4, 1.6) : u(1.6, 1.6, 1.6, 0.4),
                     background: me ? 'var(--grad-primary)' : '#fff',
                     color: me ? '#fff' : '#2a1d12',
-                    fontSize: u(1.1),
+                    fontSize: textSize(1.1),
                     lineHeight: 1.5,
                     boxShadow: me
                       ? '0 6px 14px rgba(232,120,42,.3)'
@@ -188,7 +190,7 @@ export function DudasChat({ children }: { children: ReactNode }) {
             >
               <span
                 aria-hidden="true"
-                style={{ ...dot, width: u(2.4), height: u(2.4), fontSize: u(1) }}
+                style={{ ...dot, width: u(2.4), height: u(2.4), fontSize: textSize(1) }}
               >
                 t
               </span>
@@ -198,7 +200,7 @@ export function DudasChat({ children }: { children: ReactNode }) {
                   borderRadius: u(1.6, 1.6, 1.6, 0.4),
                   background: '#fff',
                   boxShadow: '0 3px 10px rgba(80,50,20,.08)',
-                  fontSize: u(1.4),
+                  fontSize: textSize(1.4),
                   letterSpacing: '.2em',
                   color: '#e8782a',
                 }}
@@ -210,8 +212,9 @@ export function DudasChat({ children }: { children: ReactNode }) {
         </div>
 
         <div
+          className="chat-footer"
           style={{
-            padding: u(1.4, 2),
+            padding: `var(--mobile-chat-padding, ${u(1.4,2)})`,
             borderTop: '1px solid rgba(42,29,18,.08)',
             display: 'flex',
             flexDirection: 'column',
@@ -219,7 +222,7 @@ export function DudasChat({ children }: { children: ReactNode }) {
             background: 'rgba(255,255,255,.7)',
           }}
         >
-          <div style={{ display: 'flex', gap: u(0.7), flexWrap: 'wrap' }}>
+          <div className="chat-quick" data-mobile-scroll="" aria-label="Preguntas rápidas" style={{ display: 'flex', gap: u(0.7), flexWrap: 'var(--mobile-quick-wrap, wrap)' as CSSProperties['flexWrap'] }}>
             {quickQuestions.map((q) => (
               <button
                 key={q}
@@ -232,7 +235,7 @@ export function DudasChat({ children }: { children: ReactNode }) {
                   borderRadius: 99,
                   border: '1px solid rgba(138,90,31,.25)',
                   background: '#fff',
-                  fontSize: u(0.95),
+                  fontSize: textSize(0.95),
                   fontWeight: 600,
                   color: '#2a1d12',
                 }}
@@ -241,9 +244,12 @@ export function DudasChat({ children }: { children: ReactNode }) {
               </button>
             ))}
           </div>
-          <form onSubmit={send} style={{ display: 'flex', gap: u(1), alignItems: 'center' }}>
+          <form className="chat-compose" onSubmit={send} style={{ display: 'flex', gap: u(1), alignItems: 'center' }}>
             <input
               type="text"
+              inputMode="text"
+              autoComplete="off"
+              enterKeyHint="send"
               value={draft}
               onChange={(e) => setDraft(e.target.value)}
               placeholder="Escribe tu pregunta…"
@@ -258,7 +264,7 @@ export function DudasChat({ children }: { children: ReactNode }) {
                 border: '1px solid rgba(138,90,31,.25)',
                 background: '#fff',
                 font: 'inherit',
-                fontSize: u(1.1),
+                fontSize: fieldSize(1.1),
                 color: '#2a1d12',
                 outline: 'none',
               }}
@@ -273,7 +279,7 @@ export function DudasChat({ children }: { children: ReactNode }) {
       <div style={{ display: 'flex', flexDirection: 'column', gap: u(1.6) }}>
         <div className="cream" style={{ padding: u(2) }}>
           <div
-            style={{ fontSize: u(0.9), fontWeight: 700, letterSpacing: '.12em', color: '#8a5a1f' }}
+            style={{ fontSize: textSize(0.9), fontWeight: 700, letterSpacing: '.12em', color: '#8a5a1f' }}
           >
             PRUEBA PREGUNTANDO
           </div>
@@ -290,7 +296,7 @@ export function DudasChat({ children }: { children: ReactNode }) {
                 borderRadius: u(1.2),
                 background: 'rgba(255,255,255,.85)',
                 border: '1px solid rgba(240,222,200,.95)',
-                fontSize: u(1.05),
+                fontSize: textSize(1.05),
                 fontWeight: 600,
               }}
             >
