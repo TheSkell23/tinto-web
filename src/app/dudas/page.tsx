@@ -1,3 +1,4 @@
+import { pageMetadata } from '@/lib/metadata';
 import Image from 'next/image';
 import Link from 'next/link';
 import type { CSSProperties } from 'react';
@@ -8,6 +9,8 @@ import { Accent, Button, ClosingCard, GhostTitle, Reveal, SectionTitle } from '@
 import { dudasClosing, dudasHero, faqSection, humanCard } from '@/content/dudas';
 import { site } from '@/content/site';
 import { k, u } from '@/lib/u';
+
+export const metadata = pageMetadata('/dudas');
 
 export default function DudasPage() {
   return (

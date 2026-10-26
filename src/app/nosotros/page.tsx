@@ -1,3 +1,4 @@
+import { pageMetadata } from '@/lib/metadata';
 import Image from 'next/image';
 import type { CSSProperties } from 'react';
 import { Icon } from '@/components/Icons';
@@ -28,6 +29,8 @@ const heroChip = (pos: CSSProperties): CSSProperties => ({
   ...pos,
 });
 const band = (extra: CSSProperties): CSSProperties => ({ position: 'relative', ...extra });
+
+export const metadata = pageMetadata('/nosotros');
 
 export default function NosotrosPage() {
   return (

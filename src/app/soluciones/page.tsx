@@ -1,3 +1,4 @@
+import { pageMetadata } from '@/lib/metadata';
 import Image from 'next/image';
 import Link from 'next/link';
 import type { CSSProperties } from 'react';
@@ -74,6 +75,8 @@ const glassCard = (extra: CSSProperties): CSSProperties => ({
   border: '1px solid rgba(255,255,255,.9)',
   ...extra,
 });
+
+export const metadata = pageMetadata('/soluciones');
 
 export default function SolucionesPage() {
   const f = solFor.card;

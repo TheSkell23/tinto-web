@@ -1,3 +1,4 @@
+import { pageMetadata } from '@/lib/metadata';
 import Image from 'next/image';
 import Link from 'next/link';
 import type { CSSProperties } from 'react';
@@ -62,6 +63,8 @@ function Check() {
     </span>
   );
 }
+
+export const metadata = pageMetadata('/');
 
 export default function HomePage() {
   const h = homeHero;

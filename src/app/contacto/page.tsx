@@ -1,3 +1,4 @@
+import { pageMetadata } from '@/lib/metadata';
 import Image from 'next/image';
 import type { CSSProperties } from 'react';
 import { ContactForm } from '@/components/ContactForm';
@@ -17,6 +18,8 @@ const glass = (extra: CSSProperties = {}): CSSProperties => ({
   boxShadow: '0 5px 14px rgba(80,50,20,.1)',
   ...extra,
 });
+
+export const metadata = pageMetadata('/contacto');
 
 export default function ContactoPage() {
   const m = contactoCta.mock;

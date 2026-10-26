@@ -1,3 +1,6 @@
+import type { Metadata, Viewport } from 'next';
+import { pageMetadata } from '@/lib/metadata';
+import { siteUrl } from '@/lib/site-url';
 import fs from 'node:fs';
 import path from 'node:path';
 import { Plus_Jakarta_Sans } from 'next/font/google';
@@ -27,13 +30,19 @@ function readLogoSheet(): LogoSheet | null {
   }
 }
 
+export const metadata: Metadata = {
+  ...pageMetadata('/'),
+  metadataBase: new URL(siteUrl),
+  title: { default: 'CRM para agencias de seguros: vende con contexto | Tinto', template: '%s | Tinto' },
+  applicationName: 'Tinto',
+};
+
+export const viewport: Viewport = { themeColor: '#fff4e6', colorScheme: 'light' };
+
 export default function RootLayout({ children }: { children: ReactNode }) {
   const logoSheet = readLogoSheet();
   return (
     <html lang="es" className={jakarta.variable}>
-      <head>
-        <title>Tinto</title>
-      </head>
       <body>
         <a
           href="#contenido"

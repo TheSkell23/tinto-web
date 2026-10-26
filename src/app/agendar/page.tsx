@@ -1,8 +1,11 @@
+import { pageMetadata } from '@/lib/metadata';
 import type { CSSProperties } from 'react';
 import { BookingFlow } from '@/components/BookingFlow';
 import { Accent, GhostTitle, Reveal } from '@/components/ui';
 import { agendarHero } from '@/content/agendar';
 import { k, u } from '@/lib/u';
+
+export const metadata = pageMetadata('/agendar');
 
 export default function AgendarPage() {
   return (

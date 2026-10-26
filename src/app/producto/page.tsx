@@ -1,3 +1,4 @@
+import { pageMetadata } from '@/lib/metadata';
 import Image from 'next/image';
 import type { CSSProperties } from 'react';
 import { CrmMockup } from '@/components/CrmMockup';
@@ -225,6 +226,8 @@ function StatCard({
     </div>
   );
 }
+
+export const metadata = pageMetadata('/producto');
 
 export default function ProductoPage() {
   return (
