@@ -175,7 +175,7 @@ export function Header({ logoSheet }: { logoSheet: LogoSheet | null }) {
                         padding: 8,
                         borderRadius: 22,
                         background:
-                          'linear-gradient(135deg,rgba(255,255,255,.88),rgba(255,244,230,.78))',
+                          'linear-gradient(135deg,rgba(255,255,255,.98),rgba(255,247,238,.97))',
                         backdropFilter: 'blur(14px) saturate(1.6)',
                         WebkitBackdropFilter: 'blur(14px) saturate(1.6)',
                         border: '1px solid rgba(255,255,255,.8)',
