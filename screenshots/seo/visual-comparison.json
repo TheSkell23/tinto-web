@@ -1,0 +1,20 @@
+[
+  {
+    "page": "inicio",
+    "width": 1440,
+    "height": 7628,
+    "changedPixels": 240586,
+    "maxDelta": 7,
+    "tolerance": 8,
+    "pixelsAboveTolerance": 0
+  },
+  {
+    "page": "producto",
+    "width": 1440,
+    "height": 10278,
+    "changedPixels": 316842,
+    "maxDelta": 6,
+    "tolerance": 8,
+    "pixelsAboveTolerance": 0
+  }
+]

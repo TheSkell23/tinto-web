@@ -1,0 +1,968 @@
+[
+  {
+    "route": "/",
+    "errors": [],
+    "header": 1,
+    "main": 1,
+    "footer": 1,
+    "preconnect": [],
+    "preload": [
+      {
+        "as": "font",
+        "href": "http://localhost:3127/_next/static/media/d8aeca813a9ab546-s.p.18rizl4rsrl42.woff2",
+        "imageSrcSet": ""
+      },
+      {
+        "as": "image",
+        "href": "",
+        "imageSrcSet": "/_next/image?url=%2Fimages%2Ftinto-logo.png&w=32&q=75 32w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=48&q=75 48w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=64&q=75 64w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75 96w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=128&q=75 128w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=256&q=75 256w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=384&q=75 384w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=640&q=75 640w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=750&q=75 750w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=828&q=75 828w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=3840&q=75 3840w"
+      },
+      {
+        "as": "image",
+        "href": "",
+        "imageSrcSet": "/_next/image?url=%2Fimages%2Fhero-inicio.jpg&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fhero-inicio.jpg&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fhero-inicio.jpg&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fhero-inicio.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fhero-inicio.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fhero-inicio.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fhero-inicio.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fhero-inicio.jpg&w=3840&q=75 3840w"
+      },
+      {
+        "as": "script",
+        "href": "http://localhost:3127/_next/static/chunks/1ckvzn7sfprko.js",
+        "imageSrcSet": ""
+      }
+    ],
+    "imageSpace": [
+      {
+        "src": "http://localhost:3127/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "width": "793",
+        "height": "228",
+        "fill": false,
+        "alt": "tinto",
+        "loading": "auto",
+        "fetchPriority": "auto"
+      },
+      {
+        "src": "http://localhost:3127/_next/image?url=%2Fimages%2Fhero-inicio.jpg&w=1920&q=75",
+        "width": null,
+        "height": null,
+        "fill": true,
+        "alt": "",
+        "loading": "auto",
+        "fetchPriority": "auto"
+      },
+      {
+        "src": "http://localhost:3127/_next/image?url=%2Fimages%2Ftinto-blanco.png&w=384&q=75",
+        "width": "2376",
+        "height": "683",
+        "fill": false,
+        "alt": "tinto",
+        "loading": "lazy",
+        "fetchPriority": "auto"
+      },
+      {
+        "src": "http://localhost:3127/_next/image?url=%2Fimages%2Fcolinas-escritorio.jpg&w=1920&q=75",
+        "width": "2712",
+        "height": "1536",
+        "fill": false,
+        "alt": "Colinas verdes",
+        "loading": "lazy",
+        "fetchPriority": "auto"
+      },
+      {
+        "src": "",
+        "width": "417",
+        "height": "282",
+        "fill": true,
+        "alt": "",
+        "loading": "lazy",
+        "fetchPriority": "auto"
+      },
+      {
+        "src": "",
+        "width": "417",
+        "height": "282",
+        "fill": true,
+        "alt": "",
+        "loading": "lazy",
+        "fetchPriority": "auto"
+      },
+      {
+        "src": "",
+        "width": "896",
+        "height": "1200",
+        "fill": false,
+        "alt": "Equipo de una agencia revisando oportunidades en un portátil",
+        "loading": "lazy",
+        "fetchPriority": "auto"
+      }
+    ],
+    "navLinks": [
+      {
+        "href": "/producto",
+        "text": "Producto"
+      },
+      {
+        "href": "/producto?go=Elige%20tu%20m%C3%B3dulo",
+        "text": "MódulosCaptar, calificar y organizar"
+      },
+      {
+        "href": "/producto?go=Planes%20claros",
+        "text": "Planes y preciosClaros y simples"
+      },
+      {
+        "href": "/producto?go=Todo%20tu%20progreso",
+        "text": "Tu panelTodo tu progreso"
+      },
+      {
+        "href": "/soluciones",
+        "text": "Soluciones"
+      },
+      {
+        "href": "/soluciones?go=%C2%BFC%C3%B3mo%20vendes",
+        "text": "Tipos de equipoAgencias, corredoras y redes"
+      },
+      {
+        "href": "/soluciones?go=%C2%BFQui%C3%A9n%20se%20beneficia",
+        "text": "¿Quién se beneficia?Perfiles y equipos"
+      },
+      {
+        "href": "/soluciones?go=De%20tu%20equipo",
+        "text": "Cómo lo hacemosDe tu equipo a tu primera semana"
+      },
+      {
+        "href": "/nosotros",
+        "text": "Nosotros"
+      },
+      {
+        "href": "/nosotros?go=Donde%20el%20trabajo%20duro",
+        "text": "Quiénes somosDonde el trabajo duro encuentra su tinto"
+      },
+      {
+        "href": "/nosotros?go=Cuatro%20valores",
+        "text": "ValoresLo que nos guía"
+      },
+      {
+        "href": "/nosotros?go=Confiado%20por%20equipos",
+        "text": "ReseñasEquipos que confían en tinto"
+      },
+      {
+        "href": "/dudas",
+        "text": "Dudas"
+      },
+      {
+        "href": "/dudas",
+        "text": "Pregúntale al asistenteRespuestas al instante"
+      },
+      {
+        "href": "/dudas?go=Preguntas%20frecuentes",
+        "text": "Preguntas frecuentesLo básico antes de empezar"
+      },
+      {
+        "href": "/contacto",
+        "text": "Hablar con una personaTe escribimos en 24 h"
+      },
+      {
+        "href": "/contacto",
+        "text": "Contacto"
+      },
+      {
+        "href": "/contacto?go=Conversemos",
+        "text": "ConversemosEscríbenos tu idea"
+      },
+      {
+        "href": "/contacto?go=Elige%20c%C3%B3mo",
+        "text": "CanalesWhatsApp, email y horarios"
+      },
+      {
+        "href": "/agendar",
+        "text": "AgendarReserva tu demo"
+      }
+    ]
+  },
+  {
+    "route": "/producto",
+    "errors": [],
+    "header": 1,
+    "main": 1,
+    "footer": 1,
+    "preconnect": [],
+    "preload": [
+      {
+        "as": "font",
+        "href": "http://localhost:3127/_next/static/media/d8aeca813a9ab546-s.p.18rizl4rsrl42.woff2",
+        "imageSrcSet": ""
+      },
+      {
+        "as": "image",
+        "href": "",
+        "imageSrcSet": "/_next/image?url=%2Fimages%2Ftinto-logo.png&w=32&q=75 32w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=48&q=75 48w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=64&q=75 64w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75 96w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=128&q=75 128w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=256&q=75 256w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=384&q=75 384w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=640&q=75 640w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=750&q=75 750w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=828&q=75 828w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=3840&q=75 3840w"
+      },
+      {
+        "as": "script",
+        "href": "http://localhost:3127/_next/static/chunks/1ckvzn7sfprko.js",
+        "imageSrcSet": ""
+      }
+    ],
+    "imageSpace": [
+      {
+        "src": "http://localhost:3127/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "width": "793",
+        "height": "228",
+        "fill": false,
+        "alt": "tinto",
+        "loading": "auto",
+        "fetchPriority": "auto"
+      },
+      {
+        "src": "",
+        "width": "970",
+        "height": "1024",
+        "fill": false,
+        "alt": "Dos hombres mirando hacia arriba",
+        "loading": "lazy",
+        "fetchPriority": "auto"
+      }
+    ],
+    "navLinks": [
+      {
+        "href": "/producto",
+        "text": "Producto"
+      },
+      {
+        "href": "/producto?go=Elige%20tu%20m%C3%B3dulo",
+        "text": "MódulosCaptar, calificar y organizar"
+      },
+      {
+        "href": "/producto?go=Planes%20claros",
+        "text": "Planes y preciosClaros y simples"
+      },
+      {
+        "href": "/producto?go=Todo%20tu%20progreso",
+        "text": "Tu panelTodo tu progreso"
+      },
+      {
+        "href": "/soluciones",
+        "text": "Soluciones"
+      },
+      {
+        "href": "/soluciones?go=%C2%BFC%C3%B3mo%20vendes",
+        "text": "Tipos de equipoAgencias, corredoras y redes"
+      },
+      {
+        "href": "/soluciones?go=%C2%BFQui%C3%A9n%20se%20beneficia",
+        "text": "¿Quién se beneficia?Perfiles y equipos"
+      },
+      {
+        "href": "/soluciones?go=De%20tu%20equipo",
+        "text": "Cómo lo hacemosDe tu equipo a tu primera semana"
+      },
+      {
+        "href": "/nosotros",
+        "text": "Nosotros"
+      },
+      {
+        "href": "/nosotros?go=Donde%20el%20trabajo%20duro",
+        "text": "Quiénes somosDonde el trabajo duro encuentra su tinto"
+      },
+      {
+        "href": "/nosotros?go=Cuatro%20valores",
+        "text": "ValoresLo que nos guía"
+      },
+      {
+        "href": "/nosotros?go=Confiado%20por%20equipos",
+        "text": "ReseñasEquipos que confían en tinto"
+      },
+      {
+        "href": "/dudas",
+        "text": "Dudas"
+      },
+      {
+        "href": "/dudas",
+        "text": "Pregúntale al asistenteRespuestas al instante"
+      },
+      {
+        "href": "/dudas?go=Preguntas%20frecuentes",
+        "text": "Preguntas frecuentesLo básico antes de empezar"
+      },
+      {
+        "href": "/contacto",
+        "text": "Hablar con una personaTe escribimos en 24 h"
+      },
+      {
+        "href": "/contacto",
+        "text": "Contacto"
+      },
+      {
+        "href": "/contacto?go=Conversemos",
+        "text": "ConversemosEscríbenos tu idea"
+      },
+      {
+        "href": "/contacto?go=Elige%20c%C3%B3mo",
+        "text": "CanalesWhatsApp, email y horarios"
+      },
+      {
+        "href": "/agendar",
+        "text": "AgendarReserva tu demo"
+      }
+    ]
+  },
+  {
+    "route": "/soluciones",
+    "errors": [],
+    "header": 1,
+    "main": 1,
+    "footer": 1,
+    "preconnect": [],
+    "preload": [
+      {
+        "as": "font",
+        "href": "http://localhost:3127/_next/static/media/d8aeca813a9ab546-s.p.18rizl4rsrl42.woff2",
+        "imageSrcSet": ""
+      },
+      {
+        "as": "image",
+        "href": "",
+        "imageSrcSet": "/_next/image?url=%2Fimages%2Ftinto-logo.png&w=32&q=75 32w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=48&q=75 48w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=64&q=75 64w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75 96w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=128&q=75 128w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=256&q=75 256w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=384&q=75 384w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=640&q=75 640w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=750&q=75 750w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=828&q=75 828w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=3840&q=75 3840w"
+      },
+      {
+        "as": "script",
+        "href": "http://localhost:3127/_next/static/chunks/1ckvzn7sfprko.js",
+        "imageSrcSet": ""
+      }
+    ],
+    "imageSpace": [
+      {
+        "src": "http://localhost:3127/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "width": "793",
+        "height": "228",
+        "fill": false,
+        "alt": "tinto",
+        "loading": "auto",
+        "fetchPriority": "auto"
+      },
+      {
+        "src": "http://localhost:3127/_next/image?url=%2Fimages%2Ffoto-oficina.png&w=750&q=75",
+        "width": "896",
+        "height": "1200",
+        "fill": false,
+        "alt": "Equipo de asesores trabajando en una oficina abierta",
+        "loading": "lazy",
+        "fetchPriority": "auto"
+      },
+      {
+        "src": "http://localhost:3127/_next/image?url=%2Fimages%2Ffoto-equipo.png&w=640&q=75",
+        "width": "896",
+        "height": "1200",
+        "fill": false,
+        "alt": "",
+        "loading": "lazy",
+        "fetchPriority": "auto"
+      },
+      {
+        "src": "http://localhost:3127/_next/image?url=%2Fimages%2Ffoto-corredora.png&w=640&q=75",
+        "width": "896",
+        "height": "1200",
+        "fill": false,
+        "alt": "",
+        "loading": "lazy",
+        "fetchPriority": "auto"
+      },
+      {
+        "src": "http://localhost:3127/_next/image?url=%2Fimages%2Ffoto-oficina.png&w=640&q=75",
+        "width": "896",
+        "height": "1200",
+        "fill": false,
+        "alt": "",
+        "loading": "lazy",
+        "fetchPriority": "auto"
+      }
+    ],
+    "navLinks": [
+      {
+        "href": "/producto",
+        "text": "Producto"
+      },
+      {
+        "href": "/producto?go=Elige%20tu%20m%C3%B3dulo",
+        "text": "MódulosCaptar, calificar y organizar"
+      },
+      {
+        "href": "/producto?go=Planes%20claros",
+        "text": "Planes y preciosClaros y simples"
+      },
+      {
+        "href": "/producto?go=Todo%20tu%20progreso",
+        "text": "Tu panelTodo tu progreso"
+      },
+      {
+        "href": "/soluciones",
+        "text": "Soluciones"
+      },
+      {
+        "href": "/soluciones?go=%C2%BFC%C3%B3mo%20vendes",
+        "text": "Tipos de equipoAgencias, corredoras y redes"
+      },
+      {
+        "href": "/soluciones?go=%C2%BFQui%C3%A9n%20se%20beneficia",
+        "text": "¿Quién se beneficia?Perfiles y equipos"
+      },
+      {
+        "href": "/soluciones?go=De%20tu%20equipo",
+        "text": "Cómo lo hacemosDe tu equipo a tu primera semana"
+      },
+      {
+        "href": "/nosotros",
+        "text": "Nosotros"
+      },
+      {
+        "href": "/nosotros?go=Donde%20el%20trabajo%20duro",
+        "text": "Quiénes somosDonde el trabajo duro encuentra su tinto"
+      },
+      {
+        "href": "/nosotros?go=Cuatro%20valores",
+        "text": "ValoresLo que nos guía"
+      },
+      {
+        "href": "/nosotros?go=Confiado%20por%20equipos",
+        "text": "ReseñasEquipos que confían en tinto"
+      },
+      {
+        "href": "/dudas",
+        "text": "Dudas"
+      },
+      {
+        "href": "/dudas",
+        "text": "Pregúntale al asistenteRespuestas al instante"
+      },
+      {
+        "href": "/dudas?go=Preguntas%20frecuentes",
+        "text": "Preguntas frecuentesLo básico antes de empezar"
+      },
+      {
+        "href": "/contacto",
+        "text": "Hablar con una personaTe escribimos en 24 h"
+      },
+      {
+        "href": "/contacto",
+        "text": "Contacto"
+      },
+      {
+        "href": "/contacto?go=Conversemos",
+        "text": "ConversemosEscríbenos tu idea"
+      },
+      {
+        "href": "/contacto?go=Elige%20c%C3%B3mo",
+        "text": "CanalesWhatsApp, email y horarios"
+      },
+      {
+        "href": "/agendar",
+        "text": "AgendarReserva tu demo"
+      }
+    ]
+  },
+  {
+    "route": "/nosotros",
+    "errors": [],
+    "header": 1,
+    "main": 1,
+    "footer": 1,
+    "preconnect": [],
+    "preload": [
+      {
+        "as": "font",
+        "href": "http://localhost:3127/_next/static/media/d8aeca813a9ab546-s.p.18rizl4rsrl42.woff2",
+        "imageSrcSet": ""
+      },
+      {
+        "as": "image",
+        "href": "",
+        "imageSrcSet": "/_next/image?url=%2Fimages%2Ftinto-logo.png&w=32&q=75 32w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=48&q=75 48w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=64&q=75 64w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75 96w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=128&q=75 128w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=256&q=75 256w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=384&q=75 384w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=640&q=75 640w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=750&q=75 750w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=828&q=75 828w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=3840&q=75 3840w"
+      },
+      {
+        "as": "script",
+        "href": "http://localhost:3127/_next/static/chunks/1ckvzn7sfprko.js",
+        "imageSrcSet": ""
+      }
+    ],
+    "imageSpace": [
+      {
+        "src": "http://localhost:3127/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "width": "793",
+        "height": "228",
+        "fill": false,
+        "alt": "tinto",
+        "loading": "auto",
+        "fetchPriority": "auto"
+      },
+      {
+        "src": "http://localhost:3127/_next/image?url=%2Fimages%2Ffoto-equipo.png&w=640&q=75",
+        "width": null,
+        "height": null,
+        "fill": true,
+        "alt": "Equipo de Tinto riendo con un tinto en la mano",
+        "loading": "lazy",
+        "fetchPriority": "auto"
+      },
+      {
+        "src": "",
+        "width": "2750",
+        "height": "1536",
+        "fill": false,
+        "alt": "Conversación sobre un café",
+        "loading": "lazy",
+        "fetchPriority": "auto"
+      }
+    ],
+    "navLinks": [
+      {
+        "href": "/producto",
+        "text": "Producto"
+      },
+      {
+        "href": "/producto?go=Elige%20tu%20m%C3%B3dulo",
+        "text": "MódulosCaptar, calificar y organizar"
+      },
+      {
+        "href": "/producto?go=Planes%20claros",
+        "text": "Planes y preciosClaros y simples"
+      },
+      {
+        "href": "/producto?go=Todo%20tu%20progreso",
+        "text": "Tu panelTodo tu progreso"
+      },
+      {
+        "href": "/soluciones",
+        "text": "Soluciones"
+      },
+      {
+        "href": "/soluciones?go=%C2%BFC%C3%B3mo%20vendes",
+        "text": "Tipos de equipoAgencias, corredoras y redes"
+      },
+      {
+        "href": "/soluciones?go=%C2%BFQui%C3%A9n%20se%20beneficia",
+        "text": "¿Quién se beneficia?Perfiles y equipos"
+      },
+      {
+        "href": "/soluciones?go=De%20tu%20equipo",
+        "text": "Cómo lo hacemosDe tu equipo a tu primera semana"
+      },
+      {
+        "href": "/nosotros",
+        "text": "Nosotros"
+      },
+      {
+        "href": "/nosotros?go=Donde%20el%20trabajo%20duro",
+        "text": "Quiénes somosDonde el trabajo duro encuentra su tinto"
+      },
+      {
+        "href": "/nosotros?go=Cuatro%20valores",
+        "text": "ValoresLo que nos guía"
+      },
+      {
+        "href": "/nosotros?go=Confiado%20por%20equipos",
+        "text": "ReseñasEquipos que confían en tinto"
+      },
+      {
+        "href": "/dudas",
+        "text": "Dudas"
+      },
+      {
+        "href": "/dudas",
+        "text": "Pregúntale al asistenteRespuestas al instante"
+      },
+      {
+        "href": "/dudas?go=Preguntas%20frecuentes",
+        "text": "Preguntas frecuentesLo básico antes de empezar"
+      },
+      {
+        "href": "/contacto",
+        "text": "Hablar con una personaTe escribimos en 24 h"
+      },
+      {
+        "href": "/contacto",
+        "text": "Contacto"
+      },
+      {
+        "href": "/contacto?go=Conversemos",
+        "text": "ConversemosEscríbenos tu idea"
+      },
+      {
+        "href": "/contacto?go=Elige%20c%C3%B3mo",
+        "text": "CanalesWhatsApp, email y horarios"
+      },
+      {
+        "href": "/agendar",
+        "text": "AgendarReserva tu demo"
+      }
+    ]
+  },
+  {
+    "route": "/dudas",
+    "errors": [],
+    "header": 1,
+    "main": 1,
+    "footer": 1,
+    "preconnect": [],
+    "preload": [
+      {
+        "as": "font",
+        "href": "http://localhost:3127/_next/static/media/d8aeca813a9ab546-s.p.18rizl4rsrl42.woff2",
+        "imageSrcSet": ""
+      },
+      {
+        "as": "image",
+        "href": "",
+        "imageSrcSet": "/_next/image?url=%2Fimages%2Ftinto-logo.png&w=32&q=75 32w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=48&q=75 48w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=64&q=75 64w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75 96w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=128&q=75 128w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=256&q=75 256w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=384&q=75 384w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=640&q=75 640w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=750&q=75 750w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=828&q=75 828w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=3840&q=75 3840w"
+      },
+      {
+        "as": "script",
+        "href": "http://localhost:3127/_next/static/chunks/1ckvzn7sfprko.js",
+        "imageSrcSet": ""
+      }
+    ],
+    "imageSpace": [
+      {
+        "src": "http://localhost:3127/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "width": "793",
+        "height": "228",
+        "fill": false,
+        "alt": "tinto",
+        "loading": "auto",
+        "fetchPriority": "auto"
+      },
+      {
+        "src": "http://localhost:3127/_next/image?url=%2Fimages%2Ffoto-soporte.png&w=640&q=75",
+        "width": "896",
+        "height": "1200",
+        "fill": false,
+        "alt": "Asesora de Tinto con audífonos sonriendo",
+        "loading": "lazy",
+        "fetchPriority": "auto"
+      }
+    ],
+    "navLinks": [
+      {
+        "href": "/producto",
+        "text": "Producto"
+      },
+      {
+        "href": "/producto?go=Elige%20tu%20m%C3%B3dulo",
+        "text": "MódulosCaptar, calificar y organizar"
+      },
+      {
+        "href": "/producto?go=Planes%20claros",
+        "text": "Planes y preciosClaros y simples"
+      },
+      {
+        "href": "/producto?go=Todo%20tu%20progreso",
+        "text": "Tu panelTodo tu progreso"
+      },
+      {
+        "href": "/soluciones",
+        "text": "Soluciones"
+      },
+      {
+        "href": "/soluciones?go=%C2%BFC%C3%B3mo%20vendes",
+        "text": "Tipos de equipoAgencias, corredoras y redes"
+      },
+      {
+        "href": "/soluciones?go=%C2%BFQui%C3%A9n%20se%20beneficia",
+        "text": "¿Quién se beneficia?Perfiles y equipos"
+      },
+      {
+        "href": "/soluciones?go=De%20tu%20equipo",
+        "text": "Cómo lo hacemosDe tu equipo a tu primera semana"
+      },
+      {
+        "href": "/nosotros",
+        "text": "Nosotros"
+      },
+      {
+        "href": "/nosotros?go=Donde%20el%20trabajo%20duro",
+        "text": "Quiénes somosDonde el trabajo duro encuentra su tinto"
+      },
+      {
+        "href": "/nosotros?go=Cuatro%20valores",
+        "text": "ValoresLo que nos guía"
+      },
+      {
+        "href": "/nosotros?go=Confiado%20por%20equipos",
+        "text": "ReseñasEquipos que confían en tinto"
+      },
+      {
+        "href": "/dudas",
+        "text": "Dudas"
+      },
+      {
+        "href": "/dudas",
+        "text": "Pregúntale al asistenteRespuestas al instante"
+      },
+      {
+        "href": "/dudas?go=Preguntas%20frecuentes",
+        "text": "Preguntas frecuentesLo básico antes de empezar"
+      },
+      {
+        "href": "/contacto",
+        "text": "Hablar con una personaTe escribimos en 24 h"
+      },
+      {
+        "href": "/contacto",
+        "text": "Contacto"
+      },
+      {
+        "href": "/contacto?go=Conversemos",
+        "text": "ConversemosEscríbenos tu idea"
+      },
+      {
+        "href": "/contacto?go=Elige%20c%C3%B3mo",
+        "text": "CanalesWhatsApp, email y horarios"
+      },
+      {
+        "href": "/agendar",
+        "text": "AgendarReserva tu demo"
+      }
+    ]
+  },
+  {
+    "route": "/contacto",
+    "errors": [],
+    "header": 1,
+    "main": 1,
+    "footer": 1,
+    "preconnect": [],
+    "preload": [
+      {
+        "as": "font",
+        "href": "http://localhost:3127/_next/static/media/d8aeca813a9ab546-s.p.18rizl4rsrl42.woff2",
+        "imageSrcSet": ""
+      },
+      {
+        "as": "image",
+        "href": "",
+        "imageSrcSet": "/_next/image?url=%2Fimages%2Ftinto-logo.png&w=32&q=75 32w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=48&q=75 48w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=64&q=75 64w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75 96w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=128&q=75 128w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=256&q=75 256w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=384&q=75 384w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=640&q=75 640w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=750&q=75 750w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=828&q=75 828w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=3840&q=75 3840w"
+      },
+      {
+        "as": "script",
+        "href": "http://localhost:3127/_next/static/chunks/1ckvzn7sfprko.js",
+        "imageSrcSet": ""
+      }
+    ],
+    "imageSpace": [
+      {
+        "src": "http://localhost:3127/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "width": "793",
+        "height": "228",
+        "fill": false,
+        "alt": "tinto",
+        "loading": "auto",
+        "fetchPriority": "auto"
+      },
+      {
+        "src": "http://localhost:3127/_next/image?url=%2Fimages%2Fjinetes-desierto.jpg&w=1920&q=75",
+        "width": "3132",
+        "height": "1376",
+        "fill": false,
+        "alt": "Jinetes cruzando el desierto",
+        "loading": "lazy",
+        "fetchPriority": "auto"
+      }
+    ],
+    "navLinks": [
+      {
+        "href": "/producto",
+        "text": "Producto"
+      },
+      {
+        "href": "/producto?go=Elige%20tu%20m%C3%B3dulo",
+        "text": "MódulosCaptar, calificar y organizar"
+      },
+      {
+        "href": "/producto?go=Planes%20claros",
+        "text": "Planes y preciosClaros y simples"
+      },
+      {
+        "href": "/producto?go=Todo%20tu%20progreso",
+        "text": "Tu panelTodo tu progreso"
+      },
+      {
+        "href": "/soluciones",
+        "text": "Soluciones"
+      },
+      {
+        "href": "/soluciones?go=%C2%BFC%C3%B3mo%20vendes",
+        "text": "Tipos de equipoAgencias, corredoras y redes"
+      },
+      {
+        "href": "/soluciones?go=%C2%BFQui%C3%A9n%20se%20beneficia",
+        "text": "¿Quién se beneficia?Perfiles y equipos"
+      },
+      {
+        "href": "/soluciones?go=De%20tu%20equipo",
+        "text": "Cómo lo hacemosDe tu equipo a tu primera semana"
+      },
+      {
+        "href": "/nosotros",
+        "text": "Nosotros"
+      },
+      {
+        "href": "/nosotros?go=Donde%20el%20trabajo%20duro",
+        "text": "Quiénes somosDonde el trabajo duro encuentra su tinto"
+      },
+      {
+        "href": "/nosotros?go=Cuatro%20valores",
+        "text": "ValoresLo que nos guía"
+      },
+      {
+        "href": "/nosotros?go=Confiado%20por%20equipos",
+        "text": "ReseñasEquipos que confían en tinto"
+      },
+      {
+        "href": "/dudas",
+        "text": "Dudas"
+      },
+      {
+        "href": "/dudas",
+        "text": "Pregúntale al asistenteRespuestas al instante"
+      },
+      {
+        "href": "/dudas?go=Preguntas%20frecuentes",
+        "text": "Preguntas frecuentesLo básico antes de empezar"
+      },
+      {
+        "href": "/contacto",
+        "text": "Hablar con una personaTe escribimos en 24 h"
+      },
+      {
+        "href": "/contacto",
+        "text": "Contacto"
+      },
+      {
+        "href": "/contacto?go=Conversemos",
+        "text": "ConversemosEscríbenos tu idea"
+      },
+      {
+        "href": "/contacto?go=Elige%20c%C3%B3mo",
+        "text": "CanalesWhatsApp, email y horarios"
+      },
+      {
+        "href": "/agendar",
+        "text": "AgendarReserva tu demo"
+      }
+    ]
+  },
+  {
+    "route": "/agendar",
+    "errors": [],
+    "header": 1,
+    "main": 1,
+    "footer": 1,
+    "preconnect": [],
+    "preload": [
+      {
+        "as": "font",
+        "href": "http://localhost:3127/_next/static/media/d8aeca813a9ab546-s.p.18rizl4rsrl42.woff2",
+        "imageSrcSet": ""
+      },
+      {
+        "as": "image",
+        "href": "",
+        "imageSrcSet": "/_next/image?url=%2Fimages%2Ftinto-logo.png&w=32&q=75 32w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=48&q=75 48w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=64&q=75 64w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75 96w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=128&q=75 128w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=256&q=75 256w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=384&q=75 384w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=640&q=75 640w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=750&q=75 750w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=828&q=75 828w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Ftinto-logo.png&w=3840&q=75 3840w"
+      },
+      {
+        "as": "script",
+        "href": "http://localhost:3127/_next/static/chunks/1ckvzn7sfprko.js",
+        "imageSrcSet": ""
+      }
+    ],
+    "imageSpace": [
+      {
+        "src": "http://localhost:3127/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "width": "793",
+        "height": "228",
+        "fill": false,
+        "alt": "tinto",
+        "loading": "auto",
+        "fetchPriority": "auto"
+      }
+    ],
+    "navLinks": [
+      {
+        "href": "/producto",
+        "text": "Producto"
+      },
+      {
+        "href": "/producto?go=Elige%20tu%20m%C3%B3dulo",
+        "text": "MódulosCaptar, calificar y organizar"
+      },
+      {
+        "href": "/producto?go=Planes%20claros",
+        "text": "Planes y preciosClaros y simples"
+      },
+      {
+        "href": "/producto?go=Todo%20tu%20progreso",
+        "text": "Tu panelTodo tu progreso"
+      },
+      {
+        "href": "/soluciones",
+        "text": "Soluciones"
+      },
+      {
+        "href": "/soluciones?go=%C2%BFC%C3%B3mo%20vendes",
+        "text": "Tipos de equipoAgencias, corredoras y redes"
+      },
+      {
+        "href": "/soluciones?go=%C2%BFQui%C3%A9n%20se%20beneficia",
+        "text": "¿Quién se beneficia?Perfiles y equipos"
+      },
+      {
+        "href": "/soluciones?go=De%20tu%20equipo",
+        "text": "Cómo lo hacemosDe tu equipo a tu primera semana"
+      },
+      {
+        "href": "/nosotros",
+        "text": "Nosotros"
+      },
+      {
+        "href": "/nosotros?go=Donde%20el%20trabajo%20duro",
+        "text": "Quiénes somosDonde el trabajo duro encuentra su tinto"
+      },
+      {
+        "href": "/nosotros?go=Cuatro%20valores",
+        "text": "ValoresLo que nos guía"
+      },
+      {
+        "href": "/nosotros?go=Confiado%20por%20equipos",
+        "text": "ReseñasEquipos que confían en tinto"
+      },
+      {
+        "href": "/dudas",
+        "text": "Dudas"
+      },
+      {
+        "href": "/dudas",
+        "text": "Pregúntale al asistenteRespuestas al instante"
+      },
+      {
+        "href": "/dudas?go=Preguntas%20frecuentes",
+        "text": "Preguntas frecuentesLo básico antes de empezar"
+      },
+      {
+        "href": "/contacto",
+        "text": "Hablar con una personaTe escribimos en 24 h"
+      },
+      {
+        "href": "/contacto",
+        "text": "Contacto"
+      },
+      {
+        "href": "/contacto?go=Conversemos",
+        "text": "ConversemosEscríbenos tu idea"
+      },
+      {
+        "href": "/contacto?go=Elige%20c%C3%B3mo",
+        "text": "CanalesWhatsApp, email y horarios"
+      },
+      {
+        "href": "/agendar",
+        "text": "AgendarReserva tu demo"
+      }
+    ]
+  }
+]

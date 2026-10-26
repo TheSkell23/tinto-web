@@ -1,0 +1,14 @@
+{
+  "vocabulary": "https://schema.org/version/latest/schemaorg-current-https.jsonld",
+  "sha256": "0a4b8c4c910fc831ec8695196510973390906a5ee34dc6b862dfec4d21a12f74",
+  "propertiesChecked": 122,
+  "routes": 7,
+  "checks": [
+    "tipos",
+    "propiedades",
+    "dominios heredados",
+    "rangos de valores",
+    "escape de <"
+  ],
+  "result": "PASS"
+}

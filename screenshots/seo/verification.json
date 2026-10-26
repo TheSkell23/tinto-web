@@ -1,0 +1,985 @@
+{
+  "base": "http://localhost:3127",
+  "rows": [
+    {
+      "route": "/",
+      "title": "CRM para agencias de seguros: vende con contexto | Tinto",
+      "descriptions": [
+        "Atrae, precalifica y organiza las oportunidades de tu agencia de seguros con Tinto. Reúne tus canales y llega a cada conversación con contexto para tu equipo."
+      ],
+      "canonical": [
+        "http://localhost:3127/"
+      ],
+      "og": {
+        "og:title": "CRM para agencias de seguros: vende con contexto | Tinto",
+        "og:description": "Atrae, precalifica y organiza las oportunidades de tu agencia de seguros con Tinto. Reúne tus canales y llega a cada conversación con contexto para tu equipo.",
+        "og:url": "http://localhost:3127",
+        "og:site_name": "Tinto",
+        "og:locale": "es_CO",
+        "og:image": "http://localhost:3127/opengraph-image",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
+        "og:type": "website"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "CRM para agencias de seguros: vende con contexto | Tinto",
+        "twitter:description": "Atrae, precalifica y organiza las oportunidades de tu agencia de seguros con Tinto. Reúne tus canales y llega a cada conversación con contexto para tu equipo.",
+        "twitter:image": "http://localhost:3127/twitter-image",
+        "twitter:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
+        "twitter:image:width": "1200",
+        "twitter:image:height": "630"
+      },
+      "robots": "index, follow",
+      "json": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:3127/#organization",
+              "name": "Tinto",
+              "url": "http://localhost:3127/",
+              "logo": "http://localhost:3127/images/tinto-logo.png",
+              "sameAs": []
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:3127/#website",
+              "name": "Tinto",
+              "url": "http://localhost:3127/",
+              "inLanguage": "es-CO",
+              "publisher": {
+                "@id": "http://localhost:3127/#organization"
+              }
+            }
+          ]
+        }
+      ],
+      "h1": 1,
+      "headings": [
+        {
+          "level": 1,
+          "text": "tinto: atrae, precalifica y organiza tus oportunidades"
+        },
+        {
+          "level": 2,
+          "text": "Empieza en tres pasos"
+        },
+        {
+          "level": 2,
+          "text": "Todo lo que te imaginas está aquí."
+        },
+        {
+          "level": 2,
+          "text": "Un CRM, cuatro módulos"
+        },
+        {
+          "level": 2,
+          "text": "Agencias que ya venden y quieren crecer con orden"
+        },
+        {
+          "level": 2,
+          "text": "Equipos que ya venden con contexto"
+        },
+        {
+          "level": 2,
+          "text": "Preguntas rápidas"
+        },
+        {
+          "level": 3,
+          "text": "¿Reemplaza a mi equipo comercial?"
+        },
+        {
+          "level": 3,
+          "text": "¿Para qué tamaño de agencia es?"
+        },
+        {
+          "level": 3,
+          "text": "¿Cómo empezamos?"
+        },
+        {
+          "level": 2,
+          "text": "Cultivamos oportunidades. Tú cosechas clientes."
+        },
+        {
+          "level": 3,
+          "text": "¿Listo para tu tinto de las cinco?"
+        }
+      ],
+      "missingAlt": 0,
+      "missingSize": [],
+      "lang": "es",
+      "headTags": true,
+      "unnamedLinks": [],
+      "externalBlank": []
+    },
+    {
+      "route": "/producto",
+      "title": "Captación, precalificación y pipeline para tu agencia | Tinto",
+      "descriptions": [
+        "Conoce los módulos de Tinto: captación, precalificación, pipeline y reportes. Organiza contactos, citas y próximos pasos para tu equipo de asesores de seguros."
+      ],
+      "canonical": [
+        "http://localhost:3127/producto"
+      ],
+      "og": {
+        "og:title": "Captación, precalificación y pipeline para tu agencia | Tinto",
+        "og:description": "Conoce los módulos de Tinto: captación, precalificación, pipeline y reportes. Organiza contactos, citas y próximos pasos para tu equipo de asesores de seguros.",
+        "og:url": "http://localhost:3127/producto",
+        "og:site_name": "Tinto",
+        "og:locale": "es_CO",
+        "og:image": "http://localhost:3127/opengraph-image",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
+        "og:type": "website"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Captación, precalificación y pipeline para tu agencia | Tinto",
+        "twitter:description": "Conoce los módulos de Tinto: captación, precalificación, pipeline y reportes. Organiza contactos, citas y próximos pasos para tu equipo de asesores de seguros.",
+        "twitter:image": "http://localhost:3127/twitter-image",
+        "twitter:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
+        "twitter:image:width": "1200",
+        "twitter:image:height": "630"
+      },
+      "robots": "index, follow",
+      "json": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:3127/#organization",
+              "name": "Tinto",
+              "url": "http://localhost:3127/",
+              "logo": "http://localhost:3127/images/tinto-logo.png",
+              "sameAs": []
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:3127/#website",
+              "name": "Tinto",
+              "url": "http://localhost:3127/",
+              "inLanguage": "es-CO",
+              "publisher": {
+                "@id": "http://localhost:3127/#organization"
+              }
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:3127/producto#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Inicio",
+                  "item": "http://localhost:3127/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Producto",
+                  "item": "http://localhost:3127/producto"
+                }
+              ]
+            },
+            {
+              "@type": "SoftwareApplication",
+              "@id": "http://localhost:3127/producto#software",
+              "name": "Tinto",
+              "applicationCategory": "BusinessApplication",
+              "url": "http://localhost:3127/producto",
+              "description": "Llega a cada conversación con contexto. Tinto reúne tus canales, filtra a quien sí te interesa y te dice cuál es el siguiente paso.",
+              "publisher": {
+                "@id": "http://localhost:3127/#organization"
+              },
+              "inLanguage": "es-CO"
+            }
+          ]
+        }
+      ],
+      "h1": 1,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Un CRM que atrae, precalifica y organiza tus oportunidades."
+        },
+        {
+          "level": 2,
+          "text": "Menos siembra a ciegas, más cosecha medible."
+        },
+        {
+          "level": 2,
+          "text": "Elige tu módulo"
+        },
+        {
+          "level": 3,
+          "text": "Captación"
+        },
+        {
+          "level": 3,
+          "text": "Precalificación"
+        },
+        {
+          "level": 3,
+          "text": "Pipeline"
+        },
+        {
+          "level": 3,
+          "text": "Reportes"
+        },
+        {
+          "level": 2,
+          "text": "Cuatro ideas guían cada módulo"
+        },
+        {
+          "level": 2,
+          "text": "Se conecta con lo que ya usas"
+        },
+        {
+          "level": 2,
+          "text": "Todo para vender con contexto"
+        },
+        {
+          "level": 3,
+          "text": "Mide cómo avanza tu pipeline semana a semana"
+        },
+        {
+          "level": 3,
+          "text": "Listo para usar desde el primer día"
+        },
+        {
+          "level": 3,
+          "text": "Más citas, más cierres"
+        },
+        {
+          "level": 2,
+          "text": "Orden de verdad, sin pagar de más."
+        },
+        {
+          "level": 2,
+          "text": "Todo tu progreso en un solo lugar"
+        },
+        {
+          "level": 2,
+          "text": "Planes claros y simples"
+        },
+        {
+          "level": 2,
+          "text": "Descubre el mejor plan para tu equipo"
+        },
+        {
+          "level": 2,
+          "text": "¿Listo para tu tinto de las cinco? Agenda una demo."
+        }
+      ],
+      "missingAlt": 0,
+      "missingSize": [],
+      "lang": "es",
+      "headTags": true,
+      "unnamedLinks": [],
+      "externalBlank": []
+    },
+    {
+      "route": "/soluciones",
+      "title": "Soluciones CRM para agencias y equipos de seguros | Tinto",
+      "descriptions": [
+        "Explora cómo Tinto se adapta a agencias, corredoras y redes comerciales. Reparte oportunidades, organiza el seguimiento y consulta reportes de todo tu equipo."
+      ],
+      "canonical": [
+        "http://localhost:3127/soluciones"
+      ],
+      "og": {
+        "og:title": "Soluciones CRM para agencias y equipos de seguros | Tinto",
+        "og:description": "Explora cómo Tinto se adapta a agencias, corredoras y redes comerciales. Reparte oportunidades, organiza el seguimiento y consulta reportes de todo tu equipo.",
+        "og:url": "http://localhost:3127/soluciones",
+        "og:site_name": "Tinto",
+        "og:locale": "es_CO",
+        "og:image": "http://localhost:3127/opengraph-image",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
+        "og:type": "website"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Soluciones CRM para agencias y equipos de seguros | Tinto",
+        "twitter:description": "Explora cómo Tinto se adapta a agencias, corredoras y redes comerciales. Reparte oportunidades, organiza el seguimiento y consulta reportes de todo tu equipo.",
+        "twitter:image": "http://localhost:3127/twitter-image",
+        "twitter:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
+        "twitter:image:width": "1200",
+        "twitter:image:height": "630"
+      },
+      "robots": "index, follow",
+      "json": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:3127/#organization",
+              "name": "Tinto",
+              "url": "http://localhost:3127/",
+              "logo": "http://localhost:3127/images/tinto-logo.png",
+              "sameAs": []
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:3127/#website",
+              "name": "Tinto",
+              "url": "http://localhost:3127/",
+              "inLanguage": "es-CO",
+              "publisher": {
+                "@id": "http://localhost:3127/#organization"
+              }
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:3127/soluciones#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Inicio",
+                  "item": "http://localhost:3127/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Soluciones",
+                  "item": "http://localhost:3127/soluciones"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "h1": 1,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Una solución para cada forma de vender."
+        },
+        {
+          "level": 2,
+          "text": "Agencias que ya venden y quieren crecer con orden"
+        },
+        {
+          "level": 2,
+          "text": "¿Cómo vendes?"
+        },
+        {
+          "level": 3,
+          "text": "Agencia con equipo comercial"
+        },
+        {
+          "level": 3,
+          "text": "Agencia o corredora"
+        },
+        {
+          "level": 3,
+          "text": "Red comercial"
+        },
+        {
+          "level": 2,
+          "text": "De tu equipo a tu primera semana"
+        },
+        {
+          "level": 2,
+          "text": "Cada equipo, en una tabla"
+        },
+        {
+          "level": 2,
+          "text": "¿Quién se beneficia más?"
+        },
+        {
+          "level": 3,
+          "text": "Agencia con equipo comercial"
+        },
+        {
+          "level": 3,
+          "text": "Agencias y corredoras"
+        },
+        {
+          "level": 3,
+          "text": "Equipos de alto volumen"
+        },
+        {
+          "level": 2,
+          "text": "Cuéntanos cómo vendes. Nosotros lo configuramos."
+        }
+      ],
+      "missingAlt": 0,
+      "missingSize": [],
+      "lang": "es",
+      "headTags": true,
+      "unnamedLinks": [],
+      "externalBlank": []
+    },
+    {
+      "route": "/nosotros",
+      "title": "Conoce al equipo y la forma de trabajar de Tinto | Tinto",
+      "descriptions": [
+        "Conoce al equipo detrás de Tinto y los valores que guían el producto. Trabajamos para convertir conversaciones dispersas en oportunidades claras para tu agencia."
+      ],
+      "canonical": [
+        "http://localhost:3127/nosotros"
+      ],
+      "og": {
+        "og:title": "Conoce al equipo y la forma de trabajar de Tinto | Tinto",
+        "og:description": "Conoce al equipo detrás de Tinto y los valores que guían el producto. Trabajamos para convertir conversaciones dispersas en oportunidades claras para tu agencia.",
+        "og:url": "http://localhost:3127/nosotros",
+        "og:site_name": "Tinto",
+        "og:locale": "es_CO",
+        "og:image": "http://localhost:3127/opengraph-image",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
+        "og:type": "website"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Conoce al equipo y la forma de trabajar de Tinto | Tinto",
+        "twitter:description": "Conoce al equipo detrás de Tinto y los valores que guían el producto. Trabajamos para convertir conversaciones dispersas en oportunidades claras para tu agencia.",
+        "twitter:image": "http://localhost:3127/twitter-image",
+        "twitter:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
+        "twitter:image:width": "1200",
+        "twitter:image:height": "630"
+      },
+      "robots": "index, follow",
+      "json": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:3127/#organization",
+              "name": "Tinto",
+              "url": "http://localhost:3127/",
+              "logo": "http://localhost:3127/images/tinto-logo.png",
+              "sameAs": []
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:3127/#website",
+              "name": "Tinto",
+              "url": "http://localhost:3127/",
+              "inLanguage": "es-CO",
+              "publisher": {
+                "@id": "http://localhost:3127/#organization"
+              }
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:3127/nosotros#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Inicio",
+                  "item": "http://localhost:3127/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Nosotros",
+                  "item": "http://localhost:3127/nosotros"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "h1": 1,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Creemos que vender no debería ser desordenado."
+        },
+        {
+          "level": 2,
+          "text": "Cuatro valores, cero discursos"
+        },
+        {
+          "level": 2,
+          "text": "De un chat desordenado a todo el país"
+        },
+        {
+          "level": 2,
+          "text": "Las personas detrás del tinto"
+        },
+        {
+          "level": 2,
+          "text": "Donde el trabajo duro encuentra su tinto."
+        },
+        {
+          "level": 2,
+          "text": "Todo se da con un cafecito charladito."
+        },
+        {
+          "level": 2,
+          "text": "Confiado por equipos de todo el país"
+        },
+        {
+          "level": 2,
+          "text": "Pasa por la oficina. Te esperamos con un tinto."
+        }
+      ],
+      "missingAlt": 0,
+      "missingSize": [],
+      "lang": "es",
+      "headTags": true,
+      "unnamedLinks": [],
+      "externalBlank": []
+    },
+    {
+      "route": "/dudas",
+      "title": "Preguntas frecuentes sobre el CRM para tu agencia | Tinto",
+      "descriptions": [
+        "Resuelve tus dudas sobre cómo funciona Tinto, sus módulos y cómo empezar. Lee las preguntas frecuentes o conversa con el equipo sobre tu agencia de seguros."
+      ],
+      "canonical": [
+        "http://localhost:3127/dudas"
+      ],
+      "og": {
+        "og:title": "Preguntas frecuentes sobre el CRM para tu agencia | Tinto",
+        "og:description": "Resuelve tus dudas sobre cómo funciona Tinto, sus módulos y cómo empezar. Lee las preguntas frecuentes o conversa con el equipo sobre tu agencia de seguros.",
+        "og:url": "http://localhost:3127/dudas",
+        "og:site_name": "Tinto",
+        "og:locale": "es_CO",
+        "og:image": "http://localhost:3127/opengraph-image",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
+        "og:type": "website"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Preguntas frecuentes sobre el CRM para tu agencia | Tinto",
+        "twitter:description": "Resuelve tus dudas sobre cómo funciona Tinto, sus módulos y cómo empezar. Lee las preguntas frecuentes o conversa con el equipo sobre tu agencia de seguros.",
+        "twitter:image": "http://localhost:3127/twitter-image",
+        "twitter:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
+        "twitter:image:width": "1200",
+        "twitter:image:height": "630"
+      },
+      "robots": "index, follow",
+      "json": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:3127/#organization",
+              "name": "Tinto",
+              "url": "http://localhost:3127/",
+              "logo": "http://localhost:3127/images/tinto-logo.png",
+              "sameAs": []
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:3127/#website",
+              "name": "Tinto",
+              "url": "http://localhost:3127/",
+              "inLanguage": "es-CO",
+              "publisher": {
+                "@id": "http://localhost:3127/#organization"
+              }
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:3127/dudas#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Inicio",
+                  "item": "http://localhost:3127/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Dudas",
+                  "item": "http://localhost:3127/dudas"
+                }
+              ]
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "http://localhost:3127/dudas#faq",
+              "url": "http://localhost:3127/dudas",
+              "inLanguage": "es-CO",
+              "isPartOf": {
+                "@id": "http://localhost:3127/#website"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "¿Qué hace Tinto exactamente?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Trabaja la parte previa a la venta: atrae personas interesadas, las precalifica y deja cada oportunidad organizada para que tu equipo converse con contexto."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "¿Reemplaza a mi equipo comercial?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. La conversación sigue siendo de tus asesores. Tinto se encarga de que lleguen a ella con más información y menos trabajo previo."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "¿Cómo empezamos?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Con una conversación para entender tu agencia, tus ramos y cómo vendes hoy. De ahí sale un plan claro de qué hacer primero."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "h1": 1,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Resolvemos tus dudas."
+        },
+        {
+          "level": 2,
+          "text": "¿Prefieres hablar con una persona?"
+        },
+        {
+          "level": 2,
+          "text": "Preguntas frecuentes"
+        },
+        {
+          "level": 3,
+          "text": "¿Qué hace Tinto exactamente?+"
+        },
+        {
+          "level": 3,
+          "text": "¿Reemplaza a mi equipo comercial?+"
+        },
+        {
+          "level": 3,
+          "text": "¿Para qué tamaño de agencia es?+"
+        },
+        {
+          "level": 3,
+          "text": "¿Cómo empezamos?+"
+        },
+        {
+          "level": 2,
+          "text": "¿Todavía con dudas? Conversemos."
+        }
+      ],
+      "missingAlt": 0,
+      "missingSize": [],
+      "lang": "es",
+      "headTags": true,
+      "unnamedLinks": [],
+      "externalBlank": []
+    },
+    {
+      "route": "/contacto",
+      "title": "Conversemos sobre el CRM para tu agencia de seguros | Tinto",
+      "descriptions": [
+        "Cuéntanos cómo vende tu agencia de seguros y qué necesita tu equipo. Conoce las formas de conversar con Tinto y da el primer paso para organizar oportunidades."
+      ],
+      "canonical": [
+        "http://localhost:3127/contacto"
+      ],
+      "og": {
+        "og:title": "Conversemos sobre el CRM para tu agencia de seguros | Tinto",
+        "og:description": "Cuéntanos cómo vende tu agencia de seguros y qué necesita tu equipo. Conoce las formas de conversar con Tinto y da el primer paso para organizar oportunidades.",
+        "og:url": "http://localhost:3127/contacto",
+        "og:site_name": "Tinto",
+        "og:locale": "es_CO",
+        "og:image": "http://localhost:3127/opengraph-image",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
+        "og:type": "website"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Conversemos sobre el CRM para tu agencia de seguros | Tinto",
+        "twitter:description": "Cuéntanos cómo vende tu agencia de seguros y qué necesita tu equipo. Conoce las formas de conversar con Tinto y da el primer paso para organizar oportunidades.",
+        "twitter:image": "http://localhost:3127/twitter-image",
+        "twitter:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
+        "twitter:image:width": "1200",
+        "twitter:image:height": "630"
+      },
+      "robots": "index, follow",
+      "json": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:3127/#organization",
+              "name": "Tinto",
+              "url": "http://localhost:3127/",
+              "logo": "http://localhost:3127/images/tinto-logo.png",
+              "sameAs": []
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:3127/#website",
+              "name": "Tinto",
+              "url": "http://localhost:3127/",
+              "inLanguage": "es-CO",
+              "publisher": {
+                "@id": "http://localhost:3127/#organization"
+              }
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:3127/contacto#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Inicio",
+                  "item": "http://localhost:3127/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Contacto",
+                  "item": "http://localhost:3127/contacto"
+                }
+              ]
+            },
+            {
+              "@type": "ContactPage",
+              "@id": "http://localhost:3127/contacto#page",
+              "url": "http://localhost:3127/contacto",
+              "name": "Conversemos sobre el CRM para tu agencia de seguros",
+              "inLanguage": "es-CO",
+              "about": {
+                "@id": "http://localhost:3127/#organization"
+              },
+              "isPartOf": {
+                "@id": "http://localhost:3127/#website"
+              }
+            }
+          ]
+        }
+      ],
+      "h1": 1,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Conversemos con nuestro equipo"
+        },
+        {
+          "level": 2,
+          "text": "Escríbenos"
+        },
+        {
+          "level": 2,
+          "text": "Elige cómo quieres tomarte el tinto."
+        },
+        {
+          "level": 3,
+          "text": "Llama o escribe por WhatsApp"
+        },
+        {
+          "level": 3,
+          "text": "Horarios"
+        },
+        {
+          "level": 3,
+          "text": "Escríbenos"
+        },
+        {
+          "level": 2,
+          "text": "Empieza a ordenar tus oportunidades"
+        }
+      ],
+      "missingAlt": 0,
+      "missingSize": [],
+      "lang": "es",
+      "headTags": true,
+      "unnamedLinks": [],
+      "externalBlank": []
+    },
+    {
+      "route": "/agendar",
+      "title": "Agenda una demo de Tinto para tu agencia de seguros | Tinto",
+      "descriptions": [
+        "¿Agendamos un tinto? Elige cómo quieres conversar, consulta los horarios y déjanos tus datos para conocer el CRM según la forma de trabajar de tu agencia."
+      ],
+      "canonical": [
+        "http://localhost:3127/agendar"
+      ],
+      "og": {
+        "og:title": "Agenda una demo de Tinto para tu agencia de seguros | Tinto",
+        "og:description": "¿Agendamos un tinto? Elige cómo quieres conversar, consulta los horarios y déjanos tus datos para conocer el CRM según la forma de trabajar de tu agencia.",
+        "og:url": "http://localhost:3127/agendar",
+        "og:site_name": "Tinto",
+        "og:locale": "es_CO",
+        "og:image": "http://localhost:3127/opengraph-image",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
+        "og:type": "website"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Agenda una demo de Tinto para tu agencia de seguros | Tinto",
+        "twitter:description": "¿Agendamos un tinto? Elige cómo quieres conversar, consulta los horarios y déjanos tus datos para conocer el CRM según la forma de trabajar de tu agencia.",
+        "twitter:image": "http://localhost:3127/twitter-image",
+        "twitter:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
+        "twitter:image:width": "1200",
+        "twitter:image:height": "630"
+      },
+      "robots": "noindex, follow",
+      "json": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:3127/#organization",
+              "name": "Tinto",
+              "url": "http://localhost:3127/",
+              "logo": "http://localhost:3127/images/tinto-logo.png",
+              "sameAs": []
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:3127/#website",
+              "name": "Tinto",
+              "url": "http://localhost:3127/",
+              "inLanguage": "es-CO",
+              "publisher": {
+                "@id": "http://localhost:3127/#organization"
+              }
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:3127/agendar#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Inicio",
+                  "item": "http://localhost:3127/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Agendar",
+                  "item": "http://localhost:3127/agendar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "h1": 1,
+      "headings": [
+        {
+          "level": 1,
+          "text": "¿Agendamos un tinto?"
+        },
+        {
+          "level": 2,
+          "text": "¿Cómo quieres conversar?"
+        },
+        {
+          "level": 2,
+          "text": "Elige día y hora"
+        },
+        {
+          "level": 2,
+          "text": "Tus datos"
+        }
+      ],
+      "missingAlt": 0,
+      "missingSize": [],
+      "lang": "es",
+      "headTags": true,
+      "unnamedLinks": [],
+      "externalBlank": []
+    }
+  ],
+  "images": [
+    {
+      "path": "/opengraph-image",
+      "status": 200,
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "path": "/twitter-image",
+      "status": 200,
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "path": "/icon.png",
+      "status": 200,
+      "width": 32,
+      "height": 32
+    },
+    {
+      "path": "/apple-icon.png",
+      "status": 200,
+      "width": 180,
+      "height": 180
+    },
+    {
+      "path": "/icons/icon-192.png",
+      "status": 200,
+      "width": 192,
+      "height": 192
+    },
+    {
+      "path": "/icons/icon-512.png",
+      "status": 200,
+      "width": 512,
+      "height": 512
+    }
+  ],
+  "sitemap": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n<url>\n<loc>http://localhost:3127/</loc>\n<lastmod>2026-10-25</lastmod>\n<priority>1</priority>\n</url>\n<url>\n<loc>http://localhost:3127/producto</loc>\n<lastmod>2026-10-25</lastmod>\n<priority>0.9</priority>\n</url>\n<url>\n<loc>http://localhost:3127/soluciones</loc>\n<lastmod>2026-10-25</lastmod>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>http://localhost:3127/nosotros</loc>\n<lastmod>2026-10-25</lastmod>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>http://localhost:3127/dudas</loc>\n<lastmod>2026-10-25</lastmod>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>http://localhost:3127/contacto</loc>\n<lastmod>2026-10-25</lastmod>\n<priority>0.7</priority>\n</url>\n</urlset>\n",
+  "robots": "User-Agent: *\nAllow: /\nDisallow: /api/\n\nSitemap: http://localhost:3127/sitemap.xml\n"
+}

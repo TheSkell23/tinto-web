@@ -2,38 +2,52 @@
 export const seoPages = {
   '/': {
     title: 'CRM para agencias de seguros: vende con contexto',
-    description: 'Atrae, precalifica y organiza las oportunidades de tu agencia de seguros con Tinto. Reúne tus canales y llega a cada conversación con contexto para tu equipo.',
-    label: 'Inicio', priority: 1,
+    description:
+      'Atrae, precalifica y organiza las oportunidades de tu agencia de seguros con Tinto. Reúne tus canales y llega a cada conversación con contexto para tu equipo.',
+    label: 'Inicio',
+    priority: 1,
   },
   '/producto': {
     title: 'Captación, precalificación y pipeline para tu agencia',
-    description: 'Conoce los módulos de Tinto: captación, precalificación, pipeline y reportes. Organiza contactos, citas y próximos pasos para tu equipo de asesores de seguros.',
-    label: 'Producto', priority: 0.9,
+    description:
+      'Conoce los módulos de Tinto: captación, precalificación, pipeline y reportes. Organiza contactos, citas y próximos pasos para tu equipo de asesores de seguros.',
+    label: 'Producto',
+    priority: 0.9,
   },
   '/soluciones': {
     title: 'Soluciones CRM para agencias y equipos de seguros',
-    description: 'Explora cómo Tinto se adapta a agencias, corredoras y redes comerciales. Reparte oportunidades, organiza el seguimiento y consulta reportes de todo tu equipo.',
-    label: 'Soluciones', priority: 0.8,
+    description:
+      'Explora cómo Tinto se adapta a agencias, corredoras y redes comerciales. Reparte oportunidades, organiza el seguimiento y consulta reportes de todo tu equipo.',
+    label: 'Soluciones',
+    priority: 0.8,
   },
   '/nosotros': {
     title: 'Conoce al equipo y la forma de trabajar de Tinto',
-    description: 'Conoce al equipo detrás de Tinto y los valores que guían el producto. Trabajamos para convertir conversaciones dispersas en oportunidades claras para tu agencia.',
-    label: 'Nosotros', priority: 0.6,
+    description:
+      'Conoce al equipo detrás de Tinto y los valores que guían el producto. Trabajamos para convertir conversaciones dispersas en oportunidades claras para tu agencia.',
+    label: 'Nosotros',
+    priority: 0.6,
   },
   '/dudas': {
     title: 'Preguntas frecuentes sobre el CRM para tu agencia',
-    description: 'Resuelve tus dudas sobre cómo funciona Tinto, sus módulos y cómo empezar. Consulta las preguntas frecuentes o conversa con el equipo sobre tu agencia de seguros.',
-    label: 'Dudas', priority: 0.7,
+    description:
+      'Resuelve tus dudas sobre cómo funciona Tinto, sus módulos y cómo empezar. Lee las preguntas frecuentes o conversa con el equipo sobre tu agencia de seguros.',
+    label: 'Dudas',
+    priority: 0.7,
   },
   '/contacto': {
     title: 'Conversemos sobre el CRM para tu agencia de seguros',
-    description: 'Cuéntanos cómo vende tu agencia de seguros y qué necesita tu equipo. Conoce las formas de conversar con Tinto y da el primer paso para organizar oportunidades.',
-    label: 'Contacto', priority: 0.7,
+    description:
+      'Cuéntanos cómo vende tu agencia de seguros y qué necesita tu equipo. Conoce las formas de conversar con Tinto y da el primer paso para organizar oportunidades.',
+    label: 'Contacto',
+    priority: 0.7,
   },
   '/agendar': {
     title: 'Agenda una demo de Tinto para tu agencia de seguros',
-    description: '¿Agendamos un tinto? Elige cómo quieres conversar, consulta los horarios y déjanos tus datos para conocer el CRM según la forma de trabajar de tu agencia.',
-    label: 'Agendar', priority: 0.3,
+    description:
+      '¿Agendamos un tinto? Elige cómo quieres conversar, consulta los horarios y déjanos tus datos para conocer el CRM según la forma de trabajar de tu agencia.',
+    label: 'Agendar',
+    priority: 0.3,
   },
 } as const;
 export type SeoPath = keyof typeof seoPages;
