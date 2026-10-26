@@ -72,7 +72,9 @@ export default function HomePage() {
     <>
       {/* ---------- Hero ---------- */}
       <div>
-        <h1 id="inicio-title" className="sr-only">tinto: atrae, precalifica y organiza tus oportunidades</h1>
+        <h1 id="inicio-title" className="sr-only">
+          tinto: atrae, precalifica y organiza tus oportunidades
+        </h1>
         <section
           aria-labelledby="inicio-title"
           className="home-hero cq"

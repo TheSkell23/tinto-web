@@ -2,7 +2,7 @@
 import fs from 'node:fs';
 const phase = process.argv[2] || 'before';
 fs.mkdirSync('screenshots/seo', { recursive: true });
-const browser = await chromium.launch({ channel: 'chrome' });
+const browser = await chromium.launch();
 try {
   const context = await browser.newContext({
     viewport: { width: 1440, height: 900 },

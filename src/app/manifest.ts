@@ -1,4 +1,4 @@
-﻿import type { MetadataRoute } from 'next';
+import type { MetadataRoute } from 'next';
 import { absoluteUrl } from '@/lib/site-url';
 export default function manifest(): MetadataRoute.Manifest {
   return {

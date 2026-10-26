@@ -1,4 +1,4 @@
-﻿import { faqSection } from '@/content/dudas';
+import { faqSection } from '@/content/dudas';
 import { productoHero } from '@/content/producto';
 import { seoPages, type SeoPath } from '@/content/seo';
 import { absoluteUrl } from '@/lib/site-url';

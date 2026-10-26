@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { seoPages, type SeoPath } from '@/content/seo';
-import { absoluteUrl } from '@/lib/site-url';
+import { absoluteUrl, siteUrlConfigured } from '@/lib/site-url';
 
 export function pageMetadata(path: SeoPath): Metadata {
   const { title, description } = seoPages[path];
@@ -32,6 +32,6 @@ export function pageMetadata(path: SeoPath): Metadata {
       description,
       images: [{ ...images[0], url: absoluteUrl('/twitter-image') }],
     },
-    robots: { index: path !== '/agendar', follow: true },
+    robots: { index: siteUrlConfigured && path !== '/agendar', follow: true },
   };
 }

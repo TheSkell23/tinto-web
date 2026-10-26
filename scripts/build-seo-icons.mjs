@@ -1,4 +1,4 @@
-﻿import sharp from 'sharp';
+import sharp from 'sharp';
 import fs from 'node:fs/promises';
 // Derivados del logo existente, sobre fondo crema, sin recortar el wordmark.
 await fs.mkdir('public/icons', { recursive: true });

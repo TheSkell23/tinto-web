@@ -4,9 +4,9 @@ Implementado y verificado el 25 de octubre de 2026. Trabajo realizado en una cop
 
 ## URL pública y metadatos
 
-La única configuración del origen público es `NEXT_PUBLIC_SITE_URL`, añadida a `.env.example` con un dominio reservado de ejemplo. `src/lib/site-url.ts` valida el origen y genera las URLs de metadataBase, canonicals, Open Graph/Twitter, JSON-LD, sitemap, robots y manifest. Acepta una barra final en la configuración y la normaliza; rechaza rutas, parámetros, fragmentos y credenciales. En desarrollo, sin variable, usa localhost:3000. La compilación de producción falla si falta la variable para evitar publicar canonicals de un dominio supuesto. Configurar antes de compilar y volver a compilar al cambiar el dominio.
+La única configuración del origen público es `NEXT_PUBLIC_SITE_URL`, añadida a `.env.example` con un dominio reservado de ejemplo. `src/lib/site-url.ts` valida el origen y genera las URLs de metadataBase, canonicals, Open Graph/Twitter, JSON-LD, sitemap, robots y manifest. Acepta una barra final en la configuración y la normaliza; rechaza rutas, parámetros, fragmentos y credenciales. En desarrollo, sin variable, usa localhost:3000. Si falta la variable el build NO falla (regla del proyecto): se usa http://localhost:3000, se avisa por consola y el sitio se publica con robots noindex y `Disallow: /` para no indexar canonicals falsos. Configurar antes de publicar y recompilar al cambiar el dominio.
 
-Todos los metadatos son estáticos; no hay motivo para usar generateMetadata. El layout define applicationName, title.default/template y viewport con themeColor crema y colorScheme light. Cada página define título, descripción, canonical, OG completo y Twitter summary_large_image. El inicio usa title.absolute para conservar el sufijo de marca en ese segmento de Next. Los títulos tienen 56–61 caracteres y las descripciones 154–161: márgenes aproximados, sin recortar artificialmente el texto.
+Todos los metadatos son estáticos; no hay motivo para usar generateMetadata. El layout define applicationName, title.default/template y viewport con themeColor crema y colorScheme light. Cada página define título, descripción, canonical, OG completo y Twitter summary_large_image. El inicio usa title.absolute para conservar el sufijo de marca en ese segmento de Next. Los títulos finales (con el sufijo " | Tinto") miden como máximo 60 caracteres y las descripciones 154–161.
 
 Los canonicals y og:url apuntan siempre a la ruta limpia, sin parámetros ni barras duplicadas. Se verificaron las siete rutas con `?go=Planes%20claros&utm_source=seo`. Next puede representar el origen raíz sin barra en el HTML; equivale al origen con / que devuelve URL.href. No hay páginas distintas para cada navegación ?go=. Se conservó html lang="es". OG usa es_CO y JSON-LD/manifest es-CO. Se omite hreflang: solo existe una versión en español, sin traducciones ni variantes regionales alternativas.
 
@@ -14,13 +14,13 @@ Los canonicals y og:url apuntan siempre a la ruta limpia, sin parámetros ni bar
 
 | Ruta | title final | description |
 |---|---|---|
-| / | CRM para agencias de seguros: vende con contexto \| Tinto | Atrae, precalifica y organiza las oportunidades de tu agencia de seguros con Tinto. Reúne tus canales y llega a cada conversación con contexto para tu equipo. |
-| /producto | Captación, precalificación y pipeline para tu agencia \| Tinto | Conoce los módulos de Tinto: captación, precalificación, pipeline y reportes. Organiza contactos, citas y próximos pasos para tu equipo de asesores de seguros. |
-| /soluciones | Soluciones CRM para agencias y equipos de seguros \| Tinto | Explora cómo Tinto se adapta a agencias, corredoras y redes comerciales. Reparte oportunidades, organiza el seguimiento y consulta reportes de todo tu equipo. |
-| /nosotros | Conoce al equipo y la forma de trabajar de Tinto \| Tinto | Conoce al equipo detrás de Tinto y los valores que guían el producto. Trabajamos para convertir conversaciones dispersas en oportunidades claras para tu agencia. |
-| /dudas | Preguntas frecuentes sobre el CRM para tu agencia \| Tinto | Resuelve tus dudas sobre cómo funciona Tinto, sus módulos y cómo empezar. Lee las preguntas frecuentes o conversa con el equipo sobre tu agencia de seguros. |
-| /contacto | Conversemos sobre el CRM para tu agencia de seguros \| Tinto | Cuéntanos cómo vende tu agencia de seguros y qué necesita tu equipo. Conoce las formas de conversar con Tinto y da el primer paso para organizar oportunidades. |
-| /agendar | Agenda una demo de Tinto para tu agencia de seguros \| Tinto | ¿Agendamos un tinto? Elige cómo quieres conversar, consulta los horarios y déjanos tus datos para conocer el CRM según la forma de trabajar de tu agencia. |
+| / | CRM para agencias de seguros: vende con contexto | Tinto | Atrae, precalifica y organiza las oportunidades de tu agencia de seguros con Tinto. Reúne tus canales y llega a cada conversación con contexto para tu equipo. |
+| /producto | Captación, precalificación y pipeline | Tinto | Conoce los módulos de Tinto: captación, precalificación, pipeline y reportes. Organiza contactos, citas y próximos pasos para tu equipo de asesores de seguros. |
+| /soluciones | CRM para agencias, corredoras y redes | Tinto | Explora cómo Tinto se adapta a agencias, corredoras y redes comerciales. Reparte oportunidades, organiza el seguimiento y consulta reportes de todo tu equipo. |
+| /nosotros | Nuestro equipo, valores e historia | Tinto | Conoce al equipo detrás de Tinto y los valores que guían el producto. Trabajamos para convertir conversaciones dispersas en oportunidades claras para tu agencia. |
+| /dudas | Preguntas frecuentes sobre el CRM | Tinto | Resuelve tus dudas sobre cómo funciona Tinto, sus módulos y cómo empezar. Lee las preguntas frecuentes o conversa con el equipo sobre tu agencia de seguros. |
+| /contacto | Conversemos sobre el CRM de tu agencia | Tinto | Cuéntanos cómo vende tu agencia de seguros y qué necesita tu equipo. Conoce las formas de conversar con Tinto y da el primer paso para organizar oportunidades. |
+| /agendar | Agenda una demo para tu agencia | Tinto | ¿Agendamos un tinto? Elige cómo quieres conversar, consulta los horarios y déjanos tus datos para conocer el CRM según la forma de trabajar de tu agencia. |
 
 ## Indexación, sitemap y robots
 

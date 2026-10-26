@@ -1,4 +1,4 @@
-﻿/** Componente servidor. El escape evita cerrar el script desde contenido editorial. */
+/** Componente servidor. El escape evita cerrar el script desde contenido editorial. */
 export function JsonLd({ data }: { data: Record<string, unknown> }) {
   return (
     <script

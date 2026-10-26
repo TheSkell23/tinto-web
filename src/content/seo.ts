@@ -8,42 +8,42 @@ export const seoPages = {
     priority: 1,
   },
   '/producto': {
-    title: 'Captación, precalificación y pipeline para tu agencia',
+    title: 'Captación, precalificación y pipeline',
     description:
       'Conoce los módulos de Tinto: captación, precalificación, pipeline y reportes. Organiza contactos, citas y próximos pasos para tu equipo de asesores de seguros.',
     label: 'Producto',
     priority: 0.9,
   },
   '/soluciones': {
-    title: 'Soluciones CRM para agencias y equipos de seguros',
+    title: 'CRM para agencias, corredoras y redes',
     description:
       'Explora cómo Tinto se adapta a agencias, corredoras y redes comerciales. Reparte oportunidades, organiza el seguimiento y consulta reportes de todo tu equipo.',
     label: 'Soluciones',
     priority: 0.8,
   },
   '/nosotros': {
-    title: 'Conoce al equipo y la forma de trabajar de Tinto',
+    title: 'Nuestro equipo, valores e historia',
     description:
       'Conoce al equipo detrás de Tinto y los valores que guían el producto. Trabajamos para convertir conversaciones dispersas en oportunidades claras para tu agencia.',
     label: 'Nosotros',
     priority: 0.6,
   },
   '/dudas': {
-    title: 'Preguntas frecuentes sobre el CRM para tu agencia',
+    title: 'Preguntas frecuentes sobre el CRM',
     description:
       'Resuelve tus dudas sobre cómo funciona Tinto, sus módulos y cómo empezar. Lee las preguntas frecuentes o conversa con el equipo sobre tu agencia de seguros.',
     label: 'Dudas',
     priority: 0.7,
   },
   '/contacto': {
-    title: 'Conversemos sobre el CRM para tu agencia de seguros',
+    title: 'Conversemos sobre el CRM de tu agencia',
     description:
       'Cuéntanos cómo vende tu agencia de seguros y qué necesita tu equipo. Conoce las formas de conversar con Tinto y da el primer paso para organizar oportunidades.',
     label: 'Contacto',
     priority: 0.7,
   },
   '/agendar': {
-    title: 'Agenda una demo de Tinto para tu agencia de seguros',
+    title: 'Agenda una demo para tu agencia',
     description:
       '¿Agendamos un tinto? Elige cómo quieres conversar, consulta los horarios y déjanos tus datos para conocer el CRM según la forma de trabajar de tu agencia.',
     label: 'Agendar',

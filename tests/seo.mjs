@@ -6,7 +6,7 @@ import sharp from 'sharp';
 const base = process.argv[2] || 'http://localhost:3127';
 const routes = ['/', '/producto', '/soluciones', '/nosotros', '/dudas', '/contacto', '/agendar'];
 const rows = [];
-const browser = await chromium.launch({ channel: 'chrome' });
+const browser = await chromium.launch();
 const types = new Set([
   'Organization',
   'WebSite',

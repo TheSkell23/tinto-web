@@ -13,12 +13,12 @@ page.on('pageerror', (e) => errs.push(String(e)));
 
 // navegación por el menú + ?go=
 await page.goto(base + '/');
-await page.hover('text=Producto >> nth=0');
+await page.hover('header nav a:text-is("Producto")');
 await page.click('a:has-text("Planes y precios")');
 await page.waitForURL(/producto\?go=/);
 await page.waitForTimeout(2200);
 const top = await page.evaluate(() => {
-  const h = [...document.querySelectorAll('h3')].find((x) =>
+  const h = [...document.querySelectorAll('h2,h3')].find((x) =>
     x.textContent.startsWith('Planes claros'),
   );
   return Math.round(h.getBoundingClientRect().top);

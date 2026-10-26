@@ -1,4 +1,4 @@
-﻿import type { MetadataRoute } from 'next';
+import type { MetadataRoute } from 'next';
 import { seoLastModified, seoPages, seoPaths } from '@/content/seo';
 import { absoluteUrl } from '@/lib/site-url';
 

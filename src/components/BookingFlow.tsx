@@ -72,7 +72,9 @@ function Step({ n, title, children }: { n: number; title: string; children: Reac
     >
       <div style={{ display: 'flex', alignItems: 'center', gap: u(1.1) }}>
         <span style={stepNum}>{n}</span>
-        <h2 id={`booking-step-${n}`} style={stepTitle}>{title}</h2>
+        <h2 id={`booking-step-${n}`} style={stepTitle}>
+          {title}
+        </h2>
       </div>
       {children}
     </section>

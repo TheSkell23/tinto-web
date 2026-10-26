@@ -35,7 +35,10 @@ function readLogoSheet(): LogoSheet | null {
 export const metadata: Metadata = {
   ...pageMetadata('/'),
   metadataBase: new URL(siteUrl),
-  title: { default: 'CRM para agencias de seguros: vende con contexto | Tinto', template: '%s | Tinto' },
+  title: {
+    default: 'CRM para agencias de seguros: vende con contexto | Tinto',
+    template: '%s | Tinto',
+  },
   applicationName: 'Tinto',
 };
 

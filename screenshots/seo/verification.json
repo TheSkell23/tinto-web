@@ -117,7 +117,7 @@
     },
     {
       "route": "/producto",
-      "title": "Captación, precalificación y pipeline para tu agencia | Tinto",
+      "title": "Captación, precalificación y pipeline | Tinto",
       "descriptions": [
         "Conoce los módulos de Tinto: captación, precalificación, pipeline y reportes. Organiza contactos, citas y próximos pasos para tu equipo de asesores de seguros."
       ],
@@ -125,7 +125,7 @@
         "http://localhost:3127/producto"
       ],
       "og": {
-        "og:title": "Captación, precalificación y pipeline para tu agencia | Tinto",
+        "og:title": "Captación, precalificación y pipeline | Tinto",
         "og:description": "Conoce los módulos de Tinto: captación, precalificación, pipeline y reportes. Organiza contactos, citas y próximos pasos para tu equipo de asesores de seguros.",
         "og:url": "http://localhost:3127/producto",
         "og:site_name": "Tinto",
@@ -138,7 +138,7 @@
       },
       "twitter": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Captación, precalificación y pipeline para tu agencia | Tinto",
+        "twitter:title": "Captación, precalificación y pipeline | Tinto",
         "twitter:description": "Conoce los módulos de Tinto: captación, precalificación, pipeline y reportes. Organiza contactos, citas y próximos pasos para tu equipo de asesores de seguros.",
         "twitter:image": "http://localhost:3127/twitter-image",
         "twitter:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
@@ -290,7 +290,7 @@
     },
     {
       "route": "/soluciones",
-      "title": "Soluciones CRM para agencias y equipos de seguros | Tinto",
+      "title": "CRM para agencias, corredoras y redes | Tinto",
       "descriptions": [
         "Explora cómo Tinto se adapta a agencias, corredoras y redes comerciales. Reparte oportunidades, organiza el seguimiento y consulta reportes de todo tu equipo."
       ],
@@ -298,7 +298,7 @@
         "http://localhost:3127/soluciones"
       ],
       "og": {
-        "og:title": "Soluciones CRM para agencias y equipos de seguros | Tinto",
+        "og:title": "CRM para agencias, corredoras y redes | Tinto",
         "og:description": "Explora cómo Tinto se adapta a agencias, corredoras y redes comerciales. Reparte oportunidades, organiza el seguimiento y consulta reportes de todo tu equipo.",
         "og:url": "http://localhost:3127/soluciones",
         "og:site_name": "Tinto",
@@ -311,7 +311,7 @@
       },
       "twitter": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Soluciones CRM para agencias y equipos de seguros | Tinto",
+        "twitter:title": "CRM para agencias, corredoras y redes | Tinto",
         "twitter:description": "Explora cómo Tinto se adapta a agencias, corredoras y redes comerciales. Reparte oportunidades, organiza el seguimiento y consulta reportes de todo tu equipo.",
         "twitter:image": "http://localhost:3127/twitter-image",
         "twitter:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
@@ -431,7 +431,7 @@
     },
     {
       "route": "/nosotros",
-      "title": "Conoce al equipo y la forma de trabajar de Tinto | Tinto",
+      "title": "Nuestro equipo, valores e historia | Tinto",
       "descriptions": [
         "Conoce al equipo detrás de Tinto y los valores que guían el producto. Trabajamos para convertir conversaciones dispersas en oportunidades claras para tu agencia."
       ],
@@ -439,7 +439,7 @@
         "http://localhost:3127/nosotros"
       ],
       "og": {
-        "og:title": "Conoce al equipo y la forma de trabajar de Tinto | Tinto",
+        "og:title": "Nuestro equipo, valores e historia | Tinto",
         "og:description": "Conoce al equipo detrás de Tinto y los valores que guían el producto. Trabajamos para convertir conversaciones dispersas en oportunidades claras para tu agencia.",
         "og:url": "http://localhost:3127/nosotros",
         "og:site_name": "Tinto",
@@ -452,7 +452,7 @@
       },
       "twitter": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Conoce al equipo y la forma de trabajar de Tinto | Tinto",
+        "twitter:title": "Nuestro equipo, valores e historia | Tinto",
         "twitter:description": "Conoce al equipo detrás de Tinto y los valores que guían el producto. Trabajamos para convertir conversaciones dispersas en oportunidades claras para tu agencia.",
         "twitter:image": "http://localhost:3127/twitter-image",
         "twitter:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
@@ -552,7 +552,7 @@
     },
     {
       "route": "/dudas",
-      "title": "Preguntas frecuentes sobre el CRM para tu agencia | Tinto",
+      "title": "Preguntas frecuentes sobre el CRM | Tinto",
       "descriptions": [
         "Resuelve tus dudas sobre cómo funciona Tinto, sus módulos y cómo empezar. Lee las preguntas frecuentes o conversa con el equipo sobre tu agencia de seguros."
       ],
@@ -560,7 +560,7 @@
         "http://localhost:3127/dudas"
       ],
       "og": {
-        "og:title": "Preguntas frecuentes sobre el CRM para tu agencia | Tinto",
+        "og:title": "Preguntas frecuentes sobre el CRM | Tinto",
         "og:description": "Resuelve tus dudas sobre cómo funciona Tinto, sus módulos y cómo empezar. Lee las preguntas frecuentes o conversa con el equipo sobre tu agencia de seguros.",
         "og:url": "http://localhost:3127/dudas",
         "og:site_name": "Tinto",
@@ -573,7 +573,7 @@
       },
       "twitter": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Preguntas frecuentes sobre el CRM para tu agencia | Tinto",
+        "twitter:title": "Preguntas frecuentes sobre el CRM | Tinto",
         "twitter:description": "Resuelve tus dudas sobre cómo funciona Tinto, sus módulos y cómo empezar. Lee las preguntas frecuentes o conversa con el equipo sobre tu agencia de seguros.",
         "twitter:image": "http://localhost:3127/twitter-image",
         "twitter:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
@@ -708,7 +708,7 @@
     },
     {
       "route": "/contacto",
-      "title": "Conversemos sobre el CRM para tu agencia de seguros | Tinto",
+      "title": "Conversemos sobre el CRM de tu agencia | Tinto",
       "descriptions": [
         "Cuéntanos cómo vende tu agencia de seguros y qué necesita tu equipo. Conoce las formas de conversar con Tinto y da el primer paso para organizar oportunidades."
       ],
@@ -716,7 +716,7 @@
         "http://localhost:3127/contacto"
       ],
       "og": {
-        "og:title": "Conversemos sobre el CRM para tu agencia de seguros | Tinto",
+        "og:title": "Conversemos sobre el CRM de tu agencia | Tinto",
         "og:description": "Cuéntanos cómo vende tu agencia de seguros y qué necesita tu equipo. Conoce las formas de conversar con Tinto y da el primer paso para organizar oportunidades.",
         "og:url": "http://localhost:3127/contacto",
         "og:site_name": "Tinto",
@@ -729,7 +729,7 @@
       },
       "twitter": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Conversemos sobre el CRM para tu agencia de seguros | Tinto",
+        "twitter:title": "Conversemos sobre el CRM de tu agencia | Tinto",
         "twitter:description": "Cuéntanos cómo vende tu agencia de seguros y qué necesita tu equipo. Conoce las formas de conversar con Tinto y da el primer paso para organizar oportunidades.",
         "twitter:image": "http://localhost:3127/twitter-image",
         "twitter:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
@@ -786,7 +786,7 @@
               "@type": "ContactPage",
               "@id": "http://localhost:3127/contacto#page",
               "url": "http://localhost:3127/contacto",
-              "name": "Conversemos sobre el CRM para tu agencia de seguros",
+              "name": "Conversemos sobre el CRM de tu agencia",
               "inLanguage": "es-CO",
               "about": {
                 "@id": "http://localhost:3127/#organization"
@@ -838,7 +838,7 @@
     },
     {
       "route": "/agendar",
-      "title": "Agenda una demo de Tinto para tu agencia de seguros | Tinto",
+      "title": "Agenda una demo para tu agencia | Tinto",
       "descriptions": [
         "¿Agendamos un tinto? Elige cómo quieres conversar, consulta los horarios y déjanos tus datos para conocer el CRM según la forma de trabajar de tu agencia."
       ],
@@ -846,7 +846,7 @@
         "http://localhost:3127/agendar"
       ],
       "og": {
-        "og:title": "Agenda una demo de Tinto para tu agencia de seguros | Tinto",
+        "og:title": "Agenda una demo para tu agencia | Tinto",
         "og:description": "¿Agendamos un tinto? Elige cómo quieres conversar, consulta los horarios y déjanos tus datos para conocer el CRM según la forma de trabajar de tu agencia.",
         "og:url": "http://localhost:3127/agendar",
         "og:site_name": "Tinto",
@@ -859,7 +859,7 @@
       },
       "twitter": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Agenda una demo de Tinto para tu agencia de seguros | Tinto",
+        "twitter:title": "Agenda una demo para tu agencia | Tinto",
         "twitter:description": "¿Agendamos un tinto? Elige cómo quieres conversar, consulta los horarios y déjanos tus datos para conocer el CRM según la forma de trabajar de tu agencia.",
         "twitter:image": "http://localhost:3127/twitter-image",
         "twitter:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",

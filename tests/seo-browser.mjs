@@ -1,7 +1,7 @@
 ﻿import { chromium } from '@playwright/test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
-const browser = await chromium.launch({ channel: 'chrome' });
+const browser = await chromium.launch();
 const rows = [];
 try {
   for (const route of [
