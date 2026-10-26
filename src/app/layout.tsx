@@ -1,3 +1,5 @@
+import { JsonLd } from '@/components/JsonLd';
+import { globalStructuredData } from '@/lib/structured-data';
 import type { Metadata, Viewport } from 'next';
 import { pageMetadata } from '@/lib/metadata';
 import { siteUrl } from '@/lib/site-url';
@@ -44,6 +46,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="es" className={jakarta.variable}>
       <body>
+        <JsonLd data={globalStructuredData} />
         <a
           href="#contenido"
           style={{

@@ -1,3 +1,5 @@
+import { JsonLd } from '@/components/JsonLd';
+import { pageStructuredData } from '@/lib/structured-data';
 import { pageMetadata } from '@/lib/metadata';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -15,6 +17,7 @@ export const metadata = pageMetadata('/dudas');
 export default function DudasPage() {
   return (
     <>
+      <JsonLd data={pageStructuredData('/dudas')} />
       <ScrollToGo />
       <div className="pg">
         <Reveal

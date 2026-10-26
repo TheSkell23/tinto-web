@@ -1,3 +1,5 @@
+import { JsonLd } from '@/components/JsonLd';
+import { pageStructuredData } from '@/lib/structured-data';
 import { pageMetadata } from '@/lib/metadata';
 import Image from 'next/image';
 import type { CSSProperties } from 'react';
@@ -25,6 +27,7 @@ export default function ContactoPage() {
   const m = contactoCta.mock;
   return (
     <>
+      <JsonLd data={pageStructuredData('/contacto')} />
       <ScrollToGo />
       <div className="pg">
         <div

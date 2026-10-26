@@ -1,3 +1,5 @@
+import { JsonLd } from '@/components/JsonLd';
+import { pageStructuredData } from '@/lib/structured-data';
 import { pageMetadata } from '@/lib/metadata';
 import Image from 'next/image';
 import type { CSSProperties } from 'react';
@@ -232,6 +234,7 @@ export const metadata = pageMetadata('/producto');
 export default function ProductoPage() {
   return (
     <>
+      <JsonLd data={pageStructuredData('/producto')} />
       <ScrollToGo />
       <div className="pg">
         <PageHero

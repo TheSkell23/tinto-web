@@ -1,3 +1,5 @@
+import { JsonLd } from '@/components/JsonLd';
+import { pageStructuredData } from '@/lib/structured-data';
 import { pageMetadata } from '@/lib/metadata';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -82,6 +84,7 @@ export default function SolucionesPage() {
   const f = solFor.card;
   return (
     <>
+      <JsonLd data={pageStructuredData('/soluciones')} />
       <ScrollToGo />
       <div className="pg">
         <PageHero

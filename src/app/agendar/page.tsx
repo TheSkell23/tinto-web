@@ -1,3 +1,5 @@
+import { JsonLd } from '@/components/JsonLd';
+import { pageStructuredData } from '@/lib/structured-data';
 import { pageMetadata } from '@/lib/metadata';
 import type { CSSProperties } from 'react';
 import { BookingFlow } from '@/components/BookingFlow';
@@ -10,6 +12,7 @@ export const metadata = pageMetadata('/agendar');
 export default function AgendarPage() {
   return (
     <div className="pg">
+      <JsonLd data={pageStructuredData('/agendar')} />
       <Reveal
         style={{
           position: 'relative',
