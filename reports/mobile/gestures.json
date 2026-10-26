@@ -1,0 +1,24 @@
+{
+  "engine": "Chromium",
+  "realDevice": false,
+  "results": [
+    {
+      "route": "/producto",
+      "gesture": "swipe horizontal táctil sintetizado por CDP",
+      "scrollLeft": 280,
+      "pass": true
+    },
+    {
+      "route": "/soluciones",
+      "gesture": "swipe horizontal táctil sintetizado por CDP",
+      "scrollLeft": 280,
+      "pass": true
+    },
+    {
+      "route": "/dudas",
+      "gesture": "swipe horizontal táctil sintetizado por CDP",
+      "scrollLeft": 254,
+      "pass": true
+    }
+  ]
+}

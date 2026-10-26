@@ -1,0 +1,35 @@
+[
+  {
+    "route": "inicio",
+    "width": 1440,
+    "heightBefore": 7276,
+    "heightAfter": 7276,
+    "sameDimensions": true,
+    "changedPixels": 0,
+    "maxDelta": 0,
+    "tolerance": 8,
+    "pixelsAboveTolerance": 0
+  },
+  {
+    "route": "producto",
+    "width": 1440,
+    "heightBefore": 10014,
+    "heightAfter": 10014,
+    "sameDimensions": true,
+    "changedPixels": 0,
+    "maxDelta": 0,
+    "tolerance": 8,
+    "pixelsAboveTolerance": 0
+  },
+  {
+    "route": "agendar",
+    "width": 1440,
+    "heightBefore": 2007,
+    "heightAfter": 2007,
+    "sameDimensions": true,
+    "changedPixels": 0,
+    "maxDelta": 0,
+    "tolerance": 8,
+    "pixelsAboveTolerance": 0
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "combinations": 56,
+  "before": {
+    "smallText": 1870,
+    "smallTargets": 1314,
+    "clipped": 168,
+    "outside": 32
+  },
+  "after": {
+    "smallText": 0,
+    "smallTargets": 0,
+    "clipped": 0,
+    "outside": 0
+  },
+  "contrastExamples": {
+    "brandOnCream": 2.7037356251761917,
+    "whiteOnGradientLightStop": 2.015541853553044
+  },
+  "functionalPassed": 23,
+  "desktop": [
+    {
+      "route": "inicio",
+      "width": 1440,
+      "heightBefore": 7276,
+      "heightAfter": 7276,
+      "sameDimensions": true,
+      "changedPixels": 0,
+      "maxDelta": 0,
+      "tolerance": 8,
+      "pixelsAboveTolerance": 0
+    },
+    {
+      "route": "producto",
+      "width": 1440,
+      "heightBefore": 10014,
+      "heightAfter": 10014,
+      "sameDimensions": true,
+      "changedPixels": 0,
+      "maxDelta": 0,
+      "tolerance": 8,
+      "pixelsAboveTolerance": 0
+    },
+    {
+      "route": "agendar",
+      "width": 1440,
+      "heightBefore": 2007,
+      "heightAfter": 2007,
+      "sameDimensions": true,
+      "changedPixels": 0,
+      "maxDelta": 0,
+      "tolerance": 8,
+      "pixelsAboveTolerance": 0
+    }
+  ]
+}

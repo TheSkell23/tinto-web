@@ -1,0 +1,125 @@
+{
+  "rows": [
+    {
+      "route": "/",
+      "additionalWidths": 15,
+      "inputs": [],
+      "pass": true
+    },
+    {
+      "route": "/producto",
+      "additionalWidths": 15,
+      "inputs": [],
+      "pass": true
+    },
+    {
+      "route": "/soluciones",
+      "additionalWidths": 15,
+      "inputs": [],
+      "pass": true
+    },
+    {
+      "route": "/nosotros",
+      "additionalWidths": 15,
+      "inputs": [],
+      "pass": true
+    },
+    {
+      "route": "/dudas",
+      "additionalWidths": 15,
+      "inputs": [
+        {
+          "name": "Escribe tu pregunta",
+          "font": 16,
+          "type": "text",
+          "inputMode": "text",
+          "autocomplete": "off",
+          "enterKeyHint": "send"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "/contacto",
+      "additionalWidths": 15,
+      "inputs": [
+        {
+          "name": "name",
+          "font": 16,
+          "type": "text",
+          "inputMode": "text",
+          "autocomplete": "name",
+          "enterKeyHint": "next"
+        },
+        {
+          "name": "email",
+          "font": 16,
+          "type": "email",
+          "inputMode": "email",
+          "autocomplete": "email",
+          "enterKeyHint": "next"
+        },
+        {
+          "name": "phone",
+          "font": 16,
+          "type": "tel",
+          "inputMode": "tel",
+          "autocomplete": "tel",
+          "enterKeyHint": "next"
+        },
+        {
+          "name": "message",
+          "font": 16,
+          "type": "textarea",
+          "inputMode": "",
+          "autocomplete": "",
+          "enterKeyHint": "enter"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "/agendar",
+      "additionalWidths": 15,
+      "inputs": [
+        {
+          "name": "name",
+          "font": 16,
+          "type": "text",
+          "inputMode": "text",
+          "autocomplete": "name",
+          "enterKeyHint": "next"
+        },
+        {
+          "name": "email",
+          "font": 16,
+          "type": "email",
+          "inputMode": "email",
+          "autocomplete": "email",
+          "enterKeyHint": "next"
+        },
+        {
+          "name": "phone",
+          "font": 16,
+          "type": "tel",
+          "inputMode": "tel",
+          "autocomplete": "tel",
+          "enterKeyHint": "next"
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "performanceSimulation": {
+    "cpuThrottle": 4,
+    "frames": 110,
+    "p95FrameMs": 16.799999999999955,
+    "maxFrameMs": 16.800000000000182,
+    "hero": {
+      "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fhero-inicio.jpg&w=640&q=75",
+      "renderedWidth": 375,
+      "bytes": 15070
+    },
+    "viewportMeta": "width=device-width, initial-scale=1"
+  }
+}

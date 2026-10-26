@@ -1,0 +1,222 @@
+[
+  {
+    "path": "src/components/Header.tsx",
+    "unchanged": true,
+    "sha256": "8d23359688331770d2c7f98e33b56bfdd95a58f9f40d023518d846358fd738e7"
+  },
+  {
+    "path": "src/components/HeaderLogo.tsx",
+    "unchanged": true,
+    "sha256": "72f26c4dde6878c4501ae2152f089946105a09fe9e7e9687319f6e6780100fbe"
+  },
+  {
+    "path": "src/components/MotionController.tsx",
+    "unchanged": true,
+    "sha256": "4d187d7ea820800bb52fd507315e01358232589d5a358daff4258ee6fb0081c1"
+  },
+  {
+    "path": "src/components/JsonLd.tsx",
+    "unchanged": true,
+    "sha256": "f9d2c98259aae5bcf61384b5173c724ce2ac7ab2c89a50afcd88ed2895425adb"
+  },
+  {
+    "path": "src/lib/metadata.ts",
+    "unchanged": true,
+    "sha256": "78be2a0cc227127494676b16afeb6030b65e424f14a8701ebe3f2d81c269bd9c"
+  },
+  {
+    "path": "src/lib/structured-data.ts",
+    "unchanged": true,
+    "sha256": "87152618c9d7e0b3e6d17ff719431e82aaad16063d5904c1e6970435bee4c0ff"
+  },
+  {
+    "path": "src/lib/site-url.ts",
+    "unchanged": true,
+    "sha256": "ce24385e6511e750a83b2d9c6dfa480f10a1f7d52c661c55f1ccc3e0a843ae20"
+  },
+  {
+    "path": "src/app/sitemap.ts",
+    "unchanged": true,
+    "sha256": "d209af5504e005c6e7821305ceb56efdc64f6c2ad5097019852a9fa4c580597b"
+  },
+  {
+    "path": "src/app/robots.ts",
+    "unchanged": true,
+    "sha256": "06cbedfb495e607d7fb7f0b2ed2894ced3395eb4249b7cc2b64d48bfb6bad3f3"
+  },
+  {
+    "path": "src/app/manifest.ts",
+    "unchanged": true,
+    "sha256": "c5ec81cae65ce30f01b5c55497bde5f06859383a9e395d3acce52aa3e4921c8c"
+  },
+  {
+    "path": "src/app/opengraph-image.tsx",
+    "unchanged": true,
+    "sha256": "21118455666d7b3e87d24c9146e92bf650769a97cfd49d166d1af7d4867606ae"
+  },
+  {
+    "path": "src/app/twitter-image.tsx",
+    "unchanged": true,
+    "sha256": "21118455666d7b3e87d24c9146e92bf650769a97cfd49d166d1af7d4867606ae"
+  },
+  {
+    "path": "scripts/build-logo-frames.mjs",
+    "unchanged": true,
+    "sha256": "ba7983b54cbf7d9ae0a986995a331445eb3ad4d7d671801b2faf672de30c6038"
+  },
+  {
+    "path": "scripts/build-seo-icons.mjs",
+    "unchanged": true,
+    "sha256": "bfcdea8adc7b64e903ab83f052d755f07b831f6d288833899361a057e3260257"
+  },
+  {
+    "path": "package.json",
+    "unchanged": true,
+    "sha256": "2a43933be5d4b19dba47b02d507ffeac2e13a928ce1c1726d3ac82fc2a425f08"
+  },
+  {
+    "path": "package-lock.json",
+    "unchanged": true,
+    "sha256": "fd3ac7f26b111146c1c423a0645e2c6c638155b435928fb2a48e1a53d91c93d6"
+  },
+  {
+    "path": "src/content/agendar.ts",
+    "unchanged": true,
+    "sha256": "a7070591723e4f19005f8a9c6992ef41fed6b2f35729e53e70abe59b117e31dc"
+  },
+  {
+    "path": "src/content/contacto.ts",
+    "unchanged": true,
+    "sha256": "8c5e6bd1ba38748b97feda767f60163a84d4093e0b86714400adf48d8d6f9e6b"
+  },
+  {
+    "path": "src/content/dudas.ts",
+    "unchanged": true,
+    "sha256": "ad1907b890e40299c6367913cec182cb4d6c6af99e6c0b2ca4cb23e542a7e281"
+  },
+  {
+    "path": "src/content/home.ts",
+    "unchanged": true,
+    "sha256": "abfd0ffa6d89f788d9912918dddd4c60e9b583275d415a2680f0029c5e044586"
+  },
+  {
+    "path": "src/content/nosotros.ts",
+    "unchanged": true,
+    "sha256": "041c224642edac23dc36b26f6c2addb6cf4804d6105c3e10ae51df7b432e6998"
+  },
+  {
+    "path": "src/content/producto.ts",
+    "unchanged": true,
+    "sha256": "1dfda5de74a4b2735b43783ae59cc3092a6354e346bab993e2de77069c58119d"
+  },
+  {
+    "path": "src/content/seo.ts",
+    "unchanged": true,
+    "sha256": "ca8e8df6edbc11eabbfe3c7b731d5a6b25c01164ae8d3fc1cbbf355fedaea2f0"
+  },
+  {
+    "path": "src/content/site.ts",
+    "unchanged": true,
+    "sha256": "5ca56a31cb25ff8512231c0f946ea1ad1c6f681d2df9fa77dea6f5986e8a36fa"
+  },
+  {
+    "path": "src/content/soluciones.ts",
+    "unchanged": true,
+    "sha256": "d8e859a9306b3ca3a754b3f9554732bbe93a83d53b1acebe89134e1df498cd77"
+  },
+  {
+    "path": "src/app/api/agendar/route.ts",
+    "unchanged": true,
+    "sha256": "4f1213585b3b7ba4c329b18c0c98a78899a4dbeff9af4499876450e122bf7ef5"
+  },
+  {
+    "path": "src/app/api/contacto/route.ts",
+    "unchanged": true,
+    "sha256": "74e5408a1878c2cc54e70bfaf1ef15ac73cc54a5121a9b1bf93af33e862e38d5"
+  },
+  {
+    "path": "public/images/cafecito-conversacion.jpg",
+    "unchanged": true,
+    "sha256": "a5eb7c81d4868b63f05eb20ab1a17a4f2e69079522c420f4efa52b2d2dff4c79"
+  },
+  {
+    "path": "public/images/colinas-escritorio.jpg",
+    "unchanged": true,
+    "sha256": "1d92eb33183127aaaec66b8b0239b21c3810da3a3878d09a2b8a1617235ef7dc"
+  },
+  {
+    "path": "public/images/foto-corredora.png",
+    "unchanged": true,
+    "sha256": "61e3ba6e9836a482b75bbbd97e49b7a4d3870eaee411628df5ae1d103888f6c4"
+  },
+  {
+    "path": "public/images/foto-equipo.png",
+    "unchanged": true,
+    "sha256": "49c2245fa85bfefdc9bab4baabae56de8a2f048dcaf97f5ee4d8d16df27c3748"
+  },
+  {
+    "path": "public/images/foto-oficina.png",
+    "unchanged": true,
+    "sha256": "7d07071c1c6425f1732054d5f99eeec3db03433f099330ebe2cf62e1b94eb45e"
+  },
+  {
+    "path": "public/images/foto-soporte.png",
+    "unchanged": true,
+    "sha256": "1d3093cdadf995560cd7fd3ec6d284cfc720103ce82097474eaaa6207d6839a4"
+  },
+  {
+    "path": "public/images/hero-inicio.jpg",
+    "unchanged": true,
+    "sha256": "bfc10042885207f8bb832c44cd38353409880633ca04524d2a7a15fc3c1b1ee9"
+  },
+  {
+    "path": "public/images/jinetes-desierto.jpg",
+    "unchanged": true,
+    "sha256": "c4a95c4ae066570689443df73ea3ef5e13bf1f83eeaf77eba7cf86abdd765da7"
+  },
+  {
+    "path": "public/images/pajaros.png",
+    "unchanged": true,
+    "sha256": "0d97289ff35cf16b9ede392d23eed24f19654f1926e9d80a0b1db4d915256611"
+  },
+  {
+    "path": "public/images/producto-dos-hombres.png",
+    "unchanged": true,
+    "sha256": "dcc116358e5e28552048770f3a48c20312bc2611475d79711d78f7f347139a4e"
+  },
+  {
+    "path": "public/images/tinto-blanco.png",
+    "unchanged": true,
+    "sha256": "aa2b211d96739bbaef0c2515aae0114403e6d1679bfa3825690d862e8b031e1e"
+  },
+  {
+    "path": "public/images/tinto-logo.png",
+    "unchanged": true,
+    "sha256": "05f08c7d49c7a2c1c5bdff8e511e05e06adfc7a5dd0da51871eae1debd1e0ed6"
+  },
+  {
+    "path": "public/images/tinto-mark.png",
+    "unchanged": true,
+    "sha256": "1318aea42c232d5e030bbfba7b3605a96cf5abee25616638b38d21d71164c489"
+  },
+  {
+    "path": "public/anim/logo-sheet.json",
+    "unchanged": true,
+    "sha256": "3175f386cb7ae41c97c25d2af039b62d3ca31726bee81541406bd893422dbb9d"
+  },
+  {
+    "path": "public/anim/logo-sheet.webp",
+    "unchanged": true,
+    "sha256": "a1626dd65d9d190101755bf801fda808a5971a89c92a36054417aff52e18403a"
+  },
+  {
+    "path": "public/icons/icon-192.png",
+    "unchanged": true,
+    "sha256": "3787d6b14983aa0d2bef8d815e217b178314513069fa4e39d0c858ad5ec5f0d8"
+  },
+  {
+    "path": "public/icons/icon-512.png",
+    "unchanged": true,
+    "sha256": "de55f38d791730f7574780f0904c89377b64c0938b56a44af717a86c961bacab"
+  }
+]

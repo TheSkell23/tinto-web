@@ -1,0 +1,44 @@
+{
+  "viewport": 375,
+  "hasTouch": true,
+  "isMobile": true,
+  "passed": [
+    "tap abre menú",
+    "bloqueo scroll de fondo",
+    "foco permanece en navegación",
+    "Escape cierra menú",
+    "tap en hamburguesa cierra",
+    "tap fuera cierra",
+    "navegar cierra menú",
+    "offset móvil sigue altura real del header",
+    "filtro del catálogo",
+    "tabla se desplaza internamente",
+    "chat responde",
+    "autoscroll no mueve la página",
+    "FAQ conserva una apertura",
+    "input del chat visible en viewport corto",
+    "confirmación deshabilitada al inicio",
+    "confirmación habilitada al completar datos",
+    "reserva simulada muestra éxito",
+    "contacto simulado muestra éxito",
+    "ningún envío real; endpoints interceptados",
+    "sin errores de consola",
+    "canvas del logo pintado",
+    "header compacto en móvil",
+    "menú cabe en dvh"
+  ],
+  "errors": [],
+  "bookings": 1,
+  "contacts": 1,
+  "offset": {
+    "heading": 87.859375,
+    "header": 72
+  },
+  "logo": [
+    {
+      "width": 96,
+      "height": 43,
+      "painted": true
+    }
+  ]
+}

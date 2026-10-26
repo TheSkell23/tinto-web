@@ -1,0 +1,2634 @@
+[
+  {
+    "route": "/",
+    "width": 320,
+    "status": 200,
+    "errors": [],
+    "viewport": 320,
+    "scrollWidth": 320,
+    "bodyWidth": 320,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 30,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fhero-inicio.jpg&w=640&q=75",
+        "sizes": "100vw",
+        "width": 320,
+        "height": 800,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-blanco.png&w=256&q=75",
+        "sizes": "(max-width: 899px) 150px, 20vw",
+        "width": 150,
+        "height": 43,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fcolinas-escritorio.jpg&w=640&q=75",
+        "sizes": "100vw",
+        "width": 320,
+        "height": 181,
+        "loading": "lazy"
+      },
+      {
+        "src": "",
+        "sizes": "19vw",
+        "width": 417,
+        "height": 282,
+        "loading": "lazy"
+      },
+      {
+        "src": "",
+        "sizes": "9vw",
+        "width": 417,
+        "height": 282,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-corredora.png&w=384&q=75",
+        "sizes": "(max-width: 899px) 100vw, 42vw",
+        "width": 280,
+        "height": 294,
+        "loading": "lazy"
+      }
+    ],
+    "height": 10117
+  },
+  {
+    "route": "/producto",
+    "width": 320,
+    "status": 200,
+    "errors": [],
+    "viewport": 320,
+    "scrollWidth": 320,
+    "bodyWidth": 320,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 37,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fproducto-dos-hombres.png&w=384&q=75",
+        "sizes": "(max-width: 899px) 100vw, 46vw",
+        "width": 280,
+        "height": 295,
+        "loading": "lazy"
+      }
+    ],
+    "height": 17633
+  },
+  {
+    "route": "/soluciones",
+    "width": 320,
+    "status": 200,
+    "errors": [],
+    "viewport": 320,
+    "scrollWidth": 320,
+    "bodyWidth": 320,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 29,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-oficina.png&w=384&q=75",
+        "sizes": "(max-width: 899px) 100vw, 46vw",
+        "width": 280,
+        "height": 301,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-equipo.png&w=384&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 225,
+        "height": 270,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-corredora.png&w=384&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 225,
+        "height": 270,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-oficina.png&w=384&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 225,
+        "height": 270,
+        "loading": "lazy"
+      }
+    ],
+    "height": 10015
+  },
+  {
+    "route": "/nosotros",
+    "width": 320,
+    "status": 200,
+    "errors": [],
+    "viewport": 320,
+    "scrollWidth": 320,
+    "bodyWidth": 320,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 26,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-equipo.png&w=384&q=75",
+        "sizes": "(max-width: 899px) 100vw, 44vw",
+        "width": 280,
+        "height": 294,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fcafecito-conversacion.jpg&w=640&q=75",
+        "sizes": "92vw",
+        "width": 280,
+        "height": 156,
+        "loading": "lazy"
+      }
+    ],
+    "height": 8488
+  },
+  {
+    "route": "/dudas",
+    "width": 320,
+    "status": 200,
+    "errors": [],
+    "viewport": 320,
+    "scrollWidth": 320,
+    "bodyWidth": 320,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 36,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-soporte.png&w=384&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 249,
+        "height": 156,
+        "loading": "lazy"
+      }
+    ],
+    "height": 4233
+  },
+  {
+    "route": "/contacto",
+    "width": 320,
+    "status": 200,
+    "errors": [],
+    "viewport": 320,
+    "scrollWidth": 320,
+    "bodyWidth": 320,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 38,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fjinetes-desierto.jpg&w=640&q=75",
+        "sizes": "100vw",
+        "width": 320,
+        "height": 141,
+        "loading": "lazy"
+      }
+    ],
+    "height": 6456
+  },
+  {
+    "route": "/agendar",
+    "width": 320,
+    "status": 200,
+    "errors": [],
+    "viewport": 320,
+    "scrollWidth": 320,
+    "bodyWidth": 320,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 43,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      }
+    ],
+    "height": 3186
+  },
+  {
+    "route": "/",
+    "width": 360,
+    "status": 200,
+    "errors": [],
+    "viewport": 360,
+    "scrollWidth": 360,
+    "bodyWidth": 360,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 30,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fhero-inicio.jpg&w=640&q=75",
+        "sizes": "100vw",
+        "width": 360,
+        "height": 800,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-blanco.png&w=256&q=75",
+        "sizes": "(max-width: 899px) 150px, 20vw",
+        "width": 150,
+        "height": 43,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fcolinas-escritorio.jpg&w=640&q=75",
+        "sizes": "100vw",
+        "width": 360,
+        "height": 204,
+        "loading": "lazy"
+      },
+      {
+        "src": "",
+        "sizes": "19vw",
+        "width": 417,
+        "height": 282,
+        "loading": "lazy"
+      },
+      {
+        "src": "",
+        "sizes": "9vw",
+        "width": 417,
+        "height": 282,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-corredora.png&w=384&q=75",
+        "sizes": "(max-width: 899px) 100vw, 42vw",
+        "width": 320,
+        "height": 336,
+        "loading": "lazy"
+      }
+    ],
+    "height": 9712
+  },
+  {
+    "route": "/producto",
+    "width": 360,
+    "status": 200,
+    "errors": [],
+    "viewport": 360,
+    "scrollWidth": 360,
+    "bodyWidth": 360,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 37,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fproducto-dos-hombres.png&w=384&q=75",
+        "sizes": "(max-width: 899px) 100vw, 46vw",
+        "width": 320,
+        "height": 338,
+        "loading": "lazy"
+      }
+    ],
+    "height": 16811
+  },
+  {
+    "route": "/soluciones",
+    "width": 360,
+    "status": 200,
+    "errors": [],
+    "viewport": 360,
+    "scrollWidth": 360,
+    "bodyWidth": 360,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 29,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-oficina.png&w=384&q=75",
+        "sizes": "(max-width: 899px) 100vw, 46vw",
+        "width": 320,
+        "height": 344,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-equipo.png&w=384&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 265,
+        "height": 318,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-corredora.png&w=384&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 265,
+        "height": 318,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-oficina.png&w=384&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 265,
+        "height": 318,
+        "loading": "lazy"
+      }
+    ],
+    "height": 9738
+  },
+  {
+    "route": "/nosotros",
+    "width": 360,
+    "status": 200,
+    "errors": [],
+    "viewport": 360,
+    "scrollWidth": 360,
+    "bodyWidth": 360,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 26,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-equipo.png&w=384&q=75",
+        "sizes": "(max-width: 899px) 100vw, 44vw",
+        "width": 320,
+        "height": 336,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fcafecito-conversacion.jpg&w=640&q=75",
+        "sizes": "92vw",
+        "width": 320,
+        "height": 179,
+        "loading": "lazy"
+      }
+    ],
+    "height": 7947
+  },
+  {
+    "route": "/dudas",
+    "width": 360,
+    "status": 200,
+    "errors": [],
+    "viewport": 360,
+    "scrollWidth": 360,
+    "bodyWidth": 360,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 36,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-soporte.png&w=384&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 289,
+        "height": 181,
+        "loading": "lazy"
+      }
+    ],
+    "height": 3974
+  },
+  {
+    "route": "/contacto",
+    "width": 360,
+    "status": 200,
+    "errors": [],
+    "viewport": 360,
+    "scrollWidth": 360,
+    "bodyWidth": 360,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 38,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fjinetes-desierto.jpg&w=640&q=75",
+        "sizes": "100vw",
+        "width": 360,
+        "height": 158,
+        "loading": "lazy"
+      }
+    ],
+    "height": 6116
+  },
+  {
+    "route": "/agendar",
+    "width": 360,
+    "status": 200,
+    "errors": [],
+    "viewport": 360,
+    "scrollWidth": 360,
+    "bodyWidth": 360,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 43,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      }
+    ],
+    "height": 2977
+  },
+  {
+    "route": "/",
+    "width": 375,
+    "status": 200,
+    "errors": [],
+    "viewport": 375,
+    "scrollWidth": 375,
+    "bodyWidth": 375,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 30,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fhero-inicio.jpg&w=640&q=75",
+        "sizes": "100vw",
+        "width": 375,
+        "height": 800,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-blanco.png&w=256&q=75",
+        "sizes": "(max-width: 899px) 150px, 20vw",
+        "width": 150,
+        "height": 43,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fcolinas-escritorio.jpg&w=640&q=75",
+        "sizes": "100vw",
+        "width": 375,
+        "height": 212,
+        "loading": "lazy"
+      },
+      {
+        "src": "",
+        "sizes": "19vw",
+        "width": 417,
+        "height": 282,
+        "loading": "lazy"
+      },
+      {
+        "src": "",
+        "sizes": "9vw",
+        "width": 417,
+        "height": 282,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-corredora.png&w=384&q=75",
+        "sizes": "(max-width: 899px) 100vw, 42vw",
+        "width": 335,
+        "height": 352,
+        "loading": "lazy"
+      }
+    ],
+    "height": 9650
+  },
+  {
+    "route": "/producto",
+    "width": 375,
+    "status": 200,
+    "errors": [],
+    "viewport": 375,
+    "scrollWidth": 375,
+    "bodyWidth": 375,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 37,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fproducto-dos-hombres.png&w=384&q=75",
+        "sizes": "(max-width: 899px) 100vw, 46vw",
+        "width": 335,
+        "height": 353,
+        "loading": "lazy"
+      }
+    ],
+    "height": 16781
+  },
+  {
+    "route": "/soluciones",
+    "width": 375,
+    "status": 200,
+    "errors": [],
+    "viewport": 375,
+    "scrollWidth": 375,
+    "bodyWidth": 375,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 29,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-oficina.png&w=384&q=75",
+        "sizes": "(max-width: 899px) 100vw, 46vw",
+        "width": 335,
+        "height": 360,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-equipo.png&w=384&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 280,
+        "height": 336,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-corredora.png&w=384&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 280,
+        "height": 336,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-oficina.png&w=384&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 280,
+        "height": 336,
+        "loading": "lazy"
+      }
+    ],
+    "height": 9794
+  },
+  {
+    "route": "/nosotros",
+    "width": 375,
+    "status": 200,
+    "errors": [],
+    "viewport": 375,
+    "scrollWidth": 375,
+    "bodyWidth": 375,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 26,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-equipo.png&w=384&q=75",
+        "sizes": "(max-width: 899px) 100vw, 44vw",
+        "width": 335,
+        "height": 352,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fcafecito-conversacion.jpg&w=640&q=75",
+        "sizes": "92vw",
+        "width": 335,
+        "height": 187,
+        "loading": "lazy"
+      }
+    ],
+    "height": 7890
+  },
+  {
+    "route": "/dudas",
+    "width": 375,
+    "status": 200,
+    "errors": [],
+    "viewport": 375,
+    "scrollWidth": 375,
+    "bodyWidth": 375,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 37,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-soporte.png&w=384&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 304,
+        "height": 190,
+        "loading": "lazy"
+      }
+    ],
+    "height": 3992
+  },
+  {
+    "route": "/contacto",
+    "width": 375,
+    "status": 200,
+    "errors": [],
+    "viewport": 375,
+    "scrollWidth": 375,
+    "bodyWidth": 375,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 38,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fjinetes-desierto.jpg&w=640&q=75",
+        "sizes": "100vw",
+        "width": 375,
+        "height": 165,
+        "loading": "lazy"
+      }
+    ],
+    "height": 6080
+  },
+  {
+    "route": "/agendar",
+    "width": 375,
+    "status": 200,
+    "errors": [],
+    "viewport": 375,
+    "scrollWidth": 375,
+    "bodyWidth": 375,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 43,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      }
+    ],
+    "height": 2961
+  },
+  {
+    "route": "/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "viewport": 390,
+    "scrollWidth": 390,
+    "bodyWidth": 390,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 30,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fhero-inicio.jpg&w=640&q=75",
+        "sizes": "100vw",
+        "width": 390,
+        "height": 800,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-blanco.png&w=256&q=75",
+        "sizes": "(max-width: 899px) 150px, 20vw",
+        "width": 150,
+        "height": 43,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fcolinas-escritorio.jpg&w=640&q=75",
+        "sizes": "100vw",
+        "width": 390,
+        "height": 221,
+        "loading": "lazy"
+      },
+      {
+        "src": "",
+        "sizes": "19vw",
+        "width": 417,
+        "height": 282,
+        "loading": "lazy"
+      },
+      {
+        "src": "",
+        "sizes": "9vw",
+        "width": 417,
+        "height": 282,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-corredora.png&w=640&q=75",
+        "sizes": "(max-width: 899px) 100vw, 42vw",
+        "width": 350,
+        "height": 368,
+        "loading": "lazy"
+      }
+    ],
+    "height": 9590
+  },
+  {
+    "route": "/producto",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "viewport": 390,
+    "scrollWidth": 390,
+    "bodyWidth": 390,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 37,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fproducto-dos-hombres.png&w=640&q=75",
+        "sizes": "(max-width: 899px) 100vw, 46vw",
+        "width": 350,
+        "height": 370,
+        "loading": "lazy"
+      }
+    ],
+    "height": 16661
+  },
+  {
+    "route": "/soluciones",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "viewport": 390,
+    "scrollWidth": 390,
+    "bodyWidth": 390,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 29,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-oficina.png&w=640&q=75",
+        "sizes": "(max-width: 899px) 100vw, 46vw",
+        "width": 350,
+        "height": 376,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-equipo.png&w=640&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 295,
+        "height": 354,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-corredora.png&w=640&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 295,
+        "height": 354,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-oficina.png&w=640&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 295,
+        "height": 354,
+        "loading": "lazy"
+      }
+    ],
+    "height": 9786
+  },
+  {
+    "route": "/nosotros",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "viewport": 390,
+    "scrollWidth": 390,
+    "bodyWidth": 390,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 26,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-equipo.png&w=640&q=75",
+        "sizes": "(max-width: 899px) 100vw, 44vw",
+        "width": 350,
+        "height": 368,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fcafecito-conversacion.jpg&w=640&q=75",
+        "sizes": "92vw",
+        "width": 350,
+        "height": 195,
+        "loading": "lazy"
+      }
+    ],
+    "height": 7844
+  },
+  {
+    "route": "/dudas",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "viewport": 390,
+    "scrollWidth": 390,
+    "bodyWidth": 390,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 37,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-soporte.png&w=640&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 319,
+        "height": 200,
+        "loading": "lazy"
+      }
+    ],
+    "height": 3984
+  },
+  {
+    "route": "/contacto",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "viewport": 390,
+    "scrollWidth": 390,
+    "bodyWidth": 390,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 38,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fjinetes-desierto.jpg&w=640&q=75",
+        "sizes": "100vw",
+        "width": 390,
+        "height": 171,
+        "loading": "lazy"
+      }
+    ],
+    "height": 6095
+  },
+  {
+    "route": "/agendar",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "viewport": 390,
+    "scrollWidth": 390,
+    "bodyWidth": 390,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 43,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      }
+    ],
+    "height": 2896
+  },
+  {
+    "route": "/",
+    "width": 412,
+    "status": 200,
+    "errors": [],
+    "viewport": 412,
+    "scrollWidth": 412,
+    "bodyWidth": 412,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 30,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fhero-inicio.jpg&w=640&q=75",
+        "sizes": "100vw",
+        "width": 412,
+        "height": 800,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-blanco.png&w=256&q=75",
+        "sizes": "(max-width: 899px) 150px, 20vw",
+        "width": 150,
+        "height": 43,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fcolinas-escritorio.jpg&w=640&q=75",
+        "sizes": "100vw",
+        "width": 412,
+        "height": 233,
+        "loading": "lazy"
+      },
+      {
+        "src": "",
+        "sizes": "19vw",
+        "width": 417,
+        "height": 282,
+        "loading": "lazy"
+      },
+      {
+        "src": "",
+        "sizes": "9vw",
+        "width": 417,
+        "height": 282,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-corredora.png&w=640&q=75",
+        "sizes": "(max-width: 899px) 100vw, 42vw",
+        "width": 372,
+        "height": 391,
+        "loading": "lazy"
+      }
+    ],
+    "height": 9519
+  },
+  {
+    "route": "/producto",
+    "width": 412,
+    "status": 200,
+    "errors": [],
+    "viewport": 412,
+    "scrollWidth": 412,
+    "bodyWidth": 412,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 37,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fproducto-dos-hombres.png&w=640&q=75",
+        "sizes": "(max-width: 899px) 100vw, 46vw",
+        "width": 372,
+        "height": 393,
+        "loading": "lazy"
+      }
+    ],
+    "height": 16566
+  },
+  {
+    "route": "/soluciones",
+    "width": 412,
+    "status": 200,
+    "errors": [],
+    "viewport": 412,
+    "scrollWidth": 412,
+    "bodyWidth": 412,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 29,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-oficina.png&w=640&q=75",
+        "sizes": "(max-width: 899px) 100vw, 46vw",
+        "width": 372,
+        "height": 400,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-equipo.png&w=640&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 317,
+        "height": 381,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-corredora.png&w=640&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 317,
+        "height": 381,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-oficina.png&w=640&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 317,
+        "height": 381,
+        "loading": "lazy"
+      }
+    ],
+    "height": 9696
+  },
+  {
+    "route": "/nosotros",
+    "width": 412,
+    "status": 200,
+    "errors": [],
+    "viewport": 412,
+    "scrollWidth": 412,
+    "bodyWidth": 412,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 26,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-equipo.png&w=640&q=75",
+        "sizes": "(max-width: 899px) 100vw, 44vw",
+        "width": 372,
+        "height": 391,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fcafecito-conversacion.jpg&w=640&q=75",
+        "sizes": "92vw",
+        "width": 372,
+        "height": 208,
+        "loading": "lazy"
+      }
+    ],
+    "height": 7838
+  },
+  {
+    "route": "/dudas",
+    "width": 412,
+    "status": 200,
+    "errors": [],
+    "viewport": 412,
+    "scrollWidth": 412,
+    "bodyWidth": 412,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 37,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-soporte.png&w=640&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 341,
+        "height": 213,
+        "loading": "lazy"
+      }
+    ],
+    "height": 3935
+  },
+  {
+    "route": "/contacto",
+    "width": 412,
+    "status": 200,
+    "errors": [],
+    "viewport": 412,
+    "scrollWidth": 412,
+    "bodyWidth": 412,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 38,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fjinetes-desierto.jpg&w=640&q=75",
+        "sizes": "100vw",
+        "width": 412,
+        "height": 181,
+        "loading": "lazy"
+      }
+    ],
+    "height": 6079
+  },
+  {
+    "route": "/agendar",
+    "width": 412,
+    "status": 200,
+    "errors": [],
+    "viewport": 412,
+    "scrollWidth": 412,
+    "bodyWidth": 412,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 43,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      }
+    ],
+    "height": 2905
+  },
+  {
+    "route": "/",
+    "width": 430,
+    "status": 200,
+    "errors": [],
+    "viewport": 430,
+    "scrollWidth": 430,
+    "bodyWidth": 430,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 30,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fhero-inicio.jpg&w=640&q=75",
+        "sizes": "100vw",
+        "width": 430,
+        "height": 800,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-blanco.png&w=256&q=75",
+        "sizes": "(max-width: 899px) 150px, 20vw",
+        "width": 150,
+        "height": 43,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fcolinas-escritorio.jpg&w=640&q=75",
+        "sizes": "100vw",
+        "width": 430,
+        "height": 243,
+        "loading": "lazy"
+      },
+      {
+        "src": "",
+        "sizes": "19vw",
+        "width": 417,
+        "height": 282,
+        "loading": "lazy"
+      },
+      {
+        "src": "",
+        "sizes": "9vw",
+        "width": 417,
+        "height": 282,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-corredora.png&w=640&q=75",
+        "sizes": "(max-width: 899px) 100vw, 42vw",
+        "width": 390,
+        "height": 410,
+        "loading": "lazy"
+      }
+    ],
+    "height": 9497
+  },
+  {
+    "route": "/producto",
+    "width": 430,
+    "status": 200,
+    "errors": [],
+    "viewport": 430,
+    "scrollWidth": 430,
+    "bodyWidth": 430,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 37,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fproducto-dos-hombres.png&w=640&q=75",
+        "sizes": "(max-width: 899px) 100vw, 46vw",
+        "width": 390,
+        "height": 412,
+        "loading": "lazy"
+      }
+    ],
+    "height": 16591
+  },
+  {
+    "route": "/soluciones",
+    "width": 430,
+    "status": 200,
+    "errors": [],
+    "viewport": 430,
+    "scrollWidth": 430,
+    "bodyWidth": 430,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 29,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-oficina.png&w=640&q=75",
+        "sizes": "(max-width: 899px) 100vw, 46vw",
+        "width": 390,
+        "height": 419,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-equipo.png&w=640&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 335,
+        "height": 402,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-corredora.png&w=640&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 335,
+        "height": 402,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-oficina.png&w=640&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 335,
+        "height": 402,
+        "loading": "lazy"
+      }
+    ],
+    "height": 9671
+  },
+  {
+    "route": "/nosotros",
+    "width": 430,
+    "status": 200,
+    "errors": [],
+    "viewport": 430,
+    "scrollWidth": 430,
+    "bodyWidth": 430,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 26,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-equipo.png&w=640&q=75",
+        "sizes": "(max-width: 899px) 100vw, 44vw",
+        "width": 390,
+        "height": 410,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fcafecito-conversacion.jpg&w=640&q=75",
+        "sizes": "92vw",
+        "width": 390,
+        "height": 218,
+        "loading": "lazy"
+      }
+    ],
+    "height": 7838
+  },
+  {
+    "route": "/dudas",
+    "width": 430,
+    "status": 200,
+    "errors": [],
+    "viewport": 430,
+    "scrollWidth": 430,
+    "bodyWidth": 430,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 37,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-soporte.png&w=640&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 359,
+        "height": 225,
+        "loading": "lazy"
+      }
+    ],
+    "height": 3957
+  },
+  {
+    "route": "/contacto",
+    "width": 430,
+    "status": 200,
+    "errors": [],
+    "viewport": 430,
+    "scrollWidth": 430,
+    "bodyWidth": 430,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 38,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fjinetes-desierto.jpg&w=640&q=75",
+        "sizes": "100vw",
+        "width": 430,
+        "height": 189,
+        "loading": "lazy"
+      }
+    ],
+    "height": 6099
+  },
+  {
+    "route": "/agendar",
+    "width": 430,
+    "status": 200,
+    "errors": [],
+    "viewport": 430,
+    "scrollWidth": 430,
+    "bodyWidth": 430,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 43,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      }
+    ],
+    "height": 2912
+  },
+  {
+    "route": "/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "viewport": 768,
+    "scrollWidth": 768,
+    "bodyWidth": 768,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 31,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fhero-inicio.jpg&w=828&q=75",
+        "sizes": "100vw",
+        "width": 768,
+        "height": 900,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-blanco.png&w=256&q=75",
+        "sizes": "(max-width: 899px) 150px, 20vw",
+        "width": 150,
+        "height": 43,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fcolinas-escritorio.jpg&w=828&q=75",
+        "sizes": "100vw",
+        "width": 768,
+        "height": 435,
+        "loading": "lazy"
+      },
+      {
+        "src": "",
+        "sizes": "19vw",
+        "width": 417,
+        "height": 282,
+        "loading": "lazy"
+      },
+      {
+        "src": "",
+        "sizes": "9vw",
+        "width": 417,
+        "height": 282,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-corredora.png&w=828&q=75",
+        "sizes": "(max-width: 899px) 100vw, 42vw",
+        "width": 728,
+        "height": 764,
+        "loading": "lazy"
+      }
+    ],
+    "height": 9176
+  },
+  {
+    "route": "/producto",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "viewport": 768,
+    "scrollWidth": 768,
+    "bodyWidth": 768,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 38,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fproducto-dos-hombres.png&w=828&q=75",
+        "sizes": "(max-width: 899px) 100vw, 46vw",
+        "width": 728,
+        "height": 768,
+        "loading": "lazy"
+      }
+    ],
+    "height": 13833
+  },
+  {
+    "route": "/soluciones",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "viewport": 768,
+    "scrollWidth": 768,
+    "bodyWidth": 768,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 31,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-oficina.png&w=828&q=75",
+        "sizes": "(max-width: 899px) 100vw, 46vw",
+        "width": 728,
+        "height": 783,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-equipo.png&w=828&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 298,
+        "height": 358,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-corredora.png&w=828&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 298,
+        "height": 358,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-oficina.png&w=828&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 298,
+        "height": 358,
+        "loading": "lazy"
+      }
+    ],
+    "height": 8084
+  },
+  {
+    "route": "/nosotros",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "viewport": 768,
+    "scrollWidth": 768,
+    "bodyWidth": 768,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 27,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-equipo.png&w=828&q=75",
+        "sizes": "(max-width: 899px) 100vw, 44vw",
+        "width": 728,
+        "height": 764,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fcafecito-conversacion.jpg&w=750&q=75",
+        "sizes": "92vw",
+        "width": 728,
+        "height": 407,
+        "loading": "lazy"
+      }
+    ],
+    "height": 6912
+  },
+  {
+    "route": "/dudas",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "viewport": 768,
+    "scrollWidth": 768,
+    "bodyWidth": 768,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 39,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-soporte.png&w=828&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 697,
+        "height": 435,
+        "loading": "lazy"
+      }
+    ],
+    "height": 4154
+  },
+  {
+    "route": "/contacto",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "viewport": 768,
+    "scrollWidth": 768,
+    "bodyWidth": 768,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 39,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fjinetes-desierto.jpg&w=828&q=75",
+        "sizes": "100vw",
+        "width": 768,
+        "height": 338,
+        "loading": "lazy"
+      }
+    ],
+    "height": 6007
+  },
+  {
+    "route": "/agendar",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "viewport": 768,
+    "scrollWidth": 768,
+    "bodyWidth": 768,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 44,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      }
+    ],
+    "height": 2903
+  },
+  {
+    "route": "/",
+    "width": 820,
+    "status": 200,
+    "errors": [],
+    "viewport": 820,
+    "scrollWidth": 820,
+    "bodyWidth": 820,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 31,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fhero-inicio.jpg&w=828&q=75",
+        "sizes": "100vw",
+        "width": 820,
+        "height": 900,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-blanco.png&w=256&q=75",
+        "sizes": "(max-width: 899px) 150px, 20vw",
+        "width": 150,
+        "height": 43,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fcolinas-escritorio.jpg&w=828&q=75",
+        "sizes": "100vw",
+        "width": 820,
+        "height": 464,
+        "loading": "lazy"
+      },
+      {
+        "src": "",
+        "sizes": "19vw",
+        "width": 417,
+        "height": 282,
+        "loading": "lazy"
+      },
+      {
+        "src": "",
+        "sizes": "9vw",
+        "width": 417,
+        "height": 282,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-corredora.png&w=828&q=75",
+        "sizes": "(max-width: 899px) 100vw, 42vw",
+        "width": 780,
+        "height": 819,
+        "loading": "lazy"
+      }
+    ],
+    "height": 9604
+  },
+  {
+    "route": "/producto",
+    "width": 820,
+    "status": 200,
+    "errors": [],
+    "viewport": 820,
+    "scrollWidth": 820,
+    "bodyWidth": 820,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 38,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fproducto-dos-hombres.png&w=828&q=75",
+        "sizes": "(max-width: 899px) 100vw, 46vw",
+        "width": 780,
+        "height": 823,
+        "loading": "lazy"
+      }
+    ],
+    "height": 14313
+  },
+  {
+    "route": "/soluciones",
+    "width": 820,
+    "status": 200,
+    "errors": [],
+    "viewport": 820,
+    "scrollWidth": 820,
+    "bodyWidth": 820,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 31,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-oficina.png&w=828&q=75",
+        "sizes": "(max-width: 899px) 100vw, 46vw",
+        "width": 780,
+        "height": 839,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-equipo.png&w=828&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 320,
+        "height": 384,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-corredora.png&w=828&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 320,
+        "height": 384,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-oficina.png&w=828&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 320,
+        "height": 384,
+        "loading": "lazy"
+      }
+    ],
+    "height": 8467
+  },
+  {
+    "route": "/nosotros",
+    "width": 820,
+    "status": 200,
+    "errors": [],
+    "viewport": 820,
+    "scrollWidth": 820,
+    "bodyWidth": 820,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 27,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-equipo.png&w=828&q=75",
+        "sizes": "(max-width: 899px) 100vw, 44vw",
+        "width": 780,
+        "height": 819,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fcafecito-conversacion.jpg&w=828&q=75",
+        "sizes": "92vw",
+        "width": 780,
+        "height": 435,
+        "loading": "lazy"
+      }
+    ],
+    "height": 7284
+  },
+  {
+    "route": "/dudas",
+    "width": 820,
+    "status": 200,
+    "errors": [],
+    "viewport": 820,
+    "scrollWidth": 820,
+    "bodyWidth": 820,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 39,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ffoto-soporte.png&w=828&q=75",
+        "sizes": "(max-width: 899px) 100vw, 30vw",
+        "width": 747,
+        "height": 467,
+        "loading": "lazy"
+      }
+    ],
+    "height": 4316
+  },
+  {
+    "route": "/contacto",
+    "width": 820,
+    "status": 200,
+    "errors": [],
+    "viewport": 820,
+    "scrollWidth": 820,
+    "bodyWidth": 820,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 39,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Fjinetes-desierto.jpg&w=828&q=75",
+        "sizes": "100vw",
+        "width": 820,
+        "height": 360,
+        "loading": "lazy"
+      }
+    ],
+    "height": 6289
+  },
+  {
+    "route": "/agendar",
+    "width": 820,
+    "status": 200,
+    "errors": [],
+    "viewport": 820,
+    "scrollWidth": 820,
+    "bodyWidth": 820,
+    "smallText": [],
+    "smallBody": [],
+    "smallTargets": [],
+    "controls": 44,
+    "clipped": [],
+    "outside": [],
+    "images": [
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-logo.png&w=96&q=75",
+        "sizes": "96px",
+        "width": 96,
+        "height": 44,
+        "loading": "auto"
+      },
+      {
+        "src": "http://localhost:3137/_next/image?url=%2Fimages%2Ftinto-mark.png&w=48&q=75",
+        "sizes": "40px",
+        "width": 50,
+        "height": 44,
+        "loading": "lazy"
+      }
+    ],
+    "height": 3020
+  }
+]

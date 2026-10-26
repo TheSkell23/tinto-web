@@ -1,0 +1,13 @@
+{
+  "preservedExternalChanges": [
+    "src/app/page.tsx",
+    "src/components/BookingFlow.tsx",
+    "src/components/DudasChat.tsx",
+    "src/components/PageHero.tsx",
+    "src/app/dudas/page.tsx",
+    "src/app/nosotros/page.tsx",
+    "src/app/producto/page.tsx",
+    "src/app/soluciones/page.tsx"
+  ],
+  "reason": "Ajustes externos de espaciado recibidos durante la auditor?a; se conserva su dise?o de escritorio como referencia m?s reciente."
+}
