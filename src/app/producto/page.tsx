@@ -1,3 +1,4 @@
+import { MobileScroll } from '@/components/MobileScroll';
 import { JsonLd } from '@/components/JsonLd';
 import { pageStructuredData } from '@/lib/structured-data';
 import { pageMetadata } from '@/lib/metadata';
@@ -30,7 +31,7 @@ import {
   productoHero,
   whyTinto,
 } from '@/content/producto';
-import { k, u } from '@/lib/u';
+import { textSize, k, u } from '@/lib/u';
 
 const checkRow: CSSProperties = {
   display: 'flex',
@@ -38,7 +39,7 @@ const checkRow: CSSProperties = {
   alignItems: 'center',
   padding: `${u(1.1)} 0`,
   borderBottom: '1px solid rgba(42,29,18,.08)',
-  fontSize: u(1.2),
+  fontSize: textSize(1.2),
 };
 const tick = (
   size: number,
@@ -107,7 +108,7 @@ function FeatureText({ f, order }: { f: (typeof features.rows)[number]; order?: 
       >
         {f.title}
       </h3>
-      <p style={{ margin: 0, fontSize: u(1.2), lineHeight: 1.5, color: '#7a6a58' }}>{f.text}</p>
+      <p style={{ margin: 0, fontSize: textSize(1.2), lineHeight: 1.5, color: '#7a6a58' }}>{f.text}</p>
       <div>
         {f.checks.map((c) => (
           <div key={c} style={checkRow}>
@@ -206,7 +207,7 @@ function StatCard({
       <div style={{ flex: 1, minWidth: 0 }}>
         <div
           style={{
-            fontSize: u(0.8),
+            fontSize: textSize(0.8),
             color: dark ? undefined : '#7a6a58',
             opacity: dark ? 0.85 : 1,
           }}
@@ -215,7 +216,7 @@ function StatCard({
         </div>
         <div
           style={{
-            fontSize: u(1.5),
+            fontSize: textSize(1.5),
             fontWeight: 600,
             letterSpacing: '-.02em',
             whiteSpace: 'nowrap',
@@ -265,14 +266,14 @@ export default function ProductoPage() {
               </>
             }
           />
-          <div className="rg" style={{ '--c': 'repeat(3,1fr)', gap: u(1.6) } as CSSProperties}>
+          <div className="rg tablet-cards" style={{ '--c': 'repeat(3,1fr)', gap: u(1.6) } as CSSProperties}>
             {problems.items.map(([t, d], i) => (
               <CreamCard key={t} soft delay={i * 80}>
                 <span className="num">{i + 1}</span>
-                <div style={{ fontSize: u(1.45), fontWeight: 800, letterSpacing: '-.02em' }}>
+                <div style={{ fontSize: textSize(1.45), fontWeight: 800, letterSpacing: '-.02em' }}>
                   {t}
                 </div>
-                <div style={{ fontSize: u(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{d}</div>
+                <div style={{ fontSize: textSize(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{d}</div>
               </CreamCard>
             ))}
           </div>
@@ -292,16 +293,16 @@ export default function ProductoPage() {
         <div style={{ paddingBottom: u(9) }}>
           <SectionTitle ghost={principles.ghost} title={principles.title} sub={principles.sub} />
           <div
-            className="rg"
+            className="rg tablet-cards"
             style={{ '--c': 'repeat(4,1fr)', '--m': 1, gap: u(1.6) } as CSSProperties}
           >
             {principles.items.map(([t, d], i) => (
               <CreamCard key={t} soft delay={i * 70}>
                 <span className="num">{i + 1}</span>
-                <div style={{ fontSize: u(1.45), fontWeight: 800, letterSpacing: '-.02em' }}>
+                <div style={{ fontSize: textSize(1.45), fontWeight: 800, letterSpacing: '-.02em' }}>
                   {t}
                 </div>
-                <div style={{ fontSize: u(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{d}</div>
+                <div style={{ fontSize: textSize(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{d}</div>
               </CreamCard>
             ))}
           </div>
@@ -311,7 +312,7 @@ export default function ProductoPage() {
         <div style={{ paddingBottom: u(9) }}>
           <SectionTitle ghost={connections.ghost} title={connections.title} sub={connections.sub} />
           <div
-            className="rg"
+            className="rg tablet-cards"
             style={{ '--c': 'repeat(4,1fr)', '--m': 1, gap: u(1.6) } as CSSProperties}
           >
             {connections.items.map((c, i) => (
@@ -319,10 +320,10 @@ export default function ProductoPage() {
                 <span className="ico" style={{ width: u(4.4), height: u(4.4) }}>
                   <Icon name={c.icon} size={u(2)} stroke={1.8} style={{ color: '#fff' }} />
                 </span>
-                <div style={{ fontSize: u(1.4), fontWeight: 800, letterSpacing: '-.02em' }}>
+                <div style={{ fontSize: textSize(1.4), fontWeight: 800, letterSpacing: '-.02em' }}>
                   {c.title}
                 </div>
-                <div style={{ fontSize: u(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{c.text}</div>
+                <div style={{ fontSize: textSize(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{c.text}</div>
               </CreamCard>
             ))}
           </div>
@@ -370,7 +371,7 @@ export default function ProductoPage() {
                       display: 'flex',
                       justifyContent: 'space-between',
                       alignItems: 'center',
-                      fontSize: u(1.2),
+                      fontSize: textSize(1.2),
                       fontWeight: 600,
                       marginBottom: u(1.2),
                     }}
@@ -390,7 +391,7 @@ export default function ProductoPage() {
                         alignItems: 'center',
                         gap: u(1),
                         marginBottom: u(1.6),
-                        fontSize: u(1),
+                        fontSize: textSize(1),
                         color: '#7a6a58',
                       }}
                     >
@@ -437,7 +438,7 @@ export default function ProductoPage() {
             <Reveal style={{ order: 1 }}>
               <div style={frame}>
                 <div className="cream soft" style={inner}>
-                  <div style={{ fontSize: u(1.2), fontWeight: 600, marginBottom: u(1.2) }}>
+                  <div style={{ fontSize: textSize(1.2), fontWeight: 600, marginBottom: u(1.2) }}>
                     Configuración lista
                   </div>
                   <div
@@ -456,7 +457,7 @@ export default function ProductoPage() {
                       padding: u(1),
                       borderRadius: u(0.9),
                       background: '#f7f3ec',
-                      fontSize: u(1.05),
+                      fontSize: textSize(1.05),
                     }}
                   >
                     <span>Recordatorio de llamada</span>
@@ -497,7 +498,7 @@ export default function ProductoPage() {
                     style={{
                       display: 'flex',
                       justifyContent: 'space-between',
-                      fontSize: u(1.2),
+                      fontSize: textSize(1.2),
                       fontWeight: 600,
                       marginBottom: u(1),
                     }}
@@ -537,7 +538,7 @@ export default function ProductoPage() {
                                 : 'linear-gradient(180deg,#ffe9cf,#ffd8b0)',
                           }}
                         />
-                        <span style={{ fontSize: u(0.9), color: '#7a6a58' }}>{s}</span>
+                        <span style={{ fontSize: textSize(0.9), color: '#7a6a58' }}>{s}</span>
                       </div>
                     ))}
                   </div>
@@ -550,7 +551,7 @@ export default function ProductoPage() {
                       padding: u(0.8, 1.2),
                       borderRadius: u(1),
                       boxShadow: `0 ${u(1)} ${u(2.4)} rgba(60,40,20,.18)`,
-                      fontSize: u(1),
+                      fontSize: textSize(1),
                       lineHeight: 1.4,
                     }}
                   >
@@ -605,7 +606,7 @@ export default function ProductoPage() {
               <p
                 style={{
                   margin: 0,
-                  fontSize: u(1.2),
+                  fontSize: textSize(1.2),
                   lineHeight: 1.55,
                   color: '#7a6a58',
                   maxWidth: u(34),
@@ -617,7 +618,7 @@ export default function ProductoPage() {
                 href="#planes"
                 strong
                 lift
-                style={{ alignSelf: 'flex-start', fontSize: u(1.1), fontWeight: 600 }}
+                style={{ alignSelf: 'flex-start', fontSize: textSize(1.1), fontWeight: 600 }}
               >
                 {whyTinto.cta}
               </Button>
@@ -636,7 +637,7 @@ export default function ProductoPage() {
                   WebkitBackdropFilter: 'blur(9px)',
                 }}
               >
-                <div style={{ fontSize: u(1.5), fontWeight: 600, marginBottom: u(0.8) }}>
+                <div style={{ fontSize: textSize(1.5), fontWeight: 600, marginBottom: u(0.8) }}>
                   {whyTinto.boxTitle}
                 </div>
                 {whyTinto.checks.map((c) => (
@@ -648,7 +649,7 @@ export default function ProductoPage() {
                       alignItems: 'center',
                       padding: `${u(1.1)} 0`,
                       borderBottom: '1px solid rgba(42,29,18,.08)',
-                      fontSize: u(1.25),
+                      fontSize: textSize(1.25),
                       fontWeight: 500,
                     }}
                   >
@@ -757,10 +758,10 @@ export default function ProductoPage() {
                   }}
                 >
                   <div>
-                    <div style={{ fontSize: u(2), fontWeight: 600, letterSpacing: '-.02em' }}>
+                    <div style={{ fontSize: textSize(2), fontWeight: 600, letterSpacing: '-.02em' }}>
                       Hola, Carlos!
                     </div>
-                    <div style={{ fontSize: u(1.05), color: '#5a4a3a' }}>
+                    <div style={{ fontSize: textSize(1.05), color: '#5a4a3a' }}>
                       Revisa cómo van tus oportunidades y tu actividad esta semana
                     </div>
                   </div>
@@ -777,7 +778,7 @@ export default function ProductoPage() {
                         padding: u(0.5, 0.5, 0.5, 1.4),
                         borderRadius: 99,
                         background: '#fff',
-                        fontSize: u(1.05),
+                        fontSize: textSize(1.05),
                         color: '#8b7b68',
                       }}
                     >
@@ -825,7 +826,7 @@ export default function ProductoPage() {
                 </div>
 
                 <div
-                  className="rg"
+                  className="rg tablet-cards"
                   style={{ '--c': 'repeat(4,minmax(0,1fr))', '--m': 2, gap: u(1) } as CSSProperties}
                 >
                   <StatCard
@@ -893,18 +894,18 @@ export default function ProductoPage() {
                       style={{
                         display: 'flex',
                         justifyContent: 'space-between',
-                        fontSize: u(1.15),
+                        fontSize: textSize(1.15),
                         fontWeight: 600,
                         marginBottom: u(1),
                       }}
                     >
                       <span>
                         Conversión{' '}
-                        <span style={{ fontWeight: 400, color: '#3d6b36', fontSize: u(0.9) }}>
+                        <span style={{ fontWeight: 400, color: '#3d6b36', fontSize: textSize(0.9) }}>
                           ● En meta
                         </span>
                       </span>
-                      <span style={{ fontWeight: 400, color: '#7a6a58', fontSize: u(0.9) }}>
+                      <span style={{ fontWeight: 400, color: '#7a6a58', fontSize: textSize(0.9) }}>
                         Semanal ⌄
                       </span>
                     </div>
@@ -919,16 +920,16 @@ export default function ProductoPage() {
                             padding: u(0.6, 1),
                             borderRadius: u(0.8),
                             boxShadow: `0 ${u(0.6)} ${u(1.6)} rgba(60,40,20,.1)`,
-                            fontSize: u(0.85),
+                            fontSize: textSize(0.85),
                             color: '#7a6a58',
                           }}
                         >
                           {l}
-                          <div style={{ fontSize: u(1.4), fontWeight: 600, color: '#2a1d12' }}>
+                          <div style={{ fontSize: textSize(1.4), fontWeight: 600, color: '#2a1d12' }}>
                             {v}{' '}
                             <span
                               style={{
-                                fontSize: u(0.75),
+                                fontSize: textSize(0.75),
                                 padding: u(0.15, 0.5),
                                 borderRadius: 99,
                                 background: bg,
@@ -969,11 +970,11 @@ export default function ProductoPage() {
                     className="cream soft"
                     style={{ ...small, alignItems: 'center', textAlign: 'center', gap: u(0.6) }}
                   >
-                    <div style={{ alignSelf: 'flex-start', fontSize: u(1.15), fontWeight: 600 }}>
+                    <div style={{ alignSelf: 'flex-start', fontSize: textSize(1.15), fontWeight: 600 }}>
                       Meta semanal
                     </div>
-                    <div style={{ fontSize: u(0.9), color: '#7a6a58' }}>Citas</div>
-                    <div style={{ fontSize: u(1.7), fontWeight: 600, color: '#8a5a1f' }}>
+                    <div style={{ fontSize: textSize(0.9), color: '#7a6a58' }}>Citas</div>
+                    <div style={{ fontSize: textSize(1.7), fontWeight: 600, color: '#8a5a1f' }}>
                       32 / 40
                     </div>
                     <div
@@ -1012,7 +1013,7 @@ export default function ProductoPage() {
                           right: 0,
                           bottom: 0,
                           textAlign: 'center',
-                          fontSize: u(1.5),
+                          fontSize: textSize(1.5),
                           fontWeight: 600,
                         }}
                       >
@@ -1033,22 +1034,22 @@ export default function ProductoPage() {
                         display: 'grid',
                         placeItems: 'center',
                         fontWeight: 600,
-                        fontSize: u(1.5),
+                        fontSize: textSize(1.5),
                         color: '#8a5a1f',
                       }}
                     >
                       C
                     </span>
-                    <div style={{ fontSize: u(1.2), fontWeight: 600, marginTop: u(0.4) }}>
+                    <div style={{ fontSize: textSize(1.2), fontWeight: 600, marginTop: u(0.4) }}>
                       Carlos Pérez
                     </div>
-                    <div style={{ fontSize: u(0.85), color: '#7a6a58' }}>carlos@correo.com</div>
+                    <div style={{ fontSize: textSize(0.85), color: '#7a6a58' }}>carlos@correo.com</div>
                     <div
                       style={{
                         display: 'flex',
                         gap: u(1.4),
                         marginTop: u(0.8),
-                        fontSize: u(0.8),
+                        fontSize: textSize(0.8),
                         color: '#7a6a58',
                       }}
                     >
@@ -1059,7 +1060,7 @@ export default function ProductoPage() {
                       ].map(([l, v]) => (
                         <div key={l}>
                           {l}
-                          <div style={{ fontSize: u(1.3), fontWeight: 600, color: '#2a1d12' }}>
+                          <div style={{ fontSize: textSize(1.3), fontWeight: 600, color: '#2a1d12' }}>
                             {v}
                           </div>
                         </div>
@@ -1090,12 +1091,12 @@ export default function ProductoPage() {
                     }}
                   >
                     <div style={{ maxWidth: u(15) }}>
-                      <div style={{ fontSize: u(1.5), fontWeight: 600, lineHeight: 1.15 }}>
+                      <div style={{ fontSize: textSize(1.5), fontWeight: 600, lineHeight: 1.15 }}>
                         Tu embudo ideal
                       </div>
                       <div
                         style={{
-                          fontSize: u(0.9),
+                          fontSize: textSize(0.9),
                           lineHeight: 1.5,
                           color: '#7a6a58',
                           margin: `${u(0.8)} 0 ${u(1.2)}`,
@@ -1112,7 +1113,7 @@ export default function ProductoPage() {
                           boxShadow:
                             'inset 0 1px 0 rgba(255,255,255,.45),0 6px 14px rgba(138,90,31,.3)',
                           color: '#fff',
-                          fontSize: u(0.95),
+                          fontSize: textSize(0.95),
                           fontWeight: 500,
                         }}
                       >
@@ -1150,7 +1151,7 @@ export default function ProductoPage() {
                     </div>
                   </div>
                   <div className="cream soft" style={small}>
-                    <div style={{ fontSize: u(1.15), fontWeight: 600, marginBottom: u(0.8) }}>
+                    <div style={{ fontSize: textSize(1.15), fontWeight: 600, marginBottom: u(0.8) }}>
                       Tus tareas
                     </div>
                     {[
@@ -1176,12 +1177,12 @@ export default function ProductoPage() {
                           }}
                         />
                         <div style={{ flex: 1, lineHeight: 1.3 }}>
-                          <div style={{ fontSize: u(1.05), fontWeight: 600 }}>{t}</div>
-                          <div style={{ fontSize: u(0.85), color: '#7a6a58' }}>{w}</div>
+                          <div style={{ fontSize: textSize(1.05), fontWeight: 600 }}>{t}</div>
+                          <div style={{ fontSize: textSize(0.85), color: '#7a6a58' }}>{w}</div>
                         </div>
                         <span
                           style={{
-                            fontSize: u(0.85),
+                            fontSize: textSize(0.85),
                             padding: u(0.25, 0.7),
                             borderRadius: 99,
                             background: '#e5f0e1',
@@ -1227,8 +1228,8 @@ export default function ProductoPage() {
                         <Icon name="hand" size={u(1.5)} stroke={1.7} />
                       </span>
                     </span>
-                    <div style={{ fontSize: u(1.35), fontWeight: 600 }}>¡No pierdas el hilo!</div>
-                    <div style={{ fontSize: u(0.9), color: '#7a6a58', lineHeight: 1.4 }}>
+                    <div style={{ fontSize: textSize(1.35), fontWeight: 600 }}>¡No pierdas el hilo!</div>
+                    <div style={{ fontSize: textSize(0.9), color: '#7a6a58', lineHeight: 1.4 }}>
                       Revisa tus 3 seguimientos pendientes de hoy.
                     </div>
                     <span
@@ -1240,7 +1241,7 @@ export default function ProductoPage() {
                         boxShadow:
                           'inset 0 1px 0 rgba(255,255,255,.45),0 6px 14px rgba(138,90,31,.3)',
                         color: '#fff',
-                        fontSize: u(0.95),
+                        fontSize: textSize(0.95),
                         fontWeight: 500,
                       }}
                     >
@@ -1277,7 +1278,7 @@ export default function ProductoPage() {
               borderRadius: 99,
               background: '#fff',
               border: '1px solid rgba(42,29,18,.1)',
-              fontSize: u(1.05),
+              fontSize: textSize(1.05),
               fontWeight: 500,
             }}
           >
@@ -1294,7 +1295,7 @@ export default function ProductoPage() {
             <span style={{ padding: u(0.6, 1.2) }}>Anual</span>
             <span className="pill">Ahorra 20%</span>
           </div>
-          <div className="rg" style={{ '--c': 'repeat(3,1fr)', gap: u(1.6) } as CSSProperties}>
+          <div className="rg tablet-cards" style={{ '--c': 'repeat(3,1fr)', gap: u(1.6) } as CSSProperties}>
             {plans.items.map((p, i) => (
               <Reveal key={p.name} fill delay={i * 80}>
                 <div
@@ -1316,7 +1317,7 @@ export default function ProductoPage() {
                 >
                   <div
                     style={{
-                      fontSize: u(1.4),
+                      fontSize: textSize(1.4),
                       fontWeight: 600,
                       display: 'flex',
                       gap: u(0.8),
@@ -1326,7 +1327,7 @@ export default function ProductoPage() {
                     {p.name}
                     {p.featured && <span className="pill">Popular</span>}
                   </div>
-                  <div style={{ fontSize: u(1.05), color: '#7a6a58' }}>{p.desc}</div>
+                  <div style={{ fontSize: textSize(1.05), color: '#7a6a58' }}>{p.desc}</div>
                   <div>
                     <span
                       className="fz"
@@ -1336,14 +1337,14 @@ export default function ProductoPage() {
                     >
                       {p.price}
                     </span>
-                    <span style={{ fontSize: u(1), color: '#7a6a58' }}> / único pago</span>
+                    <span style={{ fontSize: textSize(1), color: '#7a6a58' }}> / único pago</span>
                   </div>
                   {p.featured ? (
                     <Button
                       href="/agendar"
                       strong
                       lift
-                      style={{ padding: u(1), fontSize: u(1.1), fontWeight: 600 }}
+                      style={{ padding: u(1), fontSize: textSize(1.1), fontWeight: 600 }}
                     >
                       Elegir plan
                     </Button>
@@ -1352,14 +1353,14 @@ export default function ProductoPage() {
                       href="/agendar"
                       variant="glass"
                       lift
-                      style={{ padding: u(1), fontSize: u(1.1) }}
+                      style={{ padding: u(1), fontSize: textSize(1.1) }}
                     >
                       Elegir plan
                     </Button>
                   )}
                   <div
                     style={{
-                      fontSize: u(1),
+                      fontSize: textSize(1),
                       fontWeight: 600,
                       marginTop: u(0.6),
                       display: 'flex',
@@ -1376,7 +1377,7 @@ export default function ProductoPage() {
                       style={{
                         display: 'flex',
                         gap: u(0.9),
-                        fontSize: u(1.05),
+                        fontSize: textSize(1.05),
                         marginBottom: u(0.9),
                         alignItems: 'center',
                       }}
@@ -1439,7 +1440,8 @@ export default function ProductoPage() {
             ghostTop={-6.4}
           />
           <Reveal>
-            <div
+            <MobileScroll label="Comparación de planes. Desliza horizontalmente para ver todas las columnas.">
+<div
               className="cream soft cmp"
               style={{
                 padding: 0,
@@ -1451,10 +1453,10 @@ export default function ProductoPage() {
               }}
             >
               <div style={{ padding: u(1.6), background: 'linear-gradient(180deg,#fbf3e8,#fff)' }}>
-                <div style={{ fontSize: u(1.2), fontWeight: 600 }}>Características</div>
+                <div style={{ fontSize: textSize(1.2), fontWeight: 600 }}>Características</div>
                 <div
                   style={{
-                    fontSize: u(0.95),
+                    fontSize: textSize(0.95),
                     color: '#7a6a58',
                     marginTop: u(0.4),
                     lineHeight: 1.4,
@@ -1473,8 +1475,8 @@ export default function ProductoPage() {
                     background: 'linear-gradient(180deg,#fbf3e8,#fff)',
                   }}
                 >
-                  <div style={{ fontSize: u(1.1), fontWeight: 600 }}>{h}</div>
-                  <div style={{ fontSize: u(1.9), fontWeight: 600, letterSpacing: '-.02em' }}>
+                  <div style={{ fontSize: textSize(1.1), fontWeight: 600 }}>{h}</div>
+                  <div style={{ fontSize: textSize(1.9), fontWeight: 600, letterSpacing: '-.02em' }}>
                     {compare.prices[i]}
                   </div>
                 </div>
@@ -1487,7 +1489,7 @@ export default function ProductoPage() {
                       display: 'flex',
                       alignItems: 'center',
                       borderTop: '1px solid rgba(42,29,18,.08)',
-                      fontSize: u(1.05),
+                      fontSize: textSize(1.05),
                     }}
                   >
                     {label}
@@ -1518,7 +1520,7 @@ export default function ProductoPage() {
                         {on ? (
                           <Icon name="check" size="60%" stroke={3} />
                         ) : (
-                          <span style={{ fontSize: u(1) }} aria-label="No incluido">
+                          <span style={{ fontSize: textSize(1) }} aria-label="No incluido">
                             –
                           </span>
                         )}
@@ -1528,6 +1530,7 @@ export default function ProductoPage() {
                 </div>
               ))}
             </div>
+</MobileScroll>
           </Reveal>
         </div>
       </section>

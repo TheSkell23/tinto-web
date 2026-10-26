@@ -1,5 +1,5 @@
 import type { CSSProperties, ReactNode } from 'react';
-import { k, u } from '@/lib/u';
+import { textSize, k, u } from '@/lib/u';
 import { Accent, Button, GhostTitle, Reveal } from './ui';
 
 /** Portada de cada página: grid 1.05fr / 1fr, H1 acento naranja, subtítulo, dos botones y visual a la derecha. */
@@ -69,7 +69,7 @@ export function PageHero({
         <p
           style={{
             margin: 0,
-            fontSize: u(1.3),
+            fontSize: textSize(1.3),
             lineHeight: 1.55,
             color: '#7a6a58',
             maxWidth: u(36),
@@ -101,7 +101,7 @@ export function PageHero({
                 >
                   {v}
                 </div>
-                <div style={{ fontSize: u(1), color: '#7a6a58' }}>{l}</div>
+                <div style={{ fontSize: textSize(1), color: '#7a6a58' }}>{l}</div>
               </div>
             ))}
           </div>

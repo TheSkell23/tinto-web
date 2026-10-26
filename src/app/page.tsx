@@ -15,7 +15,7 @@ import {
   homeSteps,
   homeWork,
 } from '@/content/home';
-import { k, u } from '@/lib/u';
+import { textSize, k, u } from '@/lib/u';
 
 const mini: CSSProperties = {
   width: '100%',
@@ -33,12 +33,12 @@ const row: CSSProperties = {
   alignItems: 'center',
   padding: `${u(0.8)} 0`,
   borderBottom: '1px solid rgba(42,29,18,.07)',
-  fontSize: u(1.05),
+  fontSize: textSize(1.05),
 };
 const chipOff: CSSProperties = {
   padding: u(0.6, 1.2),
   borderRadius: 99,
-  fontSize: u(0.95),
+  fontSize: textSize(0.95),
   fontWeight: 700,
   border: '1px solid rgba(138,90,31,.22)',
   background: 'rgba(255,255,255,.85)',
@@ -134,7 +134,7 @@ export default function HomePage() {
                 alt="tinto"
                 width={2376}
                 height={683}
-                sizes="20vw"
+                sizes="(max-width: 899px) 150px, 20vw"
                 style={{
                   width: '43%',
                   aspectRatio: '3.48/1',
@@ -151,7 +151,7 @@ export default function HomePage() {
                 className="hero-p"
                 style={{
                   margin: 0,
-                  fontSize: u(1),
+                  fontSize: textSize(1),
                   lineHeight: 1.45,
                   position: 'relative',
                   top: u(4.5),
@@ -240,7 +240,7 @@ export default function HomePage() {
               >
                 <span
                   style={{
-                    fontSize: u(0.65),
+                    fontSize: textSize(0.65),
                     fontWeight: 600,
                     letterSpacing: '.1em',
                     color: '#5a4a3a',
@@ -251,7 +251,7 @@ export default function HomePage() {
                 </span>
                 <span
                   style={{
-                    fontSize: u(0.75),
+                    fontSize: textSize(0.75),
                     fontWeight: 700,
                     padding: u(0.3, 0.8),
                     borderRadius: 99,
@@ -266,7 +266,7 @@ export default function HomePage() {
               </div>
               <div
                 style={{
-                  fontSize: u(1.1),
+                  fontSize: textSize(1.1),
                   lineHeight: 1.18,
                   fontWeight: 700,
                   letterSpacing: '-.01em',
@@ -285,7 +285,7 @@ export default function HomePage() {
                       gap: u(0.8),
                       padding: u(0.4, 0),
                       borderTop: '1px solid rgba(42,29,18,.15)',
-                      fontSize: u(0.85),
+                      fontSize: textSize(0.85),
                       lineHeight: 1.15,
                     }}
                   >
@@ -309,7 +309,7 @@ export default function HomePage() {
                     />
                     <span
                       style={{
-                        fontSize: u(0.65),
+                        fontSize: textSize(0.65),
                         color: '#5a4a3a',
                         fontWeight: 500,
                         whiteSpace: 'nowrap',
@@ -337,13 +337,13 @@ export default function HomePage() {
             gap: u(2),
           }}
         >
-          <span style={{ fontSize: u(1.1), color: '#7a6a58' }}>{h.trust.label}</span>
+          <span style={{ fontSize: textSize(1.1), color: '#7a6a58' }}>{h.trust.label}</span>
           <div
             style={{
               display: 'flex',
               gap: u(4),
               flexWrap: 'wrap',
-              fontSize: u(1.9),
+              fontSize: textSize(1.9),
               fontWeight: 600,
               letterSpacing: '-.02em',
               color: '#b8a995',
@@ -438,23 +438,23 @@ export default function HomePage() {
                     border: '1px solid rgba(42,29,18,.15)',
                     display: 'grid',
                     placeItems: 'center',
-                    fontSize: u(1.2),
+                    fontSize: textSize(1.2),
                     position: 'relative',
                     zIndex: 1,
                   }}
                 >
                   {s.n}
                 </span>
-                <div style={{ fontSize: u(1.6), fontWeight: 600 }}>{s.t}</div>
+                <div style={{ fontSize: textSize(1.6), fontWeight: 600 }}>{s.t}</div>
                 <div
-                  style={{ fontSize: u(1.1), color: '#7a6a58', lineHeight: 1.5, maxWidth: u(20) }}
+                  style={{ fontSize: textSize(1.1), color: '#7a6a58', lineHeight: 1.5, maxWidth: u(20) }}
                 >
                   {s.d}
                 </div>
                 <div className="cream soft" style={mini}>
                   {s.n === 1 && (
                     <>
-                      <div style={{ fontSize: u(1.2), fontWeight: 600, marginBottom: u(1) }}>
+                      <div style={{ fontSize: textSize(1.2), fontWeight: 600, marginBottom: u(1) }}>
                         Tus canales
                       </div>
                       <div
@@ -462,7 +462,7 @@ export default function HomePage() {
                           padding: u(0.9, 1.1),
                           borderRadius: u(0.8),
                           background: '#f7f3ec',
-                          fontSize: u(1.05),
+                          fontSize: textSize(1.05),
                           marginBottom: u(0.8),
                         }}
                       >
@@ -473,7 +473,7 @@ export default function HomePage() {
                           padding: u(0.9, 1.1),
                           borderRadius: u(0.8),
                           background: '#f7f3ec',
-                          fontSize: u(1.05),
+                          fontSize: textSize(1.05),
                           marginBottom: u(1.2),
                           color: '#7a6a58',
                         }}
@@ -489,7 +489,7 @@ export default function HomePage() {
                           boxShadow:
                             'inset 0 1px 0 rgba(255,255,255,.28),0 6px 14px rgba(42,29,18,.25)',
                           color: '#fff',
-                          fontSize: u(1.1),
+                          fontSize: textSize(1.1),
                           fontWeight: 600,
                         }}
                       >
@@ -499,7 +499,7 @@ export default function HomePage() {
                   )}
                   {s.n === 2 && (
                     <>
-                      <div style={{ fontSize: u(1.2), fontWeight: 600, marginBottom: u(1) }}>
+                      <div style={{ fontSize: textSize(1.2), fontWeight: 600, marginBottom: u(1) }}>
                         Pregunta clave
                       </div>
                       <div
@@ -539,7 +539,7 @@ export default function HomePage() {
                   )}
                   {s.n === 3 && (
                     <>
-                      <div style={{ fontSize: u(1.2), fontWeight: 600, marginBottom: u(0.6) }}>
+                      <div style={{ fontSize: textSize(1.2), fontWeight: 600, marginBottom: u(0.6) }}>
                         Tu pipeline
                       </div>
                       <div style={row}>
@@ -682,7 +682,7 @@ export default function HomePage() {
               <p
                 style={{
                   margin: 0,
-                  fontSize: u(1.25),
+                  fontSize: textSize(1.25),
                   lineHeight: 1.5,
                   color: '#6b5a48',
                   maxWidth: u(60),
@@ -706,7 +706,7 @@ export default function HomePage() {
             as="h2"
           />
           <div
-            className="rg"
+            className="rg tablet-cards"
             style={{ '--c': 'repeat(4,1fr)', '--m': 1, gap: u(1.6) } as CSSProperties}
           >
             {homeModules.items.map((m, i) => (
@@ -719,12 +719,12 @@ export default function HomePage() {
                 <span className="ico">
                   <Icon name={m.icon} size={u(1.9)} stroke={1.8} style={{ color: '#fff' }} />
                 </span>
-                <div style={{ fontSize: u(1.5), fontWeight: 800, letterSpacing: '-.02em' }}>
+                <div style={{ fontSize: textSize(1.5), fontWeight: 800, letterSpacing: '-.02em' }}>
                   {m.title}
                 </div>
-                <div style={{ fontSize: u(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{m.text}</div>
+                <div style={{ fontSize: textSize(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{m.text}</div>
                 <span
-                  style={{ marginTop: 'auto', fontSize: u(1), fontWeight: 700, color: '#e8782a' }}
+                  style={{ marginTop: 'auto', fontSize: textSize(1), fontWeight: 700, color: '#e8782a' }}
                 >
                   Ver módulo →
                 </span>
@@ -776,7 +776,7 @@ export default function HomePage() {
                   >
                     {s.value}
                   </div>
-                  <div style={{ fontSize: u(1.1), color: '#7a6a58' }}>{s.label}</div>
+                  <div style={{ fontSize: textSize(1.1), color: '#7a6a58' }}>{s.label}</div>
                 </div>
               ))}
             </div>
@@ -837,7 +837,7 @@ export default function HomePage() {
                 >
                   {homeFor.title} <Accent>{homeFor.accent}</Accent>
                 </h2>
-                <p style={{ margin: 0, fontSize: u(1.2), lineHeight: 1.55, color: '#7a6a58' }}>
+                <p style={{ margin: 0, fontSize: textSize(1.2), lineHeight: 1.55, color: '#7a6a58' }}>
                   {homeFor.text}
                 </p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: u(0.9) }}>
@@ -848,7 +848,7 @@ export default function HomePage() {
                         display: 'flex',
                         alignItems: 'center',
                         gap: u(1),
-                        fontSize: u(1.15),
+                        fontSize: textSize(1.15),
                         fontWeight: 600,
                       }}
                     >
@@ -867,7 +867,7 @@ export default function HomePage() {
                   }}
                 >
                   <Button href="/soluciones">Ver soluciones</Button>
-                  <Link href="/agendar" className="link-brand" style={{ fontSize: u(1.05) }}>
+                  <Link href="/agendar" className="link-brand" style={{ fontSize: textSize(1.05) }}>
                     Agendar demo →
                   </Link>
                 </div>
@@ -879,18 +879,18 @@ export default function HomePage() {
         {/* ---------- Reseñas ---------- */}
         <div className="cq-pad" style={{ padding: `${u(4)} ${u(12)} ${u(9)}` }}>
           <SectionTitle ghost={homeReviews.ghost} title={homeReviews.title} as="h2" />
-          <div className="rg" style={{ '--c': 'repeat(3,1fr)', gap: u(1.6) } as CSSProperties}>
+          <div className="rg tablet-cards" style={{ '--c': 'repeat(3,1fr)', gap: u(1.6) } as CSSProperties}>
             {homeReviews.items.map((r, i) => (
               <CreamCard key={r.org} delay={i * 80} style={{ gap: u(1.4) }}>
                 <div
-                  style={{ color: '#e8782a', fontSize: u(1.3), letterSpacing: '.2em' }}
+                  style={{ color: '#e8782a', fontSize: textSize(1.3), letterSpacing: '.2em' }}
                   aria-label="5 de 5 estrellas"
                 >
                   ★★★★★
                 </div>
                 <div
                   style={{
-                    fontSize: u(1.35),
+                    fontSize: textSize(1.35),
                     lineHeight: 1.45,
                     fontWeight: 600,
                     letterSpacing: '-.01em',
@@ -912,14 +912,14 @@ export default function HomePage() {
                       placeItems: 'center',
                       color: '#fff',
                       fontWeight: 800,
-                      fontSize: u(1.1),
+                      fontSize: textSize(1.1),
                     }}
                   >
                     {r.initial}
                   </span>
                   <div style={{ lineHeight: 1.25 }}>
-                    <div style={{ fontSize: u(1), fontWeight: 800 }}>{r.role}</div>
-                    <div style={{ fontSize: u(0.9), color: '#7a6a58' }}>{r.org}</div>
+                    <div style={{ fontSize: textSize(1), fontWeight: 800 }}>{r.role}</div>
+                    <div style={{ fontSize: textSize(0.9), color: '#7a6a58' }}>{r.org}</div>
                   </div>
                 </div>
               </CreamCard>
@@ -930,20 +930,20 @@ export default function HomePage() {
         {/* ---------- Preguntas rápidas ---------- */}
         <div className="cq-pad" style={{ padding: `${u(4)} ${u(12)} ${u(9)}` }}>
           <SectionTitle ghost={homeQuick.ghost} title={homeQuick.title} as="h2" />
-          <div className="rg" style={{ '--c': 'repeat(3,1fr)', gap: u(1.6) } as CSSProperties}>
+          <div className="rg tablet-cards" style={{ '--c': 'repeat(3,1fr)', gap: u(1.6) } as CSSProperties}>
             {homeQuick.items.map((q, i) => (
               <CreamCard key={q.q} delay={i * 80} style={{ gap: u(0.9) }}>
                 <h3
-                  style={{ margin: 0, fontSize: u(1.35), fontWeight: 800, letterSpacing: '-.02em' }}
+                  style={{ margin: 0, fontSize: textSize(1.35), fontWeight: 800, letterSpacing: '-.02em' }}
                 >
                   {q.q}
                 </h3>
-                <div style={{ fontSize: u(1.05), lineHeight: 1.55, color: '#7a6a58' }}>{q.a}</div>
+                <div style={{ fontSize: textSize(1.05), lineHeight: 1.55, color: '#7a6a58' }}>{q.a}</div>
               </CreamCard>
             ))}
           </div>
           <Reveal style={{ textAlign: 'center', marginTop: u(2.4) }}>
-            <Link href="/dudas" className="link-brand" style={{ fontSize: u(1.1) }}>
+            <Link href="/dudas" className="link-brand" style={{ fontSize: textSize(1.1) }}>
               {homeQuick.link}
             </Link>
           </Reveal>
@@ -970,7 +970,7 @@ export default function HomePage() {
           >
             <span
               style={{
-                fontSize: u(0.95),
+                fontSize: textSize(0.95),
                 fontWeight: 600,
                 letterSpacing: '.12em',
                 color: '#8a5a1f',
@@ -993,7 +993,7 @@ export default function HomePage() {
               {homeWork.title} <Accent>{homeWork.accent}</Accent>
             </h2>
           </Reveal>
-          <div className="rg" style={{ '--c': 'repeat(3,1fr)', gap: u(1.6) } as CSSProperties}>
+          <div className="rg tablet-cards" style={{ '--c': 'repeat(3,1fr)', gap: u(1.6) } as CSSProperties}>
             {homeWork.items.map((w, i) => (
               <CreamCard
                 key={w.title}
@@ -1001,13 +1001,13 @@ export default function HomePage() {
                 delay={i * 80}
                 style={{ padding: u(2), borderRadius: u(2), gap: u(0.8) }}
               >
-                <span className="num" style={{ width: u(3), height: u(3), fontSize: u(1.2) }}>
+                <span className="num" style={{ width: u(3), height: u(3), fontSize: textSize(1.2) }}>
                   {i + 1}
                 </span>
-                <div style={{ fontSize: u(1.5), fontWeight: 800, letterSpacing: '-.02em' }}>
+                <div style={{ fontSize: textSize(1.5), fontWeight: 800, letterSpacing: '-.02em' }}>
                   {w.title}
                 </div>
-                <div style={{ fontSize: u(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{w.text}</div>
+                <div style={{ fontSize: textSize(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{w.text}</div>
               </CreamCard>
             ))}
           </div>
@@ -1044,7 +1044,7 @@ export default function HomePage() {
                 {homeWork.closing.title}
               </h3>
               <div
-                style={{ fontSize: u(1.15), lineHeight: 1.5, color: '#7a5c3a', marginTop: u(0.8) }}
+                style={{ fontSize: textSize(1.15), lineHeight: 1.5, color: '#7a5c3a', marginTop: u(0.8) }}
               >
                 {homeWork.closing.text}
               </div>
@@ -1053,7 +1053,7 @@ export default function HomePage() {
               href="/agendar"
               strong
               lift
-              style={{ flex: 'none', padding: u(1.2, 3), fontSize: u(1.2) }}
+              style={{ flex: 'none', padding: u(1.2, 3), fontSize: textSize(1.2) }}
             >
               ¿Agendamos un tinto?
             </Button>

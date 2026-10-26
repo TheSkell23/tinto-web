@@ -1,5 +1,5 @@
 import type { CSSProperties } from 'react';
-import { u } from '@/lib/u';
+import { textSize, u } from '@/lib/u';
 
 export type MockItem = readonly [
   initial: string,
@@ -81,14 +81,14 @@ export function CrmMockup({
                 style={{ width: u(0.7), height: u(0.7), borderRadius: '50%', background: c }}
               />
             ))}
-            <span style={{ marginLeft: u(0.7), fontSize: u(0.9), fontWeight: 800 }}>{title}</span>
+            <span style={{ marginLeft: u(0.7), fontSize: textSize(0.9), fontWeight: 800 }}>{title}</span>
             <span
-              style={{ marginLeft: 'auto', fontSize: u(0.75), fontWeight: 700, color: '#7a6a58' }}
+              style={{ marginLeft: 'auto', fontSize: textSize(0.75), fontWeight: 700, color: '#7a6a58' }}
             >
               {period}
             </span>
           </div>
-          <div style={{ display: 'flex', gap: u(0.7) }}>
+          <div className="mock-columns" style={{ display: 'flex', gap: u(0.7) }}>
             {columns.map((col) => (
               <div
                 key={col.label}
@@ -105,7 +105,7 @@ export function CrmMockup({
                     display: 'flex',
                     justifyContent: 'space-between',
                     alignItems: 'baseline',
-                    fontSize: u(0.7),
+                    fontSize: textSize(0.7),
                     fontWeight: 700,
                     letterSpacing: '.06em',
                     color: '#8a5a1f',
@@ -114,7 +114,7 @@ export function CrmMockup({
                 >
                   <span>{col.label}</span>
                   <span
-                    style={{ fontSize: u(1), fontWeight: 800, color: '#2a1d12', letterSpacing: 0 }}
+                    style={{ fontSize: textSize(1), fontWeight: 800, color: '#2a1d12', letterSpacing: 0 }}
                   >
                     {col.count}
                   </span>
@@ -143,7 +143,7 @@ export function CrmMockup({
                           background: 'linear-gradient(135deg,#ffd2b0,#ff9d86)',
                           display: 'grid',
                           placeItems: 'center',
-                          fontSize: u(0.75),
+                          fontSize: textSize(0.75),
                           fontWeight: 800,
                           color: '#fff',
                         }}
@@ -151,16 +151,16 @@ export function CrmMockup({
                         {ini}
                       </span>
                       <div style={{ minWidth: 0, flex: 1 }}>
-                        <div style={{ fontSize: u(0.85), fontWeight: 800, ...ellipsis }}>
+                        <div style={{ fontSize: textSize(0.85), fontWeight: 800, ...ellipsis }}>
                           {name}
                         </div>
-                        <div style={{ fontSize: u(0.65), color: '#7a6a58', ...ellipsis }}>
+                        <div style={{ fontSize: textSize(0.65), color: '#7a6a58', ...ellipsis }}>
                           {sub}
                         </div>
                       </div>
                       <span
                         style={{
-                          fontSize: u(0.7),
+                          fontSize: textSize(0.7),
                           fontWeight: 800,
                           padding: u(0.2, 0.5),
                           borderRadius: 99,
@@ -203,7 +203,7 @@ export function CrmMockup({
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <span
               style={{
-                fontSize: u(0.75),
+                fontSize: textSize(0.75),
                 fontWeight: 700,
                 letterSpacing: '.12em',
                 color: '#8a5a1f',
@@ -213,7 +213,7 @@ export function CrmMockup({
             </span>
             <span
               style={{
-                fontSize: u(0.75),
+                fontSize: textSize(0.75),
                 fontWeight: 700,
                 padding: u(0.3, 0.8),
                 borderRadius: 99,
@@ -225,7 +225,7 @@ export function CrmMockup({
               {card.badge}
             </span>
           </div>
-          <div style={{ fontSize: u(1.2), fontWeight: 800, letterSpacing: '-.02em' }}>
+          <div style={{ fontSize: textSize(1.2), fontWeight: 800, letterSpacing: '-.02em' }}>
             {card.title}
           </div>
           <div
@@ -233,7 +233,7 @@ export function CrmMockup({
               display: 'grid',
               gridTemplateColumns: 'auto 1fr',
               gap: `${u(0.35)} ${u(1.2)}`,
-              fontSize: u(0.9),
+              fontSize: textSize(0.9),
             }}
           >
             {card.rows.map(([a, b]) => (

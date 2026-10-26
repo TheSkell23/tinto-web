@@ -12,6 +12,7 @@ import { Header } from '@/components/Header';
 import type { LogoSheet } from '@/components/HeaderLogo';
 import { MotionController } from '@/components/MotionController';
 import './globals.css';
+import './mobile.css';
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],

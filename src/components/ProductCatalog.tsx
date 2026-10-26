@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useState, type CSSProperties } from 'react';
 import { categories, moduleCards, type Category, type ModuleCard } from '@/content/producto';
-import { u } from '@/lib/u';
+import { textSize, u } from '@/lib/u';
 
 const chip: CSSProperties = {
   display: 'flex',
@@ -12,7 +12,7 @@ const chip: CSSProperties = {
   padding: u(0.55, 0.9),
   borderRadius: 99,
   background: 'rgba(255,255,255,.88)',
-  fontSize: u(0.85),
+  fontSize: textSize(0.85),
   fontWeight: 700,
   color: '#2a1d12',
   boxShadow: '0 4px 10px rgba(80,50,20,.1)',
@@ -30,7 +30,7 @@ const cell = (h: number, a: number): CSSProperties => ({
   boxShadow: '0 3px 8px rgba(80,50,20,.1)',
 });
 const colHead: CSSProperties = {
-  fontSize: u(0.7),
+  fontSize: textSize(0.7),
   fontWeight: 700,
   letterSpacing: '.06em',
   color: '#8a5a1f',
@@ -95,18 +95,18 @@ function Visual({ v }: { v: ModuleCard['visual'] }) {
             }}
           >
             <span
-              style={{ fontSize: u(2.4), fontWeight: 800, letterSpacing: '-.04em', lineHeight: 1 }}
+              style={{ fontSize: textSize(2.4), fontWeight: 800, letterSpacing: '-.04em', lineHeight: 1 }}
             >
               84
             </span>
-            <span style={{ fontSize: u(0.7), fontWeight: 700, color: '#7a6a58' }}>PUNTAJE</span>
+            <span style={{ fontSize: textSize(0.7), fontWeight: 700, color: '#7a6a58' }}>PUNTAJE</span>
           </div>
         </div>
       </div>
     );
   if (v === 'kanban')
     return (
-      <div style={{ display: 'flex', gap: u(0.8), padding: u(3, 1.4, 2.6) }}>
+      <div className="catalog-board" style={{ display: 'flex', gap: u(0.8), padding: u(3, 1.4, 2.6) }}>
         {[
           ['ATRAÍDA', [2.1, 1.6, 2.1]],
           ['CALIFICADA', [2.1, 1.6]],
@@ -171,7 +171,7 @@ export function ProductCatalog() {
                 cursor: 'pointer',
                 padding: u(0.8, 1.8),
                 borderRadius: 99,
-                fontSize: u(1.05),
+                fontSize: textSize(1.05),
                 fontWeight: 700,
                 border: `1px solid ${on ? '#ff8a3d' : 'rgba(138,90,31,.2)'}`,
                 background: on ? 'var(--grad-primary)' : 'rgba(255,255,255,.8)',
@@ -186,7 +186,7 @@ export function ProductCatalog() {
         })}
       </div>
       <div
-        className="rg"
+        className="rg tablet-cards"
         data-testid="catalog"
         style={{ '--c': 'repeat(4,minmax(0,1fr))', '--m': 1, gap: u(1.6) } as CSSProperties}
       >
@@ -218,7 +218,7 @@ export function ProductCatalog() {
                     position: 'absolute',
                     left: u(1),
                     top: u(1),
-                    fontSize: u(0.8),
+                    fontSize: textSize(0.8),
                     fontWeight: 700,
                     padding: u(0.4, 0.9),
                     borderRadius: 99,
@@ -233,7 +233,7 @@ export function ProductCatalog() {
                     position: 'absolute',
                     left: u(1.2),
                     bottom: u(1.1),
-                    fontSize: u(0.85),
+                    fontSize: textSize(0.85),
                     fontWeight: 700,
                     letterSpacing: '.12em',
                     textTransform: 'uppercase',
@@ -253,11 +253,11 @@ export function ProductCatalog() {
                 }}
               >
                 <h3
-                  style={{ margin: 0, fontSize: u(1.55), fontWeight: 800, letterSpacing: '-.02em' }}
+                  style={{ margin: 0, fontSize: textSize(1.55), fontWeight: 800, letterSpacing: '-.02em' }}
                 >
                   {c.name}
                 </h3>
-                <div style={{ fontSize: u(1), lineHeight: 1.5, color: '#7a6a58' }}>{c.desc}</div>
+                <div style={{ fontSize: textSize(1), lineHeight: 1.5, color: '#7a6a58' }}>{c.desc}</div>
                 <div
                   style={{
                     display: 'flex',
@@ -271,7 +271,7 @@ export function ProductCatalog() {
                     <span
                       key={x}
                       style={{
-                        fontSize: u(0.8),
+                        fontSize: textSize(0.8),
                         fontWeight: 600,
                         padding: u(0.35, 0.8),
                         borderRadius: 99,
@@ -293,13 +293,13 @@ export function ProductCatalog() {
                     gap: u(1),
                   }}
                 >
-                  <span style={{ fontSize: u(1), fontWeight: 700, color: '#7a6a58' }}>
+                  <span style={{ fontSize: textSize(1), fontWeight: 700, color: '#7a6a58' }}>
                     {c.price}
                   </span>
                   <Link
                     href="/agendar"
                     style={{
-                      fontSize: u(1),
+                      fontSize: textSize(1),
                       fontWeight: 700,
                       color: '#fff',
                       padding: u(0.6, 1.3),

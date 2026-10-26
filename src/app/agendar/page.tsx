@@ -5,7 +5,7 @@ import type { CSSProperties } from 'react';
 import { BookingFlow } from '@/components/BookingFlow';
 import { Accent, GhostTitle, Reveal } from '@/components/ui';
 import { agendarHero } from '@/content/agendar';
-import { k, u } from '@/lib/u';
+import { textSize, k, u } from '@/lib/u';
 
 export const metadata = pageMetadata('/agendar');
 
@@ -48,7 +48,7 @@ export default function AgendarPage() {
         <p
           style={{
             margin: 0,
-            fontSize: u(1.3),
+            fontSize: textSize(1.3),
             lineHeight: 1.55,
             color: '#7a6a58',
             maxWidth: u(40),

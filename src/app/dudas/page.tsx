@@ -10,7 +10,7 @@ import { ScrollToGo } from '@/components/ScrollToGo';
 import { Accent, Button, ClosingCard, GhostTitle, Reveal, SectionTitle } from '@/components/ui';
 import { dudasClosing, dudasHero, faqSection, humanCard } from '@/content/dudas';
 import { site } from '@/content/site';
-import { k, u } from '@/lib/u';
+import { textSize, k, u } from '@/lib/u';
 
 export const metadata = pageMetadata('/dudas');
 
@@ -55,7 +55,7 @@ export default function DudasPage() {
           <p
             style={{
               margin: 0,
-              fontSize: u(1.3),
+              fontSize: textSize(1.3),
               lineHeight: 1.55,
               color: '#7a6a58',
               maxWidth: u(40),
@@ -107,8 +107,8 @@ export default function DudasPage() {
                     background: '#2fbf71',
                   }}
                 />
-                <span style={{ fontSize: u(0.95), fontWeight: 800 }}>{site.advisor}</span>
-                <span style={{ fontSize: u(0.85), color: '#7a6a58' }}>Asesora · en línea</span>
+                <span style={{ fontSize: textSize(0.95), fontWeight: 800 }}>{site.advisor}</span>
+                <span style={{ fontSize: textSize(0.85), color: '#7a6a58' }}>Asesora · en línea</span>
               </div>
             </div>
             <div
@@ -122,7 +122,7 @@ export default function DudasPage() {
               <h2
                 style={{
                   margin: 0,
-                  fontSize: u(1.6),
+                  fontSize: textSize(1.6),
                   fontWeight: 800,
                   letterSpacing: '-.02em',
                   lineHeight: 1.15,
@@ -130,7 +130,7 @@ export default function DudasPage() {
               >
                 {humanCard.title}
               </h2>
-              <div style={{ fontSize: u(1.05), lineHeight: 1.5, color: '#7a6a58' }}>
+              <div style={{ fontSize: textSize(1.05), lineHeight: 1.5, color: '#7a6a58' }}>
                 {humanCard.text}
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', marginTop: u(0.4) }}>
@@ -156,19 +156,19 @@ export default function DudasPage() {
                         display: 'grid',
                         placeItems: 'center',
                         color: '#fff',
-                        fontSize: u(1),
+                        fontSize: textSize(1),
                         fontWeight: 800,
                       }}
                     >
                       {ic}
                     </span>
                     <div style={{ flex: 1, minWidth: 0 }}>
-                      <div style={{ fontSize: u(1.1), fontWeight: 800, lineHeight: 1.2 }}>{t}</div>
-                      <div style={{ fontSize: u(0.9), color: '#7a6a58' }}>{s}</div>
+                      <div style={{ fontSize: textSize(1.1), fontWeight: 800, lineHeight: 1.2 }}>{t}</div>
+                      <div style={{ fontSize: textSize(0.9), color: '#7a6a58' }}>{s}</div>
                     </div>
                     <span
                       style={{
-                        fontSize: u(0.85),
+                        fontSize: textSize(0.85),
                         fontWeight: 700,
                         color: '#e8782a',
                         whiteSpace: 'nowrap',
@@ -188,10 +188,10 @@ export default function DudasPage() {
                   flexWrap: 'wrap',
                 }}
               >
-                <Button href="/contacto" style={{ padding: u(0.9, 1.8), fontSize: u(1.05) }}>
+                <Button href="/contacto" style={{ padding: u(0.9, 1.8), fontSize: textSize(1.05) }}>
                   Contactar
                 </Button>
-                <Link href="/agendar" className="link-brand" style={{ fontSize: u(1.05) }}>
+                <Link href="/agendar" className="link-brand" style={{ fontSize: textSize(1.05) }}>
                   Agendar demo →
                 </Link>
               </div>

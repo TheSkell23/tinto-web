@@ -16,7 +16,7 @@ import {
   nosTeams,
   nosValues,
 } from '@/content/nosotros';
-import { k, u } from '@/lib/u';
+import { textSize, k, u } from '@/lib/u';
 
 const accentEm: CSSProperties = { fontWeight: 800, fontStyle: 'normal', color: '#e8782a' };
 const heroChip = (pos: CSSProperties): CSSProperties => ({
@@ -68,7 +68,7 @@ export default function NosotrosPage() {
             <div style={heroChip({ right: u(1.4), top: u(1.4) })}>
               <div
                 style={{
-                  fontSize: u(0.8),
+                  fontSize: textSize(0.8),
                   fontWeight: 700,
                   letterSpacing: '.1em',
                   color: '#8a5a1f',
@@ -78,7 +78,7 @@ export default function NosotrosPage() {
               </div>
               <div
                 style={{
-                  fontSize: u(1.6),
+                  fontSize: textSize(1.6),
                   fontWeight: 800,
                   color: '#e8782a',
                   letterSpacing: '-.02em',
@@ -90,7 +90,7 @@ export default function NosotrosPage() {
             <div style={heroChip({ left: u(1.4), bottom: u(1.4) })}>
               <div
                 style={{
-                  fontSize: u(0.8),
+                  fontSize: textSize(0.8),
                   fontWeight: 700,
                   letterSpacing: '.1em',
                   color: '#8a5a1f',
@@ -100,7 +100,7 @@ export default function NosotrosPage() {
               </div>
               <div
                 style={{
-                  fontSize: u(1.6),
+                  fontSize: textSize(1.6),
                   fontWeight: 800,
                   color: '#e8782a',
                   letterSpacing: '-.02em',
@@ -116,16 +116,16 @@ export default function NosotrosPage() {
         <div id="valores" style={{ padding: `${u(2)} 0 ${u(9)}` }}>
           <SectionTitle ghost={nosValues.ghost} title={nosValues.title} sub={nosValues.sub} />
           <div
-            className="rg"
+            className="rg tablet-cards"
             style={{ '--c': 'repeat(4,1fr)', '--m': 1, gap: u(1.6) } as CSSProperties}
           >
             {nosValues.items.map(([t, d], i) => (
               <CreamCard key={t} soft delay={i * 70}>
                 <span className="num">{i + 1}</span>
-                <div style={{ fontSize: u(1.45), fontWeight: 800, letterSpacing: '-.02em' }}>
+                <div style={{ fontSize: textSize(1.45), fontWeight: 800, letterSpacing: '-.02em' }}>
                   {t}
                 </div>
-                <div style={{ fontSize: u(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{d}</div>
+                <div style={{ fontSize: textSize(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{d}</div>
               </CreamCard>
             ))}
           </div>
@@ -139,7 +139,7 @@ export default function NosotrosPage() {
             sub={nosMilestones.sub}
           />
           <div
-            className="rg"
+            className="rg tablet-cards"
             style={{ '--c': 'repeat(4,1fr)', '--m': 1, gap: u(1.6) } as CSSProperties}
           >
             {nosMilestones.items.map(([y, t, d], i) => (
@@ -158,10 +158,10 @@ export default function NosotrosPage() {
                 >
                   {y}
                 </div>
-                <div style={{ fontSize: u(1.35), fontWeight: 800, letterSpacing: '-.02em' }}>
+                <div style={{ fontSize: textSize(1.35), fontWeight: 800, letterSpacing: '-.02em' }}>
                   {t}
                 </div>
-                <div style={{ fontSize: u(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{d}</div>
+                <div style={{ fontSize: textSize(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{d}</div>
               </CreamCard>
             ))}
           </div>
@@ -170,17 +170,17 @@ export default function NosotrosPage() {
         {/* Equipo */}
         <div style={{ paddingBottom: u(9) }}>
           <SectionTitle ghost={nosTeams.ghost} title={nosTeams.title} sub={nosTeams.sub} />
-          <div className="rg" style={{ '--c': 'repeat(3,1fr)', gap: u(1.6) } as CSSProperties}>
+          <div className="rg tablet-cards" style={{ '--c': 'repeat(3,1fr)', gap: u(1.6) } as CSSProperties}>
             {nosTeams.items.map((t, i) => (
               <CreamCard key={t.title} soft lift delay={i * 80}>
                 <span className="ico" style={{ width: u(4.4), height: u(4.4) }}>
                   <Icon name={t.icon} size={u(2)} stroke={1.8} style={{ color: '#fff' }} />
                 </span>
-                <div style={{ fontSize: u(1.6), fontWeight: 800, letterSpacing: '-.02em' }}>
+                <div style={{ fontSize: textSize(1.6), fontWeight: 800, letterSpacing: '-.02em' }}>
                   {t.title}
                 </div>
-                <div style={{ fontSize: u(0.95), fontWeight: 700, color: '#e8782a' }}>{t.role}</div>
-                <div style={{ fontSize: u(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{t.text}</div>
+                <div style={{ fontSize: textSize(0.95), fontWeight: 700, color: '#e8782a' }}>{t.role}</div>
+                <div style={{ fontSize: textSize(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{t.text}</div>
               </CreamCard>
             ))}
           </div>
@@ -241,7 +241,7 @@ export default function NosotrosPage() {
               style={{
                 margin: 0,
                 maxWidth: u(46),
-                fontSize: u(1.3),
+                fontSize: textSize(1.3),
                 lineHeight: 1.55,
                 color: '#7a6a58',
                 position: 'relative',
@@ -323,7 +323,7 @@ export default function NosotrosPage() {
         >
           <SectionTitle variant="b" ghost={nosReviews.ghost} title={nosReviews.title} />
           <div
-            className="rg"
+            className="rg tablet-cards"
             style={{ '--c': 'repeat(3,1fr)', '--m': 1, gap: u(1.4) } as CSSProperties}
           >
             {nosReviews.items.map(([q, n, r], i) => (
@@ -334,12 +334,12 @@ export default function NosotrosPage() {
                 style={{ padding: u(1.8), borderRadius: u(1.8), gap: u(1.2) }}
               >
                 <span
-                  style={{ color: '#e8782a', letterSpacing: '.1em', fontSize: u(1.05) }}
+                  style={{ color: '#e8782a', letterSpacing: '.1em', fontSize: textSize(1.05) }}
                   aria-label="5 de 5 estrellas"
                 >
                   ★★★★★
                 </span>
-                <div style={{ fontSize: u(1.15), lineHeight: 1.5 }}>{q}</div>
+                <div style={{ fontSize: textSize(1.15), lineHeight: 1.5 }}>{q}</div>
                 <div
                   style={{ display: 'flex', alignItems: 'center', gap: u(0.9), marginTop: 'auto' }}
                 >
@@ -355,8 +355,8 @@ export default function NosotrosPage() {
                     }}
                   />
                   <div style={{ lineHeight: 1.3 }}>
-                    <div style={{ fontSize: u(1), fontWeight: 600 }}>{n}</div>
-                    <div style={{ fontSize: u(0.9), color: '#7a6a58' }}>{r}</div>
+                    <div style={{ fontSize: textSize(1), fontWeight: 600 }}>{n}</div>
+                    <div style={{ fontSize: textSize(0.9), color: '#7a6a58' }}>{r}</div>
                   </div>
                 </div>
               </CreamCard>

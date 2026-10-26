@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { CSSProperties, MouseEventHandler, ReactNode } from 'react';
-import { k, u } from '@/lib/u';
+import { textSize, k, u } from '@/lib/u';
 
 /* ---------- Reveal: fade + translateY al hacer scroll (lo activa MotionController) ---------- */
 export function Reveal({
@@ -128,7 +128,7 @@ export function SectionTitle({
         <p
           style={{
             margin: 0,
-            fontSize: u(1.2),
+            fontSize: textSize(1.2),
             lineHeight: 1.5,
             color: '#7a6a58',
             maxWidth: a ? undefined : u(42),
@@ -216,7 +216,7 @@ export function Button({
       : `btn btn-primary${variant === 'dark' ? ' btn-dark' : ''}${variant === 'glass' ? ' btn-glass' : ''}${strong ? ' btn-strong' : ''}${lift ? ' btn-lift' : ''} ${className}`;
   const st: CSSProperties =
     variant === 'dark' || variant === 'glass'
-      ? { fontWeight: 600, fontSize: u(1.1), padding: u(1.1, 2.4), ...style }
+      ? { fontWeight: 600, fontSize: textSize(1.1), padding: u(1.1, 2.4), ...style }
       : (style ?? {});
   if (href) {
     return (
@@ -315,7 +315,7 @@ export function ClosingCard({
         <p
           style={{
             margin: 0,
-            fontSize: u(1.2),
+            fontSize: textSize(1.2),
             color: '#7a6a58',
             maxWidth: u(34),
             lineHeight: 1.5,

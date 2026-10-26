@@ -8,7 +8,7 @@ import { Icon } from '@/components/Icons';
 import { ScrollToGo } from '@/components/ScrollToGo';
 import { Accent, Button, GhostTitle, Reveal } from '@/components/ui';
 import { contactoChannels, contactoCta, contactoHero, contactoWays } from '@/content/contacto';
-import { k, u } from '@/lib/u';
+import { textSize, k, u } from '@/lib/u';
 
 const glass = (extra: CSSProperties = {}): CSSProperties => ({
   padding: u(0.9, 1.2),
@@ -83,7 +83,7 @@ export default function ContactoPage() {
                 style={{
                   margin: 0,
                   maxWidth: u(30),
-                  fontSize: u(1.25),
+                  fontSize: textSize(1.25),
                   lineHeight: 1.55,
                   color: '#7a6a58',
                 }}
@@ -109,10 +109,10 @@ export default function ContactoPage() {
                     <Icon name={i.icon} size={u(1.7)} stroke={1.8} style={{ color: '#e8782a' }} />
                   </span>
                   <div style={{ lineHeight: 1.3 }}>
-                    <div style={{ fontSize: u(0.85), color: '#7a6a58', fontWeight: 500 }}>
+                    <div style={{ fontSize: textSize(0.85), color: '#7a6a58', fontWeight: 500 }}>
                       {i.label}
                     </div>
-                    <div style={{ fontSize: u(1.2), fontWeight: 700 }}>{i.value}</div>
+                    <div style={{ fontSize: textSize(1.2), fontWeight: 700 }}>{i.value}</div>
                   </div>
                 </div>
               ))}
@@ -178,7 +178,7 @@ export default function ContactoPage() {
             className="ct-off2"
             style={{
               margin: 0,
-              fontSize: u(1.2),
+              fontSize: textSize(1.2),
               color: '#7a6a58',
               maxWidth: u(34),
               lineHeight: 1.5,
@@ -227,7 +227,7 @@ export default function ContactoPage() {
                 </div>
                 <div
                   style={{
-                    fontSize: u(1.7),
+                    fontSize: textSize(1.7),
                     fontWeight: 800,
                     letterSpacing: '-.02em',
                     marginTop: u(0.6),
@@ -235,11 +235,11 @@ export default function ContactoPage() {
                 >
                   {w.title}
                 </div>
-                <div style={{ fontSize: u(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{w.text}</div>
+                <div style={{ fontSize: textSize(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{w.text}</div>
                 <a
                   href="#form"
                   className="link-brand"
-                  style={{ marginTop: u(0.6), alignSelf: 'flex-start', fontSize: u(1.05) }}
+                  style={{ marginTop: u(0.6), alignSelf: 'flex-start', fontSize: textSize(1.05) }}
                   data-i={i}
                 >
                   {w.cta}
@@ -299,7 +299,7 @@ export default function ContactoPage() {
                   <h3
                     style={{
                       margin: 0,
-                      fontSize: u(1.6),
+                      fontSize: textSize(1.6),
                       fontWeight: 800,
                       letterSpacing: '-.02em',
                     }}
@@ -316,7 +316,7 @@ export default function ContactoPage() {
                           gap: u(1),
                           padding: u(0.7, 0),
                           borderTop: '1px solid rgba(42,29,18,.08)',
-                          fontSize: u(1.05),
+                          fontSize: textSize(1.05),
                         }}
                       >
                         <span style={{ color: '#7a6a58' }}>{a}</span>
@@ -324,7 +324,7 @@ export default function ContactoPage() {
                       </div>
                     ))}
                   </div>
-                  <a href="#form" className="link-brand" style={{ fontSize: u(1.05) }}>
+                  <a href="#form" className="link-brand" style={{ fontSize: textSize(1.05) }}>
                     {c.cta}
                   </a>
                 </div>
@@ -381,7 +381,7 @@ export default function ContactoPage() {
               <p
                 style={{
                   margin: 0,
-                  fontSize: u(1.15),
+                  fontSize: textSize(1.15),
                   lineHeight: 1.55,
                   color: '#7a6a58',
                   maxWidth: u(27),
@@ -397,7 +397,7 @@ export default function ContactoPage() {
                       display: 'flex',
                       alignItems: 'center',
                       gap: u(0.9),
-                      fontSize: u(1.1),
+                      fontSize: textSize(1.1),
                       fontWeight: 600,
                     }}
                   >
@@ -426,7 +426,7 @@ export default function ContactoPage() {
                   href="/producto"
                   strong
                   lift
-                  style={{ padding: u(1.05, 2.5), fontSize: u(1.1) }}
+                  style={{ padding: u(1.05, 2.5), fontSize: textSize(1.1) }}
                 >
                   Ver producto
                 </Button>
@@ -434,7 +434,7 @@ export default function ContactoPage() {
                   href="/dudas"
                   variant="glass"
                   lift
-                  style={{ padding: u(1.05, 2.5), fontSize: u(1.1), fontWeight: 700 }}
+                  style={{ padding: u(1.05, 2.5), fontSize: textSize(1.1), fontWeight: 700 }}
                 >
                   Hablar con un asesor
                 </Button>
@@ -454,7 +454,7 @@ export default function ContactoPage() {
                   <div key={v} style={{ lineHeight: 1.25 }}>
                     <div
                       style={{
-                        fontSize: u(2.2),
+                        fontSize: textSize(2.2),
                         fontWeight: 800,
                         letterSpacing: '-.03em',
                         color: '#e8782a',
@@ -462,7 +462,7 @@ export default function ContactoPage() {
                     >
                       {v}
                     </div>
-                    <div style={{ fontSize: u(0.9), color: '#7a6a58' }}>{l}</div>
+                    <div style={{ fontSize: textSize(0.9), color: '#7a6a58' }}>{l}</div>
                   </div>
                 ))}
               </div>
@@ -488,13 +488,13 @@ export default function ContactoPage() {
                     style={{ width: u(0.8), height: u(0.8), borderRadius: '50%', background: c }}
                   />
                 ))}
-                <span style={{ marginLeft: u(0.8), fontSize: u(0.95), fontWeight: 800 }}>
+                <span style={{ marginLeft: u(0.8), fontSize: textSize(0.95), fontWeight: 800 }}>
                   Oportunidades
                 </span>
                 <span
                   style={{
                     marginLeft: 'auto',
-                    fontSize: u(0.8),
+                    fontSize: textSize(0.8),
                     fontWeight: 700,
                     color: '#7a6a58',
                   }}
@@ -521,7 +521,7 @@ export default function ContactoPage() {
                 >
                   <span
                     style={{
-                      fontSize: u(0.75),
+                      fontSize: textSize(0.75),
                       fontWeight: 700,
                       letterSpacing: '.12em',
                       color: '#8a5a1f',
@@ -531,7 +531,7 @@ export default function ContactoPage() {
                   </span>
                   <span
                     style={{
-                      fontSize: u(0.75),
+                      fontSize: textSize(0.75),
                       fontWeight: 700,
                       padding: u(0.3, 0.8),
                       borderRadius: 99,
@@ -543,15 +543,15 @@ export default function ContactoPage() {
                     {m.card.badge}
                   </span>
                 </div>
-                <div style={{ fontSize: u(1.4), fontWeight: 800, letterSpacing: '-.02em' }}>
+                <div style={{ fontSize: textSize(1.4), fontWeight: 800, letterSpacing: '-.02em' }}>
                   {m.card.title}
                 </div>
                 <div
                   style={{
                     display: 'grid',
-                    gridTemplateColumns: 'auto 1fr',
+                    gridTemplateColumns: 'var(--mobile-detail-columns, auto 1fr)',
                     gap: `${u(0.4)} ${u(1.4)}`,
-                    fontSize: u(1),
+                    fontSize: textSize(1),
                     borderTop: '1px solid rgba(42,29,18,.08)',
                     paddingTop: u(0.7),
                   }}
@@ -564,7 +564,7 @@ export default function ContactoPage() {
                   ))}
                 </div>
               </div>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: u(1) }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'var(--mobile-counter-columns, repeat(3,1fr))', gap: u(1) }}>
                 {m.counters.map(([l, v, hot]) => (
                   <div
                     key={l as string}
@@ -574,10 +574,10 @@ export default function ContactoPage() {
                       backdropFilter: 'none',
                     })}
                   >
-                    <div style={{ fontSize: u(0.8), fontWeight: 700, color: '#7a6a58' }}>{l}</div>
+                    <div style={{ fontSize: textSize(0.8), fontWeight: 700, color: '#7a6a58' }}>{l}</div>
                     <div
                       style={{
-                        fontSize: u(2),
+                        fontSize: textSize(2),
                         fontWeight: 800,
                         letterSpacing: '-.03em',
                         lineHeight: 1.1,
@@ -594,7 +594,7 @@ export default function ContactoPage() {
                   <div key={l} style={glass()}>
                     <div
                       style={{
-                        fontSize: u(0.7),
+                        fontSize: textSize(0.7),
                         fontWeight: 700,
                         letterSpacing: '.1em',
                         color: '#8a5a1f',
@@ -602,7 +602,7 @@ export default function ContactoPage() {
                     >
                       {l}
                     </div>
-                    <div style={{ fontSize: u(1.1), fontWeight: 800, lineHeight: 1.25 }}>{v}</div>
+                    <div style={{ fontSize: textSize(1.1), fontWeight: 800, lineHeight: 1.25 }}>{v}</div>
                   </div>
                 ))}
               </div>

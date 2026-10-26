@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { u } from '@/lib/u';
+import { textSize, u } from '@/lib/u';
 
 /** Acordeón de una sola apertura (estado `faq`, abierto el índice 1 por defecto, como el diseño). */
 export function Faq({ items }: { items: ReadonlyArray<readonly [string, string]> }) {
@@ -39,7 +39,7 @@ export function Faq({ items }: { items: ReadonlyArray<readonly [string, string]>
                   border: 0,
                   background: 'none',
                   textAlign: 'left',
-                  fontSize: u(1.3),
+                  fontSize: textSize(1.3),
                   fontWeight: 800,
                   letterSpacing: '-.02em',
                 }}
@@ -56,7 +56,7 @@ export function Faq({ items }: { items: ReadonlyArray<readonly [string, string]>
                     color: '#fff',
                     display: 'grid',
                     placeItems: 'center',
-                    fontSize: u(1.4),
+                    fontSize: textSize(1.4),
                     lineHeight: 1,
                     transition: 'transform .3s ease',
                     transform: `rotate(${on ? 45 : 0}deg)`,
@@ -74,7 +74,7 @@ export function Faq({ items }: { items: ReadonlyArray<readonly [string, string]>
               style={{
                 display: on ? 'block' : 'none',
                 paddingTop: u(0.8),
-                fontSize: u(1.1),
+                fontSize: textSize(1.1),
                 lineHeight: 1.6,
                 color: '#7a6a58',
                 maxWidth: u(52),

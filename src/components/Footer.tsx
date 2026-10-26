@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { CSSProperties } from 'react';
 import { footerCols, site } from '@/content/site';
-import { k, u } from '@/lib/u';
+import { textSize, k, u } from '@/lib/u';
 
 const socials = [
   {
@@ -68,8 +68,8 @@ const socials = [
   },
 ];
 
-const colTitle: CSSProperties = { fontSize: u(1.5), fontWeight: 500, color: '#2a1d12' };
-const linkSt: CSSProperties = { fontSize: u(0.95), color: '#7a5c3a' };
+const colTitle: CSSProperties = { fontSize: textSize(1.5), fontWeight: 500, color: '#2a1d12' };
+const linkSt: CSSProperties = { fontSize: textSize(0.95), color: '#7a5c3a' };
 
 /** Pie común: logo en máscara, columnas de enlaces y CTA "Contactar". */
 export function Footer() {
@@ -235,7 +235,7 @@ export function Footer() {
           display: 'flex',
           justifyContent: 'space-between',
           padding: `${u(1.2)} ${u(2)} 0`,
-          fontSize: u(0.85),
+          fontSize: textSize(0.85),
           color: '#8a6a48',
           gap: u(2),
           flexWrap: 'wrap',

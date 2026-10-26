@@ -8,3 +8,10 @@ export const u = (...v: Array<number | string>): string =>
 
 /** Variable --k para títulos grandes con la clase .fz (usa --ud en móvil, ver globals.css). */
 export const k = (n: number): Record<string, number> => ({ '--k': n });
+
+/** Suelo de lectura móvil. Sin variables móviles conserva exactamente el cálculo de escritorio. */
+export const textSize = (n: number): string =>
+  `max(var(${n >= 1 ? '--mobile-body-min' : '--mobile-label-min'}, 0px), ${u(n)})`;
+
+/** Los campos conservan su tamaño de escritorio y alcanzan 16 px en móviles. */
+export const fieldSize = (n: number): string => `max(var(--mobile-input-min, 0px), ${textSize(n)})`;

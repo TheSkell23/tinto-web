@@ -1,3 +1,4 @@
+import { MobileScroll } from '@/components/MobileScroll';
 import { JsonLd } from '@/components/JsonLd';
 import { pageStructuredData } from '@/lib/structured-data';
 import { pageMetadata } from '@/lib/metadata';
@@ -26,7 +27,7 @@ import {
   solTable,
   solTypes,
 } from '@/content/soluciones';
-import { k, u } from '@/lib/u';
+import { textSize, k, u } from '@/lib/u';
 
 const check = (size: number) => (
   <span
@@ -48,7 +49,7 @@ const cellBase: CSSProperties = {
   padding: u(1.05, 1),
   borderTop: '1px solid rgba(42,29,18,.08)',
   textAlign: 'center',
-  fontSize: u(1.05),
+  fontSize: textSize(1.05),
   fontWeight: 600,
 };
 const cellHot: CSSProperties = {
@@ -58,14 +59,14 @@ const cellHot: CSSProperties = {
 const cellLabel: CSSProperties = {
   padding: u(1.05, 1),
   borderTop: '1px solid rgba(42,29,18,.08)',
-  fontSize: u(1.05),
+  fontSize: textSize(1.05),
   fontWeight: 600,
   color: '#7a6a58',
 };
 const thStyle: CSSProperties = {
   padding: u(1.3, 1),
   textAlign: 'center',
-  fontSize: u(1.3),
+  fontSize: textSize(1.3),
   fontWeight: 800,
   letterSpacing: '-.02em',
 };
@@ -170,7 +171,7 @@ export default function SolucionesPage() {
                   padding: u(0.7, 1.2),
                   borderRadius: 99,
                   background: 'rgba(255,255,255,.82)',
-                  fontSize: u(0.95),
+                  fontSize: textSize(0.95),
                   fontWeight: 700,
                   boxShadow: '0 8px 20px rgba(60,40,20,.16)',
                 }}
@@ -205,7 +206,7 @@ export default function SolucionesPage() {
                 >
                   <span
                     style={{
-                      fontSize: u(0.75),
+                      fontSize: textSize(0.75),
                       fontWeight: 700,
                       letterSpacing: '.12em',
                       color: '#8a5a1f',
@@ -215,7 +216,7 @@ export default function SolucionesPage() {
                   </span>
                   <span
                     style={{
-                      fontSize: u(1.4),
+                      fontSize: textSize(1.4),
                       fontWeight: 800,
                       color: '#e8782a',
                       letterSpacing: '-.02em',
@@ -238,7 +239,7 @@ export default function SolucionesPage() {
                         background: 'linear-gradient(135deg,#ffd2b0,#ff9d86)',
                         display: 'grid',
                         placeItems: 'center',
-                        fontSize: u(0.8),
+                        fontSize: textSize(0.8),
                         fontWeight: 800,
                         color: '#fff',
                       }}
@@ -246,14 +247,14 @@ export default function SolucionesPage() {
                       {ini}
                     </span>
                     <div style={{ flex: 1, minWidth: 0 }}>
-                      <div style={{ fontSize: u(0.95), fontWeight: 800, lineHeight: 1.2 }}>
+                      <div style={{ fontSize: textSize(0.95), fontWeight: 800, lineHeight: 1.2 }}>
                         {name}
                       </div>
-                      <div style={{ fontSize: u(0.75), color: '#7a6a58' }}>{sub}</div>
+                      <div style={{ fontSize: textSize(0.75), color: '#7a6a58' }}>{sub}</div>
                     </div>
                     <span
                       style={{
-                        fontSize: u(0.75),
+                        fontSize: textSize(0.75),
                         fontWeight: 800,
                         padding: u(0.25, 0.7),
                         borderRadius: 99,
@@ -286,7 +287,7 @@ export default function SolucionesPage() {
                   style={{
                     display: 'flex',
                     justifyContent: 'space-between',
-                    fontSize: u(0.75),
+                    fontSize: textSize(0.75),
                     color: '#7a6a58',
                   }}
                 >
@@ -306,7 +307,7 @@ export default function SolucionesPage() {
               >
                 <div
                   style={{
-                    fontSize: u(0.75),
+                    fontSize: textSize(0.75),
                     fontWeight: 700,
                     letterSpacing: '.1em',
                     color: '#8a5a1f',
@@ -316,7 +317,7 @@ export default function SolucionesPage() {
                 </div>
                 <div
                   style={{
-                    fontSize: u(2),
+                    fontSize: textSize(2),
                     fontWeight: 800,
                     color: '#2a1d12',
                     letterSpacing: '-.03em',
@@ -324,7 +325,7 @@ export default function SolucionesPage() {
                   }}
                 >
                   {solFor.citas.value}{' '}
-                  <span style={{ fontSize: u(0.9), color: '#2fbf71' }}>{solFor.citas.delta}</span>
+                  <span style={{ fontSize: textSize(0.9), color: '#2fbf71' }}>{solFor.citas.delta}</span>
                 </div>
               </div>
             </Reveal>
@@ -340,7 +341,7 @@ export default function SolucionesPage() {
               >
                 <span
                   style={{
-                    fontSize: u(0.85),
+                    fontSize: textSize(0.85),
                     fontWeight: 700,
                     letterSpacing: '.14em',
                     color: '#8a5a1f',
@@ -369,7 +370,7 @@ export default function SolucionesPage() {
                 </div>
                 <div
                   style={{
-                    fontSize: u(1.15),
+                    fontSize: textSize(1.15),
                     lineHeight: 1.55,
                     color: '#7a6a58',
                     maxWidth: u(30),
@@ -429,7 +430,7 @@ export default function SolucionesPage() {
                   style={{
                     display: 'flex',
                     justifyContent: 'space-between',
-                    fontSize: u(0.8),
+                    fontSize: textSize(0.8),
                     color: '#7a6a58',
                   }}
                 >
@@ -444,13 +445,14 @@ export default function SolucionesPage() {
                 {f.checks.map(([t, tg], i) => (
                   <div
                     key={t}
+                    className="sol-fit-check"
                     style={{
                       display: 'flex',
                       alignItems: 'center',
                       gap: u(1),
                       padding: u(0.9, 0),
                       borderTop: '1px solid rgba(42,29,18,.08)',
-                      fontSize: u(1.1),
+                      fontSize: textSize(1.1),
                       fontWeight: 600,
                       ...(i === 0 ? { borderTop: '1px solid rgba(42,29,18,.08)' } : {}),
                     }}
@@ -460,7 +462,7 @@ export default function SolucionesPage() {
                     <span
                       style={{
                         flex: 'none',
-                        fontSize: u(0.8),
+                        fontSize: textSize(0.8),
                         fontWeight: 700,
                         color: '#8a5a1f',
                         padding: u(0.3, 0.8),
@@ -474,7 +476,7 @@ export default function SolucionesPage() {
                 ))}
               </div>
               <div
-                className="rg"
+                className="rg tablet-cards"
                 style={{ '--c': 'repeat(3,1fr)', '--m': 3, gap: u(1) } as CSSProperties}
               >
                 {f.stats.map(([v, l]) => (
@@ -490,7 +492,7 @@ export default function SolucionesPage() {
                   >
                     <div
                       style={{
-                        fontSize: u(1.8),
+                        fontSize: textSize(1.8),
                         fontWeight: 800,
                         letterSpacing: '-.03em',
                         lineHeight: 1,
@@ -500,7 +502,7 @@ export default function SolucionesPage() {
                     </div>
                     <div
                       style={{
-                        fontSize: u(0.85),
+                        fontSize: textSize(0.85),
                         color: '#7a6a58',
                         marginTop: u(0.35),
                         lineHeight: 1.3,
@@ -515,7 +517,7 @@ export default function SolucionesPage() {
                 <Button href="/agendar" lift>
                   ¿Agendamos un tinto?
                 </Button>
-                <Link href="/contacto" className="link-brand" style={{ fontSize: u(1.05) }}>
+                <Link href="/contacto" className="link-brand" style={{ fontSize: textSize(1.05) }}>
                   Hablar con ventas →
                 </Link>
               </div>
@@ -526,7 +528,7 @@ export default function SolucionesPage() {
         {/* Tipos */}
         <div id="tipos" style={{ padding: `${u(2)} 0 ${u(9)}` }}>
           <SectionTitle ghost={solTypes.ghost} title={solTypes.title} sub={solTypes.sub} />
-          <div className="rg" style={{ '--c': 'repeat(3,1fr)', gap: u(1.6) } as CSSProperties}>
+          <div className="rg tablet-cards" style={{ '--c': 'repeat(3,1fr)', gap: u(1.6) } as CSSProperties}>
             {solTypes.items.map((t, i) => (
               <CreamCard key={t.title} lift delay={i * 80} style={{ gap: u(1) }}>
                 <div style={{ position: 'relative', display: 'flex', flexDirection: 'column' }}>
@@ -557,7 +559,7 @@ export default function SolucionesPage() {
                       gap: u(0.5),
                       padding: u(0.45, 0.9),
                       borderRadius: 99,
-                      fontSize: u(0.8),
+                      fontSize: textSize(0.8),
                       fontWeight: 700,
                       boxShadow: '0 6px 16px rgba(60,40,20,.16)',
                     }}
@@ -595,7 +597,7 @@ export default function SolucionesPage() {
                     <div style={{ minWidth: 0 }}>
                       <div
                         style={{
-                          fontSize: u(0.65),
+                          fontSize: textSize(0.65),
                           fontWeight: 700,
                           letterSpacing: '.12em',
                           color: '#8a5a1f',
@@ -605,7 +607,7 @@ export default function SolucionesPage() {
                       </div>
                       <div
                         style={{
-                          fontSize: u(1),
+                          fontSize: textSize(1),
                           fontWeight: 800,
                           letterSpacing: '-.01em',
                           lineHeight: 1.2,
@@ -614,12 +616,12 @@ export default function SolucionesPage() {
                       >
                         {t.glass[1]}
                       </div>
-                      <div style={{ fontSize: u(0.75), color: '#7a6a58' }}>{t.glass[2]}</div>
+                      <div style={{ fontSize: textSize(0.75), color: '#7a6a58' }}>{t.glass[2]}</div>
                     </div>
                     <span
                       style={{
                         flex: 'none',
-                        fontSize: u(1.3),
+                        fontSize: textSize(1.3),
                         fontWeight: 800,
                         color: '#e8782a',
                         letterSpacing: '-.02em',
@@ -629,15 +631,15 @@ export default function SolucionesPage() {
                     </span>
                   </div>
                 </div>
-                <span className="tag" style={{ alignSelf: 'flex-start', fontSize: u(0.85) }}>
+                <span className="tag" style={{ alignSelf: 'flex-start', fontSize: textSize(0.85) }}>
                   {t.range}
                 </span>
                 <h3
-                  style={{ margin: 0, fontSize: u(1.7), fontWeight: 800, letterSpacing: '-.02em' }}
+                  style={{ margin: 0, fontSize: textSize(1.7), fontWeight: 800, letterSpacing: '-.02em' }}
                 >
                   {t.title}
                 </h3>
-                <div style={{ fontSize: u(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{t.text}</div>
+                <div style={{ fontSize: textSize(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{t.text}</div>
                 <div style={{ display: 'flex', flexDirection: 'column', marginTop: u(0.4) }}>
                   {t.checks.map((c, j) => (
                     <div
@@ -647,7 +649,7 @@ export default function SolucionesPage() {
                         alignItems: 'center',
                         gap: u(0.9),
                         padding: u(0.7, 0),
-                        fontSize: u(1.05),
+                        fontSize: textSize(1.05),
                         fontWeight: 600,
                         ...(j ? { borderTop: '1px solid rgba(42,29,18,.08)' } : {}),
                       }}
@@ -660,7 +662,7 @@ export default function SolucionesPage() {
                 <Link
                   href="/agendar"
                   className="link-brand"
-                  style={{ fontSize: u(1.05), marginTop: u(0.4) }}
+                  style={{ fontSize: textSize(1.05), marginTop: u(0.4) }}
                 >
                   Pedir una demo →
                 </Link>
@@ -673,16 +675,16 @@ export default function SolucionesPage() {
         <div style={{ paddingBottom: u(9) }}>
           <SectionTitle ghost={solSteps.ghost} title={solSteps.title} sub={solSteps.sub} />
           <div
-            className="rg"
+            className="rg tablet-cards"
             style={{ '--c': 'repeat(4,1fr)', '--m': 1, gap: u(1.6) } as CSSProperties}
           >
             {solSteps.items.map(([t, d], i) => (
               <CreamCard key={t} delay={i * 70}>
                 <span className="num">{i + 1}</span>
-                <div style={{ fontSize: u(1.45), fontWeight: 800, letterSpacing: '-.02em' }}>
+                <div style={{ fontSize: textSize(1.45), fontWeight: 800, letterSpacing: '-.02em' }}>
                   {t}
                 </div>
-                <div style={{ fontSize: u(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{d}</div>
+                <div style={{ fontSize: textSize(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{d}</div>
               </CreamCard>
             ))}
           </div>
@@ -692,7 +694,8 @@ export default function SolucionesPage() {
         <div style={{ paddingBottom: u(9) }}>
           <SectionTitle ghost={solTable.ghost} title={solTable.title} sub={solTable.sub} />
           <Reveal>
-            <div
+            <MobileScroll label="Comparación de equipos. Desliza horizontalmente para ver todas las columnas.">
+<div
               className="cream soft sol-table"
               style={{ padding: u(1.4, 2), overflow: 'hidden' }}
             >
@@ -731,6 +734,7 @@ export default function SolucionesPage() {
                 ))}
               </div>
             </div>
+</MobileScroll>
           </Reveal>
         </div>
       </div>
@@ -758,7 +762,7 @@ export default function SolucionesPage() {
           }}
         >
           <SectionTitle variant="b" ghost={solBenefit.ghost} title={solBenefit.title} as="h2" />
-          <div className="rg" style={{ '--c': 'repeat(3,1fr)', gap: u(2) } as CSSProperties}>
+          <div className="rg tablet-cards" style={{ '--c': 'repeat(3,1fr)', gap: u(2) } as CSSProperties}>
             {solBenefit.items.map((b, i) => (
               <Reveal
                 key={b.title}
@@ -827,7 +831,7 @@ export default function SolucionesPage() {
                   <h3
                     style={{
                       margin: 0,
-                      fontSize: u(1.5),
+                      fontSize: textSize(1.5),
                       fontWeight: 600,
                       letterSpacing: '-.02em',
                     }}
@@ -836,7 +840,7 @@ export default function SolucionesPage() {
                   </h3>
                   <div
                     style={{
-                      fontSize: u(1.05),
+                      fontSize: textSize(1.05),
                       color: '#7a6a58',
                       lineHeight: 1.5,
                       marginTop: u(0.4),
