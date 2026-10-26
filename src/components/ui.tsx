@@ -68,7 +68,7 @@ export function SectionTitle({
   ghostSize,
   ghostTop,
   align = 'center',
-  as: As = 'h3',
+  as: As = 'h2',
   maxWidth,
   style,
 }: {
@@ -295,7 +295,7 @@ export function ClosingCard({
         boxShadow: `0 ${u(1.4)} ${u(3.4)} rgba(240,150,80,.22),inset 0 1px 0 #fff`,
       }}
     >
-      <h3
+      <h2
         className="fz"
         style={
           {
@@ -310,7 +310,7 @@ export function ClosingCard({
         }
       >
         {title} {accent && <Accent>{accent}</Accent>}
-      </h3>
+      </h2>
       {text && (
         <p
           style={{

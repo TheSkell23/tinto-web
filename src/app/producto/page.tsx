@@ -93,7 +93,7 @@ function FeatureText({ f, order }: { f: (typeof features.rows)[number]; order?: 
   return (
     <Reveal style={{ order, display: 'flex', flexDirection: 'column', gap: u(1.4) }}>
       <Pill>{f.tag}</Pill>
-      <h4
+      <h3
         className="fz"
         style={
           {
@@ -106,7 +106,7 @@ function FeatureText({ f, order }: { f: (typeof features.rows)[number]; order?: 
         }
       >
         {f.title}
-      </h4>
+      </h3>
       <p style={{ margin: 0, fontSize: u(1.2), lineHeight: 1.5, color: '#7a6a58' }}>{f.text}</p>
       <div>
         {f.checks.map((c) => (
@@ -330,6 +330,7 @@ export default function ProductoPage() {
       </div>
 
       <section
+        aria-label="Funciones y planes de Tinto"
         className="cq"
         style={{
           position: 'relative',
@@ -582,7 +583,7 @@ export default function ProductoPage() {
               {whyTinto.ghost}
             </GhostTitle>
             <Reveal style={{ display: 'flex', flexDirection: 'column', gap: u(1.6) }}>
-              <h3
+              <h2
                 className="fz"
                 style={
                   {
@@ -600,7 +601,7 @@ export default function ProductoPage() {
                 <em style={{ fontStyle: 'normal', fontWeight: 800, color: '#e8782a' }}>
                   {whyTinto.accent}
                 </em>
-              </h3>
+              </h2>
               <p
                 style={{
                   margin: 0,

@@ -72,8 +72,9 @@ export default function HomePage() {
     <>
       {/* ---------- Hero ---------- */}
       <div>
-        <h1 className="sr-only">tinto: atrae, precalifica y organiza tus oportunidades</h1>
+        <h1 id="inicio-title" className="sr-only">tinto: atrae, precalifica y organiza tus oportunidades</h1>
         <section
+          aria-labelledby="inicio-title"
           className="home-hero cq"
           style={{
             position: 'relative',
@@ -354,6 +355,7 @@ export default function HomePage() {
       </div>
 
       <section
+        aria-label="C?mo funciona Tinto"
         className="cq"
         style={{
           position: 'relative',
@@ -653,7 +655,7 @@ export default function HomePage() {
             <Reveal
               style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: u(1) }}
             >
-              <h3
+              <h2
                 className="fz"
                 style={
                   {
@@ -674,7 +676,7 @@ export default function HomePage() {
                 <em style={{ fontStyle: 'normal', fontWeight: 800, color: '#e8782a' }}>
                   {homeBanner.accent}
                 </em>
-              </h3>
+              </h2>
               <p
                 style={{
                   margin: 0,

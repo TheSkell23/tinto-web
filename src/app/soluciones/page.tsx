@@ -117,7 +117,7 @@ export default function SolucionesPage() {
             <GhostTitle size={5.4} top={-3.6} align="left">
               {solFor.ghost}
             </GhostTitle>
-            <h3
+            <h2
               className="fz"
               style={
                 {
@@ -134,7 +134,7 @@ export default function SolucionesPage() {
               }
             >
               {solFor.title} <Accent>{solFor.accent}</Accent>
-            </h3>
+            </h2>
           </Reveal>
           <div
             className="rg"
@@ -632,11 +632,11 @@ export default function SolucionesPage() {
                 <span className="tag" style={{ alignSelf: 'flex-start', fontSize: u(0.85) }}>
                   {t.range}
                 </span>
-                <h4
+                <h3
                   style={{ margin: 0, fontSize: u(1.7), fontWeight: 800, letterSpacing: '-.02em' }}
                 >
                   {t.title}
-                </h4>
+                </h3>
                 <div style={{ fontSize: u(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{t.text}</div>
                 <div style={{ display: 'flex', flexDirection: 'column', marginTop: u(0.4) }}>
                   {t.checks.map((c, j) => (
@@ -736,6 +736,7 @@ export default function SolucionesPage() {
       </div>
 
       <section
+        aria-label="Qui?n se beneficia de Tinto"
         className="cq"
         style={{
           position: 'relative',
@@ -823,7 +824,7 @@ export default function SolucionesPage() {
                   </div>
                 </div>
                 <div>
-                  <h4
+                  <h3
                     style={{
                       margin: 0,
                       fontSize: u(1.5),
@@ -832,7 +833,7 @@ export default function SolucionesPage() {
                     }}
                   >
                     {b.title}
-                  </h4>
+                  </h3>
                   <div
                     style={{
                       fontSize: u(1.05),

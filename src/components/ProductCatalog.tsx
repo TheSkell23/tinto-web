@@ -252,11 +252,11 @@ export function ProductCatalog() {
                   flex: 1,
                 }}
               >
-                <h4
+                <h3
                   style={{ margin: 0, fontSize: u(1.55), fontWeight: 800, letterSpacing: '-.02em' }}
                 >
                   {c.name}
-                </h4>
+                </h3>
                 <div style={{ fontSize: u(1), lineHeight: 1.5, color: '#7a6a58' }}>{c.desc}</div>
                 <div
                   style={{

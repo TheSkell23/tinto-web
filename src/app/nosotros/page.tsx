@@ -188,6 +188,7 @@ export default function NosotrosPage() {
       </div>
 
       <section
+        aria-label="Nuestra forma de trabajar"
         className="cq sheet"
         style={{
           marginTop: u(-4),
@@ -274,7 +275,7 @@ export default function NosotrosPage() {
           }}
         >
           <Reveal>
-            <h3
+            <h2
               className="fz"
               style={
                 {
@@ -290,7 +291,7 @@ export default function NosotrosPage() {
               }
             >
               {nosStory.coffeeTitle} <em style={accentEm}>{nosStory.coffeeAccent}</em>
-            </h3>
+            </h2>
           </Reveal>
           <Image
             src="/images/cafecito-conversacion.jpg"

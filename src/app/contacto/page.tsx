@@ -154,7 +154,7 @@ export default function ContactoPage() {
           >
             {contactoWays.ghost}
           </span>
-          <h3
+          <h2
             className="fz ct-off1"
             style={
               {
@@ -173,7 +173,7 @@ export default function ContactoPage() {
             }
           >
             {contactoWays.title} <Accent>{contactoWays.accent}</Accent>
-          </h3>
+          </h2>
           <p
             className="ct-off2"
             style={{
@@ -361,7 +361,7 @@ export default function ContactoPage() {
                 alignItems: 'flex-start',
               }}
             >
-              <h3
+              <h2
                 className="fz"
                 style={
                   {
@@ -377,7 +377,7 @@ export default function ContactoPage() {
                 }
               >
                 {contactoCta.title} <Accent>{contactoCta.accent}</Accent>
-              </h3>
+              </h2>
               <p
                 style={{
                   margin: 0,
