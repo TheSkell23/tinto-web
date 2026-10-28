@@ -1,0 +1,126 @@
+{
+  "results": [
+    {
+      "route": "/",
+      "width": 375,
+      "heading": "m-heading-in",
+      "overflow": false,
+      "pending": 0,
+      "marked": 13
+    },
+    {
+      "route": "/producto",
+      "width": 375,
+      "heading": "m-heading-in",
+      "overflow": false,
+      "pending": 0,
+      "marked": 22
+    },
+    {
+      "route": "/soluciones",
+      "width": 375,
+      "heading": "m-heading-in",
+      "overflow": false,
+      "pending": 0,
+      "marked": 13
+    },
+    {
+      "route": "/nosotros",
+      "width": 375,
+      "heading": "m-heading-in",
+      "overflow": false,
+      "pending": 0,
+      "marked": 17
+    },
+    {
+      "route": "/dudas",
+      "width": 375,
+      "heading": "m-heading-in",
+      "overflow": false,
+      "pending": 0,
+      "marked": 0
+    },
+    {
+      "route": "/contacto",
+      "width": 375,
+      "heading": "m-heading-in",
+      "overflow": false,
+      "pending": 0,
+      "marked": 0
+    },
+    {
+      "route": "/agendar",
+      "width": 375,
+      "heading": "m-heading-in",
+      "overflow": false,
+      "pending": 0,
+      "marked": 0
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "heading": "m-heading-in",
+      "overflow": false,
+      "pending": 0,
+      "marked": 13
+    },
+    {
+      "route": "/producto",
+      "width": 1440,
+      "heading": "m-heading-in",
+      "overflow": false,
+      "pending": 0,
+      "marked": 22
+    },
+    {
+      "route": "/soluciones",
+      "width": 1440,
+      "heading": "m-heading-in",
+      "overflow": false,
+      "pending": 0,
+      "marked": 13
+    },
+    {
+      "route": "/nosotros",
+      "width": 1440,
+      "heading": "m-heading-in",
+      "overflow": false,
+      "pending": 0,
+      "marked": 17
+    },
+    {
+      "route": "/dudas",
+      "width": 1440,
+      "heading": "m-heading-in",
+      "overflow": false,
+      "pending": 0,
+      "marked": 0
+    },
+    {
+      "route": "/contacto",
+      "width": 1440,
+      "heading": "m-heading-in",
+      "overflow": false,
+      "pending": 0,
+      "marked": 0
+    },
+    {
+      "route": "/agendar",
+      "width": 1440,
+      "heading": "m-heading-in",
+      "overflow": false,
+      "pending": 0,
+      "marked": 0
+    }
+  ],
+  "checks": [
+    "entradas en 7 rutas a 375 y 1440",
+    "sin scroll horizontal",
+    "todo el contenido revelado",
+    "bucles fuera de pantalla pausados",
+    "catálogo y FAQ",
+    "contacto simulado",
+    "movimiento reducido",
+    "sin errores JavaScript"
+  ]
+}

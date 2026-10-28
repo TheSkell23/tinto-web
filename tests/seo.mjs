@@ -1,9 +1,11 @@
-﻿import assert from 'node:assert/strict';
+import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import { chromium } from '@playwright/test';
 import sharp from 'sharp';
 
-const base = process.argv[2] || 'http://localhost:3127';
+const base = process.argv[2] || process.env.TEST_BASE_URL || 'http://localhost:3000';
+const siteOrigin = process.env.TEST_SITE_URL || base;
+const fallbackNoindex = process.env.TEST_EXPECT_NOINDEX === '1';
 const routes = ['/', '/producto', '/soluciones', '/nosotros', '/dudas', '/contacto', '/agendar'];
 const rows = [];
 const browser = await chromium.launch();
@@ -23,7 +25,7 @@ function validate(node) {
   if (!node || typeof node !== 'object') return;
   if (node['@type']) assert(types.has(node['@type']), `Tipo inesperado ${node['@type']}`);
   for (const key of ['@id', 'url', 'logo', 'item'])
-    if (typeof node[key] === 'string') assert.equal(new URL(node[key]).origin, base);
+    if (typeof node[key] === 'string') assert.equal(new URL(node[key]).origin, siteOrigin);
   for (const forbidden of [
     'aggregateRating',
     'review',
@@ -123,13 +125,16 @@ try {
       })),
     }));
     assert.equal(row.descriptions.length, 1);
-    assert.deepEqual(row.canonical, [base + (route === '/' ? '/' : route)]);
+    assert.deepEqual(row.canonical, [siteOrigin + (route === '/' ? '/' : route)]);
     assert.equal(row.h1, 1);
     assert.equal(row.lang, 'es');
     assert(row.headTags);
     assert.equal(row.missingAlt, 0);
     assert.deepEqual(row.unnamedLinks, []);
-    assert.equal(row.robots, route === '/agendar' ? 'noindex, follow' : 'index, follow');
+    assert.equal(
+      row.robots,
+      fallbackNoindex || route === '/agendar' ? 'noindex, follow' : 'index, follow',
+    );
     for (const key of [
       'og:type',
       'og:locale',
@@ -175,12 +180,14 @@ try {
   assert.equal((xml.match(/<url>/g) || []).length, 6);
   assert(!xml.includes('/agendar'));
   for (const route of routes.filter((x) => x != '/agendar'))
-    assert(xml.includes(`<loc>${base + route}</loc>`));
+    assert(xml.includes(`<loc>${siteOrigin + route}</loc>`));
   const robots = await fetch(base + '/robots.txt');
   assert.equal(robots.status, 200);
   const robotText = await robots.text();
-  assert(robotText.includes('Disallow: /api/'));
-  assert(robotText.includes(base + '/sitemap.xml'));
+  assert(
+    fallbackNoindex ? /^Disallow: \/$/m.test(robotText) : robotText.includes('Disallow: /api/'),
+  );
+  assert(robotText.includes(siteOrigin + '/sitemap.xml'));
   const manifest = await fetch(base + '/manifest.webmanifest');
   assert.equal(manifest.status, 200);
   assert.equal((await manifest.json()).lang, 'es-CO');

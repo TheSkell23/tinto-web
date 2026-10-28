@@ -1,5 +1,5 @@
 {
-  "base": "http://localhost:3127",
+  "base": "http://localhost:3140",
   "rows": [
     {
       "route": "/",
@@ -8,15 +8,15 @@
         "Atrae, precalifica y organiza las oportunidades de tu agencia de seguros con Tinto. Reúne tus canales y llega a cada conversación con contexto para tu equipo."
       ],
       "canonical": [
-        "http://localhost:3127/"
+        "http://localhost:3000/"
       ],
       "og": {
         "og:title": "CRM para agencias de seguros: vende con contexto | Tinto",
         "og:description": "Atrae, precalifica y organiza las oportunidades de tu agencia de seguros con Tinto. Reúne tus canales y llega a cada conversación con contexto para tu equipo.",
-        "og:url": "http://localhost:3127",
+        "og:url": "http://localhost:3000",
         "og:site_name": "Tinto",
         "og:locale": "es_CO",
-        "og:image": "http://localhost:3127/opengraph-image",
+        "og:image": "http://localhost:3000/opengraph-image",
         "og:image:width": "1200",
         "og:image:height": "630",
         "og:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
@@ -26,32 +26,32 @@
         "twitter:card": "summary_large_image",
         "twitter:title": "CRM para agencias de seguros: vende con contexto | Tinto",
         "twitter:description": "Atrae, precalifica y organiza las oportunidades de tu agencia de seguros con Tinto. Reúne tus canales y llega a cada conversación con contexto para tu equipo.",
-        "twitter:image": "http://localhost:3127/twitter-image",
+        "twitter:image": "http://localhost:3000/twitter-image",
         "twitter:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
         "twitter:image:width": "1200",
         "twitter:image:height": "630"
       },
-      "robots": "index, follow",
+      "robots": "noindex, follow",
       "json": [
         {
           "@context": "https://schema.org",
           "@graph": [
             {
               "@type": "Organization",
-              "@id": "http://localhost:3127/#organization",
+              "@id": "http://localhost:3000/#organization",
               "name": "Tinto",
-              "url": "http://localhost:3127/",
-              "logo": "http://localhost:3127/images/tinto-logo.png",
+              "url": "http://localhost:3000/",
+              "logo": "http://localhost:3000/images/tinto-logo.png",
               "sameAs": []
             },
             {
               "@type": "WebSite",
-              "@id": "http://localhost:3127/#website",
+              "@id": "http://localhost:3000/#website",
               "name": "Tinto",
-              "url": "http://localhost:3127/",
+              "url": "http://localhost:3000/",
               "inLanguage": "es-CO",
               "publisher": {
-                "@id": "http://localhost:3127/#organization"
+                "@id": "http://localhost:3000/#organization"
               }
             }
           ]
@@ -61,7 +61,7 @@
       "headings": [
         {
           "level": 1,
-          "text": "tinto: atrae, precalifica y organiza tus oportunidades"
+          "text": "Atrae, precalifica y organiza tus oportunidades."
         },
         {
           "level": 2,
@@ -122,15 +122,15 @@
         "Conoce los módulos de Tinto: captación, precalificación, pipeline y reportes. Organiza contactos, citas y próximos pasos para tu equipo de asesores de seguros."
       ],
       "canonical": [
-        "http://localhost:3127/producto"
+        "http://localhost:3000/producto"
       ],
       "og": {
         "og:title": "Captación, precalificación y pipeline | Tinto",
         "og:description": "Conoce los módulos de Tinto: captación, precalificación, pipeline y reportes. Organiza contactos, citas y próximos pasos para tu equipo de asesores de seguros.",
-        "og:url": "http://localhost:3127/producto",
+        "og:url": "http://localhost:3000/producto",
         "og:site_name": "Tinto",
         "og:locale": "es_CO",
-        "og:image": "http://localhost:3127/opengraph-image",
+        "og:image": "http://localhost:3000/opengraph-image",
         "og:image:width": "1200",
         "og:image:height": "630",
         "og:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
@@ -140,32 +140,32 @@
         "twitter:card": "summary_large_image",
         "twitter:title": "Captación, precalificación y pipeline | Tinto",
         "twitter:description": "Conoce los módulos de Tinto: captación, precalificación, pipeline y reportes. Organiza contactos, citas y próximos pasos para tu equipo de asesores de seguros.",
-        "twitter:image": "http://localhost:3127/twitter-image",
+        "twitter:image": "http://localhost:3000/twitter-image",
         "twitter:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
         "twitter:image:width": "1200",
         "twitter:image:height": "630"
       },
-      "robots": "index, follow",
+      "robots": "noindex, follow",
       "json": [
         {
           "@context": "https://schema.org",
           "@graph": [
             {
               "@type": "Organization",
-              "@id": "http://localhost:3127/#organization",
+              "@id": "http://localhost:3000/#organization",
               "name": "Tinto",
-              "url": "http://localhost:3127/",
-              "logo": "http://localhost:3127/images/tinto-logo.png",
+              "url": "http://localhost:3000/",
+              "logo": "http://localhost:3000/images/tinto-logo.png",
               "sameAs": []
             },
             {
               "@type": "WebSite",
-              "@id": "http://localhost:3127/#website",
+              "@id": "http://localhost:3000/#website",
               "name": "Tinto",
-              "url": "http://localhost:3127/",
+              "url": "http://localhost:3000/",
               "inLanguage": "es-CO",
               "publisher": {
-                "@id": "http://localhost:3127/#organization"
+                "@id": "http://localhost:3000/#organization"
               }
             }
           ]
@@ -175,31 +175,31 @@
           "@graph": [
             {
               "@type": "BreadcrumbList",
-              "@id": "http://localhost:3127/producto#breadcrumb",
+              "@id": "http://localhost:3000/producto#breadcrumb",
               "itemListElement": [
                 {
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Inicio",
-                  "item": "http://localhost:3127/"
+                  "item": "http://localhost:3000/"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Producto",
-                  "item": "http://localhost:3127/producto"
+                  "item": "http://localhost:3000/producto"
                 }
               ]
             },
             {
               "@type": "SoftwareApplication",
-              "@id": "http://localhost:3127/producto#software",
+              "@id": "http://localhost:3000/producto#software",
               "name": "Tinto",
               "applicationCategory": "BusinessApplication",
-              "url": "http://localhost:3127/producto",
+              "url": "http://localhost:3000/producto",
               "description": "Llega a cada conversación con contexto. Tinto reúne tus canales, filtra a quien sí te interesa y te dice cuál es el siguiente paso.",
               "publisher": {
-                "@id": "http://localhost:3127/#organization"
+                "@id": "http://localhost:3000/#organization"
               },
               "inLanguage": "es-CO"
             }
@@ -295,15 +295,15 @@
         "Explora cómo Tinto se adapta a agencias, corredoras y redes comerciales. Reparte oportunidades, organiza el seguimiento y consulta reportes de todo tu equipo."
       ],
       "canonical": [
-        "http://localhost:3127/soluciones"
+        "http://localhost:3000/soluciones"
       ],
       "og": {
         "og:title": "CRM para agencias, corredoras y redes | Tinto",
         "og:description": "Explora cómo Tinto se adapta a agencias, corredoras y redes comerciales. Reparte oportunidades, organiza el seguimiento y consulta reportes de todo tu equipo.",
-        "og:url": "http://localhost:3127/soluciones",
+        "og:url": "http://localhost:3000/soluciones",
         "og:site_name": "Tinto",
         "og:locale": "es_CO",
-        "og:image": "http://localhost:3127/opengraph-image",
+        "og:image": "http://localhost:3000/opengraph-image",
         "og:image:width": "1200",
         "og:image:height": "630",
         "og:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
@@ -313,32 +313,32 @@
         "twitter:card": "summary_large_image",
         "twitter:title": "CRM para agencias, corredoras y redes | Tinto",
         "twitter:description": "Explora cómo Tinto se adapta a agencias, corredoras y redes comerciales. Reparte oportunidades, organiza el seguimiento y consulta reportes de todo tu equipo.",
-        "twitter:image": "http://localhost:3127/twitter-image",
+        "twitter:image": "http://localhost:3000/twitter-image",
         "twitter:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
         "twitter:image:width": "1200",
         "twitter:image:height": "630"
       },
-      "robots": "index, follow",
+      "robots": "noindex, follow",
       "json": [
         {
           "@context": "https://schema.org",
           "@graph": [
             {
               "@type": "Organization",
-              "@id": "http://localhost:3127/#organization",
+              "@id": "http://localhost:3000/#organization",
               "name": "Tinto",
-              "url": "http://localhost:3127/",
-              "logo": "http://localhost:3127/images/tinto-logo.png",
+              "url": "http://localhost:3000/",
+              "logo": "http://localhost:3000/images/tinto-logo.png",
               "sameAs": []
             },
             {
               "@type": "WebSite",
-              "@id": "http://localhost:3127/#website",
+              "@id": "http://localhost:3000/#website",
               "name": "Tinto",
-              "url": "http://localhost:3127/",
+              "url": "http://localhost:3000/",
               "inLanguage": "es-CO",
               "publisher": {
-                "@id": "http://localhost:3127/#organization"
+                "@id": "http://localhost:3000/#organization"
               }
             }
           ]
@@ -348,19 +348,19 @@
           "@graph": [
             {
               "@type": "BreadcrumbList",
-              "@id": "http://localhost:3127/soluciones#breadcrumb",
+              "@id": "http://localhost:3000/soluciones#breadcrumb",
               "itemListElement": [
                 {
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Inicio",
-                  "item": "http://localhost:3127/"
+                  "item": "http://localhost:3000/"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Soluciones",
-                  "item": "http://localhost:3127/soluciones"
+                  "item": "http://localhost:3000/soluciones"
                 }
               ]
             }
@@ -436,15 +436,15 @@
         "Conoce al equipo detrás de Tinto y los valores que guían el producto. Trabajamos para convertir conversaciones dispersas en oportunidades claras para tu agencia."
       ],
       "canonical": [
-        "http://localhost:3127/nosotros"
+        "http://localhost:3000/nosotros"
       ],
       "og": {
         "og:title": "Nuestro equipo, valores e historia | Tinto",
         "og:description": "Conoce al equipo detrás de Tinto y los valores que guían el producto. Trabajamos para convertir conversaciones dispersas en oportunidades claras para tu agencia.",
-        "og:url": "http://localhost:3127/nosotros",
+        "og:url": "http://localhost:3000/nosotros",
         "og:site_name": "Tinto",
         "og:locale": "es_CO",
-        "og:image": "http://localhost:3127/opengraph-image",
+        "og:image": "http://localhost:3000/opengraph-image",
         "og:image:width": "1200",
         "og:image:height": "630",
         "og:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
@@ -454,32 +454,32 @@
         "twitter:card": "summary_large_image",
         "twitter:title": "Nuestro equipo, valores e historia | Tinto",
         "twitter:description": "Conoce al equipo detrás de Tinto y los valores que guían el producto. Trabajamos para convertir conversaciones dispersas en oportunidades claras para tu agencia.",
-        "twitter:image": "http://localhost:3127/twitter-image",
+        "twitter:image": "http://localhost:3000/twitter-image",
         "twitter:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
         "twitter:image:width": "1200",
         "twitter:image:height": "630"
       },
-      "robots": "index, follow",
+      "robots": "noindex, follow",
       "json": [
         {
           "@context": "https://schema.org",
           "@graph": [
             {
               "@type": "Organization",
-              "@id": "http://localhost:3127/#organization",
+              "@id": "http://localhost:3000/#organization",
               "name": "Tinto",
-              "url": "http://localhost:3127/",
-              "logo": "http://localhost:3127/images/tinto-logo.png",
+              "url": "http://localhost:3000/",
+              "logo": "http://localhost:3000/images/tinto-logo.png",
               "sameAs": []
             },
             {
               "@type": "WebSite",
-              "@id": "http://localhost:3127/#website",
+              "@id": "http://localhost:3000/#website",
               "name": "Tinto",
-              "url": "http://localhost:3127/",
+              "url": "http://localhost:3000/",
               "inLanguage": "es-CO",
               "publisher": {
-                "@id": "http://localhost:3127/#organization"
+                "@id": "http://localhost:3000/#organization"
               }
             }
           ]
@@ -489,19 +489,19 @@
           "@graph": [
             {
               "@type": "BreadcrumbList",
-              "@id": "http://localhost:3127/nosotros#breadcrumb",
+              "@id": "http://localhost:3000/nosotros#breadcrumb",
               "itemListElement": [
                 {
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Inicio",
-                  "item": "http://localhost:3127/"
+                  "item": "http://localhost:3000/"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Nosotros",
-                  "item": "http://localhost:3127/nosotros"
+                  "item": "http://localhost:3000/nosotros"
                 }
               ]
             }
@@ -557,15 +557,15 @@
         "Resuelve tus dudas sobre cómo funciona Tinto, sus módulos y cómo empezar. Lee las preguntas frecuentes o conversa con el equipo sobre tu agencia de seguros."
       ],
       "canonical": [
-        "http://localhost:3127/dudas"
+        "http://localhost:3000/dudas"
       ],
       "og": {
         "og:title": "Preguntas frecuentes sobre el CRM | Tinto",
         "og:description": "Resuelve tus dudas sobre cómo funciona Tinto, sus módulos y cómo empezar. Lee las preguntas frecuentes o conversa con el equipo sobre tu agencia de seguros.",
-        "og:url": "http://localhost:3127/dudas",
+        "og:url": "http://localhost:3000/dudas",
         "og:site_name": "Tinto",
         "og:locale": "es_CO",
-        "og:image": "http://localhost:3127/opengraph-image",
+        "og:image": "http://localhost:3000/opengraph-image",
         "og:image:width": "1200",
         "og:image:height": "630",
         "og:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
@@ -575,32 +575,32 @@
         "twitter:card": "summary_large_image",
         "twitter:title": "Preguntas frecuentes sobre el CRM | Tinto",
         "twitter:description": "Resuelve tus dudas sobre cómo funciona Tinto, sus módulos y cómo empezar. Lee las preguntas frecuentes o conversa con el equipo sobre tu agencia de seguros.",
-        "twitter:image": "http://localhost:3127/twitter-image",
+        "twitter:image": "http://localhost:3000/twitter-image",
         "twitter:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
         "twitter:image:width": "1200",
         "twitter:image:height": "630"
       },
-      "robots": "index, follow",
+      "robots": "noindex, follow",
       "json": [
         {
           "@context": "https://schema.org",
           "@graph": [
             {
               "@type": "Organization",
-              "@id": "http://localhost:3127/#organization",
+              "@id": "http://localhost:3000/#organization",
               "name": "Tinto",
-              "url": "http://localhost:3127/",
-              "logo": "http://localhost:3127/images/tinto-logo.png",
+              "url": "http://localhost:3000/",
+              "logo": "http://localhost:3000/images/tinto-logo.png",
               "sameAs": []
             },
             {
               "@type": "WebSite",
-              "@id": "http://localhost:3127/#website",
+              "@id": "http://localhost:3000/#website",
               "name": "Tinto",
-              "url": "http://localhost:3127/",
+              "url": "http://localhost:3000/",
               "inLanguage": "es-CO",
               "publisher": {
-                "@id": "http://localhost:3127/#organization"
+                "@id": "http://localhost:3000/#organization"
               }
             }
           ]
@@ -610,29 +610,29 @@
           "@graph": [
             {
               "@type": "BreadcrumbList",
-              "@id": "http://localhost:3127/dudas#breadcrumb",
+              "@id": "http://localhost:3000/dudas#breadcrumb",
               "itemListElement": [
                 {
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Inicio",
-                  "item": "http://localhost:3127/"
+                  "item": "http://localhost:3000/"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Dudas",
-                  "item": "http://localhost:3127/dudas"
+                  "item": "http://localhost:3000/dudas"
                 }
               ]
             },
             {
               "@type": "FAQPage",
-              "@id": "http://localhost:3127/dudas#faq",
-              "url": "http://localhost:3127/dudas",
+              "@id": "http://localhost:3000/dudas#faq",
+              "url": "http://localhost:3000/dudas",
               "inLanguage": "es-CO",
               "isPartOf": {
-                "@id": "http://localhost:3127/#website"
+                "@id": "http://localhost:3000/#website"
               },
               "mainEntity": [
                 {
@@ -713,15 +713,15 @@
         "Cuéntanos cómo vende tu agencia de seguros y qué necesita tu equipo. Conoce las formas de conversar con Tinto y da el primer paso para organizar oportunidades."
       ],
       "canonical": [
-        "http://localhost:3127/contacto"
+        "http://localhost:3000/contacto"
       ],
       "og": {
         "og:title": "Conversemos sobre el CRM de tu agencia | Tinto",
         "og:description": "Cuéntanos cómo vende tu agencia de seguros y qué necesita tu equipo. Conoce las formas de conversar con Tinto y da el primer paso para organizar oportunidades.",
-        "og:url": "http://localhost:3127/contacto",
+        "og:url": "http://localhost:3000/contacto",
         "og:site_name": "Tinto",
         "og:locale": "es_CO",
-        "og:image": "http://localhost:3127/opengraph-image",
+        "og:image": "http://localhost:3000/opengraph-image",
         "og:image:width": "1200",
         "og:image:height": "630",
         "og:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
@@ -731,32 +731,32 @@
         "twitter:card": "summary_large_image",
         "twitter:title": "Conversemos sobre el CRM de tu agencia | Tinto",
         "twitter:description": "Cuéntanos cómo vende tu agencia de seguros y qué necesita tu equipo. Conoce las formas de conversar con Tinto y da el primer paso para organizar oportunidades.",
-        "twitter:image": "http://localhost:3127/twitter-image",
+        "twitter:image": "http://localhost:3000/twitter-image",
         "twitter:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
         "twitter:image:width": "1200",
         "twitter:image:height": "630"
       },
-      "robots": "index, follow",
+      "robots": "noindex, follow",
       "json": [
         {
           "@context": "https://schema.org",
           "@graph": [
             {
               "@type": "Organization",
-              "@id": "http://localhost:3127/#organization",
+              "@id": "http://localhost:3000/#organization",
               "name": "Tinto",
-              "url": "http://localhost:3127/",
-              "logo": "http://localhost:3127/images/tinto-logo.png",
+              "url": "http://localhost:3000/",
+              "logo": "http://localhost:3000/images/tinto-logo.png",
               "sameAs": []
             },
             {
               "@type": "WebSite",
-              "@id": "http://localhost:3127/#website",
+              "@id": "http://localhost:3000/#website",
               "name": "Tinto",
-              "url": "http://localhost:3127/",
+              "url": "http://localhost:3000/",
               "inLanguage": "es-CO",
               "publisher": {
-                "@id": "http://localhost:3127/#organization"
+                "@id": "http://localhost:3000/#organization"
               }
             }
           ]
@@ -766,33 +766,33 @@
           "@graph": [
             {
               "@type": "BreadcrumbList",
-              "@id": "http://localhost:3127/contacto#breadcrumb",
+              "@id": "http://localhost:3000/contacto#breadcrumb",
               "itemListElement": [
                 {
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Inicio",
-                  "item": "http://localhost:3127/"
+                  "item": "http://localhost:3000/"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Contacto",
-                  "item": "http://localhost:3127/contacto"
+                  "item": "http://localhost:3000/contacto"
                 }
               ]
             },
             {
               "@type": "ContactPage",
-              "@id": "http://localhost:3127/contacto#page",
-              "url": "http://localhost:3127/contacto",
+              "@id": "http://localhost:3000/contacto#page",
+              "url": "http://localhost:3000/contacto",
               "name": "Conversemos sobre el CRM de tu agencia",
               "inLanguage": "es-CO",
               "about": {
-                "@id": "http://localhost:3127/#organization"
+                "@id": "http://localhost:3000/#organization"
               },
               "isPartOf": {
-                "@id": "http://localhost:3127/#website"
+                "@id": "http://localhost:3000/#website"
               }
             }
           ]
@@ -843,15 +843,15 @@
         "¿Agendamos un tinto? Elige cómo quieres conversar, consulta los horarios y déjanos tus datos para conocer el CRM según la forma de trabajar de tu agencia."
       ],
       "canonical": [
-        "http://localhost:3127/agendar"
+        "http://localhost:3000/agendar"
       ],
       "og": {
         "og:title": "Agenda una demo para tu agencia | Tinto",
         "og:description": "¿Agendamos un tinto? Elige cómo quieres conversar, consulta los horarios y déjanos tus datos para conocer el CRM según la forma de trabajar de tu agencia.",
-        "og:url": "http://localhost:3127/agendar",
+        "og:url": "http://localhost:3000/agendar",
         "og:site_name": "Tinto",
         "og:locale": "es_CO",
-        "og:image": "http://localhost:3127/opengraph-image",
+        "og:image": "http://localhost:3000/opengraph-image",
         "og:image:width": "1200",
         "og:image:height": "630",
         "og:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
@@ -861,7 +861,7 @@
         "twitter:card": "summary_large_image",
         "twitter:title": "Agenda una demo para tu agencia | Tinto",
         "twitter:description": "¿Agendamos un tinto? Elige cómo quieres conversar, consulta los horarios y déjanos tus datos para conocer el CRM según la forma de trabajar de tu agencia.",
-        "twitter:image": "http://localhost:3127/twitter-image",
+        "twitter:image": "http://localhost:3000/twitter-image",
         "twitter:image:alt": "Tinto: atrae, precalifica y organiza tus oportunidades",
         "twitter:image:width": "1200",
         "twitter:image:height": "630"
@@ -873,20 +873,20 @@
           "@graph": [
             {
               "@type": "Organization",
-              "@id": "http://localhost:3127/#organization",
+              "@id": "http://localhost:3000/#organization",
               "name": "Tinto",
-              "url": "http://localhost:3127/",
-              "logo": "http://localhost:3127/images/tinto-logo.png",
+              "url": "http://localhost:3000/",
+              "logo": "http://localhost:3000/images/tinto-logo.png",
               "sameAs": []
             },
             {
               "@type": "WebSite",
-              "@id": "http://localhost:3127/#website",
+              "@id": "http://localhost:3000/#website",
               "name": "Tinto",
-              "url": "http://localhost:3127/",
+              "url": "http://localhost:3000/",
               "inLanguage": "es-CO",
               "publisher": {
-                "@id": "http://localhost:3127/#organization"
+                "@id": "http://localhost:3000/#organization"
               }
             }
           ]
@@ -896,19 +896,19 @@
           "@graph": [
             {
               "@type": "BreadcrumbList",
-              "@id": "http://localhost:3127/agendar#breadcrumb",
+              "@id": "http://localhost:3000/agendar#breadcrumb",
               "itemListElement": [
                 {
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Inicio",
-                  "item": "http://localhost:3127/"
+                  "item": "http://localhost:3000/"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Agendar",
-                  "item": "http://localhost:3127/agendar"
+                  "item": "http://localhost:3000/agendar"
                 }
               ]
             }
@@ -980,6 +980,6 @@
       "height": 512
     }
   ],
-  "sitemap": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n<url>\n<loc>http://localhost:3127/</loc>\n<lastmod>2026-10-25</lastmod>\n<priority>1</priority>\n</url>\n<url>\n<loc>http://localhost:3127/producto</loc>\n<lastmod>2026-10-25</lastmod>\n<priority>0.9</priority>\n</url>\n<url>\n<loc>http://localhost:3127/soluciones</loc>\n<lastmod>2026-10-25</lastmod>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>http://localhost:3127/nosotros</loc>\n<lastmod>2026-10-25</lastmod>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>http://localhost:3127/dudas</loc>\n<lastmod>2026-10-25</lastmod>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>http://localhost:3127/contacto</loc>\n<lastmod>2026-10-25</lastmod>\n<priority>0.7</priority>\n</url>\n</urlset>\n",
-  "robots": "User-Agent: *\nAllow: /\nDisallow: /api/\n\nSitemap: http://localhost:3127/sitemap.xml\n"
+  "sitemap": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n<url>\n<loc>http://localhost:3000/</loc>\n<lastmod>2026-10-25</lastmod>\n<priority>1</priority>\n</url>\n<url>\n<loc>http://localhost:3000/producto</loc>\n<lastmod>2026-10-25</lastmod>\n<priority>0.9</priority>\n</url>\n<url>\n<loc>http://localhost:3000/soluciones</loc>\n<lastmod>2026-10-25</lastmod>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>http://localhost:3000/nosotros</loc>\n<lastmod>2026-10-25</lastmod>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>http://localhost:3000/dudas</loc>\n<lastmod>2026-10-25</lastmod>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>http://localhost:3000/contacto</loc>\n<lastmod>2026-10-25</lastmod>\n<priority>0.7</priority>\n</url>\n</urlset>\n",
+  "robots": "User-Agent: *\nDisallow: /\n\nSitemap: http://localhost:3000/sitemap.xml\n"
 }

@@ -1,0 +1,35 @@
+{
+  "passed": [
+    "worker instalado y controlando",
+    "aviso inmediato al perder red",
+    "el formulario conserva sus datos",
+    "foco dentro del aviso",
+    "recuperación sin borrar el formulario",
+    "ruta inexistente devuelve HTTP 404",
+    "404 con un solo h1",
+    "404 en noindex",
+    "enlace de recuperación al inicio",
+    "recarga/ruta sin red usa HTML guardado",
+    "reintentar sin red mantiene respaldo",
+    "CSS y fuente disponibles sin red",
+    "POST no se simula como éxito offline",
+    "solo recursos de respaldo en caché",
+    "al volver la red recupera la URL solicitada",
+    "sin desborde /esta-pagina-no-existe @320",
+    "sin desborde /offline.html @320",
+    "sin desborde /esta-pagina-no-existe @375",
+    "sin desborde /offline.html @375",
+    "sin desborde /esta-pagina-no-existe @1440",
+    "sin desborde /offline.html @1440",
+    "sin errores de JavaScript"
+  ],
+  "cached": [
+    "/offline.html",
+    "/error-state.css",
+    "/offline-retry.js",
+    "/fonts/PlusJakartaSans-Bold.ttf",
+    "/images/tinto-logo.png",
+    "/icons/icon-192.png"
+  ],
+  "errors": []
+}

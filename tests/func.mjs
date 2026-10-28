@@ -1,5 +1,5 @@
 import { chromium } from '@playwright/test';
-const base = 'http://localhost:3111';
+const base = process.env.TEST_BASE_URL || 'http://localhost:3000';
 const b = await chromium.launch();
 const results = [];
 const ok = (n, c) => {
@@ -13,7 +13,7 @@ page.on('pageerror', (e) => errs.push(String(e)));
 
 // navegación por el menú + ?go=
 await page.goto(base + '/');
-await page.hover('header nav a:text-is("Producto")');
+await page.click('header nav button[aria-label^="Abrir opciones de Producto"]');
 await page.click('a:has-text("Planes y precios")');
 await page.waitForURL(/producto\?go=/);
 await page.waitForTimeout(2200);
@@ -39,7 +39,7 @@ await page.click('button:has-text("Todos")');
 
 // chat y FAQ
 await page.goto(base + '/dudas');
-await page.fill('input[name], input[aria-label="Escribe tu pregunta"]', '¿Cuánto cuesta?');
+await page.fill('input[aria-label="Escribe tu pregunta"]', '¿Cuánto cuesta?');
 await page.click('button:has-text("Enviar")');
 await page.waitForSelector('[data-testid=typing]', { timeout: 1500 });
 ok('indicador "···" visible', true);
@@ -51,20 +51,23 @@ ok('respuesta de precios', txt.includes('$129.000'));
 await page.click('button:has-text("¿Cómo empezamos?")');
 const open = await page.evaluate(
   () =>
-    [...document.querySelectorAll('[id^=faq-a-]')].filter(
-      (e) => getComputedStyle(e).display !== 'none',
+    [...document.querySelectorAll('[id^=faq-q-]')].filter(
+      (e) => e.getAttribute('aria-expanded') === 'true',
     ).length,
 );
 ok('FAQ una sola apertura (' + open + ')', open === 1);
 
 // API real en producción sin Resend: error amable (503); honeypot y validación
-const r1 = await page.request.post(base + '/api/contacto', {
-  data: { name: 'Luis', email: 'luis@correo.com' },
-});
-ok(
-  'prod sin Resend -> 503 amable',
-  r1.status() === 503 && (await r1.json()).error.includes('WhatsApp'),
-);
+// Solo habilitar contra un servidor local sin proveedor configurado.
+if (process.env.TEST_UNCONFIGURED_PROVIDER === '1') {
+  const r1 = await page.request.post(base + '/api/contacto', {
+    data: { name: 'Luis', email: 'luis@correo.com' },
+  });
+  ok(
+    'prod sin Resend -> 503 amable',
+    r1.status() === 503 && (await r1.json()).error.includes('WhatsApp'),
+  );
+}
 const r2 = await page.request.post(base + '/api/contacto', { data: { name: 'x', email: 'bad' } });
 ok('validación servidor 422', r2.status() === 422);
 const r3 = await page.request.post(base + '/api/contacto', {
@@ -77,7 +80,6 @@ await page.route('**/api/contacto', (r) => r.fulfill({ json: { ok: true } }));
 await page.goto(base + '/agendar');
 await page.waitForTimeout(500);
 ok('Confirmar deshabilitado al inicio', await page.isDisabled('[data-testid=confirm]'));
-await page.click('button:has-text("Visita a la oficina")');
 await page.click('button[aria-pressed]:has-text("10:00")');
 await page.fill('input[name=name]', 'Ana Pérez');
 await page.fill('input[name=email]', 'ana@correo.com');
@@ -121,3 +123,4 @@ ok('navegar cierra el menú', (await hid()) === 'true');
 ok('consola sin errores ' + JSON.stringify(errs), errs.length === 0);
 console.log(results.join('\n'));
 await b.close();
+if (results.some((r) => r.startsWith('FALLA'))) process.exitCode = 1;
