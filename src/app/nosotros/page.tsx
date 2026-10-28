@@ -5,6 +5,7 @@ import Image from 'next/image';
 import type { CSSProperties } from 'react';
 import { Icon } from '@/components/Icons';
 import { PageHero } from '@/components/PageHero';
+import { TeamVisual } from '@/components/TeamVisual';
 import { ScrollToGo } from '@/components/ScrollToGo';
 import { Button, ClosingBand, CreamCard, GhostTitle, Reveal, SectionTitle } from '@/components/ui';
 import {
@@ -19,17 +20,6 @@ import {
 import { textSize, k, u } from '@/lib/u';
 
 const accentEm: CSSProperties = { fontWeight: 800, fontStyle: 'normal', color: '#e8782a' };
-const heroChip = (pos: CSSProperties): CSSProperties => ({
-  position: 'absolute',
-  padding: u(0.9, 1.3),
-  borderRadius: u(1.4),
-  background: 'linear-gradient(135deg,rgba(255,255,255,.85),rgba(255,244,230,.7))',
-  backdropFilter: 'blur(12px)',
-  WebkitBackdropFilter: 'blur(12px)',
-  border: '1px solid rgba(255,255,255,.85)',
-  boxShadow: '0 8px 24px rgba(80,50,20,.18)',
-  ...pos,
-});
 const band = (extra: CSSProperties): CSSProperties => ({ position: 'relative', ...extra });
 
 export const metadata = pageMetadata('/nosotros');
@@ -49,71 +39,11 @@ export default function NosotrosPage() {
           secondary={{ label: 'Hablemos →', href: '/contacto' }}
           stats={nosHero.stats}
         >
-          <div
-            style={{
-              position: 'relative',
-              borderRadius: u(2.4),
-              overflow: 'hidden',
-              aspectRatio: '1/1.05',
-              boxShadow: `0 ${u(1.2)} ${u(3)} rgba(60,40,20,.14)`,
-            }}
-          >
-            <Image
-              src="/images/foto-equipo.png"
-              alt={nosHero.alt}
-              fill
-              sizes="(max-width: 899px) 100vw, 44vw"
-              style={{ objectFit: 'cover', objectPosition: '50% 60%' }}
-            />
-            <div style={heroChip({ right: u(1.4), top: u(1.4) })}>
-              <div
-                style={{
-                  fontSize: textSize(0.8),
-                  fontWeight: 700,
-                  letterSpacing: '.1em',
-                  color: '#8a5a1f',
-                }}
-              >
-                {nosHero.chips[0][0]}
-              </div>
-              <div
-                style={{
-                  fontSize: textSize(1.6),
-                  fontWeight: 800,
-                  color: '#e8782a',
-                  letterSpacing: '-.02em',
-                }}
-              >
-                {nosHero.chips[0][1]}
-              </div>
-            </div>
-            <div style={heroChip({ left: u(1.4), bottom: u(1.4) })}>
-              <div
-                style={{
-                  fontSize: textSize(0.8),
-                  fontWeight: 700,
-                  letterSpacing: '.1em',
-                  color: '#8a5a1f',
-                }}
-              >
-                {nosHero.chips[1][0]}
-              </div>
-              <div
-                style={{
-                  fontSize: textSize(1.6),
-                  fontWeight: 800,
-                  color: '#e8782a',
-                  letterSpacing: '-.02em',
-                }}
-              >
-                {nosHero.chips[1][1]}
-              </div>
-            </div>
-          </div>
+          <TeamVisual alt={nosHero.alt} chips={nosHero.chips} since={nosHero.stats[2]} />
         </PageHero>
 
         {/* Valores */}
-        <div id="valores" style={{ padding: `${u(2)} 0 ${u(9)}` }}>
+        <div id="valores" style={{ padding: `${u(1)} 0 ${u(6.5)}` }}>
           <SectionTitle ghost={nosValues.ghost} title={nosValues.title} sub={nosValues.sub} />
           <div
             className="rg tablet-cards"
@@ -125,14 +55,16 @@ export default function NosotrosPage() {
                 <div style={{ fontSize: textSize(1.45), fontWeight: 800, letterSpacing: '-.02em' }}>
                   {t}
                 </div>
-                <div style={{ fontSize: textSize(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{d}</div>
+                <div style={{ fontSize: textSize(1.05), lineHeight: 1.5, color: '#7a6a58' }}>
+                  {d}
+                </div>
               </CreamCard>
             ))}
           </div>
         </div>
 
         {/* Hitos */}
-        <div style={{ paddingBottom: u(9) }}>
+        <div style={{ paddingBottom: u(6.5) }}>
           <SectionTitle
             ghost={nosMilestones.ghost}
             title={nosMilestones.title}
@@ -161,16 +93,21 @@ export default function NosotrosPage() {
                 <div style={{ fontSize: textSize(1.35), fontWeight: 800, letterSpacing: '-.02em' }}>
                   {t}
                 </div>
-                <div style={{ fontSize: textSize(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{d}</div>
+                <div style={{ fontSize: textSize(1.05), lineHeight: 1.5, color: '#7a6a58' }}>
+                  {d}
+                </div>
               </CreamCard>
             ))}
           </div>
         </div>
 
         {/* Equipo */}
-        <div style={{ paddingBottom: u(9) }}>
+        <div style={{ paddingBottom: u(6.5) }}>
           <SectionTitle ghost={nosTeams.ghost} title={nosTeams.title} sub={nosTeams.sub} />
-          <div className="rg tablet-cards" style={{ '--c': 'repeat(3,1fr)', gap: u(1.6) } as CSSProperties}>
+          <div
+            className="rg tablet-cards"
+            style={{ '--c': 'repeat(3,1fr)', gap: u(1.6) } as CSSProperties}
+          >
             {nosTeams.items.map((t, i) => (
               <CreamCard key={t.title} soft lift delay={i * 80}>
                 <span className="ico" style={{ width: u(4.4), height: u(4.4) }}>
@@ -179,8 +116,12 @@ export default function NosotrosPage() {
                 <div style={{ fontSize: textSize(1.6), fontWeight: 800, letterSpacing: '-.02em' }}>
                   {t.title}
                 </div>
-                <div style={{ fontSize: textSize(0.95), fontWeight: 700, color: '#e8782a' }}>{t.role}</div>
-                <div style={{ fontSize: textSize(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{t.text}</div>
+                <div style={{ fontSize: textSize(0.95), fontWeight: 700, color: '#e8782a' }}>
+                  {t.role}
+                </div>
+                <div style={{ fontSize: textSize(1.05), lineHeight: 1.5, color: '#7a6a58' }}>
+                  {t.text}
+                </div>
               </CreamCard>
             ))}
           </div>
@@ -202,7 +143,7 @@ export default function NosotrosPage() {
         <div
           className="cq-pad"
           style={band({
-            padding: `${u(5)} ${u(12)} ${u(4)}`,
+            padding: `${u(5)} ${u(10)} ${u(4)}`,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
@@ -313,8 +254,8 @@ export default function NosotrosPage() {
           className="sheet cq-pad"
           style={{
             zIndex: 3,
-            marginTop: u(-4),
-            padding: `${u(8)} ${u(12)} ${u(6)}`,
+            marginTop: u(4),
+            padding: `${u(8)} ${u(10)} ${u(6)}`,
             display: 'flex',
             flexDirection: 'column',
             gap: u(4),

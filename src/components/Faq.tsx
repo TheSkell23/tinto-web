@@ -70,17 +70,29 @@ export function Faq({ items }: { items: ReadonlyArray<readonly [string, string]>
               id={`faq-a-${i}`}
               role="region"
               aria-labelledby={`faq-q-${i}`}
-              hidden={!on}
+              inert={!on}
               style={{
-                display: on ? 'block' : 'none',
-                paddingTop: u(0.8),
-                fontSize: textSize(1.1),
-                lineHeight: 1.6,
-                color: '#7a6a58',
-                maxWidth: u(52),
+                display: 'grid',
+                gridTemplateRows: on ? '1fr' : '0fr',
+                transition: 'grid-template-rows .4s cubic-bezier(.2,.8,.2,1)',
               }}
             >
-              {a}
+              <div style={{ overflow: 'hidden', minHeight: 0 }}>
+                <div
+                  style={{
+                    paddingTop: u(0.8),
+                    fontSize: textSize(1.1),
+                    lineHeight: 1.6,
+                    color: '#7a6a58',
+                    maxWidth: u(52),
+                    opacity: on ? 1 : 0,
+                    transform: on ? 'none' : 'translateY(-6px)',
+                    transition: 'opacity .35s ease, transform .4s cubic-bezier(.2,.8,.2,1)',
+                  }}
+                >
+                  {a}
+                </div>
+              </div>
             </div>
           </div>
         );

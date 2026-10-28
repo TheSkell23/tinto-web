@@ -91,6 +91,7 @@ export const solTypes = {
   items: [
     {
       image: '/images/foto-equipo.png',
+      alt: 'Equipo de asesores riendo con un tinto en la mano',
       chip: 'Tu equipo en sincronía',
       chipColor: '#2fbf71',
       glass: ['HOY', '8 seguimientos del equipo', 'Ana, Luis y Carla', '+12'],
@@ -101,6 +102,7 @@ export const solTypes = {
     },
     {
       image: '/images/foto-corredora.png',
+      alt: 'Equipo de una agencia revisando oportunidades en un portátil',
       chip: 'Asignación automática',
       chipColor: '#e8782a',
       glass: ['NUEVA OPORTUNIDAD', 'Elena Mora → Luis G.', 'Menor carga del equipo', '6/10'],
@@ -111,6 +113,8 @@ export const solTypes = {
     },
     {
       image: '/images/foto-oficina.png',
+      // Misma foto que la portada de esta página: decorativa aquí para no repetir la descripción.
+      alt: '',
       chip: '3 agencias conectadas',
       chipColor: '#2fbf71',
       glass: ['REPORTE CONSOLIDADO', '128 asesores activos', 'Permisos por agencia', '+38%'],

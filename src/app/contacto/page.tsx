@@ -1,3 +1,4 @@
+import { SectionHero } from '@/components/SectionHero';
 import { JsonLd } from '@/components/JsonLd';
 import { pageStructuredData } from '@/lib/structured-data';
 import { pageMetadata } from '@/lib/metadata';
@@ -6,7 +7,7 @@ import type { CSSProperties } from 'react';
 import { ContactForm } from '@/components/ContactForm';
 import { Icon } from '@/components/Icons';
 import { ScrollToGo } from '@/components/ScrollToGo';
-import { Accent, Button, GhostTitle, Reveal } from '@/components/ui';
+import { Accent, Button, Reveal } from '@/components/ui';
 import { contactoChannels, contactoCta, contactoHero, contactoWays } from '@/content/contacto';
 import { textSize, k, u } from '@/lib/u';
 
@@ -30,98 +31,95 @@ export default function ContactoPage() {
       <JsonLd data={pageStructuredData('/contacto')} />
       <ScrollToGo />
       <div className="pg">
-        <div
-          className="rg ct-hero"
-          style={
-            {
-              '--c': '1fr 1.1fr',
-              gap: u(5),
-              alignItems: 'stretch',
-              minHeight: u(42),
-              paddingBottom: u(3),
-            } as CSSProperties
-          }
-        >
+        <SectionHero full>
           <div
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'space-between',
-              gap: u(3),
-            }}
+            className="rg ct-hero"
+            style={
+              {
+                '--c': '1fr 1.1fr',
+                gap: u(5),
+                alignItems: 'stretch',
+              } as CSSProperties
+            }
           >
-            <Reveal
+            <div
               style={{
-                position: 'relative',
                 display: 'flex',
                 flexDirection: 'column',
-                gap: u(2),
-                alignItems: 'flex-start',
+                justifyContent: 'space-between',
+                gap: u(3),
               }}
             >
-              <GhostTitle size={6.6} top={-4.6} align="left">
-                {contactoHero.ghost}
-              </GhostTitle>
-              <h1
-                className="fz"
-                style={
-                  {
-                    ...k(5.8),
-                    position: 'relative',
-                    zIndex: 1,
-                    margin: 0,
-                    lineHeight: 1,
-                    fontWeight: 800,
-                    letterSpacing: '-.04em',
-                    textWrap: 'balance',
-                  } as CSSProperties
-                }
-              >
-                {contactoHero.title} <Accent>{contactoHero.accent}</Accent>
-              </h1>
-              <p
+              <Reveal
                 style={{
-                  margin: 0,
-                  maxWidth: u(30),
-                  fontSize: textSize(1.25),
-                  lineHeight: 1.55,
-                  color: '#7a6a58',
+                  position: 'relative',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: u(2),
+                  alignItems: 'flex-start',
                 }}
               >
-                {contactoHero.text}
-              </p>
-            </Reveal>
-            <Reveal style={{ display: 'flex', flexDirection: 'column', gap: u(1.3) }}>
-              {contactoHero.info.map((i) => (
-                <div key={i.label} style={{ display: 'flex', alignItems: 'center', gap: u(1.2) }}>
-                  <span
-                    className="cream soft"
-                    style={{
-                      flex: 'none',
-                      width: u(3.6),
-                      height: u(3.6),
-                      borderRadius: u(1.2),
-                      padding: 0,
-                      display: 'grid',
-                      placeItems: 'center',
-                    }}
-                  >
-                    <Icon name={i.icon} size={u(1.7)} stroke={1.8} style={{ color: '#e8782a' }} />
-                  </span>
-                  <div style={{ lineHeight: 1.3 }}>
-                    <div style={{ fontSize: textSize(0.85), color: '#7a6a58', fontWeight: 500 }}>
-                      {i.label}
+                <h1
+                  className="fz"
+                  style={
+                    {
+                      ...k(5.8),
+                      position: 'relative',
+                      zIndex: 1,
+                      margin: 0,
+                      lineHeight: 1,
+                      fontWeight: 800,
+                      letterSpacing: '-.04em',
+                      textWrap: 'balance',
+                    } as CSSProperties
+                  }
+                >
+                  {contactoHero.title} <Accent>{contactoHero.accent}</Accent>
+                </h1>
+                <p
+                  style={{
+                    margin: 0,
+                    maxWidth: u(30),
+                    fontSize: textSize(1.25),
+                    lineHeight: 1.55,
+                    color: '#7a6a58',
+                  }}
+                >
+                  {contactoHero.text}
+                </p>
+              </Reveal>
+              <Reveal style={{ display: 'flex', flexDirection: 'column', gap: u(1.3) }}>
+                {contactoHero.info.map((i) => (
+                  <div key={i.label} style={{ display: 'flex', alignItems: 'center', gap: u(1.2) }}>
+                    <span
+                      className="cream soft"
+                      style={{
+                        flex: 'none',
+                        width: u(3.6),
+                        height: u(3.6),
+                        borderRadius: u(1.2),
+                        padding: 0,
+                        display: 'grid',
+                        placeItems: 'center',
+                      }}
+                    >
+                      <Icon name={i.icon} size={u(1.7)} stroke={1.8} style={{ color: '#e8782a' }} />
+                    </span>
+                    <div style={{ lineHeight: 1.3 }}>
+                      <div style={{ fontSize: textSize(0.85), color: '#7a6a58', fontWeight: 500 }}>
+                        {i.label}
+                      </div>
+                      <div style={{ fontSize: textSize(1.2), fontWeight: 700 }}>{i.value}</div>
                     </div>
-                    <div style={{ fontSize: textSize(1.2), fontWeight: 700 }}>{i.value}</div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </Reveal>
+            </div>
+            <Reveal>
+              <ContactForm />
             </Reveal>
           </div>
-          <Reveal>
-            <ContactForm />
-          </Reveal>
-        </div>
+        </SectionHero>
 
         {/* Tres formas */}
         <div
@@ -235,7 +233,9 @@ export default function ContactoPage() {
                 >
                   {w.title}
                 </div>
-                <div style={{ fontSize: textSize(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{w.text}</div>
+                <div style={{ fontSize: textSize(1.05), lineHeight: 1.5, color: '#7a6a58' }}>
+                  {w.text}
+                </div>
                 <a
                   href="#form"
                   className="link-brand"
@@ -564,7 +564,13 @@ export default function ContactoPage() {
                   ))}
                 </div>
               </div>
-              <div style={{ display: 'grid', gridTemplateColumns: 'var(--mobile-counter-columns, repeat(3,1fr))', gap: u(1) }}>
+              <div
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'var(--mobile-counter-columns, repeat(3,1fr))',
+                  gap: u(1),
+                }}
+              >
                 {m.counters.map(([l, v, hot]) => (
                   <div
                     key={l as string}
@@ -574,7 +580,9 @@ export default function ContactoPage() {
                       backdropFilter: 'none',
                     })}
                   >
-                    <div style={{ fontSize: textSize(0.8), fontWeight: 700, color: '#7a6a58' }}>{l}</div>
+                    <div style={{ fontSize: textSize(0.8), fontWeight: 700, color: '#7a6a58' }}>
+                      {l}
+                    </div>
                     <div
                       style={{
                         fontSize: textSize(2),
@@ -602,7 +610,9 @@ export default function ContactoPage() {
                     >
                       {l}
                     </div>
-                    <div style={{ fontSize: textSize(1.1), fontWeight: 800, lineHeight: 1.25 }}>{v}</div>
+                    <div style={{ fontSize: textSize(1.1), fontWeight: 800, lineHeight: 1.25 }}>
+                      {v}
+                    </div>
                   </div>
                 ))}
               </div>

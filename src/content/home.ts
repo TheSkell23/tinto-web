@@ -127,3 +127,14 @@ export const homeWork = {
     text: 'Agenda una conversación y llega a cada reunión con contexto.',
   },
 };
+
+
+/** Experimento visual del inicio. Cambiar a 'classic' para volver al hero anterior. */
+export const homeHeroVariant: 'preview' | 'classic' = 'preview';
+export const homeHeroPreview = {
+  category: 'CRM para agencias de seguros',
+  title: ['Atrae, precalifica', 'y organiza tus', 'oportunidades.'],
+  explore: 'Explorar el CRM',
+  team: 'Tu equipo comercial',
+  context: 'Conversaciones con contexto',
+};

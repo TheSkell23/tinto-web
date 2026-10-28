@@ -81,9 +81,16 @@ export function CrmMockup({
                 style={{ width: u(0.7), height: u(0.7), borderRadius: '50%', background: c }}
               />
             ))}
-            <span style={{ marginLeft: u(0.7), fontSize: textSize(0.9), fontWeight: 800 }}>{title}</span>
+            <span style={{ marginLeft: u(0.7), fontSize: textSize(0.9), fontWeight: 800 }}>
+              {title}
+            </span>
             <span
-              style={{ marginLeft: 'auto', fontSize: textSize(0.75), fontWeight: 700, color: '#7a6a58' }}
+              style={{
+                marginLeft: 'auto',
+                fontSize: textSize(0.75),
+                fontWeight: 700,
+                color: '#7a6a58',
+              }}
             >
               {period}
             </span>
@@ -114,7 +121,12 @@ export function CrmMockup({
                 >
                   <span>{col.label}</span>
                   <span
-                    style={{ fontSize: textSize(1), fontWeight: 800, color: '#2a1d12', letterSpacing: 0 }}
+                    style={{
+                      fontSize: textSize(1),
+                      fontWeight: 800,
+                      color: '#2a1d12',
+                      letterSpacing: 0,
+                    }}
                   >
                     {col.count}
                   </span>
@@ -124,6 +136,7 @@ export function CrmMockup({
                   return (
                     <div
                       key={name + ini + score}
+                      className="mock-item"
                       style={{
                         display: 'flex',
                         alignItems: 'center',

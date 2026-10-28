@@ -70,7 +70,7 @@ export function DudasChat({ children }: { children: ReactNode }) {
           '--c': 'minmax(0,1.7fr) minmax(0,1fr)',
           gap: u(2),
           alignItems: 'start',
-          paddingBottom: u(9),
+          paddingBottom: u(6.5),
         } as CSSProperties
       }
     >
@@ -81,7 +81,7 @@ export function DudasChat({ children }: { children: ReactNode }) {
             display: 'flex',
             alignItems: 'center',
             gap: u(1),
-            padding: `var(--mobile-chat-padding, ${u(1.4,2)})`,
+            padding: `var(--mobile-chat-padding, ${u(1.4, 2)})`,
             borderBottom: '1px solid rgba(42,29,18,.08)',
           }}
         >
@@ -147,6 +147,7 @@ export function DudasChat({ children }: { children: ReactNode }) {
               <div
                 key={i}
                 data-from={m.from}
+                className="msg-in"
                 style={{
                   display: 'flex',
                   alignItems: 'flex-end',
@@ -185,6 +186,7 @@ export function DudasChat({ children }: { children: ReactNode }) {
           {typing && (
             <div
               data-testid="typing"
+              className="msg-in"
               aria-label="El asistente está escribiendo"
               style={{ display: 'flex', alignItems: 'center', gap: u(0.9) }}
             >
@@ -205,7 +207,7 @@ export function DudasChat({ children }: { children: ReactNode }) {
                   color: '#e8782a',
                 }}
               >
-                ···
+                <span className="typing-dots">···</span>
               </div>
             </div>
           )}
@@ -214,7 +216,7 @@ export function DudasChat({ children }: { children: ReactNode }) {
         <div
           className="chat-footer"
           style={{
-            padding: `var(--mobile-chat-padding, ${u(1.4,2)})`,
+            padding: `var(--mobile-chat-padding, ${u(1.4, 2)})`,
             borderTop: '1px solid rgba(42,29,18,.08)',
             display: 'flex',
             flexDirection: 'column',
@@ -222,7 +224,16 @@ export function DudasChat({ children }: { children: ReactNode }) {
             background: 'rgba(255,255,255,.7)',
           }}
         >
-          <div className="chat-quick" data-mobile-scroll="" aria-label="Preguntas rápidas" style={{ display: 'flex', gap: u(0.7), flexWrap: 'var(--mobile-quick-wrap, wrap)' as CSSProperties['flexWrap'] }}>
+          <div
+            className="chat-quick"
+            data-mobile-scroll=""
+            aria-label="Preguntas rápidas"
+            style={{
+              display: 'flex',
+              gap: u(0.7),
+              flexWrap: 'var(--mobile-quick-wrap, wrap)' as CSSProperties['flexWrap'],
+            }}
+          >
             {quickQuestions.map((q) => (
               <button
                 key={q}
@@ -244,7 +255,11 @@ export function DudasChat({ children }: { children: ReactNode }) {
               </button>
             ))}
           </div>
-          <form className="chat-compose" onSubmit={send} style={{ display: 'flex', gap: u(1), alignItems: 'center' }}>
+          <form
+            className="chat-compose"
+            onSubmit={send}
+            style={{ display: 'flex', gap: u(1), alignItems: 'center' }}
+          >
             <input
               type="text"
               inputMode="text"
@@ -279,7 +294,12 @@ export function DudasChat({ children }: { children: ReactNode }) {
       <div style={{ display: 'flex', flexDirection: 'column', gap: u(1.6) }}>
         <div className="cream" style={{ padding: u(2) }}>
           <div
-            style={{ fontSize: textSize(0.9), fontWeight: 700, letterSpacing: '.12em', color: '#8a5a1f' }}
+            style={{
+              fontSize: textSize(0.9),
+              fontWeight: 700,
+              letterSpacing: '.12em',
+              color: '#8a5a1f',
+            }}
           >
             PRUEBA PREGUNTANDO
           </div>

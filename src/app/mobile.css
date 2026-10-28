@@ -239,3 +239,221 @@
     min-width: 0;
   }
 }
+
+/* Versión móvil del rediseño naranja. Los !important vencen solo estilos inline existentes. */
+@media (max-width: 899px) {
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+  .hdr-burger {
+    color: var(--color-ink);
+  }
+  .sh .mock-wrap {
+    border-radius: 28px !important;
+  }
+  .sh .mock-in {
+    margin: 16px !important;
+    margin-bottom: 0 !important;
+  }
+  .sh .mock-win {
+    padding: 14px !important;
+    gap: 14px !important;
+  }
+  .sh .mock-float {
+    margin: 16px 16px 0 !important;
+    padding: 16px !important;
+  }
+  .assign-board .ab-lane {
+    padding: 12px !important;
+    gap: 12px !important;
+  }
+  .assign-board .ab-chips {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px !important;
+  }
+  .assign-board .ab-chips > :last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+  .assign-board .mock-item {
+    padding: 10px !important;
+  }
+  .assign-board .mock-item > div:first-child,
+  .assign-board .mock-item > div > span:first-child {
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    overflow-wrap: anywhere;
+    line-height: 1.4;
+  }
+  .assign-board .mock-item > div:last-child {
+    flex-wrap: wrap;
+  }
+  .assign-board .mock-item > div > span:last-child {
+    flex-shrink: 0;
+  }
+  .sh .sh-visual {
+    max-height: none;
+  }
+  .contact-form {
+    border-radius: 28px !important;
+  }
+  .contact-form button[type='submit'] {
+    width: 100%;
+    justify-content: center;
+  }
+  input:not([type='hidden']),
+  textarea,
+  select {
+    font-size: max(16px, 1em);
+  }
+  .sheet {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+  }
+  .sheet.cq-pad {
+    padding-top: 56px !important;
+    padding-bottom: 56px !important;
+  }
+  /* La parte blanca de la foto empieza tras el texto; el verde continúa bajo las esquinas. */
+  .banner-text {
+    background: #fff;
+  }
+  .banner-wrap {
+    padding-bottom: 40px !important;
+  }
+  .banner-wrap + .sheet {
+    margin-top: calc(-40px - 4 * var(--u)) !important;
+  }
+  .chat {
+    --mobile-chat-height: max(360px, min(600px, calc(100dvh - 112px)));
+  }
+  .bk-days {
+    gap: 8px !important;
+  }
+  .bk-slots {
+    gap: 8px !important;
+  }
+  .bk-opt {
+    overflow-wrap: break-word;
+  }
+}
+@media (min-width: 600px) and (max-width: 899px) {
+  .sh .hero-copy {
+    max-width: 640px;
+    width: 100%;
+    justify-self: center;
+  }
+  .sh .hero-actions {
+    max-width: 440px;
+  }
+  .assign-board .ab-chips {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .assign-board .ab-chips > :last-child:nth-child(odd) {
+    grid-column: auto;
+  }
+}
+@media (max-width: 899px) and (prefers-reduced-motion: no-preference) {
+  .hc-body > * {
+    animation-duration: 550ms;
+  }
+  html[data-detail-motion='ready'] .hc:not(.motion-in-view) .hc-mesh i,
+  html[data-detail-motion='ready'] .hc:not(.motion-in-view) .hc-track,
+  html[data-detail-motion='ready'] .sh:not(.motion-in-view)::before,
+  html[data-detail-motion='ready'] .sh:not(.motion-in-view)::after,
+  html[data-motion-visibility='hidden'] .hc-mesh i,
+  html[data-motion-visibility='hidden'] .hc-track,
+  html[data-motion-visibility='hidden'] .sh::before,
+  html[data-motion-visibility='hidden'] .sh::after {
+    animation-play-state: paused;
+  }
+}
+
+/* Pulido de tel?fono: composici?n vertical, menos recorrido y acciones c?modas. */
+@media (max-width: 599px) {
+  .hc .hc-body { padding-top: calc(100px + env(safe-area-inset-top, 0px)); padding-bottom: 16px; gap: 14px; }
+  .hc .hc-title { font-size: clamp(33px,9.6vw,44px); line-height: 1.06; }
+  .hc .hc-wordmark { display: block; position: absolute; z-index: 0; left: 50%; bottom: 64px; translate: -50% 0; font-size: 76vw; font-weight: 800; letter-spacing: -.08em; line-height: .8; color: rgba(138,90,31,.045); pointer-events: none; }
+  .hc .hc-actions { gap: 10px; }
+  .hc .hc-btn { min-height: 52px; }
+  .pg .sh h1.fz { font-size: clamp(34px,8.8vw,44px); line-height: 1.08 !important; }
+  .pg .sh:not(.sh-full) h1.fz { font-size: clamp(30px,8vw,38px); }
+  .sh .hero-stats { padding: 14px 12px !important; gap: 8px !important; }
+  .sh .hero-stats .fz { font-size: 19px; }
+  .sh .mock-wrap:not(.assign-board) .mock-columns {
+    flex-direction: row;
+    max-width: 100%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-color: #e8782a #fff4e6;
+    padding: 4px 2px 14px;
+    gap: 12px !important;
+  }
+  .sh .mock-columns > div { flex: 0 0 86% !important; scroll-snap-align: start; }
+  .sh .mock-columns > div:last-child { scroll-snap-align: end; }
+  /* Mantener el formulario antes de los datos informativos sin duplicar contenido. */
+  .sh .ct-hero > div:first-child { display: contents !important; }
+  .sh .ct-hero > div:first-child > .rv:first-child { order: 0 !important; }
+  .sh .ct-hero > .rv { order: 1 !important; }
+  .sh .ct-hero > div:first-child > .rv:last-child { order: 2 !important; gap: 16px !important; }
+  .booking-step { padding: 16px !important; gap: 16px !important; }
+  .booking-step > div:first-child { gap: 10px !important; }
+  .booking-step h2 { font-size: 20px !important; line-height: 1.25; }
+  .booking-step .bk-opt { padding: 12px !important; }
+  .booking-step .bk-days .bk-opt { padding: 10px 4px !important; }
+  .bk-sum { padding: 20px !important; }
+  .bk-sum [data-testid='confirm'] { min-height: 52px; }
+  .chat-heading { display: grid !important; grid-template-columns: 32px minmax(0,1fr); gap: 6px 10px !important; }
+  .chat-heading > span:first-child { grid-row: 1 / 3; width: 32px !important; height: 32px !important; }
+  .chat-heading > div { min-width: 0; }
+  .chat-heading > .tag { grid-column: 2; margin-left: 0 !important; justify-self: start; }
+}
+@media (max-width: 599px) and (min-height: 780px) {
+  .hc .hc-journey { display: flex; justify-content: center; gap: 18px; margin-top: 0; }
+  .hc-journey > span { display: flex; flex-direction: column; align-items: center; gap: 5px; font-size: 12px; line-height: 1.2; color: #5a4a3a; }
+  .hc .hc-step-dot { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: rgba(255,255,255,.75); color: #c2561a; }
+  .hc-journey > span > svg { display: none !important; }
+}
+@media (max-width: 599px) and (max-height: 700px) {
+  .hc .hc-title { font-size: clamp(30px,8.3vw,38px); }
+  .hc .hc-body { gap: 10px; padding-top: calc(96px + env(safe-area-inset-top,0px)); }
+}
+
+/* Secciones editoriales en una columna centrada. Hero, footer y UI operativa quedan fuera. */
+@media (max-width: 899px) {
+  main .rv:has(> :is(h2,h3).fz):not(:where(.hc *, .sh *, .cream *, .chat *, .booking-step *, .bk-sum *, .contact-form *)) {
+    align-items: center !important;
+    text-align: center !important;
+    margin-inline: auto !important;
+    max-width: 640px;
+    width: 100%;
+  }
+  main .rv:has(> :is(h2,h3).fz):not(:where(.hc *, .sh *, .cream *, .chat *, .booking-step *, .bk-sum *, .contact-form *)) > :is(h2,h3,p) {
+    text-align: center !important;
+    margin-inline: auto !important;
+    max-width: 100% !important;
+    text-wrap: balance;
+  }
+  main .rv:has(> :is(h2,h3).fz):not(:where(.hc *, .sh *, .cream *, .chat *, .booking-step *, .bk-sum *, .contact-form *)) > [data-ghost] {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    text-align: center;
+  }
+  main .tablet-cards:not(:where(.hc *, .sh *)) {
+    --mobile-columns: 1;
+    width: 100%;
+    max-width: 640px;
+    margin-inline: auto;
+  }
+  main .tablet-cards:not(:where(.hc *, .sh *)) > .cream,
+  main .tablet-cards:not(:where(.hc *, .sh *)) > .rv > .cream {
+    text-align: center;
+  }
+  main .tablet-cards:not(:where(.hc *, .sh *)) .cream > :is(.ico,.btn) {
+    align-self: center;
+  }
+}

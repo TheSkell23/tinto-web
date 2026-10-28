@@ -74,7 +74,11 @@ export function ContactForm() {
     <div
       id="form"
       className="cream soft contact-form"
-      style={{ borderRadius: u(2.6), padding: `var(--mobile-form-padding, ${u(2.6)})`, gap: u(1.3) }}
+      style={{
+        borderRadius: u(2.6),
+        padding: `var(--mobile-form-padding, ${u(2.6)})`,
+        gap: u(1.3),
+      }}
     >
       <div
         style={{
@@ -84,7 +88,9 @@ export function ContactForm() {
           gap: u(1),
         }}
       >
-        <h2 style={{ margin: 0, fontSize: textSize(1.7), fontWeight: 800, letterSpacing: '-.02em' }}>
+        <h2
+          style={{ margin: 0, fontSize: textSize(1.7), fontWeight: 800, letterSpacing: '-.02em' }}
+        >
           Escríbenos
         </h2>
         <span className="tag" style={{ fontSize: textSize(0.8) }}>
@@ -96,6 +102,7 @@ export function ContactForm() {
         <div
           role="status"
           data-testid="contact-success"
+          className="anim-pop"
           style={{
             display: 'flex',
             flexDirection: 'column',
@@ -250,6 +257,7 @@ export function ContactForm() {
           )}
           <button
             type="submit"
+          aria-busy={status === 'sending'}
             className="btn btn-lift btn-strong"
             disabled={status === 'sending'}
             style={{

@@ -95,18 +95,28 @@ function Visual({ v }: { v: ModuleCard['visual'] }) {
             }}
           >
             <span
-              style={{ fontSize: textSize(2.4), fontWeight: 800, letterSpacing: '-.04em', lineHeight: 1 }}
+              style={{
+                fontSize: textSize(2.4),
+                fontWeight: 800,
+                letterSpacing: '-.04em',
+                lineHeight: 1,
+              }}
             >
               84
             </span>
-            <span style={{ fontSize: textSize(0.7), fontWeight: 700, color: '#7a6a58' }}>PUNTAJE</span>
+            <span style={{ fontSize: textSize(0.7), fontWeight: 700, color: '#7a6a58' }}>
+              PUNTAJE
+            </span>
           </div>
         </div>
       </div>
     );
   if (v === 'kanban')
     return (
-      <div className="catalog-board" style={{ display: 'flex', gap: u(0.8), padding: u(3, 1.4, 2.6) }}>
+      <div
+        className="catalog-board"
+        style={{ display: 'flex', gap: u(0.8), padding: u(3, 1.4, 2.6) }}
+      >
         {[
           ['ATRAÍDA', [2.1, 1.6, 2.1]],
           ['CALIFICADA', [2.1, 1.6]],
@@ -194,8 +204,8 @@ export function ProductCatalog() {
           const show = cat === 'Todos' || cat === c.cat;
           return (
             <article
-              key={c.name}
-              className="cream lift"
+              key={c.name + cat}
+              className="cream lift anim-pop"
               hidden={!show}
               style={{ display: show ? 'flex' : 'none', padding: u(1.2), gap: u(1) }}
             >
@@ -253,11 +263,18 @@ export function ProductCatalog() {
                 }}
               >
                 <h3
-                  style={{ margin: 0, fontSize: textSize(1.55), fontWeight: 800, letterSpacing: '-.02em' }}
+                  style={{
+                    margin: 0,
+                    fontSize: textSize(1.55),
+                    fontWeight: 800,
+                    letterSpacing: '-.02em',
+                  }}
                 >
                   {c.name}
                 </h3>
-                <div style={{ fontSize: textSize(1), lineHeight: 1.5, color: '#7a6a58' }}>{c.desc}</div>
+                <div style={{ fontSize: textSize(1), lineHeight: 1.5, color: '#7a6a58' }}>
+                  {c.desc}
+                </div>
                 <div
                   style={{
                     display: 'flex',

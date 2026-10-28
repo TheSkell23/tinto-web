@@ -84,7 +84,7 @@ export function Footer() {
       }}
     >
       <div
-        className="foot-card"
+        className="foot-card rv"
         style={{
           position: 'relative',
           overflow: 'hidden',

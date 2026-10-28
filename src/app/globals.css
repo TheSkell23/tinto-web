@@ -143,19 +143,19 @@ button {
   }
 }
 
-/* ---------- Revelado al hacer scroll ---------- */
-@media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+/* ---------- Revelado al hacer scroll ----------
+   El contenido es visible por defecto. MotionController marca <html data-motion="ready"> solo cuando
+   la animación se inició bien; únicamente entonces los .rv pendientes quedan ocultos hasta acercarse. */
+@media (prefers-reduced-motion: no-preference) {
   .rv {
-    opacity: 0;
-    transform: translate3d(0, 34px, 0);
     transition:
       opacity 0.7s ease,
       transform 0.8s var(--ease-out);
     transition-delay: var(--rv-d, 0ms);
   }
-  .rv.rv-in {
-    opacity: 1;
-    transform: none;
+  [data-motion='ready'] .rv:not(.rv-in) {
+    opacity: 0;
+    transform: translate3d(0, 34px, 0);
   }
 }
 .rv-fill {
@@ -197,13 +197,13 @@ button {
     box-shadow 0.25s ease;
 }
 @media (hover: hover) {
-.cream.lift:hover {
-  transform: translateY(calc(-0.5 * var(--u)));
-  box-shadow:
-    0 calc(1.2 * var(--u)) calc(3 * var(--u)) rgba(240, 150, 80, 0.28),
-    inset 0 1px 0 rgba(255, 255, 255, 0.95);
-  opacity: 1;
-}
+  .cream.lift:hover {
+    transform: translateY(calc(-0.5 * var(--u)));
+    box-shadow:
+      0 calc(1.2 * var(--u)) calc(3 * var(--u)) rgba(240, 150, 80, 0.28),
+      inset 0 1px 0 rgba(255, 255, 255, 0.95);
+    opacity: 1;
+  }
 }
 
 /* ---------- Botones ---------- */
@@ -221,10 +221,10 @@ button {
     filter 0.2s ease;
 }
 @media (hover: hover) {
-.btn:hover {
-  filter: brightness(1.06);
-  opacity: 1;
-}
+  .btn:hover {
+    filter: brightness(1.06);
+    opacity: 1;
+  }
 }
 .btn:active {
   transform: translateY(0);
@@ -241,9 +241,9 @@ button {
     0 6px 14px rgba(232, 120, 42, 0.35);
 }
 @media (hover: hover) {
-.btn-lift:hover {
-  transform: translateY(-2px);
-}
+  .btn-lift:hover {
+    transform: translateY(-2px);
+  }
 }
 .btn[disabled],
 .btn[aria-disabled='true'] {
@@ -281,10 +281,10 @@ button {
   transition: color 0.2s;
 }
 @media (hover: hover) {
-.link-ink:hover {
-  color: var(--color-brand);
-  opacity: 1;
-}
+  .link-ink:hover {
+    color: var(--color-brand);
+    opacity: 1;
+  }
 }
 .link-brand {
   font-weight: 700;
@@ -359,7 +359,7 @@ button {
   position: relative;
   z-index: 2;
   background: #fff;
-  border-radius: calc(4 * var(--u)) calc(4 * var(--u)) 0 0;
+  border-radius: calc(6.5 * var(--u)) calc(6.5 * var(--u)) 0 0;
   border-top: 1px solid rgba(255, 255, 255, 0.95);
   box-shadow:
     0 -1.2cqw 2.4cqw -0.8cqw rgba(60, 60, 60, 0.09),
@@ -368,7 +368,7 @@ button {
 }
 @media (max-width: 899px) {
   .sheet {
-    border-radius: 28px 28px 0 0;
+    border-radius: 40px 40px 0 0;
   }
 }
 
@@ -380,8 +380,8 @@ button {
   left: 50%;
   transform: translateX(-50%);
   box-sizing: border-box;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 14px;
   padding: 10px 12px 10px 20px;
@@ -443,16 +443,16 @@ button {
     transform 0.6s var(--ease-out);
 }
 @media (hover: hover) {
-.hdr-link:hover {
-  background: rgba(255, 255, 255, 0.55);
-  opacity: 1;
-}
+  .hdr-link:hover {
+    background: rgba(255, 255, 255, 0.55);
+    opacity: 1;
+  }
 }
 @media (hover: hover) {
-.hdr-sub:hover {
-  background: rgba(255, 138, 61, 0.14);
-  opacity: 1;
-}
+  .hdr-sub:hover {
+    background: rgba(255, 138, 61, 0.14);
+    opacity: 1;
+  }
 }
 @media (max-width: 899px) {
   .hdr,
@@ -654,16 +654,16 @@ button {
   font-family: inherit;
 }
 @media (hover: hover) {
-.quick:hover {
-  border-color: #ff8a3d !important;
-  color: #c2561a !important;
-}
+  .quick:hover {
+    border-color: #ff8a3d !important;
+    color: #c2561a !important;
+  }
 }
 @media (hover: hover) {
-.idea:hover {
-  border-color: #ff8a3d !important;
-  transform: translateX(0.3cqw);
-}
+  .idea:hover {
+    border-color: #ff8a3d !important;
+    transform: translateX(0.3cqw);
+  }
 }
 .field:focus {
   border-color: #ff8a3d !important;
@@ -718,36 +718,75 @@ button {
     transform 0.2s ease;
 }
 @media (hover: hover) {
-.bk-opt:not(:disabled):hover {
-  transform: translateY(-0.3cqw);
-}
+  .bk-opt:not(:disabled):hover {
+    transform: translateY(-0.3cqw);
+  }
 }
 @media (max-width: 899px) {
   .bk-sum {
     position: static !important;
   }
   @media (hover: hover) {
-.bk-opt:not(:disabled):hover {
-    transform: none;
+    .bk-opt:not(:disabled):hover {
+      transform: none;
+    }
   }
-}
 }
 
 .cream.rg {
   display: grid;
 }
 
-/* menú siempre centrado: logo a la izquierda, CTA a la derecha, columnas laterales iguales */
-.hdr > :first-child {
-  justify-self: start;
-}
-.hdr > :last-child {
-  justify-self: end;
-}
+/* El menú ocupa el espacio entre el logo y el botón y va centrado en él: el hueco logo→Producto
+   es igual al hueco Contacto→botón. */
 @media (max-width: 899px) {
   .hdr,
   .hdr[data-compact='true'] {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+/* Visual de Soluciones: en móvil el carril pasa a dos filas (asesor arriba, oportunidades abajo) */
+@media (max-width: 899px) {
+  .ab-lane {
+    flex-wrap: wrap;
+  }
+  .ab-who {
+    flex: 1 !important;
+    width: auto !important;
+  }
+  .ab-chips {
+    flex: 1 1 100% !important;
+  }
+}
+
+/* ---------- Cursor de marca (solo con mouse; en táctiles no aplica) ---------- */
+@media (hover: hover) and (pointer: fine) {
+  html {
+    cursor:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 24 24'%3E%3Cpath fill='%23ff8a3d' stroke='%23fff' stroke-width='1.6' stroke-linejoin='round' d='M4 3l16 7.2-6.6 2.2L10.7 20 4 3z'/%3E%3C/svg%3E")
+        5 4,
+      auto;
+  }
+  a,
+  button,
+  [role='button'],
+  summary,
+  label[for],
+  select,
+  .btn {
+    cursor:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 24 24'%3E%3Cpath fill='%23e8782a' stroke='%23fff' stroke-width='1.6' stroke-linejoin='round' d='M4 3l16 7.2-6.6 2.2L10.7 20 4 3z'/%3E%3C/svg%3E")
+        5 4,
+      pointer;
+  }
+  input:not([type='checkbox']):not([type='radio']):not([type='button']):not([type='submit']),
+  textarea {
+    cursor: text;
+  }
+  button:disabled,
+  [aria-disabled='true'] {
+    cursor: not-allowed;
   }
 }

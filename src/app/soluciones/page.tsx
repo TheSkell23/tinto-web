@@ -5,8 +5,8 @@ import { pageMetadata } from '@/lib/metadata';
 import Image from 'next/image';
 import Link from 'next/link';
 import type { CSSProperties } from 'react';
-import { CrmMockup } from '@/components/CrmMockup';
 import { Icon } from '@/components/Icons';
+import { AssignBoard } from '@/components/AssignBoard';
 import { PageHero } from '@/components/PageHero';
 import { ScrollToGo } from '@/components/ScrollToGo';
 import {
@@ -96,7 +96,7 @@ export default function SolucionesPage() {
           primary={{ label: 'Ver soluciones', href: '#tipos' }}
           secondary={{ label: 'Agendar una demo →', href: '/agendar' }}
         >
-          <CrmMockup
+          <AssignBoard
             title={solHero.board.title}
             period={solHero.board.period}
             columns={solHero.board.columns}
@@ -105,7 +105,7 @@ export default function SolucionesPage() {
         </PageHero>
 
         {/* Para quién es */}
-        <div style={{ paddingBottom: u(9) }}>
+        <div style={{ paddingBottom: u(6.5) }}>
           <Reveal
             style={{
               position: 'relative',
@@ -141,7 +141,7 @@ export default function SolucionesPage() {
             className="rg"
             style={{ '--c': '1.05fr 1fr', gap: u(4), alignItems: 'center' } as CSSProperties}
           >
-            <Reveal style={{ position: 'relative' }}>
+            <Reveal variant="left" style={{ position: 'relative' }}>
               <Image
                 src="/images/foto-oficina.png"
                 alt={solFor.alt}
@@ -276,6 +276,7 @@ export default function SolucionesPage() {
                   }}
                 >
                   <div
+                    className="bar-x"
                     style={{
                       width: `${solFor.today.progress}%`,
                       height: '100%',
@@ -325,7 +326,9 @@ export default function SolucionesPage() {
                   }}
                 >
                   {solFor.citas.value}{' '}
-                  <span style={{ fontSize: textSize(0.9), color: '#2fbf71' }}>{solFor.citas.delta}</span>
+                  <span style={{ fontSize: textSize(0.9), color: '#2fbf71' }}>
+                    {solFor.citas.delta}
+                  </span>
                 </div>
               </div>
             </Reveal>
@@ -526,15 +529,18 @@ export default function SolucionesPage() {
         </div>
 
         {/* Tipos */}
-        <div id="tipos" style={{ padding: `${u(2)} 0 ${u(9)}` }}>
+        <div id="tipos" style={{ padding: `${u(1)} 0 ${u(6.5)}` }}>
           <SectionTitle ghost={solTypes.ghost} title={solTypes.title} sub={solTypes.sub} />
-          <div className="rg tablet-cards" style={{ '--c': 'repeat(3,1fr)', gap: u(1.6) } as CSSProperties}>
+          <div
+            className="rg tablet-cards"
+            style={{ '--c': 'repeat(3,1fr)', gap: u(1.6) } as CSSProperties}
+          >
             {solTypes.items.map((t, i) => (
               <CreamCard key={t.title} lift delay={i * 80} style={{ gap: u(1) }}>
                 <div style={{ position: 'relative', display: 'flex', flexDirection: 'column' }}>
                   <Image
                     src={t.image}
-                    alt=""
+                    alt={t.alt}
                     width={896}
                     height={1200}
                     sizes="(max-width: 899px) 100vw, 30vw"
@@ -635,11 +641,18 @@ export default function SolucionesPage() {
                   {t.range}
                 </span>
                 <h3
-                  style={{ margin: 0, fontSize: textSize(1.7), fontWeight: 800, letterSpacing: '-.02em' }}
+                  style={{
+                    margin: 0,
+                    fontSize: textSize(1.7),
+                    fontWeight: 800,
+                    letterSpacing: '-.02em',
+                  }}
                 >
                   {t.title}
                 </h3>
-                <div style={{ fontSize: textSize(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{t.text}</div>
+                <div style={{ fontSize: textSize(1.05), lineHeight: 1.5, color: '#7a6a58' }}>
+                  {t.text}
+                </div>
                 <div style={{ display: 'flex', flexDirection: 'column', marginTop: u(0.4) }}>
                   {t.checks.map((c, j) => (
                     <div
@@ -672,7 +685,7 @@ export default function SolucionesPage() {
         </div>
 
         {/* Paso a paso */}
-        <div style={{ paddingBottom: u(9) }}>
+        <div style={{ paddingBottom: u(6.5) }}>
           <SectionTitle ghost={solSteps.ghost} title={solSteps.title} sub={solSteps.sub} />
           <div
             className="rg tablet-cards"
@@ -684,57 +697,60 @@ export default function SolucionesPage() {
                 <div style={{ fontSize: textSize(1.45), fontWeight: 800, letterSpacing: '-.02em' }}>
                   {t}
                 </div>
-                <div style={{ fontSize: textSize(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{d}</div>
+                <div style={{ fontSize: textSize(1.05), lineHeight: 1.5, color: '#7a6a58' }}>
+                  {d}
+                </div>
               </CreamCard>
             ))}
           </div>
         </div>
 
         {/* Tabla */}
-        <div style={{ paddingBottom: u(9) }}>
+        <div style={{ paddingBottom: u(6.5) }}>
           <SectionTitle ghost={solTable.ghost} title={solTable.title} sub={solTable.sub} />
           <Reveal>
             <MobileScroll label="Comparación de equipos. Desliza horizontalmente para ver todas las columnas.">
-<div
-              className="cream soft sol-table"
-              style={{ padding: u(1.4, 2), overflow: 'hidden' }}
-            >
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr repeat(3,1.2fr)' }}>
-                <div />
-                <div style={thStyle}>{solTable.cols[0]}</div>
-                <div
-                  style={{
-                    ...thStyle,
-                    background: 'linear-gradient(180deg,rgba(255,138,61,.16),rgba(255,138,61,.04))',
-                    borderRadius: `${u(1.4)} ${u(1.4)} 0 0`,
-                    borderTop: '1px solid rgba(255,255,255,.95)',
-                    boxShadow:
-                      '0 -1.2cqw 2.4cqw -.8cqw rgba(60,60,60,.09),0 -.25cqw .7cqw rgba(60,60,60,.06),inset 0 1px 0 #fff',
-                    color: '#c2561a',
-                  }}
-                >
-                  {solTable.cols[1]}
-                </div>
-                <div style={thStyle}>{solTable.cols[2]}</div>
-                {solTable.rows.map(([label, a, b, c], i) => (
-                  <div key={label} style={{ display: 'contents' }}>
-                    <div style={cellLabel}>{label}</div>
-                    <div style={cellBase}>{a}</div>
-                    <div style={cellHot}>{b}</div>
-                    <div style={cellBase}>
-                      {i === solTable.rows.length - 1 ? (
-                        <Link href="/agendar" style={{ color: '#e8782a', fontWeight: 800 }}>
-                          {c}
-                        </Link>
-                      ) : (
-                        c
-                      )}
-                    </div>
+              <div
+                className="cream soft sol-table"
+                style={{ padding: u(1.4, 2), overflow: 'hidden' }}
+              >
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr repeat(3,1.2fr)' }}>
+                  <div />
+                  <div style={thStyle}>{solTable.cols[0]}</div>
+                  <div
+                    style={{
+                      ...thStyle,
+                      background:
+                        'linear-gradient(180deg,rgba(255,138,61,.16),rgba(255,138,61,.04))',
+                      borderRadius: `${u(1.4)} ${u(1.4)} 0 0`,
+                      borderTop: '1px solid rgba(255,255,255,.95)',
+                      boxShadow:
+                        '0 -1.2cqw 2.4cqw -.8cqw rgba(60,60,60,.09),0 -.25cqw .7cqw rgba(60,60,60,.06),inset 0 1px 0 #fff',
+                      color: '#c2561a',
+                    }}
+                  >
+                    {solTable.cols[1]}
                   </div>
-                ))}
+                  <div style={thStyle}>{solTable.cols[2]}</div>
+                  {solTable.rows.map(([label, a, b, c], i) => (
+                    <div key={label} style={{ display: 'contents' }}>
+                      <div style={cellLabel}>{label}</div>
+                      <div style={cellBase}>{a}</div>
+                      <div style={cellHot}>{b}</div>
+                      <div style={cellBase}>
+                        {i === solTable.rows.length - 1 ? (
+                          <Link href="/agendar" style={{ color: '#e8782a', fontWeight: 800 }}>
+                            {c}
+                          </Link>
+                        ) : (
+                          c
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-</MobileScroll>
+            </MobileScroll>
           </Reveal>
         </div>
       </div>
@@ -755,14 +771,17 @@ export default function SolucionesPage() {
         <div
           className="cq-pad"
           style={{
-            padding: `${u(4)} ${u(12)}`,
+            padding: `${u(4)} ${u(10)}`,
             display: 'flex',
             flexDirection: 'column',
             gap: u(3.4),
           }}
         >
           <SectionTitle variant="b" ghost={solBenefit.ghost} title={solBenefit.title} as="h2" />
-          <div className="rg tablet-cards" style={{ '--c': 'repeat(3,1fr)', gap: u(2) } as CSSProperties}>
+          <div
+            className="rg tablet-cards"
+            style={{ '--c': 'repeat(3,1fr)', gap: u(2) } as CSSProperties}
+          >
             {solBenefit.items.map((b, i) => (
               <Reveal
                 key={b.title}

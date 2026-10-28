@@ -2,7 +2,6 @@ import { MobileScroll } from '@/components/MobileScroll';
 import { JsonLd } from '@/components/JsonLd';
 import { pageStructuredData } from '@/lib/structured-data';
 import { pageMetadata } from '@/lib/metadata';
-import Image from 'next/image';
 import type { CSSProperties } from 'react';
 import { CrmMockup } from '@/components/CrmMockup';
 import { Icon } from '@/components/Icons';
@@ -108,7 +107,9 @@ function FeatureText({ f, order }: { f: (typeof features.rows)[number]; order?: 
       >
         {f.title}
       </h3>
-      <p style={{ margin: 0, fontSize: textSize(1.2), lineHeight: 1.5, color: '#7a6a58' }}>{f.text}</p>
+      <p style={{ margin: 0, fontSize: textSize(1.2), lineHeight: 1.5, color: '#7a6a58' }}>
+        {f.text}
+      </p>
       <div>
         {f.checks.map((c) => (
           <div key={c} style={checkRow}>
@@ -146,6 +147,8 @@ const spark = (stroke: string) => (
     <path
       d="M0 22 C10 22 12 6 22 12 S34 26 44 14 S54 6 60 8"
       fill="none"
+      className="draw"
+      pathLength={1}
       stroke={stroke}
       strokeWidth="2"
       strokeLinecap="round"
@@ -257,7 +260,7 @@ export default function ProductoPage() {
         </PageHero>
 
         {/* El punto de partida */}
-        <div style={{ paddingBottom: u(9) }}>
+        <div style={{ paddingBottom: u(6.5) }}>
           <SectionTitle
             ghost={problems.ghost}
             title={
@@ -266,21 +269,26 @@ export default function ProductoPage() {
               </>
             }
           />
-          <div className="rg tablet-cards" style={{ '--c': 'repeat(3,1fr)', gap: u(1.6) } as CSSProperties}>
+          <div
+            className="rg tablet-cards"
+            style={{ '--c': 'repeat(3,1fr)', gap: u(1.6) } as CSSProperties}
+          >
             {problems.items.map(([t, d], i) => (
               <CreamCard key={t} soft delay={i * 80}>
                 <span className="num">{i + 1}</span>
                 <div style={{ fontSize: textSize(1.45), fontWeight: 800, letterSpacing: '-.02em' }}>
                   {t}
                 </div>
-                <div style={{ fontSize: textSize(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{d}</div>
+                <div style={{ fontSize: textSize(1.05), lineHeight: 1.5, color: '#7a6a58' }}>
+                  {d}
+                </div>
               </CreamCard>
             ))}
           </div>
         </div>
 
         {/* Catálogo */}
-        <div id="catalogo" style={{ padding: `${u(2)} 0 ${u(9)}` }}>
+        <div id="catalogo" style={{ padding: `${u(1)} 0 ${u(6.5)}` }}>
           <SectionTitle
             ghost="Módulos"
             title="Elige tu módulo"
@@ -290,7 +298,7 @@ export default function ProductoPage() {
         </div>
 
         {/* Cuatro ideas */}
-        <div style={{ paddingBottom: u(9) }}>
+        <div style={{ paddingBottom: u(6.5) }}>
           <SectionTitle ghost={principles.ghost} title={principles.title} sub={principles.sub} />
           <div
             className="rg tablet-cards"
@@ -302,14 +310,16 @@ export default function ProductoPage() {
                 <div style={{ fontSize: textSize(1.45), fontWeight: 800, letterSpacing: '-.02em' }}>
                   {t}
                 </div>
-                <div style={{ fontSize: textSize(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{d}</div>
+                <div style={{ fontSize: textSize(1.05), lineHeight: 1.5, color: '#7a6a58' }}>
+                  {d}
+                </div>
               </CreamCard>
             ))}
           </div>
         </div>
 
         {/* Conexiones */}
-        <div style={{ paddingBottom: u(9) }}>
+        <div style={{ paddingBottom: u(6.5) }}>
           <SectionTitle ghost={connections.ghost} title={connections.title} sub={connections.sub} />
           <div
             className="rg tablet-cards"
@@ -323,7 +333,9 @@ export default function ProductoPage() {
                 <div style={{ fontSize: textSize(1.4), fontWeight: 800, letterSpacing: '-.02em' }}>
                   {c.title}
                 </div>
-                <div style={{ fontSize: textSize(1.05), lineHeight: 1.5, color: '#7a6a58' }}>{c.text}</div>
+                <div style={{ fontSize: textSize(1.05), lineHeight: 1.5, color: '#7a6a58' }}>
+                  {c.text}
+                </div>
               </CreamCard>
             ))}
           </div>
@@ -348,7 +360,7 @@ export default function ProductoPage() {
           className="sheet cq-pad"
           style={{
             marginTop: u(-6),
-            padding: `${u(8)} ${u(12)} ${u(9)}`,
+            padding: `${u(6)} ${u(10)} ${u(6.5)}`,
             display: 'flex',
             flexDirection: 'column',
             gap: u(5),
@@ -405,6 +417,7 @@ export default function ProductoPage() {
                         }}
                       >
                         <div
+                          className="bar-x"
                           style={{
                             position: 'relative',
                             width: `${w}%`,
@@ -528,6 +541,7 @@ export default function ProductoPage() {
                         }}
                       >
                         <div
+                          className="bar-y"
                           style={{
                             width: '100%',
                             height: `${h}%`,
@@ -571,7 +585,7 @@ export default function ProductoPage() {
           style={
             {
               '--c': '1fr 1.1fr',
-              padding: `${u(4)} ${u(12)}`,
+              padding: `${u(4)} ${u(10)}`,
               gap: u(5),
               alignItems: 'center',
             } as CSSProperties
@@ -758,7 +772,9 @@ export default function ProductoPage() {
                   }}
                 >
                   <div>
-                    <div style={{ fontSize: textSize(2), fontWeight: 600, letterSpacing: '-.02em' }}>
+                    <div
+                      style={{ fontSize: textSize(2), fontWeight: 600, letterSpacing: '-.02em' }}
+                    >
                       Hola, Carlos!
                     </div>
                     <div style={{ fontSize: textSize(1.05), color: '#5a4a3a' }}>
@@ -901,7 +917,9 @@ export default function ProductoPage() {
                     >
                       <span>
                         Conversión{' '}
-                        <span style={{ fontWeight: 400, color: '#3d6b36', fontSize: textSize(0.9) }}>
+                        <span
+                          style={{ fontWeight: 400, color: '#3d6b36', fontSize: textSize(0.9) }}
+                        >
                           ● En meta
                         </span>
                       </span>
@@ -925,7 +943,9 @@ export default function ProductoPage() {
                           }}
                         >
                           {l}
-                          <div style={{ fontSize: textSize(1.4), fontWeight: 600, color: '#2a1d12' }}>
+                          <div
+                            style={{ fontSize: textSize(1.4), fontWeight: 600, color: '#2a1d12' }}
+                          >
                             {v}{' '}
                             <span
                               style={{
@@ -961,6 +981,8 @@ export default function ProductoPage() {
                       <path
                         d="M0 52 C18 50 24 40 38 44 S58 18 72 36 S96 62 112 40 S134 8 150 30 S182 56 200 38 S228 28 240 34"
                         fill="none"
+                        className="draw"
+                        pathLength={1}
                         stroke="#8a5a1f"
                         strokeWidth="1.6"
                       />
@@ -970,7 +992,9 @@ export default function ProductoPage() {
                     className="cream soft"
                     style={{ ...small, alignItems: 'center', textAlign: 'center', gap: u(0.6) }}
                   >
-                    <div style={{ alignSelf: 'flex-start', fontSize: textSize(1.15), fontWeight: 600 }}>
+                    <div
+                      style={{ alignSelf: 'flex-start', fontSize: textSize(1.15), fontWeight: 600 }}
+                    >
                       Meta semanal
                     </div>
                     <div style={{ fontSize: textSize(0.9), color: '#7a6a58' }}>Citas</div>
@@ -1043,7 +1067,9 @@ export default function ProductoPage() {
                     <div style={{ fontSize: textSize(1.2), fontWeight: 600, marginTop: u(0.4) }}>
                       Carlos Pérez
                     </div>
-                    <div style={{ fontSize: textSize(0.85), color: '#7a6a58' }}>carlos@correo.com</div>
+                    <div style={{ fontSize: textSize(0.85), color: '#7a6a58' }}>
+                      carlos@correo.com
+                    </div>
                     <div
                       style={{
                         display: 'flex',
@@ -1060,7 +1086,9 @@ export default function ProductoPage() {
                       ].map(([l, v]) => (
                         <div key={l}>
                           {l}
-                          <div style={{ fontSize: textSize(1.3), fontWeight: 600, color: '#2a1d12' }}>
+                          <div
+                            style={{ fontSize: textSize(1.3), fontWeight: 600, color: '#2a1d12' }}
+                          >
                             {v}
                           </div>
                         </div>
@@ -1151,7 +1179,9 @@ export default function ProductoPage() {
                     </div>
                   </div>
                   <div className="cream soft" style={small}>
-                    <div style={{ fontSize: textSize(1.15), fontWeight: 600, marginBottom: u(0.8) }}>
+                    <div
+                      style={{ fontSize: textSize(1.15), fontWeight: 600, marginBottom: u(0.8) }}
+                    >
                       Tus tareas
                     </div>
                     {[
@@ -1228,7 +1258,9 @@ export default function ProductoPage() {
                         <Icon name="hand" size={u(1.5)} stroke={1.7} />
                       </span>
                     </span>
-                    <div style={{ fontSize: textSize(1.35), fontWeight: 600 }}>¡No pierdas el hilo!</div>
+                    <div style={{ fontSize: textSize(1.35), fontWeight: 600 }}>
+                      ¡No pierdas el hilo!
+                    </div>
                     <div style={{ fontSize: textSize(0.9), color: '#7a6a58', lineHeight: 1.4 }}>
                       Revisa tus 3 seguimientos pendientes de hoy.
                     </div>
@@ -1259,7 +1291,7 @@ export default function ProductoPage() {
           id="planes"
           className="cq-pad"
           style={{
-            padding: `${u(6)} ${u(12)} ${u(4)}`,
+            padding: `${u(6)} ${u(10)} ${u(4)}`,
             display: 'flex',
             flexDirection: 'column',
             gap: u(2.6),
@@ -1295,7 +1327,10 @@ export default function ProductoPage() {
             <span style={{ padding: u(0.6, 1.2) }}>Anual</span>
             <span className="pill">Ahorra 20%</span>
           </div>
-          <div className="rg tablet-cards" style={{ '--c': 'repeat(3,1fr)', gap: u(1.6) } as CSSProperties}>
+          <div
+            className="rg tablet-cards"
+            style={{ '--c': 'repeat(3,1fr)', gap: u(1.6) } as CSSProperties}
+          >
             {plans.items.map((p, i) => (
               <Reveal key={p.name} fill delay={i * 80}>
                 <div
@@ -1392,40 +1427,16 @@ export default function ProductoPage() {
               </Reveal>
             ))}
           </div>
-          <div
-            className="plans-img"
-            style={{
-              position: 'relative',
-              top: u(4),
-              height: u(27.6),
-              overflow: 'hidden',
-              margin: `${u(1)} 0 0 ${u(-12)}`,
-              width: u(46),
-            }}
-          >
-            <Image
-              src="/images/producto-dos-hombres.png"
-              alt="Dos hombres mirando hacia arriba"
-              width={970}
-              height={1024}
-              sizes="(max-width: 899px) 100vw, 46vw"
-              style={{
-                display: 'block',
-                width: u(46),
-                height: 'auto',
-                marginTop: u(-18.4),
-                mixBlendMode: 'multiply',
-              }}
-            />
-          </div>
+
         </div>
 
         {/* Comparar planes */}
         <div
           className="sheet cq-pad"
           style={{
-            padding: `${u(12)} ${u(12)} ${u(8)}`,
-            marginTop: u(-6),
+            padding: `${u(6)} ${u(10)} ${u(8)}`,
+            // Sin foto intermedia: cancela solo el gap exterior, sin invadir los planes.
+            marginTop: u(-4),
             display: 'flex',
             flexDirection: 'column',
             gap: u(5),
@@ -1441,96 +1452,100 @@ export default function ProductoPage() {
           />
           <Reveal>
             <MobileScroll label="Comparación de planes. Desliza horizontalmente para ver todas las columnas.">
-<div
-              className="cream soft cmp"
-              style={{
-                padding: 0,
-                gap: 0,
-                borderRadius: u(1.6),
-                overflow: 'hidden',
-                display: 'grid',
-                gridTemplateColumns: '1.6fr 1fr 1fr 1fr',
-              }}
-            >
-              <div style={{ padding: u(1.6), background: 'linear-gradient(180deg,#fbf3e8,#fff)' }}>
-                <div style={{ fontSize: textSize(1.2), fontWeight: 600 }}>Características</div>
+              <div
+                className="cream soft cmp"
+                style={{
+                  padding: 0,
+                  gap: 0,
+                  borderRadius: u(1.6),
+                  overflow: 'hidden',
+                  display: 'grid',
+                  gridTemplateColumns: '1.6fr 1fr 1fr 1fr',
+                }}
+              >
                 <div
-                  style={{
-                    fontSize: textSize(0.95),
-                    color: '#7a6a58',
-                    marginTop: u(0.4),
-                    lineHeight: 1.4,
-                  }}
+                  style={{ padding: u(1.6), background: 'linear-gradient(180deg,#fbf3e8,#fff)' }}
                 >
-                  Elige el plan ideal para tu ritmo.
-                </div>
-              </div>
-              {compare.head.map((h, i) => (
-                <div
-                  key={h}
-                  style={{
-                    padding: u(1.6),
-                    borderLeft: '1px solid rgba(42,29,18,.08)',
-                    textAlign: 'center',
-                    background: 'linear-gradient(180deg,#fbf3e8,#fff)',
-                  }}
-                >
-                  <div style={{ fontSize: textSize(1.1), fontWeight: 600 }}>{h}</div>
-                  <div style={{ fontSize: textSize(1.9), fontWeight: 600, letterSpacing: '-.02em' }}>
-                    {compare.prices[i]}
-                  </div>
-                </div>
-              ))}
-              {compare.rows.map(([label, a, b, c]) => (
-                <div key={label} style={{ display: 'contents' }}>
+                  <div style={{ fontSize: textSize(1.2), fontWeight: 600 }}>Características</div>
                   <div
                     style={{
-                      padding: u(1.4),
-                      display: 'flex',
-                      alignItems: 'center',
-                      borderTop: '1px solid rgba(42,29,18,.08)',
-                      fontSize: textSize(1.05),
+                      fontSize: textSize(0.95),
+                      color: '#7a6a58',
+                      marginTop: u(0.4),
+                      lineHeight: 1.4,
                     }}
                   >
-                    {label}
+                    Elige el plan ideal para tu ritmo.
                   </div>
-                  {[a, b, c].map((on, j) => (
+                </div>
+                {compare.head.map((h, i) => (
+                  <div
+                    key={h}
+                    style={{
+                      padding: u(1.6),
+                      borderLeft: '1px solid rgba(42,29,18,.08)',
+                      textAlign: 'center',
+                      background: 'linear-gradient(180deg,#fbf3e8,#fff)',
+                    }}
+                  >
+                    <div style={{ fontSize: textSize(1.1), fontWeight: 600 }}>{h}</div>
                     <div
-                      key={j}
+                      style={{ fontSize: textSize(1.9), fontWeight: 600, letterSpacing: '-.02em' }}
+                    >
+                      {compare.prices[i]}
+                    </div>
+                  </div>
+                ))}
+                {compare.rows.map(([label, a, b, c]) => (
+                  <div key={label} style={{ display: 'contents' }}>
+                    <div
                       style={{
                         padding: u(1.4),
                         display: 'flex',
                         alignItems: 'center',
-                        justifyContent: 'center',
                         borderTop: '1px solid rgba(42,29,18,.08)',
-                        borderLeft: '1px solid rgba(42,29,18,.08)',
+                        fontSize: textSize(1.05),
                       }}
                     >
-                      <span
+                      {label}
+                    </div>
+                    {[a, b, c].map((on, j) => (
+                      <div
+                        key={j}
                         style={{
-                          width: u(1.8),
-                          height: u(1.8),
-                          borderRadius: '50%',
-                          background: on ? '#e8782a' : '#e8e1d4',
-                          color: '#fff',
-                          display: 'grid',
-                          placeItems: 'center',
+                          padding: u(1.4),
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          borderTop: '1px solid rgba(42,29,18,.08)',
+                          borderLeft: '1px solid rgba(42,29,18,.08)',
                         }}
                       >
-                        {on ? (
-                          <Icon name="check" size="60%" stroke={3} />
-                        ) : (
-                          <span style={{ fontSize: textSize(1) }} aria-label="No incluido">
-                            –
-                          </span>
-                        )}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              ))}
-            </div>
-</MobileScroll>
+                        <span
+                          style={{
+                            width: u(1.8),
+                            height: u(1.8),
+                            borderRadius: '50%',
+                            background: on ? '#e8782a' : '#e8e1d4',
+                            color: '#fff',
+                            display: 'grid',
+                            placeItems: 'center',
+                          }}
+                        >
+                          {on ? (
+                            <Icon name="check" size="60%" stroke={3} />
+                          ) : (
+                            <span style={{ fontSize: textSize(1) }} aria-label="No incluido">
+                              –
+                            </span>
+                          )}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </MobileScroll>
           </Reveal>
         </div>
       </section>

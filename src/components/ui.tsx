@@ -9,16 +9,19 @@ export function Reveal({
   style,
   delay,
   fill,
+  variant,
 }: {
   children: ReactNode;
   className?: string;
   style?: CSSProperties;
   delay?: number;
   fill?: boolean;
+  variant?: 'up' | 'left' | 'right' | 'zoom';
 }) {
   return (
     <div
       className={`rv${fill ? ' rv-fill' : ''}${className ? ' ' + className : ''}`}
+      data-rv={variant}
       style={delay ? ({ ...style, '--rv-d': `${delay}ms` } as CSSProperties) : style}
     >
       {children}
