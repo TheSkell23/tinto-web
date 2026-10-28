@@ -11,12 +11,6 @@ export const bookingChannels = [
     meta: '20 min',
     desc: 'Te mostramos Tinto con tus propios datos, sin salir de la oficina.',
   },
-  {
-    name: 'Visita a la oficina',
-    meta: '40 min · Bogotá',
-    desc: 'Conoce al equipo con un tinto en la mano.',
-  },
-  { name: 'WhatsApp', meta: '15 min', desc: 'Una conversación por chat con un asesor.' },
 ] as const;
 
 export const weekdays = ['dom', 'lun', 'mar', 'mié', 'jue', 'vie', 'sáb'] as const;

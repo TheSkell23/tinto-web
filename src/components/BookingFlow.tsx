@@ -163,7 +163,7 @@ export function BookingFlow() {
   if (done) {
     return (
       <div
-        className="cream"
+        className="cream anim-pop"
         data-testid="booking-done"
         style={{
           padding: u(4),
@@ -175,6 +175,7 @@ export function BookingFlow() {
         }}
       >
         <span
+          className="check-pop"
           style={{
             width: u(6),
             height: u(6),
@@ -258,7 +259,7 @@ export function BookingFlow() {
           '--c': 'minmax(0,1.6fr) minmax(0,1fr)',
           gap: u(2),
           alignItems: 'start',
-          paddingBottom: u(9),
+          paddingBottom: u(6.5),
         } as CSSProperties
       }
     >
@@ -268,7 +269,13 @@ export function BookingFlow() {
             className="rg"
             role="group"
             aria-label="Canal"
-            style={{ '--c': 'repeat(3,1fr)', '--m': 1, gap: u(1.2) } as CSSProperties}
+            style={
+              {
+                '--c': `repeat(${bookingChannels.length},minmax(0,1fr))`,
+                '--m': 1,
+                gap: u(1.2),
+              } as CSSProperties
+            }
           >
             {bookingChannels.map((c, i) => (
               <button
@@ -293,10 +300,14 @@ export function BookingFlow() {
                 <span className="tag" style={{ alignSelf: 'flex-start' }}>
                   {c.meta}
                 </span>
-                <span style={{ fontSize: textSize(1.35), fontWeight: 800, letterSpacing: '-.02em' }}>
+                <span
+                  style={{ fontSize: textSize(1.35), fontWeight: 800, letterSpacing: '-.02em' }}
+                >
                   {c.name}
                 </span>
-                <span style={{ fontSize: textSize(1), lineHeight: 1.45, color: '#7a6a58' }}>{c.desc}</span>
+                <span style={{ fontSize: textSize(1), lineHeight: 1.45, color: '#7a6a58' }}>
+                  {c.desc}
+                </span>
               </button>
             ))}
           </div>
@@ -343,7 +354,9 @@ export function BookingFlow() {
                 >
                   {d ? weekdays[d.getDay()] : '···'}
                 </span>
-                <span style={{ fontSize: textSize(1.7), fontWeight: 800 }}>{d ? d.getDate() : '–'}</span>
+                <span style={{ fontSize: textSize(1.7), fontWeight: 800 }}>
+                  {d ? d.getDate() : '–'}
+                </span>
                 <span style={{ fontSize: textSize(0.85), color: '#7a6a58' }}>
                   {d ? months[d.getMonth()] : ''}
                 </span>
@@ -397,8 +410,8 @@ export function BookingFlow() {
                 type="text"
                 name="name"
                 autoComplete="name"
-              inputMode="text"
-              enterKeyHint="next"
+                inputMode="text"
+                enterKeyHint="next"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Tu nombre completo"
@@ -410,8 +423,8 @@ export function BookingFlow() {
               <input
                 className="field"
                 type="email"
-              inputMode="email"
-              enterKeyHint="next"
+                inputMode="email"
+                enterKeyHint="next"
                 name="email"
                 autoComplete="email"
                 value={mail}
@@ -425,8 +438,8 @@ export function BookingFlow() {
               <input
                 className="field"
                 type="tel"
-              inputMode="tel"
-              enterKeyHint="next"
+                inputMode="tel"
+                enterKeyHint="next"
                 name="phone"
                 autoComplete="tel"
                 value={phone}
@@ -534,6 +547,7 @@ export function BookingFlow() {
         <button
           type="button"
           data-testid="confirm"
+          aria-busy={sending}
           className="btn btn-primary"
           disabled={!ok || sending}
           onClick={submit}
@@ -556,7 +570,14 @@ export function BookingFlow() {
             {error}
           </div>
         )}
-        <div style={{ fontSize: textSize(0.95), lineHeight: 1.5, color: '#7a6a58', textAlign: 'center' }}>
+        <div
+          style={{
+            fontSize: textSize(0.95),
+            lineHeight: 1.5,
+            color: '#7a6a58',
+            textAlign: 'center',
+          }}
+        >
           {ok
             ? 'Sin costo y sin compromiso de compra.'
             : 'Completa horario, nombre y correo para confirmar.'}

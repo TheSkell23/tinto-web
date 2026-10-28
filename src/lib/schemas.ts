@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { bookingWants, months, weekdays } from '@/content/agendar';
+import { bookingChannels, bookingWants, months, weekdays } from '@/content/agendar';
 
 // El diseño valida el correo con /.+@.+/; se mantiene esa regla (más estricta que nada, sin falsos rechazos).
 const emailRule = /.+@.+/;
@@ -17,7 +17,11 @@ export const contactSchema = z.object({
 export type ContactInput = z.input<typeof contactSchema>;
 
 export const bookingSchema = z.object({
-  channel: z.number().int().min(0).max(2),
+  channel: z
+    .number()
+    .int()
+    .min(0)
+    .max(bookingChannels.length - 1),
   day: z.string().min(3).max(40),
   slot: z.enum(['9:00', '10:00', '11:00', '14:00', '15:00', '16:00']),
   name: z.string().trim().min(2, 'Escribe tu nombre completo'),
