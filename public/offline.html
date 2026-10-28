@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, follow" />
+    <meta name="theme-color" content="#fff4e6" />
+    <title>Sin conexión | Tinto</title>
+    <link rel="icon" href="/icons/icon-192.png" />
+    <link rel="stylesheet" href="/error-state.css" />
+    <script src="/offline-retry.js" defer></script>
+  </head>
+  <body class="offline-document">
+    <main class="connection-page is-offline">
+      <a href="/" class="connection-brand" aria-label="Tinto, ir al inicio"
+        ><img src="/images/tinto-logo.png" width="793" height="228" alt="Tinto"
+      /></a>
+      <section class="connection-content" aria-labelledby="offline-title">
+        <svg
+          class="connection-symbol"
+          viewBox="0 0 80 80"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="4"
+          stroke-linecap="round"
+          aria-hidden="true"
+        >
+          <path d="M14 28c14-13 38-13 52 0M25 40c8-7 22-7 30 0M36 52c3-2 5-2 8 0M10 10l60 60" />
+          <circle cx="40" cy="64" r="2" fill="currentColor" stroke="none" />
+        </svg>
+        <h1 id="offline-title" class="connection-title">Nos quedamos sin conexión.</h1>
+        <p class="connection-text">
+          El tinto puede esperar. Revisa tu conexión y vuelve a intentarlo.
+        </p>
+        <div class="connection-actions">
+          <button class="connection-action" id="retry" type="button">Volver a intentar</button
+          ><a class="connection-action secondary" href="/">Ir al inicio</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

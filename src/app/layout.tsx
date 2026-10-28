@@ -1,3 +1,5 @@
+import { MotionEnhancements } from '@/components/MotionEnhancements';
+import { OfflineSupport } from '@/components/OfflineSupport';
 import { JsonLd } from '@/components/JsonLd';
 import { globalStructuredData } from '@/lib/structured-data';
 import type { Metadata, Viewport } from 'next';
@@ -11,8 +13,12 @@ import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
 import type { LogoSheet } from '@/components/HeaderLogo';
 import { MotionController } from '@/components/MotionController';
+import { RegisterSW } from '@/components/RegisterSW';
+import { ScrollProgress } from '@/components/ScrollProgress';
 import './globals.css';
 import './mobile.css';
+import '../../public/error-state.css';
+import './motion.css';
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -68,10 +74,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           Saltar al contenido
         </a>
         {/* El header fijo va FUERA de cualquier contenedor con container-type */}
+        <ScrollProgress />
         <Header logoSheet={logoSheet} />
         <MotionController />
+        <MotionEnhancements />
+        <RegisterSW />
         <main id="contenido">{children}</main>
         <Footer />
+        <OfflineSupport />
       </body>
     </html>
   );
