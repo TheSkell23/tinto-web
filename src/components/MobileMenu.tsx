@@ -1,11 +1,21 @@
 'use client';
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { Icon } from '@/components/Icons';
+import styles from './MobileMenu.module.css';
 import { useEffect, useRef, type MouseEvent, type RefObject } from 'react';
 import { navGroups, type NavLink } from '@/content/site';
 import { goHref } from '@/lib/scroll';
 
 const FOCUSABLE = 'a[href],button:not([disabled])';
+const linkIcons: Record<string, readonly string[]> = {
+  '/producto': ['grid', 'dollar', 'bars'],
+  '/soluciones': ['user', 'target', 'columns'],
+  '/nosotros': ['user', 'heart', 'chat'],
+  '/dudas': ['chat', 'search', 'headset'],
+  '/contacto': ['mail', 'phone', 'calendar'],
+};
 
 /**
  * Menú móvil (hamburguesa) con el mismo estilo de vidrio.
@@ -23,18 +33,19 @@ export function MobileMenu({
   burgerRef: RefObject<HTMLButtonElement | null>;
   onNavigate: (e: MouseEvent<HTMLAnchorElement>, l: Pick<NavLink, 'page' | 'find'>) => void;
 }) {
+  const pathname = usePathname();
   const panelRef = useRef<HTMLDivElement>(null);
   const wasOpen = useRef(false);
 
   useEffect(() => {
     if (!open) {
-      if (wasOpen.current) burgerRef.current?.focus();
+      if (wasOpen.current) burgerRef.current?.focus({ preventScroll: true });
       wasOpen.current = false;
       return;
     }
     wasOpen.current = true;
     const panel = panelRef.current;
-    panel?.querySelector<HTMLElement>(FOCUSABLE)?.focus();
+    panel?.querySelector<HTMLElement>(FOCUSABLE)?.focus({ preventScroll: true });
     const prev = document.documentElement.style.overflow;
     document.documentElement.style.overflow = 'hidden';
 
@@ -64,8 +75,13 @@ export function MobileMenu({
       }
     };
     document.addEventListener('keydown', key);
+    // Si la ventana pasa a ancho de escritorio con el menú abierto, se cierra (y se libera el scroll).
+    const desktop = window.matchMedia('(min-width: 900px)');
+    const onDesktop = () => desktop.matches && onClose();
+    desktop.addEventListener('change', onDesktop);
     return () => {
       document.removeEventListener('keydown', key);
+      desktop.removeEventListener('change', onDesktop);
       document.documentElement.style.overflow = prev;
     };
   }, [open, onClose, burgerRef]);
@@ -86,10 +102,12 @@ export function MobileMenu({
           background: 'rgba(42,29,18,.18)',
           opacity: open ? 1 : 0,
           transition: 'opacity .3s ease',
+          touchAction: 'none',
         }}
       />
       <div
         ref={panelRef}
+        className={styles.panel}
         role="dialog"
         aria-modal="true"
         aria-label="Menú"
@@ -100,6 +118,7 @@ export function MobileMenu({
           right: 'var(--mobile-menu-side, 12px)',
           maxHeight: 'var(--mobile-menu-height, calc(100dvh - 84px))',
           overflowY: 'auto',
+          overscrollBehavior: 'contain',
           padding: 10,
           borderRadius: 26,
           background: 'linear-gradient(135deg,rgba(255,255,255,.98),rgba(255,247,238,.97))',
@@ -112,48 +131,43 @@ export function MobileMenu({
           transition: 'opacity .25s ease,transform .35s cubic-bezier(.2,.8,.2,1)',
         }}
       >
-        {navGroups.map((g) => (
-          <div key={g.label} style={{ padding: '6px 0' }}>
-            <div
-              style={{
-                padding: '6px 14px',
-                fontSize: 'max(var(--mobile-label-min, 0px), 11px)',
-                fontWeight: 700,
-                letterSpacing: '.12em',
-                textTransform: 'uppercase',
-                color: '#8a5a1f',
-              }}
-            >
-              {g.label}
+        <div className={styles.groups}>
+          {navGroups.map((g) => (
+            <div key={g.label} className={styles.group} data-current={pathname === g.page}>
+              <div className={styles.heading}>
+                <span className={styles.dot} aria-hidden="true" />
+                {g.label}
+              </div>
+              <div className={styles.links}>
+                {g.links.map((l, index) => (
+                  <Link
+                    key={l.label}
+                    href={goHref(l)}
+                    className={styles.link}
+                    onClick={(e) => onNavigate(e, l)}
+                  >
+                    <span className={styles.icon} aria-hidden="true">
+                      <Icon name={linkIcons[g.page]?.[index] ?? 'grid'} size={20} stroke={1.8} />
+                    </span>
+                    <span className={styles.copy}>
+                      <span className={styles.label}>{l.label}</span>
+                      <span className={styles.description}>{l.sub}</span>
+                    </span>
+                    <span className={styles.arrow} aria-hidden="true">
+                      <Icon name="arrow" size={17} stroke={2} />
+                    </span>
+                  </Link>
+                ))}
+              </div>
             </div>
-            {g.links.map((l) => (
-              <Link
-                key={l.label}
-                href={goHref(l)}
-                className="hdr-sub"
-                onClick={(e) => onNavigate(e, l)}
-                style={{
-                  display: 'flex',
-                  flexDirection: 'column',
-                  gap: 2,
-                  padding: '10px 14px',
-                  borderRadius: 15,
-                }}
-              >
-                <span style={{ fontSize: 15, fontWeight: 600 }}>{l.label}</span>
-                <span style={{ fontSize: 13, fontWeight: 500, color: '#7a6a58' }}>{l.sub}</span>
-              </Link>
-            ))}
-          </div>
-        ))}
-        <Link
-          href="/agendar"
-          onClick={onClose}
-          className="btn btn-primary"
-          style={{ margin: '8px 4px 4px', fontSize: 15, padding: '14px 24px', display: 'flex' }}
-        >
-          ¿Agendamos un tinto?
-        </Link>
+          ))}
+        </div>
+        <div className={styles.footer}>
+          <Link href="/agendar" onClick={onClose} className={`btn btn-primary ${styles.cta}`}>
+            ¿Agendamos un tinto?
+            <Icon name="arrow" size={19} stroke={2.2} />
+          </Link>
+        </div>
       </div>
     </div>
   );

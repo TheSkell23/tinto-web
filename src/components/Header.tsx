@@ -23,6 +23,9 @@ export function Header({ logoSheet }: { logoSheet: LogoSheet | null }) {
   const [menu, setMenu] = useState(false);
   const rootRef = useRef<HTMLElement>(null);
   const burgerRef = useRef<HTMLButtonElement>(null);
+  const chevRefs = useRef<Array<HTMLButtonElement | null>>([]);
+  // Momento del último scroll/redimensión: el hover no abre menús mientras la barra se mueve bajo el mouse.
+  const lastMove = useRef(0);
 
   useEffect(() => {
     const f = (init = false) => {
@@ -32,7 +35,10 @@ export function Header({ logoSheet }: { logoSheet: LogoSheet | null }) {
       setCompact((prev) => (init ? y > th : prev ? y >= th - HYST : y > th + HYST));
     };
     f(true);
-    const on = () => f();
+    const on = () => {
+      lastMove.current = performance.now();
+      f();
+    };
     window.addEventListener('scroll', on, { passive: true });
     window.addEventListener('resize', on);
     return () => {
@@ -56,7 +62,10 @@ export function Header({ logoSheet }: { logoSheet: LogoSheet | null }) {
       if (rootRef.current && !rootRef.current.contains(e.target as Node)) setOpen(-1);
     };
     const key = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') setOpen(-1);
+      if (e.key === 'Escape') {
+        chevRefs.current[open]?.focus({ preventScroll: true });
+        setOpen(-1);
+      }
     };
     document.addEventListener('pointerdown', down);
     document.addEventListener('keydown', key);
@@ -106,8 +115,17 @@ export function Header({ logoSheet }: { logoSheet: LogoSheet | null }) {
                 <div
                   key={g.label}
                   style={{ position: 'relative' }}
-                  onMouseEnter={() => setOpen(i)}
-                  onMouseLeave={() => setOpen(-1)}
+                  // Hover real: solo con un mouse que se está moviendo (un movimiento "falso" por scroll o por el
+                  // cambio de tamaño del header no cuenta). Clic, tap y teclado siguen funcionando igual.
+                  onPointerMove={(e) => {
+                    if (e.pointerType !== 'mouse' || open === i) return;
+                    if (!e.movementX && !e.movementY) return;
+                    if (performance.now() - lastMove.current < 700) return;
+                    setOpen(i);
+                  }}
+                  onPointerLeave={(e) => {
+                    if (e.pointerType === 'mouse') setOpen((cur) => (cur === i ? -1 : cur));
+                  }}
                 >
                   <div
                     className="hdr-link"
@@ -129,6 +147,9 @@ export function Header({ logoSheet }: { logoSheet: LogoSheet | null }) {
                       {g.label}
                     </Link>
                     <button
+                      ref={(el) => {
+                        chevRefs.current[i] = el;
+                      }}
                       type="button"
                       aria-label={'Abrir opciones de ' + g.label}
                       aria-expanded={isOpen}

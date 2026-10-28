@@ -23,7 +23,8 @@ const COLS = 10;
 const SLOT_W = 96;
 const TARGET_W = SLOT_W * 4; // 384px
 const MAX_SIDE = 4096;
-const MARGIN = 2;
+const MARGIN = 14; // margen (px del GIF) alrededor del movimiento: ningún fotograma toca el borde
+const PAD = 2; // borde transparente alrededor de cada fotograma en la hoja (evita que se mezclen los vecinos)
 const ALPHA_MIN = 8;
 
 if (!fs.existsSync(gifPath)) {
@@ -130,6 +131,52 @@ if (!frames.length) {
   }
 }
 
+// 0b) El GIF original saca piezas del lienzo durante la transición (letras que salen por la derecha y un
+//     trazo que baja hasta el borde inferior), y eso se ve como cortes y una línea negra. Se define la zona
+//     del logo (unión del primer y el último fotograma) y lo que queda fuera se desvanece suavemente.
+{
+  const FADE_PX = Number(process.env.LOGO_FADE_PX) || 26;
+  const ZONE_MARGIN = 8;
+  const Wz = frames[0].w;
+  const Hz = frames[0].h;
+  let zx0 = Wz,
+    zy0 = Hz,
+    zx1 = -1,
+    zy1 = -1;
+  for (const f of [frames[0], frames[frames.length - 1]]) {
+    for (let y = 0; y < Hz; y++)
+      for (let x = 0; x < Wz; x++)
+        if (f.data[(y * Wz + x) * 4 + 3] > 128) {
+          if (x < zx0) zx0 = x;
+          if (x > zx1) zx1 = x;
+          if (y < zy0) zy0 = y;
+          if (y > zy1) zy1 = y;
+        }
+  }
+  if (zx1 >= 0) {
+    zx0 -= ZONE_MARGIN;
+    zy0 -= ZONE_MARGIN;
+    zx1 += ZONE_MARGIN;
+    zy1 += ZONE_MARGIN;
+    for (const f of frames) {
+      for (let y = 0; y < Hz; y++) {
+        const dy = Math.max(zy0 - y, y - zy1, 0);
+        for (let x = 0; x < Wz; x++) {
+          const dx = Math.max(zx0 - x, x - zx1, 0);
+          if (!dx && !dy) continue;
+          const o = (y * Wz + x) * 4 + 3;
+          if (!f.data[o]) continue;
+          const t = Math.max(0, 1 - Math.hypot(dx, dy) / FADE_PX);
+          f.data[o] = Math.round(f.data[o] * t * t * (3 - 2 * t));
+        }
+      }
+    }
+    console.log(
+      `[logo] Zona del logo ${zx1 - zx0 + 1}x${zy1 - zy0 + 1}px; lo que sale de ella se desvanece en ${FADE_PX}px.`,
+    );
+  }
+}
+
 // 1) Recuadro mínimo de píxeles no transparentes, unión de TODOS los fotogramas.
 const W = frames[0].w;
 const H = frames[0].h;
@@ -203,6 +250,20 @@ for (let y = 0; y < fh; y++)
       if (y > ry1) ry1 = y;
     }
 const restCy = ry1 >= 0 ? (ry0 + ry1 + 1) / 2 / fh : 0.5;
+// borde derecho de la tinta (0..1) en el primer y el último fotograma: el header lo usa para que el
+// hueco logo→menú sea igual al hueco menú→botón en los dos estados
+const inkRight = (tile) => {
+  let x1 = -1;
+  for (let y = 0; y < fh; y++)
+    for (let x = fw - 1; x > x1; x--)
+      if (tile[(y * fw + x) * 4 + 3] > 40) {
+        x1 = x;
+        break;
+      }
+  return x1 >= 0 ? (x1 + 1) / fw : 1;
+};
+const inkRightStart = inkRight(tiles[0]);
+const inkRightEnd = inkRight(tiles[tiles.length - 1]);
 const firstVisible = opaque(tiles[0]) >= 0.6 * opaque(tiles[tiles.length - 1]);
 
 const composites = await Promise.all(
@@ -210,16 +271,16 @@ const composites = await Promise.all(
     input: await sharp(raw, { raw: { width: fw, height: fh, channels: 4 } })
       .png()
       .toBuffer(),
-    left: (n % COLS) * fw,
-    top: Math.floor(n / COLS) * fh,
+    left: (n % COLS) * (fw + 2 * PAD) + PAD,
+    top: Math.floor(n / COLS) * (fh + 2 * PAD) + PAD,
   })),
 );
 
 fs.mkdirSync(outDir, { recursive: true });
 await sharp({
   create: {
-    width: fw * COLS,
-    height: fh * rows,
+    width: (fw + 2 * PAD) * COLS,
+    height: (fh + 2 * PAD) * rows,
     channels: 4,
     background: { r: 0, g: 0, b: 0, alpha: 0 },
   },
@@ -240,6 +301,9 @@ fs.writeFileSync(
     duration,
     firstFrameVisible: firstVisible,
     restCy,
+    inkRightStart,
+    inkRightEnd,
+    pad: PAD,
   }),
 );
 console.log(

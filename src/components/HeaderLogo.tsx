@@ -12,6 +12,11 @@ export type LogoSheet = {
   delays: number[];
   duration: number;
   firstFrameVisible: boolean;
+  /** borde transparente (px) alrededor de cada fotograma en la hoja */
+  pad?: number;
+  /** borde derecho de la tinta (0..1) en el primer y el último fotograma */
+  inkRightStart?: number;
+  inkRightEnd?: number;
   /** centro vertical (0..1) del dibujo en el primer fotograma */
   restCy?: number;
 };
@@ -19,6 +24,7 @@ export type LogoSheet = {
 const SHEET_URL = '/anim/logo-sheet.webp';
 const SLOT_W = 96;
 const FADE = 'opacity 120ms linear';
+const SWAP = 'opacity .35s ease, transform .45s cubic-bezier(.2,.8,.2,1)';
 
 /** Índice del fotograma para el instante t (búsqueda binaria sobre los tiempos acumulados). */
 function frameAt(starts: number[], t: number): number {
@@ -37,7 +43,21 @@ function frameAt(starts: number[], t: number): number {
  * (una sola fuente de verdad), así la animación arranca en el mismo instante que la transición de ancho.
  * El GIF no se usa en el navegador: se reproduce una hoja de sprites en <canvas> hacia delante o hacia atrás.
  */
-export function HeaderLogo({ compact, sheet }: { compact: boolean; sheet: LogoSheet | null }) {
+/**
+ * Animación por sprites ACTIVA: "tinto" → "t·" al compactar el header y al revés al expandirlo.
+ * Si se pone ANIMATE_LOGO en false, vuelve al respaldo sin animación: logo completo en reposo y la
+ * marca "t·" (public/images/tinto-mark.png) con un fundido cuando el header se compacta.
+ */
+const ANIMATE_LOGO = true;
+
+export function HeaderLogo({
+  compact,
+  sheet: sheetProp,
+}: {
+  compact: boolean;
+  sheet: LogoSheet | null;
+}) {
+  const sheet = ANIMATE_LOGO ? sheetProp : null;
   const ratio = sheet ? sheet.frameW / sheet.frameH : 3.4;
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [canvasOn, setCanvasOn] = useState(false); // el canvas está visible (si no, se ve el logo estático)
@@ -64,6 +84,7 @@ export function HeaderLogo({ compact, sheet }: { compact: boolean; sheet: LogoSh
       acc += d;
     }
     const duration = sheet.duration || acc;
+    const pad = sheet.pad ?? 0;
 
     let img: HTMLImageElement | null = null;
     let ready = false;
@@ -88,8 +109,8 @@ export function HeaderLogo({ compact, sheet }: { compact: boolean; sheet: LogoSh
         ctx.globalAlpha = alpha;
         ctx.drawImage(
           img!,
-          (i % sheet.cols) * sheet.frameW,
-          Math.floor(i / sheet.cols) * sheet.frameH,
+          (i % sheet.cols) * (sheet.frameW + 2 * pad) + pad,
+          Math.floor(i / sheet.cols) * (sheet.frameH + 2 * pad) + pad,
           sheet.frameW,
           sheet.frameH,
           0,
@@ -207,6 +228,13 @@ export function HeaderLogo({ compact, sheet }: { compact: boolean; sheet: LogoSh
     api.current?.setTarget(compact);
   }, [compact]);
 
+  const showMark = !sheet && compact;
+  // Iguala el hueco logo→menú con el hueco menú→botón: la tinta del logo no llega al borde del espacio
+  // reservado (sobre todo la "t·"), y el menú termina con una flechita. 19 px = diferencia fija del menú.
+  const inkInset = sheet
+    ? (1 - ((compact ? sheet.inkRightEnd : sheet.inkRightStart) ?? 1)) * SLOT_W
+    : 0;
+  const gapFix = sheet ? Math.round(19 - inkInset) : 0;
   const useCanvas = !!sheet && !failed && canvasOn;
 
   return (
@@ -214,14 +242,15 @@ export function HeaderLogo({ compact, sheet }: { compact: boolean; sheet: LogoSh
       href="/"
       aria-label="tinto — inicio"
       style={{
-        transform: `translateY(${((0.5 - (sheet?.restCy ?? 0.5)) * 100).toFixed(2)}%)`,
         position: 'relative',
         display: 'block',
         flex: 'none',
         width: SLOT_W,
         aspectRatio: String(ratio),
         overflow: 'hidden',
-        marginBlock: Math.min(0, -(SLOT_W / ratio - 28) / 2),
+        marginRight: gapFix,
+        transition: 'margin-right .6s cubic-bezier(.2,.8,.2,1)',
+        marginBlock: sheet ? Math.min(0, -(SLOT_W / ratio - 28) / 2) : 0,
       }}
     >
       <Image
@@ -236,10 +265,31 @@ export function HeaderLogo({ compact, sheet }: { compact: boolean; sheet: LogoSh
           height: '100%',
           objectFit: 'contain',
           display: 'block',
-          transform: 'scale(1)',
+          transform: showMark ? 'scale(.92)' : 'scale(1)',
           transformOrigin: 'left center',
-          transition: `${FADE}, transform .6s cubic-bezier(.2,.8,.2,1)`,
-          opacity: useCanvas ? 0 : 1,
+          transition: SWAP,
+          opacity: useCanvas || showMark ? 0 : 1,
+        }}
+      />
+      {/* Al bajar (header compacto) el logo completo cede su lugar a la marca "t·" */}
+      <Image
+        src="/images/tinto-mark.png"
+        alt=""
+        aria-hidden="true"
+        width={590}
+        height={512}
+        sizes="40px"
+        style={{
+          position: 'absolute',
+          left: 0,
+          top: 0,
+          height: '100%',
+          width: 'auto',
+          display: 'block',
+          transformOrigin: 'left center',
+          transform: showMark ? 'scale(1)' : 'scale(.92)',
+          transition: SWAP,
+          opacity: showMark ? 1 : 0,
         }}
       />
       {sheet && !failed && (
@@ -249,6 +299,8 @@ export function HeaderLogo({ compact, sheet }: { compact: boolean; sheet: LogoSh
           style={{
             position: 'absolute',
             inset: 0,
+            // centra ópticamente el dibujo (el recuadro del GIF es más alto que la palabra)
+            transform: `translateY(${((0.5 - (sheet?.restCy ?? 0.5)) * 100).toFixed(2)}%)`,
             width: '100%',
             height: '100%',
             display: 'block',
