@@ -366,3 +366,30 @@
   .sh:not(.sh-full) h1.fz { font-size: clamp(44px,4.5vw,76px); max-width: 100% !important; }
   .sh:not(.sh-full) p { max-width: 34em !important; font-size: clamp(16px,1.3vw,21px) !important; }
 }
+
+/* La misma firma fantasma de la portada, detras del contenido interior. */
+.sh-wordmark {
+  position: absolute;
+  z-index: -1;
+  bottom: 32px;
+  left: 50%;
+  translate: -50% 0;
+  font-size: clamp(260px, 38vw, 650px);
+  font-weight: 800;
+  letter-spacing: -.08em;
+  line-height: .8;
+  color: rgba(138, 90, 31, .045);
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+}
+@media (max-width: 899px) {
+  .sh-wordmark {
+    top: clamp(150px, 28vw, 230px);
+    bottom: auto;
+    font-size: 76vw;
+  }
+  .sh:not(.sh-full) .sh-wordmark {
+    top: 112px;
+  }
+}

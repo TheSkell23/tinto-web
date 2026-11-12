@@ -1,5 +1,6 @@
 export const site = {
   name: 'tinto',
+  loginUrl: 'https://app.grou.com.co/',
   email: 'hola@tinto.co',
   emailCitas: 'citas@tinto.co',
   address: 'Cra. 15 #93-60, Bogotá',

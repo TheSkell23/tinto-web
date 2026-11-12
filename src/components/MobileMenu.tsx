@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 import { Icon } from '@/components/Icons';
 import styles from './MobileMenu.module.css';
 import { useEffect, useRef, type MouseEvent, type RefObject } from 'react';
-import { navGroups, type NavLink } from '@/content/site';
+import { navGroups, site, type NavLink } from '@/content/site';
 import { goHref } from '@/lib/scroll';
 
 const FOCUSABLE = 'a[href],button:not([disabled])';
@@ -163,6 +163,16 @@ export function MobileMenu({
           ))}
         </div>
         <div className={styles.footer}>
+          <a
+            href={site.loginUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={onClose}
+            className="btn"
+            style={{ display: 'flex', justifyContent: 'center', width: '100%', minHeight: 44, marginBottom: 10 }}
+          >
+            Ingresar
+          </a>
           <Link href="/agendar" onClick={onClose} className={`btn btn-primary ${styles.cta}`}>
             ¿Agendamos un tinto?
             <Icon name="arrow" size={19} stroke={2.2} />

@@ -113,3 +113,14 @@ No se certifica conformidad AA de toda la paleta: conservar colores entra en con
 3. Verificar reserva y contacto con contenido y datos reales, horarios, textos largos y errores reales de backend. Las pruebas actuales interceptan los envíos por seguridad y alcance.
 4. Entregar imágenes definitivas optimizadas y comprobar calidad a DPR 2/3 sobre conexiones móviles; se conserva la selección responsive de Next y los recursos existentes.
 5. Medir rendimiento/Core Web Vitals tras publicar en el alojamiento definitivo y probar en un móvil de gama media. No se desplegó nada.
+
+
+## Adaptacion de las mejoras de PC ? 28 de octubre de 2026
+
+- La firma decorativa ?tinto? se adapta al ancho del telefono y la tableta para leerse completa, con la transparencia original. Se conserva `aria-hidden` y no captura eventos.
+- Ingresar conserva su enlace y obtiene un fondo discreto y area tactil de 44 px en movil.
+- El hero principal usa el mismo margen lateral que las secciones. Las cifras de los heros ajustan su escala sin cambiar su contenido.
+- A menos de 360 px las oportunidades de Soluciones ocupan una fila cada una para mejorar la lectura.
+- Todos los ajustes visuales de este bloque viven dentro de `max-width: 899px`. Escritorio, textos, fotos, SEO, formularios y animaciones no cambian.
+
+Verificacion: 7 rutas en 320, 375, 390, 430, 768 y 820 px: sin scroll horizontal ni errores de consola; las firmas caben completas y los inputs conservan al menos 16 px. En 375 px no se detectaron objetivos tactiles menores de 44 px en header y contenido. Nueve comparaciones de escritorio (inicio, Producto y Agendar a 1366, 1440 y 1920 px) identicas antes y despues de aplicar el CSS. Las 23 comprobaciones funcionales moviles pasaron; las solicitudes de contacto y reservas fueron interceptadas, sin envios reales. Sigue pendiente la comprobacion en Safari de iPhone y dispositivos fisicos.

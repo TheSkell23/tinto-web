@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useCallback, useEffect, useRef, useState, type MouseEvent } from 'react';
-import { navGroups, type NavLink } from '@/content/site';
+import { navGroups, site, type NavLink } from '@/content/site';
 import { goHref, scrollToSection } from '@/lib/scroll';
 import { HeaderLogo, type LogoSheet } from './HeaderLogo';
 import { Icon } from './Icons';
@@ -142,7 +142,7 @@ export function Header({ logoSheet }: { logoSheet: LogoSheet | null }) {
                     <Link
                       href={g.page}
                       onClick={(e) => onNavigate(e, { page: g.page, find: '' })}
-                      style={{ padding: '8px 2px 8px 10px', borderRadius: '999px 0 0 999px' }}
+                      style={{ padding: '8px 2px 8px var(--header-nav-left, 10px)', borderRadius: '999px 0 0 999px' }}
                     >
                       {g.label}
                     </Link>
@@ -159,7 +159,7 @@ export function Header({ logoSheet }: { logoSheet: LogoSheet | null }) {
                       style={{
                         display: 'grid',
                         placeItems: 'center',
-                        padding: '8px 10px 8px 6px',
+                        padding: '8px var(--header-nav-right, 10px) 8px var(--header-chevron-left, 6px)',
                         border: 0,
                         background: 'none',
                         cursor: 'pointer',
@@ -237,6 +237,26 @@ export function Header({ logoSheet }: { logoSheet: LogoSheet | null }) {
         </div>
 
         <div style={{ flex: 'none', display: 'flex', alignItems: 'center', gap: 8 }}>
+          <a
+            className="hdr-login"
+            href={site.loginUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            inert={menu}
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              minHeight: 44,
+              padding: '0 10px',
+              borderRadius: 999,
+              fontSize: 14,
+              fontWeight: 600,
+              whiteSpace: 'nowrap',
+            }}
+          >
+            Ingresar
+          </a>
           <div className="hdr-cta-wrap">
             <Link
               href="/agendar"
@@ -246,7 +266,7 @@ export function Header({ logoSheet }: { logoSheet: LogoSheet | null }) {
                 gridArea: '1/1',
                 background: 'linear-gradient(135deg,#ff8a3d,#ff9d86)',
                 color: '#fff',
-                padding: '10px 18px',
+                padding: '10px var(--header-cta-x, 18px)',
                 borderRadius: 999,
                 fontSize: 13.5,
                 fontWeight: 600,

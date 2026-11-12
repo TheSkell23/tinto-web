@@ -790,3 +790,13 @@ button {
     cursor: not-allowed;
   }
 }
+
+/* Reserva espacio para Ingresar en el tramo mas estrecho de la navegacion de escritorio. */
+@media (min-width: 900px) and (max-width: 999px) {
+  .hdr {
+    --header-cta-x: 8px;
+    --header-nav-left: 4px;
+    --header-nav-right: 4px;
+    --header-chevron-left: 4px;
+  }
+}

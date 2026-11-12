@@ -457,3 +457,203 @@
     align-self: center;
   }
 }
+
+/* Escala editorial mas serena: contenido compacto y bordes con aire.
+   Se conserva la escala propia de los heroes, el footer y los controles. */
+@media (max-width: 899px) {
+  main {
+    --content-gutter: clamp(24px, 6.4vw, 48px);
+  }
+
+  main .pg > :not(.sh),
+  main section.cq {
+    --u: 11px;
+    --ud: clamp(6.5px, 1.8vw, 8.5px);
+  }
+
+  /* .pg ya aporta 20px: sumar solo la diferencia mantiene el hero a sangre. */
+  main .pg > :not(.sh) {
+    margin-inline: calc(var(--content-gutter) - 20px);
+  }
+
+  /* Estos bloques tienen padding inline de escritorio; se sustituye solo en movil. */
+  main .cq-pad:not(:where(.hc *, .sh *)) {
+    padding-inline: var(--content-gutter) !important;
+  }
+
+  main :is(h2, h3).fz:not(:where(.hc *, .sh *, .chat *, .booking-step *, .bk-sum *)) {
+    line-height: 1.18 !important;
+  }
+
+  main .tablet-cards:not(:where(.hc *, .sh *)) {
+    max-width: 600px;
+  }
+}
+
+/* Heros interiores: composicion movil editorial, separada de la portada. */
+@media (max-width: 899px) {
+  main .pg > .sh {
+    padding-inline: var(--content-gutter, 28px);
+    padding-top: calc(120px + env(safe-area-inset-top, 0px));
+    padding-bottom: 64px;
+    background:
+    radial-gradient(ellipse at 0% 80%, rgba(255, 150, 90, 0.85), transparent 42%),
+    radial-gradient(ellipse at 100% 92%, rgba(255, 120, 130, 0.6), transparent 48%),
+    radial-gradient(ellipse at 88% 8%, rgba(255, 205, 140, 0.9), transparent 45%),
+    radial-gradient(ellipse at 50% 38%, rgba(255, 250, 240, 0.95), transparent 55%),
+    linear-gradient(120deg, #fff4e6, #ffe9d6 55%, #ffd9c2);
+  }
+
+  .pg .sh h1.fz {
+    font-size: clamp(30px, 8vw, 42px);
+    line-height: 1.12 !important;
+    letter-spacing: -.035em !important;
+    max-width: 15ch;
+    margin-inline: auto !important;
+  }
+
+  .sh .hero-copy,
+  .sh .ct-hero > div:first-child > .rv:first-child {
+    align-items: center !important;
+    text-align: center;
+    gap: 20px !important;
+    width: 100%;
+    max-width: 600px;
+    margin-inline: auto;
+  }
+
+  .sh .hero-copy > p,
+  .sh .ct-hero p {
+    max-width: 36ch !important;
+    margin-inline: auto !important;
+    line-height: 1.65 !important;
+    color: var(--color-ink-2) !important;
+  }
+
+  .sh .hero-layout,
+  .sh .ct-hero {
+    gap: 40px !important;
+  }
+
+  .sh .hero-actions {
+    max-width: 380px;
+    margin-top: 4px !important;
+    gap: 10px !important;
+  }
+
+  .sh .hero-actions .btn {
+    min-height: 48px;
+    border-radius: 16px;
+  }
+
+  .sh .hero-stats {
+    background: transparent !important;
+    border: 0 !important;
+    border-top: 1px solid var(--color-edge-2) !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border-radius: 0 !important;
+    padding: 20px 0 0 !important;
+    gap: 12px !important;
+    max-width: 440px;
+  }
+
+  .sh .hero-stats > div > div:last-child {
+    font-size: 12px !important;
+  }
+
+  .sh .hero-visual,
+  .sh .ct-hero > .rv {
+    max-width: 600px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .sh .hero-visual > .mock-wrap {
+    box-shadow: 0 18px 32px -20px rgba(138, 90, 31, .35) !important;
+  }
+
+  main .pg > .sh:not(.sh-full) {
+    padding-top: calc(112px + env(safe-area-inset-top, 0px));
+    padding-bottom: 52px;
+    margin-bottom: 8px;
+  }
+
+  .pg .sh:not(.sh-full) h1.fz {
+    font-size: clamp(28px, 7.6vw, 38px);
+    max-width: 18ch !important;
+  }
+
+  .sh:not(.sh-full) > .rv {
+    gap: 16px !important;
+    max-width: 600px;
+    margin-inline: auto;
+  }
+
+  .sh:not(.sh-full) p {
+    max-width: 38ch !important;
+    color: var(--color-ink-2) !important;
+  }
+
+  .sh .sh-cap {
+    height: 40px;
+    border-radius: 40px 40px 0 0;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .sh .hero-actions {
+    flex-direction: row;
+    max-width: 520px;
+  }
+
+  .sh .hero-actions > .btn {
+    flex: 1;
+    width: auto;
+  }
+}
+
+/* Traslado de los detalles de PC a pantallas tactiles, sin recortar la firma. */
+@media (max-width: 899px) {
+  .hdr .hdr-login {
+    background: rgba(255, 255, 255, .72);
+    border: 1px solid rgba(138, 90, 31, .16);
+  }
+
+  .hc .hc-body {
+    padding-inline: var(--content-gutter, 24px);
+  }
+
+  main .hc .hc-wordmark,
+  main .sh .sh-wordmark {
+    display: block;
+    font-size: clamp(140px, 46vw, 340px);
+    letter-spacing: -.08em;
+    white-space: nowrap;
+  }
+
+  main .hc .hc-wordmark {
+    bottom: 80px;
+  }
+
+  main .sh .sh-wordmark {
+    top: clamp(160px, 25vw, 200px);
+    bottom: auto;
+  }
+
+  main .sh:not(.sh-full) .sh-wordmark {
+    top: 112px;
+  }
+
+  .sh .hero-stats .fz {
+    font-size: clamp(17px, 4.8vw, 24px);
+  }
+}
+
+@media (max-width: 359px) {
+  /* A este ancho cada oportunidad necesita su propia fila para poder leerse. */
+  .assign-board .ab-chips {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

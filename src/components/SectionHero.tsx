@@ -8,6 +8,7 @@ import './SectionHero.css';
 export function SectionHero({ children, full = false }: { children: ReactNode; full?: boolean }) {
   return (
     <section className={`sh${full ? ' sh-full' : ''}`}>
+      <span className="sh-wordmark" aria-hidden="true">tinto</span>
       {children}
       <span className="sh-cap" aria-hidden="true" />
     </section>
