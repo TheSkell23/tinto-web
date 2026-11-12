@@ -148,12 +148,6 @@
     transform: translate3d(46px, 0, 0);
   }
   /* en pantallas angostas el desplazamiento lateral causaría scroll horizontal: solo sube */
-  @media (max-width: 899px) {
-    [data-motion='ready'] .rv[data-rv='left']:not(.rv-in),
-    [data-motion='ready'] .rv[data-rv='right']:not(.rv-in) {
-      transform: translate3d(0, 34px, 0);
-    }
-  }
   [data-motion='ready'] .rv[data-rv='zoom']:not(.rv-in) {
     transform: scale(0.93);
   }
@@ -400,16 +394,4 @@
     background-size: 100% 1px;
   }
 }
-@media (prefers-reduced-motion: no-preference) and (max-width: 899px) {
-  .rv {
-    transition-duration: 480ms;
-  }
-  .kenburns {
-    animation: none;
-    will-change: auto;
-  }
-  .motion-list-item.motion-entered {
-    animation-duration: 360ms;
-    animation-delay: calc(var(--motion-order, 0) * 30ms);
-  }
-}
+

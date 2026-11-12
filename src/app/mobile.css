@@ -357,9 +357,6 @@
   }
 }
 @media (max-width: 899px) and (prefers-reduced-motion: no-preference) {
-  .hc-body > * {
-    animation-duration: 550ms;
-  }
   html[data-detail-motion='ready'] .hc:not(.motion-in-view) .hc-mesh i,
   html[data-detail-motion='ready'] .hc:not(.motion-in-view) .hc-track,
   html[data-detail-motion='ready'] .sh:not(.motion-in-view)::before,

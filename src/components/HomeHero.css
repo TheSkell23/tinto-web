@@ -430,9 +430,6 @@
   .hc .btn.hc-btn {
     width: 100%;
   }
-  .hc-person {
-    display: none;
-  }
   .hc-track {
     gap: 40px;
     font-size: 18px;
@@ -604,4 +601,76 @@
 @media (min-width: 1200px) and (max-height: 800px) {
   .hc-body { padding-top: 110px; padding-bottom: 24px; gap: 16px; }
   .hc-title { font-size: min(5.6vw,9svh); }
+}
+
+
+/* Móvil y tablet: mismas tarjetas flotantes y animaciones que en PC, colocadas en fila bajo el texto. */
+@media (max-width: 899px) {
+  section.hc {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    gap: 0 12px;
+    padding-inline: 12px;
+  }
+  section.hc .hc-body {
+    flex: 1 0 100%;
+    padding-bottom: 8px;
+    margin-inline: -12px;
+    width: calc(100% + 24px);
+  }
+  .hc-person {
+    display: flex;
+    position: relative;
+    flex: 0 1 auto;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    z-index: 3;
+    align-self: flex-start;
+    margin-bottom: 14px;
+  }
+  .hc-person.l {
+    transform: rotate(-4deg);
+    margin-top: 18px;
+  }
+  .hc-person.r {
+    transform: rotate(3deg);
+  }
+  section.hc .hc-marquee {
+    flex: 0 0 calc(100% + 24px);
+    margin-inline: -12px;
+  }
+  .hc-person .hc-glass {
+    padding: 12px 14px;
+    border-radius: 16px;
+  }
+  .hc-ficha {
+    width: min(48vw, 230px);
+  }
+  .hc-mini {
+    min-width: 0;
+    width: min(34vw, 150px);
+  }
+  .hc-k {
+    font-size: 10px;
+  }
+  .hc-row {
+    font-size: 12px;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .hc-row.line {
+    margin-top: 6px;
+    padding-top: 6px;
+  }
+  .hc-big {
+    font-size: 30px;
+  }
+  .hc-cursor {
+    width: 22px;
+    height: 22px;
+  }
 }
