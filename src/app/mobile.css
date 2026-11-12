@@ -673,3 +673,14 @@ html {
     touch-action: pan-x pan-y;
   }
 }
+
+
+/* Rendimiento en teléfono: el desenfoque de fondo (backdrop-filter) es lo más caro de pintar al hacer scroll.
+   Se quita del contenido; el header y el menú móvil conservan su vidrio. */
+@media (max-width: 899px) {
+  main *,
+  footer * {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
+}

@@ -21,10 +21,14 @@ const nextConfig: NextConfig = {
           { key: 'Content-Type', value: 'application/javascript; charset=utf-8' },
         ],
       },
+      ...['images', 'fonts', 'anim', 'icons'].map((dir) => ({
+        source: `/${dir}/:path*`,
+        headers: [{ key: 'Cache-Control', value: 'public, max-age=2592000, stale-while-revalidate=86400' }],
+      })),
       { source: '/api/:path*', headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }] },
     ];
   },
-  images: { formats: ['image/avif', 'image/webp'] },
+  images: { formats: ['image/avif', 'image/webp'], minimumCacheTTL: 2592000 },
   turbopack: { root: path.resolve(__dirname) },
 };
 
