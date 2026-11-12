@@ -134,8 +134,8 @@ button {
   pointer-events: none;
   user-select: none;
   z-index: 0;
-  max-width: 100%;
-  overflow: hidden;
+  max-width: none;
+  overflow: visible;
 }
 @media (max-width: 899px) {
   .ghost {
