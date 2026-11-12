@@ -49,7 +49,15 @@ export const metadata: Metadata = {
   applicationName: 'Tinto',
 };
 
-export const viewport: Viewport = { themeColor: '#fff4e6', colorScheme: 'light' };
+export const viewport: Viewport = {
+  themeColor: '#fff4e6',
+  colorScheme: 'light',
+  width: 'device-width',
+  initialScale: 1,
+  minimumScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   const logoSheet = readLogoSheet();

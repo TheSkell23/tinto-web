@@ -654,3 +654,22 @@
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+
+/* Tamaño fijo en teléfono: sin zoom con dos dedos ni desplazamiento lateral de la página (iOS ignora maximum-scale). */
+html {
+  overflow-x: clip;
+  max-width: 100%;
+}
+@media (max-width: 899px) {
+  html,
+  body {
+    touch-action: pan-y;
+    overscroll-behavior-x: none;
+  }
+  .mobile-scroll,
+  .chat-quick,
+  .sh .mock-wrap:not(.assign-board) .mock-columns {
+    touch-action: pan-x pan-y;
+  }
+}
