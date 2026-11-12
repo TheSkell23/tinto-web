@@ -1,5 +1,5 @@
 /* Respaldo de navegación. Aumentar la versión cuando cambie cualquier recurso de la lista. */
-const CACHE = 'tinto-offline-v1';
+const CACHE = 'tinto-offline-v2';
 const ASSETS = [
   '/offline.html',
   '/error-state.css',
@@ -47,8 +47,12 @@ self.addEventListener('fetch', (event) => {
     return;
   }
   if (request.mode === 'navigate') {
+    // Si la red falla, o no responde en 12 s (señal muy mala), se muestra la página sin conexión de Tinto
+    // en lugar de la pantalla gris del navegador.
+    const offline = async () => (await caches.open(CACHE)).match('/offline.html');
+    const slow = new Promise((resolve) => setTimeout(resolve, 12000, null));
     event.respondWith(
-      fetch(request).catch(async () => (await caches.open(CACHE)).match('/offline.html')),
+      Promise.race([fetch(request).catch(() => null), slow]).then((res) => res || offline()),
     );
   }
 });
