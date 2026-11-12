@@ -5,8 +5,12 @@ import { absoluteUrl } from '@/lib/site-url';
 
 const organizationId = absoluteUrl('/#organization');
 const websiteId = absoluteUrl('/#website');
-// Redes sociales reales pendientes. No exportar href="#" como identidad de la marca.
-const sameAs: string[] = [];
+// Perfiles oficiales de la marca (los mismos del pie de página).
+const sameAs: string[] = [
+  'https://www.instagram.com/softseguroslatam/',
+  'https://www.linkedin.com/company/softseguros/',
+  'https://www.youtube.com/@softseguros8477',
+];
 export const globalStructuredData = {
   '@context': 'https://schema.org',
   '@graph': [

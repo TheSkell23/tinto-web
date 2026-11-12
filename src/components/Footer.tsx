@@ -5,16 +5,8 @@ import { textSize, k, u } from '@/lib/u';
 
 const socials = [
   {
-    label: 'X',
-    svg: (
-      <path
-        fill="#111"
-        d="M18.9 2H22l-7.1 8.1L23 22h-6.4l-5-6.6L5.8 22H2.7l7.6-8.7L2.2 2h6.6l4.5 6L18.9 2zm-1.1 18h1.7L7.2 3.9H5.4L17.8 20z"
-      />
-    ),
-  },
-  {
     label: 'Instagram',
+    href: 'https://www.instagram.com/softseguroslatam/',
     svg: (
       <>
         <defs>
@@ -40,30 +32,23 @@ const socials = [
     ),
   },
   {
-    label: 'Behance',
-    svg: (
-      <path
-        fill="#1769ff"
-        d="M3 6h5.5c2.2 0 3.5 1.1 3.5 2.9 0 1.2-.6 2.1-1.7 2.5 1.4.4 2.2 1.5 2.2 3 0 2-1.5 3.2-3.9 3.2H3zm3 4.2h2c.9 0 1.4-.4 1.4-1.1S8.9 8 8 8H6zm0 5.7h2.3c1 0 1.6-.5 1.6-1.3s-.6-1.3-1.6-1.3H6zM15 7h5v1.2h-5zM17.5 9.5c2.4 0 3.8 1.6 3.8 4v.5h-5.7c.1 1.2.9 1.9 2 1.9.8 0 1.4-.3 1.7-.9h1.9c-.4 1.6-1.8 2.6-3.7 2.6-2.4 0-4-1.7-4-4.1s1.6-4 4-4zm-1.8 3.2h3.6c-.1-1-.8-1.7-1.8-1.7s-1.7.6-1.8 1.7z"
-      />
-    ),
-  },
-  {
-    label: 'YouTube',
-    svg: (
-      <>
-        <rect x="2" y="5" width="20" height="14" rx="4" fill="#ff0000" />
-        <path d="M10 9l5 3-5 3z" fill="#fff" />
-      </>
-    ),
-  },
-  {
     label: 'LinkedIn',
+    href: 'https://www.linkedin.com/company/softseguros/',
     svg: (
       <path
         fill="#0a66c2"
         d="M4 9h3.5v11H4zM5.75 3.5a2 2 0 110 4 2 2 0 010-4zM10 9h3.3v1.5c.5-.9 1.7-1.8 3.4-1.8 3.5 0 4.1 2.3 4.1 5.3V20h-3.5v-5.2c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V20H10z"
       />
+    ),
+  },
+  {
+    label: 'YouTube',
+    href: 'https://www.youtube.com/@softseguros8477',
+    svg: (
+      <>
+        <rect x="2" y="5" width="20" height="14" rx="4" fill="#ff0000" />
+        <path d="M10 9l5 3-5 3z" fill="#fff" />
+      </>
     ),
   },
 ];
@@ -183,7 +168,9 @@ export function Footer() {
               {socials.map((s) => (
                 <a
                   key={s.label}
-                  href="#"
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={s.label}
                   className="foot-soc"
                   style={{
